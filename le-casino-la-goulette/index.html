@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Casino — Restaurant pieds dans l’eau · La Goulette</title>
+<meta name="description" content="Le Casino, restaurant pieds dans l’eau sur la corniche de La Goulette : poissons grillés, fruits de mer, fell au mérou, couscous du dimanche. Ouvert toute l’année, midi et soir, 7j/7. 126 avenue de la République. Réservations : 20 325 334.">
+<meta name="theme-color" content="#0E2A3B">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_TN">
+<meta property="og:site_name" content="Le Casino La Goulette">
+<meta property="og:title" content="Le Casino — pieds dans l’eau, La Goulette">
+<meta property="og:description" content="La Méditerranée dans l’assiette et à l’horizon. Midi et soir, 7j/7, toute l’année.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La terrasse du Casino face à la mer, à La Goulette">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='50' fill='%230E2A3B'/%3E%3Cpath d='M18 62q8-8 16 0t16 0 16 0 16 0' stroke='%2346C2C6' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Ctext x='50' y='50' font-family='Georgia' font-style='italic' font-size='34' text-anchor='middle' fill='%23F7F4EE'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500;1,6..96,600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* From the restaurant: turquoise chairs and railings, white tablecloths, the deep blue of the bay,
+     the coral of grilled rougets and a glass of rosé. */
+  :root {
+    --bg: #F7F4EE;
+    --bg-2: #EAF3F2;
+    --panel: #FFFFFF;
+    --ink: #10232F;
+    --soft: #4A5A63;
+    --navy: #0E2A3B;
+    --teal: #157E83;
+    --teal-hi: #46C2C6;
+    --coral: #C2502F;
+    --line: rgb(16 35 47 / .13);
+    --focus: #157E83;
+    --shadow: 0 22px 48px rgb(14 42 59 / .18);
+    --display: "Bodoni Moda", Didot, Georgia, serif;
+    --sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --gutter: clamp(16px, 4vw, 56px);
+    --max: 1220px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0B1A23; --bg-2: #0F222D; --panel: #132A37; --ink: #EEF3F2; --soft: #B3C1C7;
+      --navy: #07141B; --teal: #46C2C6; --coral: #F08A6A; --line: rgb(238 243 242 / .13);
+      --focus: #46C2C6; --shadow: 0 22px 48px rgb(0 0 0 / .5); color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0B1A23; --bg-2: #0F222D; --panel: #132A37; --ink: #EEF3F2; --soft: #B3C1C7;
+    --navy: #07141B; --teal: #46C2C6; --coral: #F08A6A; --line: rgb(238 243 242 / .13);
+    --focus: #46C2C6; --shadow: 0 22px 48px rgb(0 0 0 / .5); color-scheme: dark;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.05rem/1.65 var(--sans); overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 60; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 8px; font-weight: 700; text-decoration: none; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
+  h1, h2, h3, p { margin: 0; }
+  section { padding-block: clamp(72px, 10vw, 120px); }
+  .eyebrow { font: 700 .76rem/1.3 var(--sans); letter-spacing: .26em; text-transform: uppercase; color: var(--teal); margin-bottom: 16px; }
+  .h2 { font: 500 clamp(2.2rem, 5vw, 3.8rem)/1.05 var(--display); letter-spacing: -.01em; }
+  .h2 i { font-weight: 500; color: var(--coral); }
+  .lead { margin-top: 18px; font-size: 1.12rem; color: var(--soft); max-width: 52ch; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55em; min-height: 50px; padding: .75em 1.45em; border-radius: 4px;
+    font: 700 .9rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; text-decoration: none; border: 1.5px solid transparent; cursor: pointer; transition: background .2s, color .2s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-sea { background: var(--teal-hi); color: #07141B; }
+  .btn-sea:hover { background: #fff; }
+  .btn-line { border-color: currentColor; }
+  .btn-line:hover { background: #F7F4EE; color: #0E2A3B; border-color: #F7F4EE; }
+
+  /* Header */
+  .top { position: sticky; top: 0; z-index: 30; background: var(--navy); color: #F7F4EE; border-bottom: 1px solid rgb(247 244 238 / .12); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 70px; }
+  .brand { text-decoration: none; display: flex; align-items: baseline; gap: 10px; }
+  .brand b { font: 500 1.6rem/1 var(--display); letter-spacing: .2em; text-transform: uppercase; }
+  .brand small { font: 700 .62rem/1 var(--sans); letter-spacing: .28em; text-transform: uppercase; color: var(--teal-hi); }
+  .nav { display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); }
+  .nav a:not(.btn) { text-decoration: none; font-weight: 500; font-size: .95rem; color: #C9D6DB; }
+  .nav a:not(.btn):hover { color: #fff; }
+  .nav .btn { min-height: 44px; padding: .6em 1.1em; }
+  .theme { width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgb(247 244 238 / .25); background: transparent; color: #F7F4EE; cursor: pointer; display: grid; place-items: center; }
+  .theme svg { width: 20px; height: 20px; }
+  @media (max-width: 900px) { .nav a:not(.btn) { display: none; } }
+  @media (max-width: 440px) { .nav .btn span { display: none; } .brand small { display: none; } }
+
+  /* Hero */
+  .hero { background: var(--navy); color: #F7F4EE; padding-block: clamp(40px, 6vw, 80px) 0; position: relative; }
+  .hero .intro { display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px 60px; align-items: end; }
+  .hero h1 { font: 500 clamp(3.4rem, 10vw, 8.6rem)/.9 var(--display); letter-spacing: -.02em; }
+  .hero h1 i { display: block; font-size: .42em; color: var(--teal-hi); letter-spacing: 0; margin-bottom: .1em; }
+  .hero .side p { color: #C9D6DB; font-size: 1.12rem; }
+  .hero .side strong { color: #fff; font-weight: 500; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .hero .btn-line { color: #F7F4EE; }
+  .horizon { position: relative; margin-top: clamp(32px, 5vw, 56px); }
+  .horizon img { width: 100%; height: clamp(280px, 46vw, 560px); object-fit: cover; object-position: 50% 42%; border-radius: 6px 6px 0 0; }
+  .horizon .pill { position: absolute; left: 20px; bottom: 20px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .horizon .pill span { background: rgb(7 20 27 / .78); color: #F7F4EE; backdrop-filter: blur(6px); padding: 8px 14px; border-radius: 999px; font-size: .9rem; font-weight: 500; }
+  .wave { display: block; width: 100%; height: 46px; color: var(--bg); background: var(--navy); }
+  @media (max-width: 860px) { .hero .intro { grid-template-columns: 1fr; } }
+
+  /* Signature dishes */
+  .sig .head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px 60px; }
+  .plates { margin-top: 48px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; list-style: none; padding: 0; }
+  .plate { background: var(--panel); border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+  .plate img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .plate:nth-child(1) { grid-column: span 2; grid-row: span 2; display: flex; flex-direction: column; }
+  .plate:nth-child(1) img { flex: 1; aspect-ratio: auto; min-height: 0; height: 100%; }
+  .plate .txt { padding: 14px 16px 18px; }
+  .plate h3 { font: 600 1.25rem/1.2 var(--display); }
+  .plate p { margin-top: 4px; color: var(--soft); font-size: .95rem; }
+  @media (max-width: 960px) { .plates { grid-template-columns: repeat(2, 1fr); } .plate:nth-child(1) { grid-row: auto; } .plate:nth-child(1) img { aspect-ratio: 4 / 3; height: auto; } }
+
+  /* La carte */
+  .carte { background: var(--bg-2); }
+  .menu { margin-top: 48px; background: var(--panel); border-radius: 8px; box-shadow: var(--shadow); padding: clamp(24px, 4vw, 56px); display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 4vw, 56px); position: relative; }
+  .menu::before { content: ""; position: absolute; inset: 10px; border: 1px solid var(--line); border-radius: 4px; pointer-events: none; }
+  .menu h3 { font: 500 italic 1.7rem/1.1 var(--display); color: var(--teal); padding-bottom: 12px; border-bottom: 2px solid var(--teal); margin-bottom: 14px; }
+  .menu ul { list-style: none; margin: 0; padding: 0; }
+  .menu li { padding: 9px 0; border-bottom: 1px dotted var(--line); display: flex; justify-content: space-between; gap: 12px; }
+  .menu li span { color: var(--soft); font-size: .88rem; text-align: right; }
+  .menu .foot { grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--soft); font-size: .95rem; padding-top: 6px; }
+  .menu .foot a { color: var(--teal); font-weight: 700; }
+  @media (max-width: 900px) { .menu { grid-template-columns: 1fr; } }
+
+  /* Dimanche */
+  .dimanche .grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 90px); align-items: center; }
+  .dimanche figure { margin: 0; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); }
+  .dimanche figure img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .choices { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; list-style: none; padding: 0; }
+  .choices li { padding: 10px 18px; border-radius: 999px; border: 1.5px solid var(--coral); color: var(--coral); font-weight: 700; }
+  @media (max-width: 860px) { .dimanche .grid { grid-template-columns: 1fr; } }
+
+  /* Lieu */
+  .lieu { background: var(--navy); color: #F7F4EE; }
+  .lieu .eyebrow { color: var(--teal-hi); }
+  .lieu .h2 i { color: #F3A389; }
+  .lieu .lead { color: #C9D6DB; }
+  .lieu .grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 90px); align-items: center; }
+  .feats { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .feats li { padding: 18px; border-radius: 8px; border: 1px solid rgb(247 244 238 / .16); background: rgb(255 255 255 / .04); }
+  .feats svg { width: 28px; height: 28px; color: var(--teal-hi); }
+  .feats b { display: block; margin-top: 8px; font: 600 1.15rem/1.2 var(--display); }
+  .feats span { color: #C9D6DB; font-size: .93rem; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
+  .pair img { border-radius: 8px; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .pair img:last-child { margin-top: 48px; }
+  @media (max-width: 860px) { .lieu .grid { grid-template-columns: 1fr; } }
+  @media (max-width: 420px) { .feats { grid-template-columns: 1fr; } }
+
+  /* Events */
+  .events .row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 40px; }
+  .ev { padding: 26px 24px; border-radius: 8px; background: var(--panel); border: 1px solid var(--line); }
+  .ev small { font: 700 .72rem/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--coral); }
+  .ev h3 { margin-top: 10px; font: 600 1.45rem/1.2 var(--display); }
+  .ev p { margin-top: 6px; color: var(--soft); }
+  @media (max-width: 860px) { .events .row { grid-template-columns: 1fr; } }
+
+  /* Infos */
+  .infos { padding-top: 0; }
+  .card { display: grid; grid-template-columns: 1fr 1fr; border-radius: 8px; overflow: hidden; background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow); }
+  .card .txt { padding: clamp(28px, 5vw, 56px); }
+  .card address { font: 500 clamp(1.4rem, 2.6vw, 1.9rem)/1.3 var(--display); font-style: normal; margin: 20px 0; }
+  .card dl { display: grid; grid-template-columns: auto 1fr; gap: 8px 22px; margin: 0 0 26px; }
+  .card dt { font: 700 .74rem/1.9 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--soft); }
+  .card dd { margin: 0; }
+  .card dd a { font-weight: 700; }
+  .card .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .card .btn-sea { background: var(--navy); color: #F7F4EE; }
+  :root[data-theme="dark"] .card .btn-sea { background: var(--teal-hi); color: #07141B; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .card .btn-sea { background: var(--teal-hi); color: #07141B; } }
+  .card .btn-line:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .card figure { margin: 0; position: relative; min-height: 360px; }
+  .card figure img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .note { margin-top: 18px; font-size: .9rem; color: var(--soft); }
+  @media (max-width: 860px) { .card { grid-template-columns: 1fr; } .card figure { min-height: 0; aspect-ratio: 4 / 3; } }
+
+  footer { background: var(--navy); color: #C9D6DB; padding: 34px 0 110px; font-size: .92rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: center; }
+  footer .brand b { color: #F7F4EE; font-size: 1.2rem; }
+  .callbar { position: fixed; z-index: 40; left: 12px; right: 12px; bottom: 12px; display: none; gap: 8px; }
+  .callbar a { flex: 1; box-shadow: 0 10px 30px rgb(0 0 0 / .3); }
+  .callbar .btn-line { background: var(--navy); color: #F7F4EE; border-color: var(--navy); }
+  @media (max-width: 700px) { .callbar { display: flex; } }
+  @media (min-width: 701px) { footer { padding-bottom: 40px; } }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/le-casino-la-goulette/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/le-casino-la-goulette/">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour Le Casino. Non affiliée à l’établissement.</div>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Le Casino, accueil"><b>Le Casino</b><small>La Goulette</small></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#carte">La carte</a>
+      <a href="#dimanche">Le dimanche</a>
+      <a href="#lieu">Le lieu</a>
+      <a href="#infos">Infos</a>
+      <button class="theme" type="button" aria-label="Changer de thème (clair / sombre)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
+      <a class="btn btn-sea" href="tel:+21620325334"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>Réserver</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="hero" aria-labelledby="titre">
+    <div class="wrap">
+      <div class="intro">
+        <h1 id="titre"><i>Restaurant</i>Le Casino</h1>
+        <div class="side">
+          <p><strong>Pieds dans l’eau sur la corniche de La Goulette.</strong> La Méditerranée dans l’assiette et à l’horizon, toute l’année, midi et soir, 7 jours sur 7.</p>
+          <div class="cta">
+            <a class="btn btn-sea" href="tel:+21620325334">Réserver · 20 325 334</a>
+            <a class="btn btn-line" href="#carte">La carte</a>
+          </div>
+        </div>
+      </div>
+      <div class="horizon">
+        <img src="assets/terrasse-mer.jpg" width="1080" height="1350" alt="Tables nappées de blanc et chaises turquoise sur la terrasse, la mer et un navire au loin">
+        <p class="pill"><span>Terrasse vue mer</span><span>Salle climatisée</span><span>7j/7</span></p>
+      </div>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46V22c120-26 240-26 360 0s240 26 360 0 240-26 360 0 240 26 360 0v24z" fill="currentColor"/></svg>
+  </section>
+
+  <section class="sig" aria-labelledby="t-sig">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Dans l’assiette</p>
+          <h2 class="h2" id="t-sig">Le goût de <i>La Goulette</i></h2>
+        </div>
+        <p class="lead">Il y a ceux qui viennent pour un bon poisson, ceux qui ne résistent pas à une brik bien croustillante… et ceux qui prennent toujours le temps de partager un couscous.</p>
+      </div>
+      <ul class="plates">
+        <li class="plate"><img src="assets/plateau-fruits-de-mer.jpg" width="1080" height="1350" alt="Plateau de fruits de mer : calamar, crevettes, langoustines et citron" loading="lazy"><div class="txt"><h3>La mer, généreusement servie</h3><p>Le goût de La Goulette, autour d’un plateau.</p></div></li>
+        <li class="plate"><img src="assets/fell-merou.jpg" width="1080" height="1350" alt="Fell au mérou, pâtes en sauce et piment grillé" loading="lazy"><div class="txt"><h3>Fell au mérou</h3><p>Une tradition bien goulettoise.</p></div></li>
+        <li class="plate"><img src="assets/rougets-tastira.jpg" width="1080" height="1350" alt="Rougets grillés, salade, tastira et frites" loading="lazy"><div class="txt"><h3>Rougets grillés</h3><p>Tastira généreuse et frites dorées.</p></div></li>
+        <li class="plate"><img src="assets/huitres.jpg" width="1080" height="1350" alt="Huîtres fraîches et citron, verre de rosé" loading="lazy"><div class="txt"><h3>Huîtres fraîches</h3><p>Citron… rien de plus.</p></div></li>
+        <li class="plate"><img src="assets/salade-poulpe.jpg" width="1080" height="1350" alt="Salade de poulpe, tomates, olives et citron" loading="lazy"><div class="txt"><h3>Salade de poulpe</h3><p>Citron, herbes fraîches, légumes croquants.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="carte" id="carte" aria-labelledby="t-carte">
+    <div class="wrap">
+      <p class="eyebrow">La carte</p>
+      <h2 class="h2" id="t-carte">De la mer, <i>et d’ici</i></h2>
+      <div class="menu">
+        <div>
+          <h3>De la mer</h3>
+          <ul>
+            <li>Poisson grillé <span>cuisson juste</span></li>
+            <li>Friture de rougets</li>
+            <li>Rougets grillés <span>tastira, frites</span></li>
+            <li>Calamars grillés</li>
+            <li>Calamar farci</li>
+            <li>Crevettes grillées</li>
+            <li>Moules version Casino <span>en sauce</span></li>
+            <li>Huîtres fraîches</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Goulettois</h3>
+          <ul>
+            <li>Fell au mérou <span>piments grillés</span></li>
+            <li>Fell au poisson <span>sauce relevée</span></li>
+            <li>Fell aux boulettes</li>
+            <li>Kamounia au poulpe</li>
+            <li>Brik croustillante</li>
+            <li>Salade de poulpe</li>
+            <li>Salade de fruits de mer</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Et aussi</h3>
+          <ul>
+            <li>Spaghetti aux fruits de mer</li>
+            <li>Riz aux crevettes et moules</li>
+            <li>Plateau de la mer</li>
+            <li>Souris d’agneau <span>fondante</span></li>
+            <li>Couscous du dimanche <span>poulpe, mérou, calamar farci</span></li>
+          </ul>
+        </div>
+        <p class="foot"><span>Extraits de nos plats. Menus spéciaux Saint-Valentin et Réveillon.</span><a href="tel:+21620325334">Réserver : 20 325 334</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dimanche" id="dimanche" aria-labelledby="t-dim">
+    <div class="wrap grid">
+      <figure><img src="assets/couscous-poulpe.jpg" width="1600" height="1067" alt="Couscous au poulpe, pommes de terre et piment" loading="lazy"></figure>
+      <div>
+        <p class="eyebrow">Le dimanche</p>
+        <h2 class="h2" id="t-dim">Le dimanche a ses traditions. <i>Chacun son couscous.</i></h2>
+        <p class="lead">Le poulpe, la semoule, la sauce, et tout le caractère de La Goulette. Le plus difficile sera de choisir.</p>
+        <ul class="choices"><li>Calamar farci</li><li>Poulpe</li><li>Mérou</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="lieu" id="lieu" aria-labelledby="t-lieu">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Le lieu</p>
+        <h2 class="h2" id="t-lieu">Une table, <i>la mer devant vous</i></h2>
+        <p class="lead">À La Goulette, on prend le temps de déjeuner. Chaque table s’ouvre sur un panorama apaisant, et chaque instant invite à rester un peu plus longtemps.</p>
+        <ul class="feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 16q2.5-2.5 5 0t5 0 5 0 5 0M2 20q2.5-2.5 5 0t5 0 5 0 5 0M12 4v8M8 8h8"/></svg><b>Terrasse ventilée</b><span>Avec vue sur la Méditerranée.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2v20M4.9 4.9l14.2 14.2M2 12h20M4.9 19.1L19.1 4.9"/></svg><b>Salle climatisée</b><span>Entièrement climatisée.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><b>Toute l’année</b><span>Midi et soir, 7 jours sur 7.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 12c3-4 7-5 11-3l4-3v12l-4-3c-4 2-8 1-11-3z"/><circle cx="7" cy="11" r=".8" fill="currentColor"/></svg><b>La vitrine de la mer</b><span>Poissons et fruits de mer frais, en salle.</span></li>
+        </ul>
+      </div>
+      <div class="pair">
+        <img src="assets/vitrine-poissons.jpg" width="1080" height="1152" alt="La vitrine réfrigérée de poissons et fruits de mer frais" loading="lazy">
+        <img src="assets/crevettes-grillees.jpg" width="1080" height="1350" alt="Crevettes grillées et verre de rosé sur une table nappée" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="events" aria-labelledby="t-ev">
+    <div class="wrap">
+      <p class="eyebrow">Au fil de l’année</p>
+      <h2 class="h2" id="t-ev">Les grandes tables <i>du Casino</i></h2>
+      <div class="row">
+        <div class="ev"><small>Février</small><h3>Menu Saint-Valentin</h3><p>Un menu spécial pour la Saint-Valentin, annoncé sur Instagram.</p></div>
+        <div class="ev"><small>31 décembre</small><h3>Menu Réveillon</h3><p>Le menu du réveillon, sur réservation.</p></div>
+        <div class="ev"><small>Chaque dimanche</small><h3>Couscous du dimanche</h3><p>Poulpe, mérou ou calamar farci.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="infos" id="infos" aria-labelledby="t-infos">
+    <div class="wrap">
+      <div class="card">
+        <div class="txt">
+          <p class="eyebrow">Nous trouver</p>
+          <h2 class="h2" id="t-infos">Sur la <i>corniche</i></h2>
+          <address>126 avenue de la République<br>La Goulette 2060</address>
+          <dl>
+            <dt>Ouvert</dt><dd>Toute l’année, midi et soir, 7j/7</dd>
+            <dt>Réservations</dt><dd><a href="tel:+21620325334">+216 20 325 334</a></dd>
+          </dl>
+          <div class="links">
+            <a class="btn btn-sea" href="tel:+21620325334">Appeler</a>
+            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant+Le+Casino+126+avenue+de+la+R%C3%A9publique+La+Goulette" target="_blank" rel="noopener">Itinéraire</a>
+            <a class="btn btn-line" href="https://ig.me/m/casinogoulette" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn btn-line" href="https://www.facebook.com/RestaurantLeCasino/" target="_blank" rel="noopener">Facebook</a>
+          </div>
+          <p class="note">À noter : les matchs de football ne sont pas diffusés au restaurant.</p>
+        </div>
+        <figure><img src="assets/spaghetti-fruits-de-mer.jpg" width="1600" height="1067" alt="Spaghetti aux fruits de mer, crevettes et moules" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brand"><b>Le Casino</b></span>
+    <span>Restaurant pieds dans l’eau · 126 av. de la République, La Goulette</span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-sea" href="tel:+21620325334">Appeler</a>
+  <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant+Le+Casino+126+avenue+de+la+R%C3%A9publique+La+Goulette" target="_blank" rel="noopener">Itinéraire</a>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.querySelector('.theme');
+    try { var t = localStorage.getItem('casino-theme'); if (t) root.setAttribute('data-theme', t); } catch (e) {}
+    btn.addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme');
+      var dark = cur ? cur === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+      root.setAttribute('data-theme', dark ? 'light' : 'dark');
+      try { localStorage.setItem('casino-theme', dark ? 'light' : 'dark'); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

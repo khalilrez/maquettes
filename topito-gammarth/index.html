@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Topito Gammarth — Pizza au feu de bois, panuzzo &amp; cuisine italienne</title>
+<meta name="description" content="Topito, l’expérience italienne à Gammarth : pizzas cuites au feu de bois, panuzzo napolitain, chakloub, lasagne. Produits soigneusement sélectionnés. Réservation : 56 374 000.">
+<meta name="theme-color" content="#16181B">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_TN">
+<meta property="og:site_name" content="Topito Gammarth">
+<meta property="og:title" content="Topito — l’expérience italienne, à Gammarth">
+<meta property="og:description" content="Pizzas au feu de bois, panuzzo, chakloub et créations gourmandes. Sur place à Gammarth.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pizza au feu de bois : olives, câpres, tomates cerises et roquette">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2316181B'/%3E%3Ctext x='50' y='66' font-family='Arial' font-weight='700' font-size='50' text-anchor='middle' fill='%23fff'%3ET%3C/text%3E%3Crect x='22' y='76' width='19' height='5' fill='%2321A05A'/%3E%3Crect x='41' y='76' width='18' height='5' fill='%23fff'/%3E%3Crect x='59' y='76' width='19' height='5' fill='%23E2323A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&family=Quicksand:wght@500;600&family=Reem+Kufi:wght@600&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  /* From the restaurant: the white neon "TOPITO" sign with its green-white-red underline,
+     white subway tiles, charcoal tables, the leopard-spotted crust of the wood-fired oven. */
+  :root {
+    --bg: #FAF8F4;
+    --bg-2: #F0ECE4;
+    --panel: #FFFFFF;
+    --ink: #16181B;
+    --soft: #50555C;
+    --green: #157A43;
+    --red: #C8232C;
+    --fire: #E0742B;
+    --line: rgb(22 24 27 / .12);
+    --tile: rgb(22 24 27 / .06);
+    --focus: #157A43;
+    --shadow: 0 20px 44px rgb(22 24 27 / .16);
+    --display: "Unbounded", system-ui, sans-serif;
+    --neon: "Quicksand", system-ui, sans-serif;
+    --sans: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --gutter: clamp(16px, 4vw, 56px);
+    --max: 1220px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121417; --bg-2: #181B1F; --panel: #1E2126; --ink: #F4F2EE; --soft: #B7BBC1;
+      --green: #3CC27A; --red: #FF6B6F; --fire: #FF9A52; --line: rgb(244 242 238 / .13); --tile: rgb(244 242 238 / .05);
+      --focus: #3CC27A; --shadow: 0 20px 44px rgb(0 0 0 / .5); color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121417; --bg-2: #181B1F; --panel: #1E2126; --ink: #F4F2EE; --soft: #B7BBC1;
+    --green: #3CC27A; --red: #FF6B6F; --fire: #FF9A52; --line: rgb(244 242 238 / .13); --tile: rgb(244 242 238 / .05);
+    --focus: #3CC27A; --shadow: 0 20px 44px rgb(0 0 0 / .5); color-scheme: dark;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.05rem/1.6 var(--sans); overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 60; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 8px; font-weight: 700; text-decoration: none; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
+  h1, h2, h3, p { margin: 0; }
+  [lang="ar"] { font-family: "Reem Kufi", system-ui, sans-serif; }
+  section { padding-block: clamp(72px, 10vw, 120px); }
+  .tiles { background-color: var(--bg);
+    background-image: linear-gradient(var(--tile) 1px, transparent 1px), linear-gradient(90deg, var(--tile) 1px, transparent 1px), linear-gradient(90deg, var(--tile) 1px, transparent 1px);
+    background-size: 100% 36px, 72px 72px, 72px 72px; background-position: 0 0, 0 0, 36px 36px; }
+  .flag { display: flex; height: 4px; width: 84px; border-radius: 4px; overflow: hidden; }
+  .flag::before, .flag::after, .flag span { content: ""; flex: 1; }
+  .flag::before { background: var(--green); } .flag span { background: #fff; outline: 1px solid var(--line); } .flag::after { background: var(--red); }
+  .label { font: 700 .78rem/1.2 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--green); display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+  .h2 { font: 700 clamp(2rem, 4.6vw, 3.5rem)/1.04 var(--display); letter-spacing: -.02em; }
+  .h2 em { font-style: normal; color: var(--fire); }
+  .lead { margin-top: 18px; font-size: 1.15rem; color: var(--soft); max-width: 52ch; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55em; min-height: 50px; padding: .75em 1.4em; border-radius: 14px;
+    font: 700 .98rem/1 var(--sans); text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: transform .15s, background .2s, color .2s; }
+  .btn svg { width: 19px; height: 19px; flex: none; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-fire { background: var(--ink); color: var(--bg); }
+  .btn-fire:hover { background: var(--green); color: #fff; }
+  .btn-line { border-color: currentColor; }
+
+  /* Header */
+  .top { position: sticky; top: 0; z-index: 30; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 70px; }
+  .logo { text-decoration: none; display: inline-grid; justify-items: center; gap: 4px; }
+  .logo b { font: 600 1.55rem/1 var(--neon); letter-spacing: .14em; }
+  .logo .flag { width: 100%; height: 3px; }
+  .nav { display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); }
+  .nav a:not(.btn) { text-decoration: none; font-weight: 500; color: var(--soft); }
+  .nav a:not(.btn):hover { color: var(--ink); }
+  .nav .btn { min-height: 44px; padding: .6em 1.1em; }
+  .theme { width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; display: grid; place-items: center; }
+  .theme svg { width: 20px; height: 20px; }
+  @media (max-width: 880px) { .nav a:not(.btn) { display: none; } }
+  @media (max-width: 400px) { .nav .btn span { display: none; } }
+
+  /* Hero: the neon sign at night */
+  .hero { background: #101215; color: #F4F2EE; padding-block: clamp(40px, 6vw, 80px) clamp(56px, 8vw, 100px); position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(60% 70% at 18% 30%, rgb(255 255 255 / .07), transparent 70%), radial-gradient(40% 50% at 85% 80%, rgb(224 116 43 / .22), transparent 70%); pointer-events: none; }
+  .hero .wrap { position: relative; display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+  .hero .label { color: #7BE0A6; }
+  .sign { display: inline-grid; gap: clamp(10px, 1.4vw, 18px); }
+  .sign h1 { font: 600 clamp(3.6rem, 11vw, 9rem)/.9 var(--neon); letter-spacing: .12em; color: #fff;
+    text-shadow: 0 0 6px rgb(255 255 255 / .9), 0 0 22px rgb(255 255 255 / .55), 0 0 60px rgb(160 220 255 / .35); }
+  .sign .flag { width: 100%; height: clamp(5px, .7vw, 8px); box-shadow: 0 0 18px rgb(255 255 255 / .35); }
+  .sign .flag::before { background: #2BD27A; box-shadow: 0 0 14px #2BD27A; } .sign .flag::after { background: #FF4A55; box-shadow: 0 0 14px #FF4A55; }
+  .sign .flag span { outline: 0; }
+  .hero .tag { margin-top: 28px; font: 700 clamp(1.35rem, 2.6vw, 2rem)/1.2 var(--display); max-width: 20em; }
+  .hero .tag em { font-style: normal; color: #FF9A52; }
+  .hero p.sub { margin-top: 14px; color: #C9CCD1; max-width: 46ch; font-size: 1.1rem; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .hero .btn-fire { background: #FF9A52; color: #16181B; }
+  .hero .btn-fire:hover { background: #fff; }
+  .hero .btn-line { color: #F4F2EE; }
+  .peel { position: relative; justify-self: center; width: min(100%, 470px); }
+  .peel .pie { border-radius: 50%; overflow: hidden; aspect-ratio: 1; box-shadow: 0 0 0 10px #24272C, 0 30px 70px rgb(0 0 0 / .6); }
+  .peel .pie img { width: 100%; height: 100%; object-fit: cover; }
+  .peel .handle { position: absolute; left: 50%; bottom: -70px; width: 46px; height: 110px; translate: -50% 0; background: linear-gradient(90deg, #6B4428, #8C5B36 50%, #6B4428); border-radius: 0 0 12px 12px; z-index: -1; }
+  .fuoco { position: absolute; top: 4%; right: -2%; background: #FF9A52; color: #16181B; border-radius: 999px; padding: 12px 18px; font: 800 .82rem/1.15 var(--display); text-transform: uppercase; letter-spacing: .04em; rotate: 8deg; box-shadow: 0 10px 30px rgb(0 0 0 / .4); text-align: center; }
+  @media (max-width: 880px) { .hero .wrap { grid-template-columns: 1fr; } .peel { width: min(80%, 380px); margin-bottom: 40px; } }
+
+  /* Promise strip */
+  .strip { background: #FF9A52; color: #16181B; padding-block: 0; }
+  .strip ul { list-style: none; margin: 0; padding: 22px 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .strip li { display: flex; align-items: center; gap: 14px; font-weight: 500; }
+  .strip svg { width: 30px; height: 30px; flex: none; color: #16181B; }
+  @media (max-width: 760px) { .strip ul { grid-template-columns: 1fr; } }
+
+  /* Menu */
+  .menu header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 20px 60px; }
+  .cards { list-style: none; padding: 0; margin: 48px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .item { background: var(--panel); border: 1px solid var(--line); border-radius: 24px; overflow: hidden; box-shadow: 0 1px 0 var(--line); transition: transform .25s, box-shadow .25s; }
+  .item:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+  .item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .item .txt { padding: 18px 20px 22px; }
+  .item h3 { font: 700 1.2rem/1.2 var(--display); display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .item h3 [lang="ar"] { font-size: 1.15rem; color: var(--fire); font-weight: 600; }
+  .item p { margin-top: 8px; color: var(--soft); }
+  .neonbox { aspect-ratio: 4 / 3; display: grid; place-items: center; background: #101215 radial-gradient(60% 60% at 50% 50%, rgb(255 154 82 / .25), transparent 70%); }
+  .neonbox span { font: 600 clamp(3rem, 7vw, 4.6rem)/1 "Reem Kufi", sans-serif; color: #fff; text-shadow: 0 0 6px #fff, 0 0 24px #FF9A52, 0 0 60px #FF9A52; }
+  .item .tagline { display: inline-block; margin-top: 12px; font: 700 .75rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--green); }
+  @media (max-width: 960px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+  .more { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .more span.k { font-weight: 700; margin-right: 6px; }
+  .chip { padding: 8px 15px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--panel); font-weight: 500; }
+  .chip:nth-child(3n+2) { border-color: var(--green); } .chip:nth-child(3n) { border-color: var(--red); }
+
+  /* Four */
+  .four { background: var(--bg-2); }
+  .four .grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 90px); align-items: center; }
+  .stack { position: relative; padding-bottom: 60px; }
+  .stack img { border-radius: 26px; box-shadow: var(--shadow); width: 78%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .stack img + img { position: absolute; right: 0; bottom: 0; width: 52%; border: 8px solid var(--bg-2); }
+  .quotes { list-style: none; padding: 0; margin: 30px 0 0; display: grid; gap: 12px; }
+  .quotes li { font: 500 1.15rem/1.4 var(--sans); padding: 14px 18px; border-radius: 16px 16px 16px 4px; background: var(--panel); border: 1px solid var(--line); width: fit-content; max-width: 100%; }
+  .quotes li:nth-child(2) { margin-left: auto; border-radius: 16px 16px 4px 16px; background: var(--ink); color: var(--bg); }
+  @media (max-width: 880px) { .four .grid { grid-template-columns: 1fr; } }
+
+  /* Lieu */
+  .lieu .mosaic { margin-top: 44px; display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 230px; gap: 14px; grid-auto-flow: dense; }
+  .lieu figure { margin: 0; border-radius: 20px; overflow: hidden; position: relative; }
+  .lieu figure img { width: 100%; height: 100%; object-fit: cover; }
+  .lieu figcaption { position: absolute; left: 12px; bottom: 12px; padding: 6px 12px; border-radius: 999px; background: rgb(16 18 21 / .78); color: #fff; font-size: .85rem; font-weight: 500; }
+  .lieu .tall { grid-row: span 2; }
+  @media (max-width: 880px) { .lieu .mosaic { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 190px; } }
+
+  /* Infos */
+  .infos { padding-top: 0; }
+  .board { display: grid; grid-template-columns: 1fr 1fr; border-radius: 30px; overflow: hidden; background: #101215; color: #F4F2EE; border: 1px solid var(--line); }
+  .board .txt { padding: clamp(28px, 5vw, 60px); }
+  .board .label { color: #7BE0A6; }
+  .board .h2 em { color: #FF9A52; }
+  .board dl { display: grid; grid-template-columns: auto 1fr; gap: 10px 22px; margin: 28px 0; }
+  .board dt { font: 700 .75rem/1.9 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: #9EA3AA; }
+  .board dd { margin: 0; font-size: 1.08rem; }
+  .board dd a { font-weight: 700; }
+  .board .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .board .btn-fire { background: #FF9A52; color: #16181B; }
+  .board .btn-line { color: #F4F2EE; }
+  .board figure { margin: 0; position: relative; min-height: 360px; }
+  .board figure img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 880px) { .board { grid-template-columns: 1fr; } .board figure { min-height: 0; aspect-ratio: 4 / 3; } }
+
+  footer { padding: 30px 0 110px; color: var(--soft); font-size: .92rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding-top: 26px; }
+  .callbar { position: fixed; z-index: 40; left: 12px; right: 12px; bottom: 12px; display: none; gap: 8px; }
+  .callbar a { flex: 1; box-shadow: 0 10px 30px rgb(0 0 0 / .3); }
+  .callbar .btn-fire { background: #FF9A52; color: #16181B; }
+  .callbar .btn-line { background: var(--panel); color: var(--ink); border-color: var(--line); }
+  @media (max-width: 700px) { .callbar { display: flex; } }
+  @media (min-width: 701px) { footer { padding-bottom: 40px; } }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn, .item { transition: none; } }
+</style>
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/topito-gammarth/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/topito-gammarth/">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour Topito Gammarth. Non affiliée à l’établissement.</div>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Topito Gammarth, accueil"><b>TOPITO</b><span class="flag" aria-hidden="true"><span></span></span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#menu">Le menu</a>
+      <a href="#four">Feu de bois</a>
+      <a href="#lieu">Le lieu</a>
+      <a href="#infos">Infos</a>
+      <button class="theme" type="button" aria-label="Changer de thème (clair / sombre)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
+      <a class="btn btn-fire" href="tel:+21656374000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>Appeler</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="hero" aria-labelledby="titre">
+    <div class="wrap">
+      <div>
+        <p class="label">Restaurant italien · Gammarth</p>
+        <div class="sign"><h1 id="titre">TOPITO</h1><span class="flag" aria-hidden="true"><span></span></span></div>
+        <p class="tag">L’expérience italienne <em>par excellence</em>.</p>
+        <p class="sub">Créations gourmandes, produits soigneusement sélectionnés et cuisson au feu de bois.</p>
+        <div class="cta">
+          <a class="btn btn-fire" href="tel:+21656374000">Réserver · 56 374 000</a>
+          <a class="btn btn-line" href="#menu">Voir le menu</a>
+        </div>
+      </div>
+      <div class="peel">
+        <div class="pie"><img src="assets/pizza-feu-de-bois.jpg" width="815" height="1019" alt="Pizza cuite au feu de bois : olives, câpres, tomates cerises, roquette et parmesan"></div>
+        <p class="fuoco" aria-hidden="true">Cuisson<br>feu de bois</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip" aria-label="Nos engagements">
+    <div class="wrap">
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22c4.4 0 7-2.9 7-6.6 0-4-3-6-4-9.4-1.4 1.6-2 3-2 4.6C11 9 9.5 6.5 10 2 6.5 4.6 5 9.5 5 15.4 5 19.1 7.6 22 12 22z"/></svg>Cuisson au feu de bois</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3c-3 3-5 6-5 9a5 5 0 0 0 10 0c0-3-2-6-5-9zM12 14v7"/></svg>Produits soigneusement sélectionnés</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg>Créations gourmandes maison</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="menu tiles" id="menu" aria-labelledby="t-menu">
+    <div class="wrap">
+      <header>
+        <div>
+          <p class="label"><span class="flag" aria-hidden="true"><span></span></span>Le menu</p>
+          <h2 class="h2" id="t-menu">One bite… <em>and you won’t resist.</em></h2>
+        </div>
+        <p class="lead">Des pizzas à la pâte bien gonflée et tachetée par le feu, le vrai panuzzo, et quelques créations qu’on ne trouve que chez Topito.</p>
+      </header>
+      <ul class="cards">
+        <li class="item"><img src="assets/pizza-huile.jpg" width="1080" height="1350" alt="Pizza à la croûte tachetée, filet d’huile d’olive, bouteille d’huile en arrière-plan" loading="lazy"><div class="txt"><h3>Nos pizzas</h3><p>Pâte cuite au feu de bois, généreuse en huile d’olive. Bellamargharita, Pizza Padova, Caprese…</p><span class="tagline">Best pizza in town</span></div></li>
+        <li class="item"><img src="assets/panuzzo.jpg" width="1080" height="1350" alt="Panuzzo garni de roquette, concombre et tomates cerises" loading="lazy"><div class="txt"><h3>Le panuzzo</h3><p>Le vrai panuzzo napolitain : pâte à pizza dorée au four, garnie et refermée.</p><span class="tagline">This panuzzo is my therapy</span></div></li>
+        <li class="item special"><div class="neonbox" aria-hidden="true"><span lang="ar" dir="rtl">شقلوب</span></div><div class="txt"><h3>Chakloub <span lang="ar" dir="rtl">شقلوب</span></h3><p>La création maison, « made only in Topito ». Fondant, gratiné, à goûter absolument.</p><span class="tagline">Only at Topito</span></div></li>
+        <li class="item"><img src="assets/pizzas-thon.jpg" width="1080" height="1350" alt="Pizzas au thon et mozzarella sur la table" loading="lazy"><div class="txt"><h3>À partager</h3><p>Plusieurs pizzas au centre de la table : chacun pioche.</p></div></li>
+        <li class="item"><img src="assets/salade.jpg" width="1080" height="1350" alt="Grande salade au parmesan, croûtons et tomates cerises" loading="lazy"><div class="txt"><h3>Salades</h3><p>Copieuses, parmesan râpé, croûtons, servies avec du pain sorti du four.</p></div></li>
+        <li class="item"><img src="assets/panuzzo-coupe.jpg" width="1080" height="1350" alt="Sandwich en pâte à pizza coupé en deux, garni jusqu’au bord" loading="lazy"><div class="txt"><h3>Bien garni</h3><p>Coupé en deux, rempli jusqu’au bord : on ne repart pas avec la faim.</p></div></li>
+      </ul>
+      <div class="more"><span class="k">Aussi au menu :</span><span class="chip">Lasagne</span><span class="chip">Baguette ripiena</span><span class="chip">Pizza Padova</span><span class="chip">Bellamargharita</span><span class="chip">Pizza Caprese</span><span class="chip">Nouveautés</span></div>
+    </div>
+  </section>
+
+  <section class="four" id="four" aria-labelledby="t-four">
+    <div class="wrap grid">
+      <div class="stack">
+        <img src="assets/pizza-salle.jpg" width="1080" height="1350" alt="Une pizza tout juste sortie du four posée sur une table en bois, carrelage blanc" loading="lazy">
+        <img src="assets/service.jpg" width="720" height="900" alt="Une salade servie devant l’enseigne lumineuse Topito" loading="lazy">
+      </div>
+      <div>
+        <p class="label">En cuisine</p>
+        <h2 class="h2" id="t-four">Le feu de bois, <em>et l’huile d’olive partout</em></h2>
+        <p class="lead">Ici, la pizza se cuit comme en Italie : à la flamme, pour une croûte qui gonfle et se tache de noir, un cœur fondant, et un dernier filet d’huile d’olive avant de servir.</p>
+        <ul class="quotes" aria-label="Ce qu’on dit chez Topito">
+          <li>« Don’t look for the best pizza anymore. »</li>
+          <li><span lang="ar" dir="rtl">لازم تجيو تجربوه</span> 😍</li>
+          <li>« I want everything that Topito makes. »</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="lieu" id="lieu" aria-labelledby="t-lieu">
+    <div class="wrap">
+      <p class="label">Le lieu</p>
+      <h2 class="h2" id="t-lieu">Entre les pins <em>de Gammarth</em></h2>
+      <p class="lead">Une salle en carrelage blanc sous le néon, et une terrasse vitrée ouverte sur la verdure.</p>
+      <div class="mosaic">
+        <figure class="tall"><img src="assets/neon.jpg" width="720" height="900" alt="L’enseigne néon Topito au-dessus de l’entrée" loading="lazy"><figcaption>Sous le néon</figcaption></figure>
+        <figure class="tall"><img src="assets/terrasse.jpg" width="1080" height="1350" alt="La terrasse vitrée avec vue sur les pins" loading="lazy"><figcaption>La terrasse</figcaption></figure>
+        <figure><img src="assets/salle.jpg" width="1080" height="1350" alt="La salle : carrelage blanc et fenêtres à petits carreaux" loading="lazy"></figure>
+        <figure><img src="assets/pizza-salle.jpg" width="1080" height="1350" alt="Pizza servie en salle" loading="lazy"></figure>
+        <figure><img src="assets/enseigne.jpg" width="1080" height="1350" alt="Le panneau Topito au bord de la route, pins et ciel bleu" loading="lazy"><figcaption>Sur la route de Gammarth</figcaption></figure>
+        <figure><img src="assets/panuzzo-main.jpg" width="1080" height="1350" alt="Un panuzzo tenu à la main" loading="lazy"><figcaption>Vos moments</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="infos" id="infos" aria-labelledby="t-infos">
+    <div class="wrap">
+      <div class="board">
+        <div class="txt">
+          <p class="label">Infos pratiques</p>
+          <h2 class="h2" id="t-infos">Let me drive <em>to Topito</em></h2>
+          <dl>
+            <dt>Où</dt><dd>Gammarth, Tunis</dd>
+            <dt>Tél.</dt><dd><a href="tel:+21656374000">+216 56 374 000</a></dd>
+            <dt>Horaires</dt><dd>Sur Instagram ou par téléphone</dd>
+          </dl>
+          <div class="links">
+            <a class="btn btn-fire" href="tel:+21656374000">Appeler</a>
+            <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Topito+Gammarth" target="_blank" rel="noopener">Itinéraire</a>
+            <a class="btn btn-line" href="https://ig.me/m/topito_gammarth" target="_blank" rel="noopener">Message Instagram</a>
+            <a class="btn btn-line" href="https://www.facebook.com/TopitoTN/" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </div>
+        <figure><img src="assets/pizza-salle.jpg" width="1080" height="1350" alt="Pizza au feu de bois servie dans la salle de Topito" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Retour en haut"><b>TOPITO</b><span class="flag" aria-hidden="true"><span></span></span></a>
+    <span>Pizza au feu de bois · panuzzo · cuisine italienne · Gammarth</span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-fire" href="tel:+21656374000">Appeler</a>
+  <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Topito+Gammarth" target="_blank" rel="noopener">Itinéraire</a>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.querySelector('.theme');
+    try { var t = localStorage.getItem('topito-theme'); if (t) root.setAttribute('data-theme', t); } catch (e) {}
+    btn.addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme');
+      var dark = cur ? cur === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+      root.setAttribute('data-theme', dark ? 'light' : 'dark');
+      try { localStorage.setItem('topito-theme', dark ? 'light' : 'dark'); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

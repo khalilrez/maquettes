@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moon’s Café · Lounge à Sfax, ouvert 24h/24 et 7j/7</title>
+<meta name="description" content="Moon’s Café-Lounge à Sfax (Kassas n°4, entre route El Ain et route Menzel Chaker) : ouvert 24h/24, 7j/7. Petit-déjeuner, Roue de Bonheur, box à partager, brunch, matchs sur écran géant et espace familial non-fumeur. 53 626 624 · 58 453 453.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Moon’s Café-Lounge · Sfax · 24h/24">
+<meta property="og:description" content="Petit-déj, Roue de Bonheur, box à partager, matchs sur écran géant. Ouvert jour et nuit, 7j/7.">
+<meta name="theme-color" content="#0B0E0C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Allura&family=Poppins:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0B0E0C;
+    --bg-2: #101A15;
+    --paper: #141D18;
+    --ink: #F3EEE3;
+    --soft: #B9B3A6;
+    --line: rgba(212,175,99,.22);
+    --gold: #D7B26A;
+    --gold-ink: #E2C27F;
+    --green: #173326;
+    --on-gold: #17120A;
+    --shadow: 0 30px 70px -30px rgba(0,0,0,.9);
+    --marble: radial-gradient(120% 80% at 10% 0%, rgba(255,255,255,.05), transparent 60%), linear-gradient(135deg, #121614, #0B0E0C);
+    --display: 'Marcellus', Georgia, serif;
+    --script: 'Allura', cursive;
+    --sans: 'Poppins', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      color-scheme: light;
+      --bg: #F6F2EA;
+      --bg-2: #EDE6D8;
+      --paper: #FFFDF8;
+      --ink: #14130F;
+      --soft: #5C574C;
+      --line: rgba(140,104,40,.25);
+      --gold: #B38936;
+      --gold-ink: #7E5C18;
+      --green: #173326;
+      --on-gold: #FFFDF8;
+      --shadow: 0 30px 70px -34px rgba(40,30,10,.45);
+      --marble: radial-gradient(120% 80% at 10% 0%, rgba(255,255,255,.9), transparent 60%), linear-gradient(135deg, #F3EEE4, #E9E2D3);
+    }
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --bg: #F6F2EA;
+    --bg-2: #EDE6D8;
+    --paper: #FFFDF8;
+    --ink: #14130F;
+    --soft: #5C574C;
+    --line: rgba(140,104,40,.25);
+    --gold: #B38936;
+    --gold-ink: #7E5C18;
+    --green: #173326;
+    --on-gold: #FFFDF8;
+    --shadow: 0 30px 70px -34px rgba(40,30,10,.45);
+    --marble: radial-gradient(120% 80% at 10% 0%, rgba(255,255,255,.9), transparent 60%), linear-gradient(135deg, #F3EEE4, #E9E2D3);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 300 16.5px/1.7 var(--sans); overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--gold); color: var(--on-gold); padding: 10px 16px; border-radius: 8px; text-decoration: none; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1200px, 100% - 40px); margin-inline: auto; }
+  [lang="ar"] { font-family: 'Noto Kufi Arabic', sans-serif; }
+  h1, h2, h3 { margin: 0; font-weight: 400; }
+  h2 { font: 400 clamp(36px, 5vw, 62px)/1.05 var(--display); letter-spacing: .01em; }
+  .script { font: 400 clamp(34px, 4vw, 50px)/1 var(--script); color: var(--gold-ink); display: block; margin-bottom: 4px; }
+  .rule { display: flex; align-items: center; gap: 14px; font: 500 12px/1 var(--sans); letter-spacing: .3em; text-transform: uppercase; color: var(--gold-ink); margin: 0 0 18px; }
+  .rule::before, .rule::after { content: ""; height: 1px; width: 36px; background: var(--gold); opacity: .7; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 24px; border-radius: 6px; font: 500 15px/1 var(--sans); letter-spacing: .03em; text-decoration: none; border: 1px solid transparent; transition: transform .2s, background .2s; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-gold { background: linear-gradient(135deg, #E6C77F, #B38936); color: #17120A; }
+  .btn-line { border-color: var(--gold); color: var(--ink); }
+
+  /* moon logo */
+  .moonlogo { display: inline-flex; align-items: center; font: 600 25px/1 var(--sans); letter-spacing: .02em; text-decoration: none; gap: 0; }
+  .moonlogo .o { width: .62em; height: .62em; border-radius: 50%; border: .12em solid currentColor; margin: 0 .03em; position: relative; top: .04em; }
+  .moonlogo .o.c { border: 0; box-shadow: inset -.17em .02em 0 0 currentColor; transform: rotate(-25deg); }
+  .moonlogo small { display: block; font: 400 10px/1 var(--sans); letter-spacing: .28em; text-transform: lowercase; color: var(--gold-ink); margin-top: 4px; text-align: right; }
+
+  .top { position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .top .wrap { height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+  nav ul { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
+  nav a { text-decoration: none; font-size: 14px; color: var(--soft); letter-spacing: .04em; }
+  nav a:hover { color: var(--gold-ink); }
+  .tr { display: flex; gap: 10px; align-items: center; }
+  .top .btn { min-height: 42px; padding: 0 16px; font-size: 14px; }
+  .toggle { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); display: grid; place-items: center; cursor: pointer; }
+  .toggle svg { width: 18px; height: 18px; }
+  .toggle .moon { display: none; }
+  :root[data-theme="light"] .toggle .moon { display: block; }
+  :root[data-theme="light"] .toggle .sun { display: none; }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) .toggle .moon { display: block; }
+    :root:not([data-theme="dark"]) .toggle .sun { display: none; }
+  }
+
+  /* hero */
+  .hero { background: var(--marble); position: relative; overflow: hidden; padding: 70px 0 90px; }
+  .hero .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+  .hero h1 { font: 400 clamp(54px, 7.6vw, 108px)/.95 var(--display); }
+  .hero h1 .script { font-size: .62em; margin: 0 0 10px; }
+  .hero p.sub { font-size: 18px; color: var(--soft); max-width: 40ch; margin: 24px 0 30px; }
+  .open { display: inline-flex; align-items: center; gap: 14px; padding: 10px 18px 10px 12px; border: 1px solid var(--line); border-radius: 99px; margin-bottom: 26px; font-size: 14px; color: var(--soft); }
+  .open b { font: 400 18px/1 var(--display); color: var(--ink); letter-spacing: .04em; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: #4CC38A; box-shadow: 0 0 0 5px rgba(76,195,138,.18); }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .moon-photo { position: relative; justify-self: center; width: min(100%, 520px); aspect-ratio: 1; }
+  .moon-photo .disc { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; box-shadow: var(--shadow), 0 0 0 1px var(--line), 0 0 80px -10px rgba(215,178,106,.35); }
+  .moon-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .moon-photo .ring { position: absolute; inset: -22px; border-radius: 50%; border: 1px solid var(--gold); opacity: .55; }
+  .moon-photo .crescent { position: absolute; right: -6%; top: -4%; width: 30%; aspect-ratio: 1; border-radius: 50%; box-shadow: inset -22px 10px 0 0 var(--gold); transform: rotate(-20deg); }
+  .moon-photo .badge { position: absolute; left: -4%; bottom: 6%; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; box-shadow: var(--shadow); text-align: center; }
+  .moon-photo .badge b { display: block; font: 400 30px/1 var(--display); color: var(--gold-ink); }
+  .moon-photo .badge span { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+
+  .ticker { background: var(--green); color: #F3EEE3; border-block: 1px solid rgba(215,178,106,.4); }
+  .ticker ul { list-style: none; margin: 0; padding: 18px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 26px; font: 400 18px/1.3 var(--display); letter-spacing: .08em; }
+  .ticker li { display: flex; align-items: center; gap: 26px; }
+  .ticker li + li::before { content: "☾"; color: #D7B26A; font-size: 14px; }
+
+  section { scroll-margin-top: 80px; }
+  .sec { padding: 104px 0; }
+  .center { text-align: center; }
+  .center .rule { justify-content: center; }
+
+  /* roue */
+  .roue .wrap { display: grid; grid-template-columns: .95fr 1.05fr; gap: 70px; align-items: center; }
+  .roue img { border-radius: 14px; box-shadow: var(--shadow); width: 100%; border: 1px solid var(--line); }
+  .roue p.lead { font-size: 18px; color: var(--soft); margin: 20px 0 30px; max-width: 46ch; }
+  .counts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 0 0 30px; padding: 0; list-style: none; }
+  .counts li { text-align: center; padding: 18px 8px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); font-size: 13px; color: var(--soft); line-height: 1.3; }
+  .counts b { display: block; font: 400 38px/1 var(--display); color: var(--gold-ink); margin-bottom: 6px; }
+
+  /* partage */
+  .partage { background: var(--bg-2); }
+  .partage .head { margin-bottom: 50px; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .item { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+  .item img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+  .item div { padding: 16px 18px 20px; }
+  .item h3 { font: 400 21px/1.2 var(--display); }
+  .item p { margin: 6px 0 0; font-size: 14px; color: var(--soft); line-height: 1.5; }
+  .item .price { color: var(--gold-ink); font-weight: 500; }
+
+  /* matchs */
+  .matchs .wrap { display: grid; grid-template-columns: 1fr 1.25fr; gap: 64px; align-items: center; }
+  .matchs ul.feats { list-style: none; padding: 0; margin: 28px 0 32px; display: grid; gap: 14px; }
+  .matchs ul.feats li { display: flex; align-items: center; gap: 14px; font-size: 16px; }
+  .matchs ul.feats svg { width: 22px; height: 22px; color: var(--gold-ink); flex: none; }
+  .posters { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; align-items: start; }
+  .posters img { border-radius: 10px; box-shadow: var(--shadow); border: 1px solid var(--line); width: 100%; aspect-ratio: 1; object-fit: cover; }
+  .posters img:nth-child(2) { margin-top: 40px; }
+
+  /* events */
+  .events { background: var(--green); color: #F3EEE3; position: relative; overflow: hidden; }
+  .events .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: center; }
+  .events .rule, .events .script { color: #E2C27F; }
+  .events p { color: #CFC8B8; }
+  .events .ar { font-size: 22px; color: #F3EEE3; margin: 22px 0 8px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 22px 0 30px; }
+  .tags li { padding: 9px 16px; border: 1px solid rgba(215,178,106,.45); border-radius: 99px; font-size: 14px; }
+  .events figure { margin: 0; position: relative; }
+  .events figure img { border-radius: 300px 300px 14px 14px; width: 100%; aspect-ratio: 3 / 4.2; object-fit: cover; }
+  .nosmoke { position: absolute; right: -10px; top: 40px; background: #F3EEE3; color: #173326; border-radius: 12px; padding: 12px 16px; font: 600 13px/1.3 var(--sans); box-shadow: 0 20px 40px -20px rgba(0,0,0,.7); text-align: center; }
+  .nosmoke span { display: block; font-size: 24px; }
+
+  /* infos */
+  .infos .card { background: var(--marble); border: 1px solid var(--line); border-radius: 22px; padding: clamp(28px, 5vw, 60px); display: grid; grid-template-columns: 1.1fr .9fr; gap: 50px; box-shadow: var(--shadow); }
+  .infos dl { display: grid; gap: 22px; margin: 30px 0 0; }
+  .infos dt { font: 500 12px/1 var(--sans); letter-spacing: .24em; text-transform: uppercase; color: var(--gold-ink); margin-bottom: 7px; }
+  .infos dd { margin: 0; font-size: 17px; font-weight: 400; }
+  .infos dd .ar { display: block; color: var(--soft); font-size: 15px; margin-top: 4px; }
+  .infos dd a { text-decoration-color: var(--gold); text-underline-offset: 4px; }
+  .acts { display: grid; gap: 12px; align-content: center; }
+  .acts .btn { min-height: 56px; font-size: 16px; }
+  .clock { text-align: center; margin-bottom: 10px; }
+  .clock b { display: block; font: 400 64px/1 var(--display); color: var(--gold-ink); }
+  .clock span { font-size: 13px; letter-spacing: .24em; text-transform: uppercase; color: var(--soft); }
+
+  footer.site { padding: 30px 0 46px; font-size: 14px; color: var(--soft); border-top: 1px solid var(--line); margin-top: 90px; }
+  footer.site .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+  @media (max-width: 1000px) {
+    nav { display: none; }
+    .hero .wrap, .roue .wrap, .matchs .wrap, .events .wrap, .infos .card { grid-template-columns: 1fr; }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .moon-photo { width: min(88%, 460px); }
+  }
+  @media (max-width: 640px) {
+    .wrap { width: calc(100% - 32px); }
+    .top .btn span { display: none; }
+    .hero { padding: 40px 0 70px; }
+    .hero .wrap { gap: 50px; }
+    .cta .btn { flex: 1 1 100%; }
+    .sec { padding: 76px 0; }
+    .counts { grid-template-columns: repeat(2, 1fr); }
+    .grid { gap: 14px; }
+    .item div { padding: 12px 14px 16px; }
+    .item h3 { font-size: 18px; }
+    .posters img:nth-child(2) { margin-top: 20px; }
+    .nosmoke { right: 6px; top: 16px; }
+    .ticker ul { font-size: 15px; gap: 4px 14px; }
+    .ticker li { gap: 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/moons-cafe-sfax/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/moons-cafe-sfax/">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour Moon’s Café-Lounge. Non affiliée à l’établissement.</div>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+  <symbol id="screen" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></g></symbol>
+  <symbol id="ball" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="m12 7 4 3-1.5 4.5h-5L8 10z"/></g></symbol>
+  <symbol id="glass" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12l-1.5 17h-9z"/><path d="M6.5 8h11"/></g></symbol>
+  <symbol id="smoke" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 15h14v4H3zM20 15v4M20 12c0-2-2-2-2-4s2-2 2-4"/></g></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="moonlogo" href="#" aria-label="Moon’s café-lounge, accueil"><span><span style="display:inline-flex;align-items:center">m<i class="o" aria-hidden="true"></i><i class="o c" aria-hidden="true"></i>n’s</span><small>café - lounge</small></span></a>
+    <nav aria-label="Navigation principale"><ul>
+      <li><a href="#roue">La Roue</a></li><li><a href="#partage">À partager</a></li><li><a href="#matchs">Matchs</a></li><li><a href="#events">Événements</a></li><li><a href="#infos">Infos</a></li>
+    </ul></nav>
+    <div class="tr">
+      <a class="btn btn-gold" href="tel:+21653626624" aria-label="Appeler le 53 626 624"><svg aria-hidden="true"><use href="#phone"/></svg><span>Appeler</span></a>
+      <button class="toggle" type="button" data-toggle aria-label="Changer de thème clair / sombre">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="hero" aria-labelledby="titre">
+    <div class="wrap">
+      <div>
+        <p class="open"><span class="dot" aria-hidden="true"></span><b>24h/24 · 7j/7</b> Ouvert jour et nuit</p>
+        <h1 id="titre"><span class="script">Bienvenue chez</span>Moon’s Café</h1>
+        <p class="sub">Le café-lounge de Sfax où l’on commence la journée, où l’on partage la Roue de Bonheur entre amis, et où l’on vibre devant les matchs. À toute heure.</p>
+        <div class="cta">
+          <a class="btn btn-gold" href="tel:+21653626624"><svg aria-hidden="true"><use href="#phone"/></svg>53 626 624</a>
+          <a class="btn btn-line" href="https://maps.app.goo.gl/jySUEMrtCQQZuMRV8" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Nous trouver</a>
+        </div>
+      </div>
+      <div class="moon-photo">
+        <span class="ring" aria-hidden="true"></span>
+        <div class="disc"><img src="assets/interieur.jpg" width="1448" height="1300" alt="La salle du Moon’s : tables en marbre noir, chaises coque blanches, arches dorées, plantes et écran au fond."></div>
+        <span class="crescent" aria-hidden="true"></span>
+        <div class="badge"><b>Sfax</b><span>Kassas n°4</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker">
+    <ul class="wrap" aria-label="Chez Moon’s">
+      <li>Petit-déj</li><li>Brunch</li><li>Lunch</li><li>Box à partager</li><li>Desserts</li><li>Matchs</li><li><span lang="ar">سحور</span></li>
+    </ul>
+  </div>
+
+  <section class="sec roue" id="roue" aria-labelledby="t-roue">
+    <div class="wrap">
+      <img src="assets/roue-de-bonheur.jpg" width="1365" height="1820" loading="lazy" alt="Affiche « La Roue de Bonheur » de Moon’s : huit assiettes gourmandes sur un plateau en marbre, cafés, jus et verrines.">
+      <div>
+        <p class="rule">La signature</p>
+        <h2 id="t-roue"><span class="script">La Roue</span>de Bonheur</h2>
+        <p class="lead">En sa nouvelle forme : un grand plateau à partager, sucré et salé, pensé pour un moment entre amis ou en famille. Un moment de partage, plein de saveurs !</p>
+        <ul class="counts">
+          <li><b>8</b>plats gourmands</li><li><b>2</b>cafés</li><li><b>2</b>jus</li><li><b>2</b>mini verres « Yhout »</li>
+        </ul>
+        <a class="btn btn-gold" href="tel:+21658453453"><svg aria-hidden="true"><use href="#phone"/></svg>Réserver une table · 58 453 453</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec partage" id="partage" aria-labelledby="t-partage">
+    <div class="wrap">
+      <div class="head center">
+        <p class="rule">Du matin au soir</p>
+        <h2 id="t-partage">À partager… ou pas</h2>
+      </div>
+      <div class="grid">
+        <article class="item"><img src="assets/box-4.jpg" width="1024" height="1360" loading="lazy" alt="Box pour 4 personnes : wraps, brochettes, beignets, salades et mojitos sur un plateau."><div><h3>Box 4 personnes</h3><p>Le grand plateau salé à partager entre amis.</p></div></article>
+        <article class="item"><img src="assets/brunch-golden-heart.jpg" width="1405" height="1874" loading="lazy" alt="Affiche du Brunch Golden Heart : jus, viennoiseries, crêpes et assiettes salées."><div><h3>Brunch Golden Heart</h3><p>Le brunch pour deux, sucré et salé.</p></div></article>
+        <article class="item"><img src="assets/petit-dejeuner.jpg" width="640" height="1136" loading="lazy" alt="Petit déjeuner Moon’s : croissants, ojja, salades et petites assiettes."><div><h3>Petit déjeuner Moon’s</h3><p>Pour bien commencer la journée, à n’importe quelle heure.</p></div></article>
+        <article class="item"><img src="assets/box-ete.jpg" width="640" height="1136" loading="lazy" alt="Box d’été pour deux : gratin, brochettes, beignets d’oignon et salade."><div><h3>Box <span lang="ar">صيف</span></h3><p>La box pour deux personnes.</p></div></article>
+        <article class="item"><img src="assets/grillade.jpg" width="640" height="1136" loading="lazy" alt="Grillade mixte : viandes et brochettes de poulet grillées, piment et citron."><div><h3>Grillade mixte</h3><p>La grillade maison Moon’s.</p></div></article>
+        <article class="item"><img src="assets/lasagne.jpg" width="720" height="1280" loading="lazy" alt="Lasagne gratinée au pesto et tomates cerises, servie avec pâtes et pain."><div><h3>Lunch time</h3><p>Lasagne gratinée, pâtes… la pause de midi.</p></div></article>
+        <article class="item"><img src="assets/cafe-gourmand.jpg" width="640" height="1136" loading="lazy" alt="Café gourmand : cappuccino et part de San Sebastian au chocolat et pistache."><div><h3>Café gourmand</h3><p>Café + San Sebastian · <span class="price">12 DT</span></p></div></article>
+        <article class="item"><img src="assets/cheesecake.jpg" width="640" height="1136" loading="lazy" alt="Part de cheesecake nappée de coulis de fruits rouges."><div><h3>Cheesecake fruits rouges</h3><p>Benna, tout simplement.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec matchs" id="matchs" aria-labelledby="t-matchs">
+    <div class="wrap">
+      <div>
+        <p class="rule">Live screening</p>
+        <h2 id="t-matchs"><span class="script">Vivez le match</span>chez Moon’s</h2>
+        <ul class="feats">
+          <li><svg aria-hidden="true"><use href="#screen"/></svg>Écran géant</li>
+          <li><svg aria-hidden="true"><use href="#ball"/></svg>Ambiance 100 % foot : CSS, Coupe du monde, Clásico…</li>
+          <li><svg aria-hidden="true"><use href="#glass"/></svg>Boissons &amp; cocktails</li>
+          <li><svg aria-hidden="true"><use href="#smoke"/></svg>Chicha disponible</li>
+        </ul>
+        <p style="color:var(--soft);margin:0 0 24px">Le programme des matchs est publié chaque semaine sur Instagram.</p>
+        <a class="btn btn-line" href="https://www.instagram.com/moons_cafe_sfax/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>Voir le programme</a>
+      </div>
+      <div class="posters">
+        <img src="assets/match-css.jpg" width="1248" height="1248" loading="lazy" alt="Affiche : CSS contre Académie de FAD, Coupe de la CAF, samedi 17 octobre 2026 à 17h, en direct chez Moon’s.">
+        <img src="assets/match-tunisie.jpg" width="1254" height="1254" loading="lazy" alt="Affiche Coupe du monde 2026 : Tunisie contre Japon, chez Moon’s.">
+        <img src="assets/clasico.jpg" width="1254" height="1254" loading="lazy" alt="Affiche du Clásico FC Barcelone contre Real Madrid chez Moon’s.">
+      </div>
+    </div>
+  </section>
+
+  <section class="sec events" id="events" aria-labelledby="t-events">
+    <div class="wrap">
+      <div>
+        <p class="rule">Espace familial</p>
+        <h2 id="t-events"><span class="script">Votre fête</span>chez Moon’s</h2>
+        <p class="ar" lang="ar" dir="rtl">مرحبا بيكم بحذانا في Moon’s ✨</p>
+        <p>Anniversaire, Bride to be, hammam, réunion de famille, dîner, ftour ou petit-déj : on vous accueille dans notre espace familial non-fumeur, pour que vous soyez à l’aise, entre vous.</p>
+        <ul class="tags"><li>Anniversaire</li><li>Bride to be</li><li>Hammam</li><li><span lang="ar">لمة عائلية</span></li><li>Ftour</li><li>Petit-déj</li></ul>
+        <a class="btn btn-gold" href="tel:+21653626624"><svg aria-hidden="true"><use href="#phone"/></svg>Organiser mon événement</a>
+      </div>
+      <figure>
+        <img src="assets/espace-familial.jpg" width="640" height="1136" loading="lazy" alt="Entrée de l’espace familial non-fumeur de Moon’s, avec son enseigne et ses miroirs ronds dorés.">
+        <div class="nosmoke"><span aria-hidden="true">🚭</span>Espace<br>non-fumeur</div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec infos" id="infos" aria-labelledby="t-infos">
+    <div class="wrap">
+      <div class="card">
+        <div>
+          <p class="rule">Infos pratiques</p>
+          <h2 id="t-infos">Venir chez Moon’s</h2>
+          <dl>
+            <div><dt>Adresse</dt><dd>Kassas n°4, entre route El Ain et route Menzel Chaker, en face du dispensaire, Sfax<span class="ar" lang="ar" dir="rtl">قصاص رقم 4 بين طريق العين و منزل شاكر، قدام المستوصف</span></dd></div>
+            <div><dt>Téléphone</dt><dd><a href="tel:+21653626624">53 626 624</a> · <a href="tel:+21658453453">58 453 453</a></dd></div>
+            <div><dt>Horaires</dt><dd>24h/24, 7j/7</dd></div>
+          </dl>
+        </div>
+        <div class="acts">
+          <div class="clock"><b>24/7</b><span>Toujours ouvert</span></div>
+          <a class="btn btn-gold" href="tel:+21653626624"><svg aria-hidden="true"><use href="#phone"/></svg>Appeler le 53 626 624</a>
+          <a class="btn btn-line" href="tel:+21658453453"><svg aria-hidden="true"><use href="#phone"/></svg>Appeler le 58 453 453</a>
+          <a class="btn btn-line" href="https://maps.app.goo.gl/jySUEMrtCQQZuMRV8" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Itinéraire Google Maps</a>
+          <a class="btn btn-line" href="https://ig.me/m/moons_cafe_sfax" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>Message sur Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap"><span>© Moon’s café - lounge · Sfax</span><a href="https://www.instagram.com/moons_cafe_sfax/" target="_blank" rel="noopener">@moons_cafe_sfax</a></div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, KEY = 'moons-theme';
+    try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    document.querySelector('[data-toggle]').addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

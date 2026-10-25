@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wannabe Coffeeshop — Coffee &amp; breakfast à Taourit, Houmt Souk</title>
+<meta name="description" content="Wannabe Coffeeshop, café vintage à Taourit, Houmt Souk (Djerba) : cafés, iced coffee, gaufres, cheesecake, petits-déjeuners et ateliers de poterie. Ouvert 8h–16h, fermé le vendredi. Tél. +216 95 500 103.">
+<meta name="theme-color" content="#2B3324">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_TN">
+<meta property="og:site_name" content="Wannabe Coffeeshop">
+<meta property="og:title" content="Wannabe Coffeeshop — Taourit, Houmt Souk">
+<meta property="og:description" content="Un café plein d'horloges, de radios et de carreaux anciens. Cafés, iced coffee, gaufres et ateliers créatifs à Djerba.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mur de briques avec horloges anciennes, radios et piano dans la salle du Wannabe">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%232B3324'/%3E%3Ctext x='50' y='64' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%23F4EDE1'%3EW%3Ctspan fill='%23C9A057'%3EB%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;700&family=Special+Elite&family=Reem+Kufi:wght@600&display=swap" rel="stylesheet">
+<style>
+  /* From their logo (olive green circle, gold "B"), the bordeaux "Friday closed" band of their hours poster,
+     and the room itself: brick, old wood, brass clocks, tungsten bulbs, cement tiles. */
+  :root {
+    --bg: #F4EDE1; --bg-2: #EAE0CE; --card: #FBF7F0; --ink: #23281E; --soft: #585D4F;
+    --olive: #2B3324; --olive-2: #46553A; --gold: #9A6E27; --gold-l: #C9A057; --wine: #7E2A26;
+    --line: rgb(35 40 30 / .15); --focus: #9A6E27;
+    --serif: "Fraunces", Georgia, serif; --sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif; --type: "Special Elite", "Courier New", monospace;
+    --gutter: clamp(16px, 4vw, 56px); --max: 1180px; color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15120E; --bg-2: #1C1813; --card: #221D17; --ink: #F1E8D8; --soft: #C2B8A6;
+      --olive: #0E0C09; --olive-2: #A8BD92; --gold: #D9B26B; --gold-l: #E5C27F; --wine: #E0817A;
+      --line: rgb(241 232 216 / .13); --focus: #E5C27F; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15120E; --bg-2: #1C1813; --card: #221D17; --ink: #F1E8D8; --soft: #C2B8A6;
+    --olive: #0E0C09; --olive-2: #A8BD92; --gold: #D9B26B; --gold-l: #E5C27F; --wine: #E0817A;
+    --line: rgb(241 232 216 / .13); --focus: #E5C27F; color-scheme: dark;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.0625rem/1.65 var(--sans); overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 50; background: var(--gold-l); color: #23281E; padding: 10px 16px; border-radius: 6px; font-weight: 700; text-decoration: none; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
+  [lang="ar"] { font-family: "Reem Kufi", sans-serif; }
+  .type { font-family: var(--type); letter-spacing: .04em; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55em; min-height: 48px; padding: .75em 1.35em; border-radius: 999px; font: 700 1rem/1 var(--sans); text-decoration: none; border: 2px solid transparent; cursor: pointer; }
+  .btn svg { width: 1.15em; height: 1.15em; flex: none; }
+  .btn-gold { background: #C9A057; color: #1D1A12; }
+  .btn-gold:hover { background: #D8B26C; }
+  .btn-ghost { border-color: currentColor; color: inherit; }
+  .btn-ghost:hover { background: rgb(255 255 255 / .08); }
+
+  /* hero: dark photo of the room */
+  .hero { position: relative; color: #F4EDE1; min-height: min(92vh, 860px); display: grid; grid-template-rows: auto 1fr; isolation: isolate; overflow: hidden; background: #15120E; }
+  .hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; object-position: 50% 40%; }
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgb(15 13 9 / .92) 0%, rgb(15 13 9 / .7) 45%, rgb(15 13 9 / .15) 100%), linear-gradient(0deg, rgb(15 13 9 / .6), transparent 40%); }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; }
+  .logo { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+  .logo .mark { white-space: nowrap; letter-spacing: -.02em; width: 50px; height: 50px; border-radius: 50%; background: #2B3324; border: 2px solid #C9A057; display: flex; align-items: center; justify-content: center; font: 700 1.15rem/1 var(--serif); color: #F4EDE1; }
+  .logo .mark b { color: #C9A057; }
+  .logo span { display: grid; line-height: 1.1; }
+  .logo strong { font: 700 1.15rem/1 var(--serif); letter-spacing: .18em; }
+  .logo small { font: 700 .62rem/1.4 var(--sans); letter-spacing: .22em; color: #C9A057; }
+  .nav { display: flex; align-items: center; gap: clamp(8px, 2vw, 26px); }
+  .nav a { text-decoration: none; font-weight: 500; color: #E2D9C7; padding: 8px 2px; }
+  .nav a:hover { color: #fff; }
+  .theme { width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgb(244 237 225 / .35); background: rgb(0 0 0 / .2); color: #F4EDE1; cursor: pointer; display: grid; place-items: center; }
+  .theme svg { width: 20px; height: 20px; }
+  .theme .moon { display: none; }
+  :root[data-theme="dark"] .theme .sun { display: none; } :root[data-theme="dark"] .theme .moon { display: block; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .theme .sun { display: none; } :root:not([data-theme="light"]) .theme .moon { display: block; } }
+  @media (max-width: 760px) { .nav a { display: none; } }
+  .hero-txt { align-self: center; padding-block: 40px 80px; }
+  .hero-txt > * { max-width: 640px; }
+  .status { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 22px; padding: 8px 14px; border-radius: 999px; background: rgb(0 0 0 / .45); border: 1px solid rgb(244 237 225 / .25); font: 400 .95rem/1 var(--type); }
+  .status i { width: 10px; height: 10px; border-radius: 50%; background: #B9AE98; }
+  .status.open i { background: #8BD17C; box-shadow: 0 0 10px #8BD17C; }
+  h1 { margin: 0; font: 500 clamp(3rem, 8vw, 6.2rem)/.95 var(--serif); letter-spacing: -.01em; }
+  h1 em { color: #C9A057; }
+  .lede { font-size: clamp(1.08rem, 1.7vw, 1.25rem); color: #E2D9C7; max-width: 40ch; margin: 22px 0 30px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+
+  /* hours ticket */
+  .ticket-bar { background: var(--olive); color: #F4EDE1; }
+  .ticket-bar .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 30px; padding-block: 18px; font-family: var(--type); }
+  .ticket-bar b { color: #C9A057; font-weight: 400; }
+  .ticket-bar .fri { background: #7E2A26; padding: 6px 12px; border-radius: 4px; }
+
+  section { padding-block: clamp(64px, 9vw, 120px); }
+  .label { margin: 0 0 12px; font: 400 .95rem/1.2 var(--type); color: var(--gold); }
+  h2 { margin: 0; font: 500 clamp(2.2rem, 5vw, 3.6rem)/1.05 var(--serif); }
+  h2 em { color: var(--gold); }
+  .lead { color: var(--soft); max-width: 56ch; margin: 16px 0 0; }
+
+  /* le lieu: polaroids */
+  .place { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+  .polas { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .pola { margin: 0; background: #FFFDF8; padding: 10px 10px 14px; box-shadow: 0 14px 30px rgb(30 20 10 / .2); border-radius: 3px; }
+  :root[data-theme="dark"] .pola { background: #2A241C; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pola { background: #2A241C; } }
+  .pola img { width: 100%; aspect-ratio: 3 / 4.4; object-fit: cover; }
+  .pola figcaption { font: 400 .9rem/1.2 var(--type); color: var(--soft); margin-top: 10px; text-align: center; }
+  .pola:nth-child(1) { transform: rotate(-3deg); }
+  .pola:nth-child(2) { transform: rotate(2deg) translateY(28px); }
+  .pola:nth-child(3) { transform: rotate(-1.5deg); }
+  .place ul { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 10px; }
+  .place li { display: flex; gap: 12px; align-items: baseline; }
+  .place li::before { content: "◆"; color: var(--gold); font-size: .7rem; }
+  @media (max-width: 900px) { .place { grid-template-columns: 1fr; } }
+  @media (max-width: 480px) { .polas { gap: 8px; } .pola { padding: 6px 6px 10px; } .pola figcaption { font-size: .72rem; } }
+
+  /* carte */
+  .menu { background: var(--bg-2); }
+  .menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 40px; }
+  .item { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .item img { width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover; }
+  .item div { padding: 16px 18px 20px; }
+  .item h3 { margin: 0 0 4px; font: 500 1.35rem/1.15 var(--serif); }
+  .item p { margin: 0; color: var(--soft); font-size: .96rem; }
+  .item .q { font-family: var(--type); font-size: .9rem; color: var(--gold); display: block; margin-top: 8px; }
+  @media (max-width: 900px) { .menu-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .menu-grid { grid-template-columns: 1fr; } }
+
+  /* ateliers */
+  .ateliers { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+  .cards { display: grid; gap: 14px; margin-top: 28px; }
+  .card { border: 1px solid var(--line); border-left: 4px solid var(--gold); background: var(--card); border-radius: 10px; padding: 18px 20px; }
+  .card h3 { margin: 0 0 4px; font: 500 1.3rem/1.2 var(--serif); }
+  .card p { margin: 0; color: var(--soft); }
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .duo img { width: 100%; aspect-ratio: 3 / 4.6; object-fit: cover; border-radius: 14px; }
+  .duo img:last-child { margin-top: 44px; }
+  @media (max-width: 900px) { .ateliers { grid-template-columns: 1fr; } }
+
+  /* infos */
+  .infos { background: var(--olive); color: #F4EDE1; }
+  .infos h2 { color: #F4EDE1; } .infos h2 em { color: #C9A057; } .infos .label { color: #C9A057; }
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px, 4vw, 48px); margin-top: 36px; }
+  .hours { width: 100%; border-collapse: collapse; font-family: var(--type); }
+  .hours caption { text-align: left; font: 700 .78rem/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: #C9A057; padding-bottom: 12px; }
+  .hours th, .hours td { padding: 10px 0; border-bottom: 1px dashed rgb(244 237 225 / .25); text-align: left; font-weight: 400; }
+  .hours td { text-align: right; }
+  .hours tr.today th, .hours tr.today td { color: #C9A057; }
+  .hours tr.closed td { color: #F0A49D; }
+  .ar-thanks { margin: 18px 0 0; font-size: 1.3rem; color: #C9A057; }
+  .contact { display: grid; gap: 12px; align-content: start; }
+  .contact p { margin: 0 0 6px; color: #E2D9C7; }
+  .contact .btn { justify-content: flex-start; }
+  @media (max-width: 860px) { .info-grid { grid-template-columns: 1fr; } }
+
+  footer { background: #15120E; color: #C2B8A6; padding-block: 28px; font-size: .95rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+</style>
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/wannabe-coffeeshop-djerba/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/wannabe-coffeeshop-djerba/">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour Wannabe Coffeeshop. Non affiliée à l’établissement.</div>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="hero">
+  <img src="assets/salle-vintage.jpg" width="900" height="1600" alt="La salle du Wannabe : mur de briques avec horloges anciennes, radios, ventilateur vintage et piano sous une ampoule">
+  <header class="wrap top">
+    <a class="logo" href="#" aria-label="Wannabe Coffeeshop, accueil"><span class="mark" aria-hidden="true">W<b>B</b></span><span><strong>WANNABE</strong><small>COFFEE &amp; BREAKFAST</small></span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#lieu">Le lieu</a>
+      <a href="#carte">La carte</a>
+      <a href="#ateliers">Ateliers</a>
+      <a href="#infos">Horaires</a>
+      <button class="theme" type="button" aria-label="Changer de thème (clair / sombre)">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+    </nav>
+  </header>
+  <div class="wrap hero-txt">
+    <p class="status" id="status"><i></i><span>Ouvert 8h – 16h · fermé le vendredi</span></p>
+    <h1>Your “me-time” <em>in a cup.</em></h1>
+    <p class="lede">Un coffee shop à Taourit, Houmt Souk : sièges en bois anciens, carreaux arabes, horloges et radios d'un autre temps. Cafés, iced coffee, gaufres et petits-déjeuners.</p>
+    <div class="cta">
+      <a class="btn btn-gold" href="https://maps.app.goo.gl/Zyd5BJzCeqAv34Dj8">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Itinéraire</a>
+      <a class="btn btn-ghost" href="tel:+21695500103">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+        95 500 103</a>
+    </div>
+  </div>
+</div>
+
+<div class="ticket-bar" role="note">
+  <div class="wrap">
+    <span>Ouverture <b>08:00</b> · Fermeture <b>16:00</b></span>
+    <span class="fri">Vendredi repos · <span lang="ar" dir="rtl">الجمعة راحة</span></span>
+    <span>Taourit · Houmt Souk · Djerba</span>
+  </div>
+</div>
+
+<main id="main">
+  <section id="lieu" aria-labelledby="lieu-t">
+    <div class="wrap place">
+      <div>
+        <p class="label">One space, many stories</p>
+        <h2 id="lieu-t">Un café qui a <em>une âme</em></h2>
+        <p class="lead">Chez Wannabe, chaque objet raconte quelque chose : la vieille télé posée sur son meuble, les radios alignées sur le mur de briques, le piano, les horloges arrêtées et les carreaux colorés au sol. Une ambiance cosy, artistique et familiale, idéale pour un moment à soi ou entre amis.</p>
+        <ul>
+          <li>Sièges en bois anciens et carreaux arabes traditionnels</li>
+          <li>Instruments de musique et objets vintage</li>
+          <li>Une terrasse fleurie de cactus peints, à l'ombre des suspensions tressées</li>
+        </ul>
+      </div>
+      <div class="polas">
+        <figure class="pola"><img src="assets/tv-radio.jpg" width="640" height="1136" loading="lazy" alt="Télévision et radio anciennes sur un meuble en bois, horloge murale et carreaux de ciment"><figcaption>La vieille télé</figcaption></figure>
+        <figure class="pola"><img src="assets/salle.jpg" width="900" height="1600" loading="lazy" alt="La salle : tables hautes, tabourets, tapis de carreaux colorés et étagères d'objets anciens"><figcaption>La salle</figcaption></figure>
+        <figure class="pola"><img src="assets/terrasse-cactus.jpg" width="720" height="1280" loading="lazy" alt="Terrasse avec fresque de cactus en fleurs, gazon, chaises vertes et suspensions en fibres tressées"><figcaption>La terrasse</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="carte" class="menu" aria-labelledby="carte-t">
+    <div class="wrap">
+      <p class="label">Coffee &amp; break fast</p>
+      <h2 id="carte-t">Ce qu'on <em>sert</em></h2>
+      <p class="lead">Cafés, boissons glacées, gaufres, crêpes, milkshakes et petits-déjeuners. La carte complète vous attend au comptoir.</p>
+      <div class="menu-grid">
+        <article class="item"><img src="assets/iced-coffee.jpg" width="1200" height="1600" loading="lazy" alt="Chope d'iced coffee sur une table en bois au soleil"><div><h3>Iced coffee signature</h3><p>Notre café glacé maison, servi en chope.</p><span class="q">« Chill vibes only »</span></div></article>
+        <article class="item"><img src="assets/gaufre-cafe.jpg" width="1200" height="1600" loading="lazy" alt="Tasse de café bleue et gaufres sur un set « Wanna Be » avec smileys"><div><h3>Gaufres &amp; café</h3><p>Nutella, fruits secs ou « barcha chocolat ».</p><span class="q">« Parfaites avec un café »</span></div></article>
+        <article class="item"><img src="assets/espresso.jpg" width="720" height="1280" loading="lazy" alt="Espresso fumant dans une tasse en verre avec un carré de chocolat"><div><h3>Cafés</h3><p>Un bon café chaud, la pause de toujours.</p><span class="q">« Have a great day »</span></div></article>
+        <article class="item"><img src="assets/frappuccino.jpg" width="640" height="880" loading="lazy" alt="Frappuccino au beurre de cacahuète avec chantilly et coulis de chocolat"><div><h3>Frappuccino &amp; milkshakes</h3><p>Comme ce frappuccino au beurre de cacahuète.</p></div></article>
+        <article class="item"><img src="assets/cheesecake.jpg" width="1080" height="1350" loading="lazy" alt="Part de cheesecake nappée de chocolat sur une ardoise"><div><h3>Cheesecake</h3><p>Nappé de chocolat.</p><span class="q">« One bite. That's all it takes »</span></div></article>
+        <article class="item"><img src="assets/smoothie.jpg" width="1080" height="1350" loading="lazy" alt="Smoothie à la cerise dans un gobelet, cerise sur le dessus"><div><h3>Smoothies &amp; citronnade</h3><p>Frais, fruités, parfaits l'été.</p><span class="q">« Smoothie is always a good idea »</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="ateliers" aria-labelledby="ateliers-t">
+    <div class="wrap ateliers">
+      <div>
+        <p class="label">Crafted with love</p>
+        <h2 id="ateliers-t">Les <em>ateliers</em> du Wannabe</h2>
+        <p class="lead">Le café devient atelier : on y façonne l'argile, on y fabrique des bijoux, on y accueille des artistes et des sessions musicales.</p>
+        <div class="cards">
+          <div class="card"><h3>Club de poterie</h3><p>Créez votre mug, votre bol ou votre coupelle en argile, débutant ou confirmé. Matériel fourni (argile, outils, tabliers), places limitées : réservation recommandée.</p></div>
+          <div class="card"><h3>Bijoux en dry clay</h3><p>Coquillages, étoiles de mer et inspirations venues du large : des pièces uniques façonnées par petits et grands.</p></div>
+          <div class="card"><h3>Art, musique &amp; rencontres</h3><p>Caravane artistique, « Citron en fête », sessions dub et live : suivez notre Instagram pour les prochaines dates.</p></div>
+        </div>
+      </div>
+      <div class="duo">
+        <img src="assets/atelier-argile.jpg" width="540" height="960" loading="lazy" alt="Petit bus en argile façonné en atelier, devant l'affiche de la Caravane">
+        <img src="assets/cafe-sepia.jpg" width="720" height="1280" loading="lazy" alt="Chope de café et dessin au crayon sur une table, lumière dorée de la salle">
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" class="infos" aria-labelledby="infos-t">
+    <div class="wrap">
+      <p class="label">Horaires &amp; accès</p>
+      <h2 id="infos-t">On vous attend à <em>Taourit</em></h2>
+      <div class="info-grid">
+        <div>
+          <table class="hours" id="hours">
+            <caption>Horaires actuels</caption>
+            <tbody>
+              <tr data-d="1"><th scope="row">Lundi</th><td>08:00 – 16:00</td></tr>
+              <tr data-d="2"><th scope="row">Mardi</th><td>08:00 – 16:00</td></tr>
+              <tr data-d="3"><th scope="row">Mercredi</th><td>08:00 – 16:00</td></tr>
+              <tr data-d="4"><th scope="row">Jeudi</th><td>08:00 – 16:00</td></tr>
+              <tr data-d="5" class="closed"><th scope="row">Vendredi</th><td>Fermé</td></tr>
+              <tr data-d="6"><th scope="row">Samedi</th><td>08:00 – 16:00</td></tr>
+              <tr data-d="0"><th scope="row">Dimanche</th><td>08:00 – 16:00</td></tr>
+            </tbody>
+          </table>
+          <p class="ar-thanks" lang="ar" dir="rtl">تتشرف بخدمتكم</p>
+        </div>
+        <div class="contact">
+          <p>Taourit, Houmt Souk, Djerba</p>
+          <a class="btn btn-gold" href="https://maps.app.goo.gl/Zyd5BJzCeqAv34Dj8"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>Ouvrir dans Google Maps</a>
+          <a class="btn btn-ghost" href="tel:+21695500103"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>+216 95 500 103</a>
+          <a class="btn btn-ghost" href="https://ig.me/m/wannabe.coffeeshop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Réserver un atelier par message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Wannabe Coffeeshop · Coffee &amp; breakfast · Taourit, Houmt Souk</span>
+    <a href="https://www.instagram.com/wannabe.coffeeshop/">@wannabe.coffeeshop</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.querySelector('.theme');
+    try { var s = localStorage.getItem('wannabe-theme'); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    btn.addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('wannabe-theme', next); } catch (e) {}
+    });
+    // Open / closed, Tunisia time (UTC+1)
+    var now = new Date(Date.now() + 60 * 60000), d = now.getUTCDay(), m = now.getUTCHours() * 60 + now.getUTCMinutes();
+    var open = d !== 5 && m >= 480 && m < 960;
+    var st = document.getElementById('status');
+    st.classList.toggle('open', open);
+    st.querySelector('span').textContent = open ? 'Ouvert maintenant · jusqu’à 16h' : (d === 5 ? 'Fermé le vendredi · à demain 8h' : 'Fermé · ouvert de 8h à 16h');
+    var row = document.querySelector('#hours tr[data-d="' + d + '"]'); if (row) row.classList.add('today');
+  })();
+</script>
+</body>
+</html>

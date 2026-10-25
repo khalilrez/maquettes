@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primavera — Salon de thé &amp; pizzeria au feu de bois · Houmt Souk, Djerba</title>
+<meta name="description" content="Primavera, salon de thé en face du Parc Bahbah à Houmt Souk : pizzas au feu de bois, panuozzo, makloub, brunch, couscous, kamounia et ravioli maison. Réservation : 56 420 421. Livraison sur Glovo.">
+<meta name="theme-color" content="#1E4A2D">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_TN">
+<meta property="og:site_name" content="Primavera Djerba">
+<meta property="og:title" content="Primavera — Salon de thé, Houmt Souk">
+<meta property="og:description" content="Pizzas au feu de bois, sandwichs généreux, brunch en famille et saveurs tunisiennes, en face du Parc Bahbah.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pizza au thon cuite au feu de bois, olives noires et piments">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231E4A2D'/%3E%3Cpath d='M30 30 50 76 70 30' fill='none' stroke='%23F7F0E1' stroke-width='9' stroke-linejoin='round'/%3E%3Ccircle cx='50' cy='24' r='7' fill='%23C8202F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Lobster&family=Work+Sans:wght@400;500;700&family=Lalezar&display=swap" rel="stylesheet">
+<style>
+  /* Their visual identity: bottle green bands, tomato red banners, cream paper, a touch of mustard,
+     bold condensed titles and a script "le plaisir de…" line on every poster. */
+  :root {
+    --bg: #FBF5EA; --bg-2: #F2E8D5; --card: #FFFFFF; --ink: #1D2A20; --soft: #55604F;
+    --green: #1E4A2D; --green-2: #2D6A3F; --red: #C11F2D; --mustard: #E9B92F;
+    --line: rgb(29 42 32 / .14); --focus: #C11F2D; --on-red: #FFFFFF;
+    --cond: "Oswald", "Arial Narrow", sans-serif; --script: "Lobster", "Brush Script MT", cursive;
+    --sans: "Work Sans", system-ui, -apple-system, "Segoe UI", sans-serif; --ar: "Lalezar", "Noto Kufi Arabic", sans-serif;
+    --gutter: clamp(16px, 4vw, 56px); --max: 1200px; color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #111A14; --bg-2: #17241B; --card: #1C2B21; --ink: #F5EEDF; --soft: #BFC8B9;
+      --green: #0B140E; --green-2: #7DC48F; --red: #FF6B6B; --mustard: #F3C94E;
+      --line: rgb(245 238 223 / .14); --focus: #F3C94E; --on-red: #1A0B0C; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #111A14; --bg-2: #17241B; --card: #1C2B21; --ink: #F5EEDF; --soft: #BFC8B9;
+    --green: #0B140E; --green-2: #7DC48F; --red: #FF6B6B; --mustard: #F3C94E;
+    --line: rgb(245 238 223 / .14); --focus: #F3C94E; --on-red: #1A0B0C; color-scheme: dark;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.0625rem/1.6 var(--sans); overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 50; background: var(--mustard); color: #1D2A20; padding: 10px 16px; border-radius: 6px; font-weight: 700; text-decoration: none; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
+  [lang="ar"] { font-family: var(--ar); font-weight: 400; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55em; min-height: 48px; padding: .7em 1.3em; border-radius: 8px;
+    font: 700 1.02rem/1 var(--cond); letter-spacing: .06em; text-transform: uppercase; text-decoration: none; border: 2px solid transparent; cursor: pointer; }
+  .btn svg { width: 1.15em; height: 1.15em; flex: none; }
+  .btn-red { background: #C11F2D; color: #fff; }
+  .btn-red:hover { background: #A51824; }
+  .btn-cream { background: #F7F0E1; color: #1E4A2D; }
+  .btn-line { border-color: currentColor; color: inherit; }
+
+  /* hero (always green, like their poster bands) */
+  .hero { background: #1E4A2D; color: #F7F0E1; position: relative; overflow: hidden; isolation: isolate; }
+  :root[data-theme="dark"] .hero { background: #0B140E; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hero { background: #0B140E; } }
+  .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .08;
+    background: radial-gradient(circle at 20% 20%, #fff 0 1.5px, transparent 2px) 0 0 / 26px 26px; }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 16px; }
+  .logo { display: inline-grid; text-decoration: none; line-height: 1; }
+  .logo small { font: 400 .95rem/1 var(--script); color: #E9B92F; margin-bottom: 2px; }
+  .logo b { font: 700 1.9rem/1 var(--cond); letter-spacing: .08em; }
+  .nav { display: flex; align-items: center; gap: clamp(8px, 2vw, 24px); }
+  .nav a { text-decoration: none; font: 500 1rem/1 var(--cond); letter-spacing: .08em; text-transform: uppercase; color: #DCE6D8; padding: 10px 2px; }
+  .nav a:hover { color: #fff; }
+  .theme { width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgb(247 240 225 / .35); background: transparent; color: #F7F0E1; cursor: pointer; display: grid; place-items: center; }
+  .theme svg { width: 20px; height: 20px; }
+  .theme .moon { display: none; }
+  :root[data-theme="dark"] .theme .sun { display: none; } :root[data-theme="dark"] .theme .moon { display: block; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .theme .sun { display: none; } :root:not([data-theme="light"]) .theme .moon { display: block; } }
+  @media (max-width: 760px) { .nav a { display: none; } }
+
+  .hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(24px, 5vw, 64px); align-items: center; padding: clamp(16px, 3vw, 40px) 0 clamp(56px, 7vw, 96px); }
+  .hello { margin: 0 0 6px; font-size: 1.6rem; color: #E9B92F; }
+  h1 { margin: 0; font: 700 clamp(3.4rem, 9vw, 7rem)/.9 var(--cond); text-transform: uppercase; letter-spacing: .01em; }
+  h1 .s { display: block; font: 400 clamp(1.7rem, 3.4vw, 2.6rem)/1.1 var(--script); text-transform: none; color: #F7F0E1; margin-top: .25em; }
+  .lede { color: #DCE6D8; max-width: 38ch; margin: 22px 0 28px; font-size: 1.12rem; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 26px 0 0; padding: 0; }
+  .chips li { font: 500 .85rem/1 var(--cond); letter-spacing: .12em; text-transform: uppercase; border: 1px solid rgb(247 240 225 / .35); padding: 9px 12px; border-radius: 999px; }
+  .plate { position: relative; }
+  .plate img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 10px solid #F7F0E1; box-shadow: 0 30px 70px rgb(0 0 0 / .45); }
+  .sticker { position: absolute; left: -8px; bottom: 8%; width: 132px; height: 132px; border-radius: 50%; background: #C11F2D; color: #fff; display: grid; place-content: center; text-align: center; transform: rotate(-10deg);
+    box-shadow: 0 12px 30px rgb(0 0 0 / .35); border: 3px dashed rgb(255 255 255 / .6); }
+  .sticker b { font: 700 2.5rem/1 var(--cond); }
+  .sticker span { font: 500 .7rem/1.25 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
+  .leaf { position: absolute; right: 2%; top: 2%; width: 92px; height: 92px; border-radius: 50%; background: #E9B92F; color: #1E4A2D; display: grid; place-content: center; text-align: center; transform: rotate(8deg);
+    font: 700 .85rem/1.1 var(--cond); letter-spacing: .06em; text-transform: uppercase; box-shadow: 0 10px 24px rgb(0 0 0 / .3); }
+  @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } .plate { max-width: 440px; margin: 10px auto 0; width: 100%; } }
+  @media (max-width: 420px) { .sticker { width: 108px; height: 108px; } .sticker b { font-size: 2rem; } .leaf { width: 80px; height: 80px; font-size: .75rem; } }
+
+  /* red banner */
+  .banner { background: var(--red); color: var(--on-red); }
+  .banner .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 30px; padding-block: 18px; }
+  .banner p { margin: 0; font: 700 clamp(1.1rem, 2.2vw, 1.45rem)/1.25 var(--cond); letter-spacing: .04em; text-transform: uppercase; }
+  .banner p span { font: 400 1.1em/1 var(--script); text-transform: none; letter-spacing: 0; }
+  .banner small { font-size: .9rem; opacity: .9; }
+
+  section { padding-block: clamp(64px, 9vw, 112px); }
+  .head { margin-bottom: clamp(28px, 4vw, 48px); }
+  h2 { margin: 0; font: 700 clamp(2.4rem, 6vw, 4.2rem)/.95 var(--cond); text-transform: uppercase; color: var(--green); }
+  :root[data-theme="dark"] h2 { color: var(--ink); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) h2 { color: var(--ink); } }
+  h2 + .s, .head .s { display: block; font: 400 clamp(1.4rem, 2.6vw, 2rem)/1.2 var(--script); color: var(--red); margin-top: 6px; }
+  .head p { color: var(--soft); max-width: 56ch; margin: 14px 0 0; }
+
+  /* menu sections */
+  .cat { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 56px); align-items: start; padding-block: clamp(28px, 4vw, 44px); border-top: 2px solid var(--line); }
+  .cat:first-of-type { border-top: 0; padding-top: 0; }
+  .cat.rev .pics { order: 2; }
+  .cat h3 { margin: 0 0 4px; font: 700 clamp(1.8rem, 3.6vw, 2.6rem)/1 var(--cond); text-transform: uppercase; }
+  .cat h3 [lang="ar"] { font-size: .8em; color: var(--red); margin-left: 10px; text-transform: none; }
+  .cat .intro { color: var(--soft); margin: 10px 0 18px; }
+  .items { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+  .items li { display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; padding: 12px 0; border-bottom: 1px dashed var(--line); }
+  .items b { font: 700 1.15rem/1.2 var(--cond); letter-spacing: .03em; text-transform: uppercase; }
+  .items span { grid-column: 1; color: var(--soft); font-size: .95rem; }
+  .items i { grid-column: 2; grid-row: 1; font-style: normal; font: 500 .72rem/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--green-2); border: 1px solid currentColor; border-radius: 999px; padding: 5px 8px; align-self: center; }
+  .pics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .pics img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 14px; }
+  .pics img.wide { grid-column: span 2; aspect-ratio: 16 / 9; }
+  @media (max-width: 860px) { .cat { grid-template-columns: 1fr; } .cat.rev .pics { order: 0; } }
+
+  /* brunch */
+  .brunch { background: var(--bg-2); }
+  .brunch-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: clamp(24px, 4vw, 56px); align-items: center; }
+  .brunch-grid img { width: 100%; border-radius: 18px; aspect-ratio: 4 / 3; object-fit: cover; }
+  .quote { font: 400 clamp(1.4rem, 2.6vw, 1.9rem)/1.3 var(--script); color: var(--red); margin: 18px 0; }
+  .ar-q { font-size: 1.5rem; color: var(--green-2); margin: 0 0 16px; }
+  @media (max-width: 860px) { .brunch-grid { grid-template-columns: 1fr; } }
+
+  /* infos */
+  .infos { background: #1E4A2D; color: #F7F0E1; }
+  :root[data-theme="dark"] .infos { background: #0B140E; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .infos { background: #0B140E; } }
+  .infos h2 { color: #F7F0E1; } .infos .s { color: #E9B92F; }
+  .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 30px; }
+  .box { border: 1px solid rgb(247 240 225 / .25); border-radius: 16px; padding: 24px; }
+  .box h3 { margin: 0 0 12px; font: 700 1.05rem/1 var(--cond); letter-spacing: .14em; text-transform: uppercase; color: #E9B92F; }
+  .box p { margin: 0 0 14px; color: #DCE6D8; }
+  .box a.tel { display: block; font: 700 1.5rem/1.3 var(--cond); text-decoration: none; letter-spacing: .03em; }
+  .box a.tel:hover { text-decoration: underline; }
+  .box .btn { margin-top: 6px; }
+  .note { font-size: .85rem; color: #BFCDB9; }
+  @media (max-width: 900px) { .info-grid { grid-template-columns: 1fr; } }
+
+  footer { background: var(--red); color: var(--on-red); padding-block: 22px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-weight: 500; }
+</style>
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/primavera-cafe-djerba/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/primavera-cafe-djerba/">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour Primavera. Non affiliée à l’établissement.</div>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="hero">
+  <header class="wrap top">
+    <a class="logo" href="#" aria-label="Primavera, accueil"><small>Salon de thé</small><b>PRIMAVERA</b></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#carte">La carte</a>
+      <a href="#brunch">Brunch</a>
+      <a href="#infos">Infos</a>
+      <button class="theme" type="button" aria-label="Changer de thème (clair / sombre)">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+    </nav>
+  </header>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hello" lang="ar" dir="rtl" style="text-align:left">مرحبا بيكم</p>
+      <h1>Primavera<span class="s">Le plaisir se partage</span></h1>
+      <p class="lede">Salon de thé en face du Parc Bahbah, à Houmt Souk : pizzas au feu de bois, sandwichs généreux, brunch en famille et saveurs tunisiennes, sur place ou livrés.</p>
+      <div class="cta">
+        <a class="btn btn-red" href="tel:+21656420421">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+          Réserver · 56 420 421</a>
+        <a class="btn btn-line" href="#carte">Voir la carte</a>
+      </div>
+      <ul class="chips" aria-label="En bref"><li>Feu de bois</li><li>Fait maison</li><li>Livraison Glovo</li></ul>
+    </div>
+    <div class="plate">
+      <img src="assets/pizza-thon.jpg" width="880" height="760" alt="Pizza au thon cuite au feu de bois, avec olives noires, tomates cerises, piments et basilic">
+      <p class="sticker"><span>Pizza à</span><b>10 DT</b><span>à emporter</span></p>
+      <p class="leaf">100 %<br>fait<br>maison</p>
+    </div>
+  </div>
+</div>
+
+<div class="banner" role="note">
+  <div class="wrap">
+    <p>Offre du moment : pizza à 10 DT <span>à emporter</span> · boisson offerte avec votre sandwich</p>
+    <small>Hors napolitaine ; prix habituels sur place.</small>
+  </div>
+</div>
+
+<main id="main">
+  <section id="carte" aria-labelledby="carte-t">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="carte-t">La carte</h2>
+        <span class="s">Chaque envie à sa place</span>
+        <p>Un aperçu de nos classiques. Prix et plats du jour : sur place, par téléphone ou sur Instagram.</p>
+      </div>
+
+      <div class="cat">
+        <div class="pics">
+          <img class="wide" src="assets/pizza-bianca.jpg" width="1080" height="720" loading="lazy" alt="Pizza Bianca : poulet, épinards, fromage crémeux et feuilles de basilic sur pâte dorée">
+          <img src="assets/pepperoni.jpg" width="1020" height="780" loading="lazy" alt="Part de pizza pepperoni avec un long fil de fromage">
+          <img src="assets/pizza-mexicaine.jpg" width="780" height="880" loading="lazy" alt="Pizza Mexicaine : viande hachée, maïs et poivrons, fromage fondant">
+        </div>
+        <div>
+          <h3>Pizzas <span lang="ar" dir="rtl">بيتزا</span></h3>
+          <p class="intro">Pâte artisanale, cuisson au feu de bois, fromage 100 % lait.</p>
+          <ul class="items">
+            <li><b>Pizza Primavera</b><span>Saumon, épinards, mozzarella, citron et noix</span><i>Signature</i></li>
+            <li><b>Thon</b><span>Garniture généreuse au thon, cuite au feu de bois</span></li>
+            <li><b>Bianca</b><span>Sans sauce tomate, une touche crémeuse</span></li>
+            <li><b>Mexicaine</b><span>Viande, maïs, poivrons colorés</span></li>
+            <li><b>Pepperoni · Margherita · Regina</b><span>Les classiques</span></li>
+            <li><b>Végétarienne · Napoletana · Escalope</b><span>Et nos calzones</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cat rev">
+        <div class="pics">
+          <img class="wide" src="assets/baguette-metre.jpg" width="1080" height="700" loading="lazy" alt="Baguette mètre farcie, servie avec frites sur une planche en bois">
+          <img src="assets/panuozzo.jpg" width="860" height="700" loading="lazy" alt="Panuozzo garni de viande et fromage fondant">
+          <img src="assets/cornet.jpg" width="940" height="800" loading="lazy" alt="Cornet escalope avec frites et sauces">
+        </div>
+        <div>
+          <h3>Sandwichs <span lang="ar" dir="rtl">بنّة و تشخشيخ</span></h3>
+          <p class="intro">Croustillants, généreux, toujours avec leurs frites.</p>
+          <ul class="items">
+            <li><b>Panuozzo</b><span>Pâte dorée, garniture généreuse, fromage fondant</span></li>
+            <li><b>Baguette farcie</b><span>Bien dorée, avec ses frites</span></li>
+            <li><b>Baguette mètre</b><span>À finir à deux… si vous y arrivez</span><i>Défi</i></li>
+            <li><b>Cornet escalope</b><span>La nouveauté de la maison</span><i>Nouveau</i></li>
+            <li><b>Makloub · Libanais · Tacos</b><span>Panini et hamburger aussi</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="pics">
+          <img src="assets/couscous.jpg" width="560" height="560" loading="lazy" alt="Couscous à la viande, légumes et piment vert dans une assiette en céramique colorée">
+          <img src="assets/kamounia.jpg" width="620" height="520" loading="lazy" alt="Kamounia en sauce dans une assiette blanche et bleue, avec piment et citron">
+          <img class="wide" src="assets/ravioli.jpg" width="760" height="700" loading="lazy" alt="Ravioli maison à la sauce tomate et parmesan">
+        </div>
+        <div>
+          <h3>Plats <span lang="ar" dir="rtl">بنّة تونسية</span></h3>
+          <p class="intro">Les saveurs de chez nous et quelques escapades méditerranéennes, à midi comme le soir.</p>
+          <ul class="items">
+            <li><b>Couscous</b><span>Viande et légumes, le plat qui rassemble</span></li>
+            <li><b>Kamounia</b><span>Un plat généreux, du pain pour la sauce</span></li>
+            <li><b>Ravioli maison</b><span>Farce au fromage 100 % lait et viande hachée</span><i>Maison</i></li>
+            <li><b>Pâtes aux fruits de mer</b><span>Un air de Méditerranée dans l'assiette</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="brunch" class="brunch" aria-labelledby="brunch-t">
+    <div class="wrap brunch-grid">
+      <img src="assets/brunch.jpg" width="1080" height="780" loading="lazy" alt="Brunch premium : plateaux de mini-viennoiseries, œufs brouillés, bouchées salées et fruits">
+      <div>
+        <h2 id="brunch-t">Brunch</h2>
+        <span class="s">Sucré, salé… et toute la famille</span>
+        <p class="quote">« Les plus belles matinées commencent autour d'une table bien garnie. »</p>
+        <p style="color:var(--soft)">Du sucré, du salé, un bon café, des jus frais et le plaisir de prendre son temps, en famille ou entre amis. Brunch à savourer sur place, dans un cadre chic et familial : pensez à réserver.</p>
+        <p class="ar-q" lang="ar" dir="rtl">ريزرفي توا وايجا Brunchy مع العايلة</p>
+        <a class="btn btn-red" href="tel:+21656420421">Réserver une table</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="douceurs-t">
+    <div class="wrap">
+      <div class="cat" style="border:0;padding:0">
+        <div>
+          <h2 id="douceurs-t">Douceurs</h2>
+          <span class="s">Il reste toujours une petite place…</span>
+          <p style="color:var(--soft);margin-top:16px">Pause chocolat entre deux rendez-vous, crêpes, douceurs aux fruits et jus jwajem : la partie salon de thé de Primavera, pour souffler un moment.</p>
+          <ul class="items" style="margin-top:12px">
+            <li><b>Crêpes</b><span>Sucrées, nappées de chocolat</span></li>
+            <li><b>Jus jwajem</b><span>Le grand classique, fruits et crème</span></li>
+            <li><b>Pause fruitée</b><span>Une douceur aux fruits et son jus</span></li>
+          </ul>
+        </div>
+        <div class="pics">
+          <img class="wide" src="assets/table.jpg" width="1080" height="470" loading="lazy" alt="Table dressée chez Primavera : escalopes panées, frites, salades et assiettes à partager">
+          <img src="assets/crepe-chocolat.jpg" width="580" height="520" loading="lazy" alt="Crêpe nappée de chocolat, chantilly et smiley de cacao dans l'assiette">
+          <img src="assets/pause-fruitee.jpg" width="560" height="560" loading="lazy" alt="Tartelette aux fraises, bananes et kiwi sur ardoise, avec un jus">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" class="infos" aria-labelledby="infos-t">
+    <div class="wrap">
+      <h2 id="infos-t">Venir chez Primavera</h2>
+      <span class="s">En face du Parc Bahbah</span>
+      <div class="info-grid">
+        <div class="box">
+          <h3>Adresse</h3>
+          <p>Rue 20 Mars, en face du Parc Bahbah<br>Houmt Souk, Djerba 4180<br><span lang="ar" dir="rtl">شارع 20 مارس، مقابل بح بح، حومة السوق</span></p>
+          <a class="btn btn-cream" href="https://www.google.com/maps/search/?api=1&amp;query=Primavera%20Rue%2020%20Mars%20Houmt%20Souk%20Djerba">Itinéraire</a>
+        </div>
+        <div class="box">
+          <h3>Réservations</h3>
+          <a class="tel" href="tel:+21656420421">56 420 421</a>
+          <a class="tel" href="tel:+21675640506">75 640 506</a>
+          <a class="tel" href="tel:+21655767004">55 767 004</a>
+          <p class="note" style="margin-top:10px">Ouvert de 5h à minuit.</p>
+        </div>
+        <div class="box">
+          <h3>Livraison &amp; nouveautés</h3>
+          <p>Livraison à domicile disponible sur Glovo. Offres et plats du jour annoncés sur Instagram.</p>
+          <a class="btn btn-line" href="https://ig.me/m/primaveradjerba">Message Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Salon de thé Primavera · Houmt Souk, Djerba</span>
+    <a href="https://www.instagram.com/primaveradjerba/">@primaveradjerba</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.querySelector('.theme');
+    try { var s = localStorage.getItem('primavera-theme'); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    btn.addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('primavera-theme', next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

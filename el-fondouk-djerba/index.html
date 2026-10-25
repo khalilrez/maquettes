@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Fondouk Djerba · Restaurant, pâtisserie &amp; concept store à Houmt Souk</title>
+<meta name="description" content="El Fondouk Djerba : restaurant, pâtisserie, cocktails et concept store dans le Fondouk Jomni, rue Moncef Bey, Houmt Souk. La carte, les petits déjeuners et les rendez-vous de la maison. Infos au 28 988 276.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="El Fondouk Djerba · Houmt Souk">
+<meta property="og:description" content="Restaurant, pâtisserie, cocktails et concept store, sous la verrière du Fondouk Jomni à Houmt Souk.">
+<meta name="theme-color" content="#FBF4E6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Lexend:wght@300;400;500;700;800&family=Noto+Naskh+Arabic:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #FBF4E6;
+    --paper: #FFFDF7;
+    --sand: #F2E6CF;
+    --ink: #22344F;
+    --soft: #56647A;
+    --line: rgba(34,52,79,.16);
+    --terra: #B04E26;
+    --green: #1F5C55;
+    --green-2: #2D7A70;
+    --ochre: #E08A2B;
+    --on-green: #FFF8EA;
+    --shadow: 0 30px 60px -30px rgba(60,40,10,.45);
+    --display: 'Fraunces', Georgia, serif;
+    --sans: 'Lexend', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #12201F;
+      --paper: #182A28;
+      --sand: #1D3330;
+      --ink: #F4EBDA;
+      --soft: #B7C2BC;
+      --line: rgba(244,235,218,.15);
+      --terra: #EE8A5E;
+      --green: #2D7A70;
+      --green-2: #7CC4B7;
+      --ochre: #F2A955;
+      --shadow: 0 30px 60px -30px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #12201F;
+    --paper: #182A28;
+    --sand: #1D3330;
+    --ink: #F4EBDA;
+    --soft: #B7C2BC;
+    --line: rgba(244,235,218,.15);
+    --terra: #EE8A5E;
+    --green: #2D7A70;
+    --green-2: #7CC4B7;
+    --ochre: #F2A955;
+    --shadow: 0 30px 60px -30px rgba(0,0,0,.8);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 300 17px/1.65 var(--sans); overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--ochre); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--green); color: var(--on-green); padding: 10px 16px; border-radius: 8px; text-decoration: none; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1180px, 100% - 40px); margin-inline: auto; }
+  h1, h2, h3 { margin: 0; font-weight: 400; }
+  h2 { font: 400 clamp(40px, 5.6vw, 72px)/1 var(--display); color: var(--terra); letter-spacing: -.01em; }
+  h2 small { display: block; font: italic 400 .42em/1 var(--display); color: var(--ink); margin-bottom: .2em; letter-spacing: 0; }
+  .kicker { font: 500 12px/1 var(--sans); letter-spacing: .24em; text-transform: uppercase; color: var(--green-2); margin: 0 0 16px; }
+  :root:not([data-theme="dark"]) .kicker { color: var(--green); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kicker { color: var(--green-2); } }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 24px; border-radius: 12px; font: 500 15px/1 var(--sans); text-decoration: none; border: 1.5px solid transparent; transition: transform .2s; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-green { background: var(--green); color: var(--on-green); }
+  .btn-line { border-color: var(--ink); }
+  .btn-ochre { background: var(--ochre); color: #2A1806; }
+
+  /* header */
+  .top { position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 74px; gap: 14px; }
+  .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--green); }
+  :root[data-theme="dark"] .logo { color: var(--green-2); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo { color: var(--green-2); } }
+  .logo svg { width: 34px; height: 38px; }
+  .logo span { display: grid; line-height: .9; }
+  .logo small { font: 700 10px/1 var(--sans); letter-spacing: .1em; }
+  .logo b { font: 800 24px/1 var(--sans); letter-spacing: .01em; }
+  .logo i { font: 400 8.5px/1 var(--sans); font-style: normal; letter-spacing: .62em; margin-top: 3px; }
+  nav ul { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
+  nav a { text-decoration: none; font-size: 15px; color: var(--soft); }
+  nav a:hover { color: var(--terra); }
+  .top-r { display: flex; gap: 10px; align-items: center; }
+  .top .btn { min-height: 42px; padding: 0 16px; font-size: 14px; }
+  .toggle { width: 42px; height: 42px; border-radius: 12px; border: 1px solid var(--line); background: transparent; color: var(--ink); display: grid; place-items: center; cursor: pointer; }
+  .toggle svg { width: 18px; height: 18px; }
+  .toggle .sun { display: none; }
+  :root[data-theme="dark"] .toggle .sun { display: block; }
+  :root[data-theme="dark"] .toggle .moon { display: none; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .toggle .sun { display: block; }
+    :root:not([data-theme="light"]) .toggle .moon { display: none; }
+  }
+
+  /* hero */
+  .hero { padding: 60px 0 100px; position: relative; overflow: hidden; }
+  .hero .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .hero h1 { font: 400 clamp(58px, 8vw, 112px)/.92 var(--display); color: var(--ink); letter-spacing: -.02em; }
+  .hero h1 em { display: block; font-style: italic; color: var(--terra); }
+  .hero .intro { font-size: 19px; color: var(--soft); margin: 26px 0 30px; max-width: 34ch; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; padding: 0; list-style: none; }
+  .tags li { font: 400 14px/1 var(--sans); padding: 9px 14px; border-radius: 99px; border: 1px solid var(--line); background: var(--paper); }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .addr { margin-top: 30px; font-size: 15px; color: var(--soft); display: flex; gap: 10px; align-items: flex-start; }
+  .addr svg { width: 18px; height: 18px; color: var(--terra); flex: none; margin-top: 3px; }
+  .stamp-wrap { position: relative; justify-self: center; width: min(100%, 480px); }
+  .stamp { background: var(--paper); padding: 14px; transform: rotate(3deg); filter: drop-shadow(0 18px 30px rgba(60,40,10,.3));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, radial-gradient(circle 7px at center, #0000 96%, #000) -11px -11px / 22px 22px round;
+            mask: linear-gradient(#000 0 0) content-box, radial-gradient(circle 7px at center, #0000 96%, #000) -11px -11px / 22px 22px round; }
+  .stamp-in { background: var(--paper); padding: 8px 8px 6px; }
+  .stamp img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .stamp p { margin: 12px 4px 2px; display: flex; justify-content: space-between; font: italic 400 18px/1 var(--display); color: var(--soft); }
+  .stamp p b { font: 700 13px/1 var(--sans); letter-spacing: .14em; color: var(--green); font-style: normal; }
+  :root[data-theme="dark"] .stamp p b { color: var(--green-2); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .stamp p b { color: var(--green-2); } }
+  .postmark { position: absolute; left: -60px; top: 34px; width: 150px; height: 150px; border-radius: 50%; border: 2px solid var(--terra); color: var(--terra); display: grid; place-items: center; text-align: center; transform: rotate(-14deg); background: color-mix(in srgb, var(--bg) 70%, transparent); }
+  .postmark::before { content: ""; position: absolute; inset: 7px; border-radius: 50%; border: 1px dashed var(--terra); }
+  .postmark span { font: 600 13px/1.25 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+  .postmark em { display: block; font: italic 400 26px/1 var(--display); letter-spacing: 0; text-transform: none; margin: 4px 0; }
+
+  section { scroll-margin-top: 84px; }
+  .sec { padding: 100px 0; }
+
+  /* lieu */
+  .lieu { background: var(--sand); position: relative; }
+  .lieu-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 64px; align-items: start; }
+  .lieu p.lead { font: italic 400 clamp(22px, 2.4vw, 28px)/1.4 var(--display); margin: 24px 0 0; }
+  .lieu .aqua { margin-top: 36px; width: 70%; mix-blend-mode: multiply; border-radius: 6px; }
+  :root[data-theme="dark"] .lieu .aqua { mix-blend-mode: normal; opacity: .9; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .lieu .aqua { mix-blend-mode: normal; opacity: .9; } }
+  .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .photos figure { margin: 0; }
+  .photos img { width: 100%; object-fit: cover; border-radius: 6px; box-shadow: var(--shadow); }
+  .photos .p1 { grid-column: 1 / -1; }
+  .photos .p1 img { aspect-ratio: 16 / 9; }
+  .photos .p2 img, .photos .p3 img { aspect-ratio: 4 / 3; }
+  .photos figcaption { font: italic 400 16px/1.3 var(--display); color: var(--soft); margin-top: 10px; }
+
+  /* carte */
+  .carte-sheet { background: var(--paper); border-radius: 4px; box-shadow: var(--shadow); display: grid; grid-template-columns: 1fr 200px; overflow: hidden; border: 1px solid var(--line); }
+  .carte-body { padding: clamp(28px, 5vw, 64px); }
+  .carte-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; flex-wrap: wrap; margin-bottom: 34px; }
+  .legend { display: flex; gap: 16px; font-size: 14px; color: var(--soft); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .v, .vg { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; font: 700 10px/1 var(--sans); vertical-align: middle; margin-left: 6px; }
+  .v { border: 1.5px solid #4E9A5A; color: #4E9A5A; }
+  .vg { background: #4E9A5A; color: #fff; }
+  .menu { columns: 2; column-gap: 56px; margin: 0; padding: 0; list-style: none; }
+  .menu li { break-inside: avoid; display: grid; grid-template-columns: 1fr auto; gap: 4px 18px; padding: 12px 0; border-bottom: 1px dotted var(--line); }
+  .menu b { font: 500 16.5px/1.35 var(--sans); }
+  .menu .price { font: 600 17px/1.35 var(--display); color: var(--terra); }
+  .menu small { grid-column: 1 / -1; font-size: 14px; color: var(--soft); line-height: 1.4; }
+  .menu .sub { margin: 4px 0 0 14px; padding-left: 12px; border-left: 2px solid var(--terra); grid-column: 1 / -1; display: grid; gap: 4px; font-size: 15px; }
+  .menu .sub div { display: flex; justify-content: space-between; gap: 12px; }
+  .menu .sub span:last-child { font: 600 16px/1.35 var(--display); color: var(--terra); }
+  .carte-note { margin-top: 26px; font-size: 14px; color: var(--soft); }
+  .carte-side { background: url(assets/aquarelle-escalier.jpg) center / cover no-repeat; }
+  :root[data-theme="dark"] .carte-side { filter: brightness(.85) saturate(.9); }
+
+  /* petit dej */
+  .pdj { background: var(--green); color: var(--on-green); }
+  .pdj .wrap { display: grid; grid-template-columns: 1fr 1.15fr; gap: 64px; align-items: center; }
+  .pdj h2 { color: #FFB867; }
+  .pdj h2 small { color: var(--on-green); }
+  .pdj .kicker, .pdj .kicker { color: #A9DCD2 !important; }
+  .pdj img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 200px 200px 8px 8px; box-shadow: 0 30px 60px -30px rgba(0,0,0,.6); }
+  .formules { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 34px; }
+  .formule { border: 1px solid rgba(255,248,234,.3); border-radius: 14px; padding: 24px; }
+  .formule h3 { font: 700 13px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #FFB867; display: flex; justify-content: space-between; gap: 10px; }
+  .formule h3 span { font: 600 24px/1 var(--display); letter-spacing: 0; color: #FFF8EA; }
+  .formule ul { margin: 16px 0 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.5; }
+  .formule li { padding: 4px 0; border-bottom: 1px dashed rgba(255,248,234,.2); }
+  .hours { margin-top: 24px; display: inline-flex; gap: 10px; align-items: center; font: 500 15px/1 var(--sans); background: rgba(255,248,234,.12); padding: 12px 16px; border-radius: 10px; }
+
+  /* rendez-vous */
+  .rdv-head { display: flex; justify-content: space-between; align-items: end; gap: 30px; flex-wrap: wrap; margin-bottom: 48px; }
+  .rdv-head p { max-width: 40ch; color: var(--soft); margin: 0; }
+  .rdv { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .card { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 26px 24px; position: relative; }
+  .card .when { font: 600 12px/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--terra); }
+  .card h3 { font: 400 26px/1.1 var(--display); margin: 14px 0 10px; }
+  .card p { margin: 0; font-size: 15px; color: var(--soft); }
+  .card .ar { font: 500 22px/1.4 'Noto Naskh Arabic', serif; color: var(--green-2); margin-top: 12px; display: block; }
+  .card.photo { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+  .card.photo img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+  .card.photo div { padding: 22px 24px 26px; }
+
+  /* boutique */
+  .boutique { padding: 0 0 100px; }
+  .boutique .inner { display: grid; grid-template-columns: 220px 1fr auto; gap: 40px; align-items: center; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 44px 0; }
+  .boutique .inner > svg { width: 100%; max-width: 160px; color: var(--terra); }
+  .boutique h2 { font-size: clamp(32px, 4vw, 48px); }
+  .boutique p { color: var(--soft); margin: 12px 0 0; max-width: 56ch; }
+
+  /* infos */
+  .infos { background: var(--sand); }
+  .infos .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+  .infos dl { display: grid; gap: 22px; margin: 36px 0 0; }
+  .infos dt { font: 600 12px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--terra); margin-bottom: 7px; }
+  .infos dd { margin: 0; font-size: 18px; font-weight: 400; }
+  .infos dd span { display: block; font-size: 15px; color: var(--soft); font-weight: 300; }
+  .actions { display: grid; gap: 12px; margin-top: 34px; }
+  .actions .btn { min-height: 56px; font-size: 16px; }
+  .infos figure { margin: 0; }
+  .infos figure img { width: 100%; border-radius: 6px; box-shadow: var(--shadow); }
+  .infos figcaption { font: italic 400 16px/1.3 var(--display); color: var(--soft); margin-top: 10px; }
+
+  footer.site { padding: 38px 0 50px; font-size: 14px; color: var(--soft); }
+  footer.site .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+
+  @media (max-width: 1000px) {
+    nav { display: none; }
+    .hero .wrap, .lieu-grid, .pdj .wrap, .infos .wrap { grid-template-columns: 1fr; }
+    .rdv { grid-template-columns: 1fr 1fr; }
+    .carte-sheet { grid-template-columns: 1fr; }
+    .carte-side { display: none; }
+    .boutique .inner { grid-template-columns: 1fr; }
+    .boutique .inner > svg { max-width: 90px; }
+    .stamp-wrap { margin-top: 10px; }
+  }
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    .wrap { width: calc(100% - 32px); }
+    .top .btn span { display: none; }
+    .hero { padding: 36px 0 80px; }
+    .postmark { left: -10px; top: -26px; width: 116px; height: 116px; }
+    .postmark em { font-size: 20px; }
+    .postmark span { font-size: 10px; }
+    .stamp { padding: 14px; }
+    .sec { padding: 72px 0; }
+    .menu { columns: 1; }
+    .formules { grid-template-columns: 1fr; }
+    .rdv { grid-template-columns: 1fr; }
+    .lieu .aqua { width: 60%; }
+    .cta .btn { flex: 1 1 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/el-fondouk-djerba/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/el-fondouk-djerba/">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour El Fondouk Djerba. Non affiliée à l’établissement.</div>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arch" viewBox="0 0 40 44"><path d="M4 42V20C4 10 11 3 20 3s16 7 16 17v22" fill="none" stroke="currentColor" stroke-width="3"/><path d="M20 42V12M20 42 9 18M20 42l11-24M20 42 6 28M20 42l14-14" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="El Fondouk Djerba, accueil"><svg aria-hidden="true"><use href="#arch"/></svg><span><small>EL</small><b>FONDOUK</b><i>DJERBA</i></span></a>
+    <nav aria-label="Navigation principale"><ul>
+      <li><a href="#lieu">Le lieu</a></li><li><a href="#carte">La carte</a></li><li><a href="#petits-dejeuners">Petits déjeuners</a></li><li><a href="#rendez-vous">Rendez-vous</a></li><li><a href="#infos">Infos</a></li>
+    </ul></nav>
+    <div class="top-r">
+      <a class="btn btn-green" href="tel:+21628988276" aria-label="Appeler le 28 988 276"><svg aria-hidden="true"><use href="#phone"/></svg><span>28 988 276</span></a>
+      <button class="toggle" type="button" data-toggle aria-label="Changer de thème clair / sombre">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="hero" aria-labelledby="titre">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Houmt Souk · Djerba</p>
+        <h1 id="titre">El Fondouk <em>sous la verrière</em></h1>
+        <p class="intro">Un patio à arcades, des suspensions tressées, une grande tablée… Au cœur du Fondouk Jomni, on vient pour le petit déjeuner, on reste pour le déjeuner, on revient pour le dîner.</p>
+        <ul class="tags" aria-label="À El Fondouk">
+          <li>Restaurant</li><li>Pâtisserie</li><li>Cocktails</li><li>Concept store</li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-green" href="tel:+21628988276"><svg aria-hidden="true"><use href="#phone"/></svg>Appeler · 28 988 276</a>
+          <a class="btn btn-line" href="#carte">Voir la carte</a>
+        </div>
+        <p class="addr"><svg aria-hidden="true"><use href="#pin"/></svg>Fondouk Jomni, rue Moncef Bey, Houmt Souk, Djerba</p>
+      </div>
+      <div class="stamp-wrap">
+        <div class="stamp"><div class="stamp-in">
+          <img src="assets/patio.jpg" width="1080" height="1349" alt="Le patio d’El Fondouk sous sa verrière : arcades blanches sur deux étages, suspensions en osier et longue tablée aux chaises vert d’eau.">
+          <p><span>Le patio</span><b>DJERBA</b></p>
+        </div></div>
+        <div class="postmark" aria-hidden="true"><div><span>Houmt</span><em>Souk</em><span>Djerba</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec lieu" id="lieu" aria-labelledby="t-lieu">
+    <div class="wrap lieu-grid">
+      <div>
+        <p class="kicker">Le lieu</p>
+        <h2 id="t-lieu"><small>bienvenue au</small>Fondouk</h2>
+        <p class="lead">Des arcades blanches, des balustrades en bois, des portes bleues, et la lumière qui tombe de la verrière.</p>
+        <img class="aqua" src="assets/aquarelle-patio.jpg" width="430" height="600" loading="lazy" alt="Illustration à l’aquarelle du patio d’El Fondouk : escalier, arcades et tables.">
+      </div>
+      <div class="photos">
+        <figure class="p1"><img src="assets/arcades.jpg" width="1080" height="600" loading="lazy" alt="Galerie à arcades du premier étage, portes bleues et balustrades en bois sous la verrière."><figcaption>Les arcades, sur deux étages</figcaption></figure>
+        <figure class="p2"><img src="assets/salon.jpg" width="1440" height="1078" loading="lazy" alt="Salon aux banquettes et coussins colorés, tables basses blanches et grande fresque de poissons au mur."><figcaption>Le salon et sa fresque</figcaption></figure>
+        <figure class="p3"><img src="assets/arche.jpg" width="960" height="620" loading="lazy" alt="Vue du patio à travers une arche en pierre, cactus et suspensions en osier."><figcaption>Vue depuis l’arche</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="carte" aria-labelledby="t-carte">
+    <div class="wrap">
+      <div class="carte-sheet">
+        <div class="carte-body">
+          <div class="carte-head">
+            <div><p class="kicker">Restaurant</p><h2 id="t-carte"><small>la</small>Carte</h2></div>
+            <div class="legend"><span><i class="v" aria-hidden="true">V</i> Végétarien</span><span><i class="vg" aria-hidden="true">V</i> Vegan</span></div>
+          </div>
+          <ul class="menu">
+            <li><b>Crème froide de courgettes, ricotta &amp; menthe <i class="v" title="Végétarien">V</i></b><span class="price">22</span></li>
+            <li><b>Salade méditerranéenne</b><span></span><small>Pois chiche, oignon, tomate, raisin &amp; abricot secs, cœur d’artichaut</small>
+              <div class="sub"><div><span>Version vegan</span><span>32</span></div><div><span>Version végétarienne à la féta bio</span><span>45</span></div><div><span>Version classique au poulet</span><span>45</span></div></div></li>
+            <li><b>Salade du chef</b><span class="price">43</span><small>Courgettes taillées en sushi, farce au thon, salade, tomate</small></li>
+            <li><b>Le jardin exotique <i class="vg" title="Vegan">V</i></b><span class="price">47</span><small>Délicate composition de fruits et légumes</small></li>
+            <li><b>Croustillant de fromage, sauce cocktail du soleil <i class="v" title="Végétarien">V</i></b><span class="price">32</span></li>
+            <li><b>Calamars croustillants, sauce tartare maison</b><span class="price">35</span></li>
+            <li><b>Carpaccio di polpo</b><span class="price">49</span><small>Poulpe cuit vapeur, citron, huile d’olive à la mandarine, roquette &amp; parmesan</small></li>
+            <li><b>Carpaccio di manzo</b><span class="price">55</span><small>Bœuf cru finement tranché, sauce pistou, crème de truffe</small></li>
+            <li><b>Fraîcheur de daurade</b><span class="price">49</span><small>Daurade en tartare, citron, huile d’olive, herbes fraîches</small></li>
+            <li><b>Gambas sautées à l’ail, riz parfumé aux légumes</b><span class="price">59</span></li>
+            <li><b>Cocotte de fruits de mer, sauce marinière</b><span class="price">55</span></li>
+            <li><b>Poisson à la plancha</b><span class="price">55</span></li>
+            <li><b>Pasta mare</b><span class="price">55</span><small>Spaghetti aux fruits de mer, sauce rouge</small></li>
+            <li><b>Conchiglie au poulpe &amp; tomates séchées</b><span class="price">49</span></li>
+            <li><b>Penne royale</b><span class="price">49</span><small>Émincé de poulet, crème de champignons &amp; parmesan</small></li>
+            <li><b>Tagliatelle aux légumes de saison <i class="vg" title="Vegan">V</i></b><span class="price">35</span><small>Courgette, pistou, épinards, oignon, ail, persil</small></li>
+            <li><b>Escalope de volaille, sauce au citron</b><span class="price">49</span></li>
+            <li><b>Cordon bleu, cœur épinards &amp; fromage</b><span class="price">52</span></li>
+            <li><b>Pièce de bœuf, sélection du chef</b><span class="price">69</span><small>Sauce au choix : parmesan, poivre, champignons, crème de truffe, beurre maître d’hôtel</small></li>
+          </ul>
+          <p class="carte-note">Prix en dinars tunisiens, tels que publiés sur la dernière carte. La carte change avec les saisons.</p>
+        </div>
+        <div class="carte-side" role="img" aria-label="Aquarelle d’un escalier et d’arcades du fondouk"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec pdj" id="petits-dejeuners" aria-labelledby="t-pdj">
+    <div class="wrap">
+      <img src="assets/petit-dejeuner.jpg" width="1280" height="1600" loading="lazy" alt="Petit déjeuner servi sur une table ronde du patio : présentoir à étages, planche de charcuterie, pain, cappuccino et citronnade.">
+      <div>
+        <p class="kicker">Tous les matins</p>
+        <h2 id="t-pdj"><small>petits</small>Déjeuners</h2>
+        <p>En formule ou à la carte, sous la verrière.</p>
+        <div class="formules">
+          <div class="formule"><h3>Express <span>27 TND</span></h3><ul><li>1 boisson chaude au choix</li><li>1 jus frais (fraise ou citronnade)</li><li>½ bouteille d’eau minérale</li><li>1 viennoiserie au choix</li><li>Pain, beurre, confiture</li><li>1 omelette nature, mayonnaise, harissa</li></ul></div>
+          <div class="formule"><h3>Composée <span>39 TND</span></h3><ul><li>Tout l’Express, plus :</li><li>Pâte à tartiner</li><li>Charcuterie (bacon de bœuf, jambon fumé)</li><li>Fromage (frais sicilien, gouda)</li><li>3 mini pâtisseries</li></ul></div>
+        </div>
+        <p class="hours"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>De 9h00 à 11h30</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="rendez-vous" aria-labelledby="t-rdv">
+    <div class="wrap">
+      <div class="rdv-head">
+        <div><p class="kicker">Au fil de l’année</p><h2 id="t-rdv"><small>les</small>Rendez-vous</h2></div>
+        <p>Une carte d’hiver, une carte d’été, et des moments que la maison prépare chaque année. Les dates sont annoncées sur Instagram.</p>
+      </div>
+      <div class="rdv">
+        <article class="card photo"><img src="assets/galettes.jpg" width="832" height="832" loading="lazy" alt="Galettes des rois de la pâtisserie El Fondouk : frangipane, pomme caramel et choco-noisette."><div><span class="when">Janvier</span><h3>Galettes des rois</h3><p>Frangipane, pommes caramélisées, noisette &amp; pépites de chocolat. Avec fève en porcelaine et couronne.</p></div></article>
+        <article class="card"><span class="when">Ramadan</span><h3>Iftar au Fondouk</h3><p>Menu de rupture du jeûne, puis snacking, pâtisserie et boissons jusque tard. Et la soirée El Nos, à la mi-Ramadan.</p><span class="ar" lang="ar" dir="rtl">رمضان كريم</span></article>
+        <article class="card"><span class="when">14 février</span><h3>Saint-Valentin</h3><p>Un menu à thème pour l’occasion. En 2026 : « Le Taj Mahal, le palais de l’amour », un voyage dans les épices de l’Inde.</p></article>
+        <article class="card"><span class="when">Juin</span><h3>L’anniversaire</h3><p>Le 6 juin 2026, El Fondouk a fêté ses 6 ans. Et la pâtisserie propose aussi un service traiteur sur mesure.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="boutique" aria-labelledby="t-boutique">
+    <div class="wrap inner">
+      <svg viewBox="0 0 40 44" aria-hidden="true"><use href="#arch"/></svg>
+      <div>
+        <p class="kicker">Concept store</p>
+        <h2 id="t-boutique">Boutique Amarante</h2>
+        <p>Parfums, parfums d’intérieur, soins pour le corps et le visage, et la collection Amarante Studio Cuir (sacs, sandales, petite maroquinerie). Un petit cocon au 10, place de l’Église, à Houmt Souk.</p>
+      </div>
+      <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=10+place+de+l%27Eglise+Houmt+Souk+Djerba" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Y aller</a>
+    </div>
+  </section>
+
+  <section class="sec infos" id="infos" aria-labelledby="t-infos">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Infos pratiques</p>
+        <h2 id="t-infos"><small>nous</small>Trouver</h2>
+        <dl>
+          <div><dt>Adresse</dt><dd>Fondouk Jomni, rue Moncef Bey<span>Houmt Souk, Djerba 4180</span></dd></div>
+          <div><dt>Téléphone</dt><dd><a href="tel:+21628988276">28 988 276</a><span>Infos, commandes de pâtisserie et réservations</span></dd></div>
+          <div><dt>Horaires</dt><dd>Petits déjeuners de 9h00 à 11h30<span>Les horaires du restaurant et du café changent avec les saisons : appelez-nous ou écrivez-nous sur Instagram.</span></dd></div>
+        </dl>
+        <div class="actions">
+          <a class="btn btn-green" href="tel:+21628988276"><svg aria-hidden="true"><use href="#phone"/></svg>Appeler le 28 988 276</a>
+          <a class="btn btn-ochre" href="https://www.google.com/maps/search/?api=1&amp;query=El+Fondouk+Djerba+Rue+Moncef+Bey+Houmt+Souk" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Itinéraire Google Maps</a>
+          <a class="btn btn-line" href="https://ig.me/m/elfondoukdjerba" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>Message sur Instagram</a>
+        </div>
+      </div>
+      <figure><img src="assets/dessin-fondouk.jpg" width="1080" height="1000" loading="lazy" alt="Dessin à l’encre bleue d’une ruelle de Houmt Souk et de l’entrée du fondouk, avec un grand soleil jaune."><figcaption>Le fondouk, croqué à l’encre bleue</figcaption></figure>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap"><span>© El Fondouk Djerba · Houmt Souk</span><a href="https://www.instagram.com/elfondoukdjerba/" target="_blank" rel="noopener">@elfondoukdjerba</a></div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, KEY = 'fondouk-theme';
+    try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    document.querySelector('[data-toggle]').addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

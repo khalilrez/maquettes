@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flanel · Salon de thé à Sfax, route Afrane km 3,5</title>
+<meta name="description" content="Flanel, salon de thé à Sfax (route Afrane km 3,5) : breakfasts healthy, équilibré ou sucré, pain perdu au saumon, risottos, mac &amp; cheese aux boulettes, brownies, matcha vanille. Le nouvel espace hors normes à Sfax.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Flanel · Le nouvel espace hors normes à Sfax">
+<meta property="og:description" content="Mornings, Salty, Sweet : breakfasts, risottos et douceurs au salon de thé Flanel, route Afrane km 3,5.">
+<meta name="theme-color" content="#F7F3EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #F7F3EC;
+    --paper: #FFFFFF;
+    --ink: #151412;
+    --soft: #5F5A52;
+    --line: rgba(21,20,18,.14);
+    --gold: #A88446;
+    --gold-ink: #85662F;
+    --sage: #7E9483;
+    --sage-bg: #E4E9E2;
+    --jute: #D8C4A1;
+    --shadow: 0 26px 60px -34px rgba(40,30,15,.5);
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'Manrope', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #121110;
+      --paper: #1B1A18;
+      --ink: #F2ECE2;
+      --soft: #B8B0A3;
+      --line: rgba(242,236,226,.14);
+      --gold: #CFAE6F;
+      --gold-ink: #D9B97B;
+      --sage: #9DB3A2;
+      --sage-bg: #1C221E;
+      --jute: #3A3226;
+      --shadow: 0 26px 60px -34px rgba(0,0,0,.85);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #121110;
+    --paper: #1B1A18;
+    --ink: #F2ECE2;
+    --soft: #B8B0A3;
+    --line: rgba(242,236,226,.14);
+    --gold: #CFAE6F;
+    --gold-ink: #D9B97B;
+    --sage: #9DB3A2;
+    --sage-bg: #1C221E;
+    --jute: #3A3226;
+    --shadow: 0 26px 60px -34px rgba(0,0,0,.85);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16.5px/1.7 var(--sans); overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+  .skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--ink); color: var(--bg); padding: 10px 16px; text-decoration: none; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1240px, 100% - 40px); margin-inline: auto; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
+  h2 { font-size: clamp(42px, 6vw, 84px); line-height: .98; letter-spacing: -.01em; }
+  h2 em { color: var(--gold-ink); }
+  .kick { font: 500 12px/1 var(--sans); letter-spacing: .28em; text-transform: uppercase; color: var(--soft); margin: 0 0 18px; }
+  .num { font: italic 400 22px/1 var(--serif); color: var(--gold-ink); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 26px; font: 500 14px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--ink); transition: background .2s, color .2s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-ink { background: var(--ink); color: var(--bg); }
+  .btn-ink:hover { background: var(--gold); border-color: var(--gold); color: #151412; }
+  .btn-line:hover { background: var(--ink); color: var(--bg); }
+
+  /* header */
+  .top { border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 14px; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; }
+  .mono { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .mono svg { width: 26px; height: 26px; color: var(--gold); }
+  .mono b { font: 700 15px/1 var(--sans); letter-spacing: .32em; }
+  nav ul { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
+  nav a { text-decoration: none; color: var(--soft); }
+  nav a:hover { color: var(--ink); }
+  .tr { display: flex; gap: 10px; align-items: center; }
+  .toggle { width: 40px; height: 40px; border: 1px solid var(--line); background: transparent; color: var(--ink); display: grid; place-items: center; cursor: pointer; border-radius: 50%; }
+  .toggle svg { width: 17px; height: 17px; }
+  .toggle .sun { display: none; }
+  :root[data-theme="dark"] .toggle .sun { display: block; }
+  :root[data-theme="dark"] .toggle .moon { display: none; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .toggle .sun { display: block; }
+    :root:not([data-theme="light"]) .toggle .moon { display: none; }
+  }
+
+  /* cover */
+  .cover { padding: 26px 0 80px; }
+  .mast { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; border-bottom: 2px solid var(--ink); padding-bottom: 10px; }
+  .mast h1 { font: 400 clamp(84px, 17vw, 250px)/.85 var(--serif); letter-spacing: -.03em; }
+  .mast h1 i { color: var(--gold-ink); }
+  .mast p { font: italic 400 clamp(16px, 1.6vw, 22px)/1.3 var(--serif); text-align: right; color: var(--soft); margin: 0; }
+  .issue { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font: 500 12px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--soft); padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .cover-grid { display: grid; grid-template-columns: 1fr 1.5fr 1fr; gap: 40px; padding-top: 40px; align-items: start; }
+  .cover-grid .lede { font: italic 400 26px/1.35 var(--serif); margin: 0 0 24px; }
+  .cover-grid p { color: var(--soft); }
+  .cover-photo { margin: 0; position: relative; }
+  .cover-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .cover-photo figcaption { font-size: 13px; color: var(--soft); margin-top: 10px; font-style: italic; font-family: var(--serif); }
+  .contents h2 { font: 500 12px/1 var(--sans); letter-spacing: .28em; text-transform: uppercase; color: var(--soft); margin-bottom: 18px; }
+  .contents ol { list-style: none; padding: 0; margin: 0 0 30px; }
+  .contents li a { display: grid; grid-template-columns: 40px 1fr; gap: 6px 10px; padding: 16px 0; border-top: 1px solid var(--line); text-decoration: none; }
+  .contents li:last-child a { border-bottom: 1px solid var(--line); }
+  .contents li b { font: 400 30px/1 var(--serif); }
+  .contents li small { grid-column: 2; color: var(--soft); font-size: 14px; }
+  .contents li a:hover b { color: var(--gold-ink); font-style: italic; }
+  .contents .btn { width: 100%; }
+
+  section { scroll-margin-top: 20px; }
+  .chapter { padding: 100px 0; border-top: 1px solid var(--line); }
+  .chap-head { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 56px; }
+  .chap-head p { color: var(--soft); max-width: 44ch; justify-self: end; margin: 0; font: italic 400 21px/1.45 var(--serif); }
+
+  /* mornings */
+  .mornings { background: var(--sage-bg); }
+  .bk { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+  .bk figure { margin: 0; }
+  .bk img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; box-shadow: var(--shadow); }
+  .bk figcaption { padding-top: 14px; }
+  .bk h3 { font-size: 24px; }
+  .bk h3 i { color: var(--gold-ink); }
+  .bk p { margin: 6px 0 0; font-size: 14px; color: var(--soft); line-height: 1.55; }
+  .feature { display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px; align-items: center; margin-top: 90px; }
+  .feature img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; box-shadow: var(--shadow); }
+  .feature h3 { font-size: clamp(34px, 4vw, 54px); line-height: 1.05; }
+  .feature p { color: var(--soft); font: italic 400 21px/1.5 var(--serif); }
+  .feature .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .feature .pair img:last-child { margin-top: 60px; }
+
+  /* salty */
+  .risottos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .risottos figure { margin: 0; }
+  .risottos img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+  .risottos figcaption { font: 400 19px/1.3 var(--serif); padding-top: 12px; }
+  .risottos figcaption small { display: block; font: 400 14px/1.4 var(--sans); color: var(--soft); margin-top: 4px; }
+  .quote { text-align: center; margin: 80px auto 70px; max-width: 26ch; font: italic 400 clamp(30px, 4vw, 50px)/1.2 var(--serif); }
+  .quote span { color: var(--gold-ink); }
+  .plates { display: grid; grid-template-columns: 1.3fr 1fr; grid-template-rows: auto auto; gap: 18px; }
+  .plates figure { margin: 0; position: relative; overflow: hidden; }
+  .plates img { width: 100%; height: 100%; object-fit: cover; }
+  .plates .big { grid-row: span 2; }
+  .plates .big img { aspect-ratio: 4 / 5.2; }
+  .plates figure:not(.big) img { aspect-ratio: 16 / 10.2; }
+  .plates figcaption { position: absolute; left: 0; bottom: 0; right: 0; padding: 30px 16px 12px; background: linear-gradient(transparent, rgba(0,0,0,.65)); color: #fff; font: italic 400 19px/1.2 var(--serif); }
+
+  /* sweet */
+  .sweet { background: var(--ink); color: var(--bg); }
+  .sweet .chap-head p { color: color-mix(in srgb, var(--bg) 70%, transparent); }
+  .sweet .num, .sweet h2 em { color: var(--gold); }
+  .sweet .kick { color: color-mix(in srgb, var(--bg) 65%, transparent); }
+  .strip { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  .strip figure { margin: 0; }
+  .strip img { width: 100%; aspect-ratio: 9 / 15; object-fit: cover; }
+  .strip figcaption { font: 400 18px/1.25 var(--serif); padding-top: 12px; }
+  .strip figcaption small { display: block; font: 400 13px/1.4 var(--sans); opacity: .7; margin-top: 3px; }
+
+  /* visit */
+  .visit .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+  .visit dl { display: grid; gap: 22px; margin: 34px 0; }
+  .visit dt { font: 500 12px/1 var(--sans); letter-spacing: .26em; text-transform: uppercase; color: var(--gold-ink); margin-bottom: 7px; }
+  .visit dd { margin: 0; font: 400 21px/1.4 var(--serif); }
+  .visit dd small { display: block; font: 400 14px/1.5 var(--sans); color: var(--soft); }
+  .visit .acts { display: flex; flex-wrap: wrap; gap: 12px; }
+  .visit figure { margin: 0; }
+  .visit img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; box-shadow: var(--shadow); }
+
+  footer.site { border-top: 2px solid var(--ink); padding: 28px 0 46px; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--soft); }
+  footer.site .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+
+  @media (max-width: 1000px) {
+    nav { display: none; }
+    .cover-grid { grid-template-columns: 1fr 1fr; }
+    .cover-grid .intro { grid-column: 1 / -1; order: 3; }
+    .bk, .risottos { grid-template-columns: 1fr 1fr; }
+    .strip { grid-template-columns: repeat(3, 1fr); }
+    .feature, .visit .wrap, .chap-head { grid-template-columns: 1fr; }
+    .chap-head p { justify-self: start; }
+  }
+  @media (max-width: 640px) {
+    .wrap { width: calc(100% - 32px); }
+    .mast { flex-direction: column; align-items: flex-start; }
+    .mast p { text-align: left; }
+    .cover-grid { grid-template-columns: 1fr; gap: 30px; }
+    .cover-grid .intro { order: 0; }
+    .issue span:nth-child(2) { display: none; }
+    .chapter { padding: 72px 0; }
+    .bk { gap: 26px 14px; }
+    .bk h3 { font-size: 20px; }
+    .plates { grid-template-columns: 1fr 1fr; }
+    .plates .big { grid-column: 1 / -1; grid-row: auto; }
+    .strip { grid-template-columns: 1fr 1fr; }
+    .strip figure:last-child { display: none; }
+    .feature .pair img:last-child { margin-top: 30px; }
+    .visit .acts .btn { flex: 1 1 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/flanel-sfax/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/flanel-sfax/">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour Flanel. Non affiliée à l’établissement.</div>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="f" viewBox="0 0 32 32"><g fill="currentColor"><path d="M6 4h20v6H12v4h11v6H12v8H6z" opacity=".9"/><path d="M14 4l12 0-6 6h-6z" opacity=".55"/></g></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mono" href="#" aria-label="Flanel, accueil"><svg aria-hidden="true"><use href="#f"/></svg><b>FLANEL</b></a>
+    <nav aria-label="Navigation principale"><ul>
+      <li><a href="#mornings">Mornings</a></li><li><a href="#salty">Salty</a></li><li><a href="#sweet">Sweet</a></li><li><a href="#visite">Nous trouver</a></li>
+    </ul></nav>
+    <div class="tr">
+      <button class="toggle" type="button" data-toggle aria-label="Changer de thème clair / sombre">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="cover" aria-labelledby="titre">
+    <div class="wrap">
+      <div class="mast">
+        <h1 id="titre">Flan<i>e</i>l</h1>
+        <p>Salon de thé<br>Sfax</p>
+      </div>
+      <div class="issue"><span>Route Afrane · km 3,5</span><span>Mornings · Salty · Sweet</span><span>Sfax</span></div>
+      <div class="cover-grid">
+        <div class="intro">
+          <p class="lede">Le nouvel espace hors normes à Sfax.</p>
+          <p>Des breakfasts pensés comme des tableaux, des risottos qu’on déguste d’abord avec les yeux, et des douceurs pour finir en beauté. Slow mornings, good coffee &amp; a breakfast worth waking up for.</p>
+          <p class="num">— Bienvenue chez Flanel</p>
+        </div>
+        <figure class="cover-photo">
+          <img src="assets/pain-perdu-saumon.jpg" width="1265" height="1600" alt="Pain perdu salé au saumon fumé, œuf poché, avocat et sauce, avec frites, sur une table blanche.">
+          <figcaption>En couverture : pain perdu saumon &amp; œuf poché.</figcaption>
+        </figure>
+        <div class="contents">
+          <h2>Au sommaire</h2>
+          <ol>
+            <li><a href="#mornings"><span class="num">01</span><b>Mornings</b><small>Healthy, équilibré, consistant, sucré</small></a></li>
+            <li><a href="#salty"><span class="num">02</span><b>Salty</b><small>Risottos, mac &amp; cheese, bruschetta</small></a></li>
+            <li><a href="#sweet"><span class="num">03</span><b>Sweet</b><small>Brownies, blanc-manger, matcha, iced tea</small></a></li>
+            <li><a href="#visite"><span class="num">04</span><b>Nous trouver</b><small>Route Afrane km 3,5, Sfax</small></a></li>
+          </ol>
+          <a class="btn btn-ink" href="https://ig.me/m/flanelsfax" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>Réserver par message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter mornings" id="mornings" aria-labelledby="t-mornings">
+    <div class="wrap">
+      <div class="chap-head">
+        <div><p class="kick"><span class="num">01</span> &nbsp;Chapitre</p><h2 id="t-mornings">Morn<em>ings</em></h2></div>
+        <p>Le genre de matin qui donne envie de se lever. Quatre breakfasts, quatre humeurs.</p>
+      </div>
+      <div class="bk">
+        <figure><img src="assets/healthy-breakfast.jpg" width="1080" height="1350" loading="lazy" alt="Healthy Breakfast sur plateau : pancakes healthy, barre de céréales, tisane, cappuccino, verrine au chia, omelette au poulet fumé et jus sans sucre."><figcaption><h3>Healthy <i>Breakfast</i></h3><p>Pancake healthy, barre à céréales énergétique, verrine aux graines de chia, omelette poulet fumé &amp; légumes sautés, tisane, jus sans sucre.</p></figcaption></figure>
+        <figure><img src="assets/equilibre-breakfast.jpg" width="1080" height="1350" loading="lazy" alt="Équilibré Breakfast : chou à la crème, tarte au poulet, flat bread, brownie, cinnamon roll, œuf plat et bacon, café."><figcaption><h3>Équilibré <i>Breakfast</i></h3><p>Chou à la crème, tarte au poulet, flat bread, brownie, cinnamon roll, œuf plat &amp; bacon.</p></figcaption></figure>
+        <figure><img src="assets/consistant-breakfast.jpg" width="1080" height="1350" loading="lazy" alt="Consistant Breakfast : viennoiseries, cappuccino, jus rouge, œuf au plat, pain et petites sauces sur un chemin de table en jute."><figcaption><h3>Consistant <i>Breakfast</i></h3><p>Your perfect morning, served with love : viennoiseries, œuf, café et jus.</p></figcaption></figure>
+        <figure><img src="assets/sucre-breakfast.jpg" width="1080" height="1350" loading="lazy" alt="Le Sucré Breakfast : brioches, pâte à tartiner, brownie, crêpe, cookies, café et jus."><figcaption><h3>Le Sucré <i>Breakfast</i></h3><p>Pour les matins gourmands.</p></figcaption></figure>
+      </div>
+      <div class="feature">
+        <div class="pair">
+          <img src="assets/pain-perdu-sale.jpg" width="1080" height="1350" loading="lazy" alt="Pain perdu salé garni, avec frites et sauces.">
+          <img src="assets/crevettes.jpg" width="1080" height="1302" loading="lazy" alt="Crevettes panées croustillantes et sauces.">
+        </div>
+        <div>
+          <p class="kick">Signature</p>
+          <h3>Le pain perdu se réinvente en version salée</h3>
+          <p>Une alliance gourmande de textures et de saveurs, préparée avec soin pour un moment aussi généreux que savoureux. Au saumon et œuf poché, ou en version burger.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="salty" aria-labelledby="t-salty">
+    <div class="wrap">
+      <div class="chap-head">
+        <div><p class="kick"><span class="num">02</span> &nbsp;Chapitre</p><h2 id="t-salty">Sal<em>ty</em></h2></div>
+        <p>On ne choisit pas son risotto… on les veut tous. Bienvenue dans notre monde de risottos.</p>
+      </div>
+      <div class="risottos">
+        <figure><img src="assets/risotto-truffe.jpg" width="1319" height="1600" loading="lazy" alt="Risotto à la truffe surmonté de tranches de pièce de boucher et champignons."><figcaption>Risotto à la truffe<small>&amp; sa pièce de boucher</small></figcaption></figure>
+        <figure><img src="assets/risotto-encre.jpg" width="1080" height="1264" loading="lazy" alt="Risotto noir à l’encre de seiche et crevettes."><figcaption>Risotto à l’encre de seiche<small>&amp; aux crevettes</small></figcaption></figure>
+        <figure><img src="assets/risotto-potiron.jpg" width="1205" height="1600" loading="lazy" alt="Risotto au potiron, émincé de poulet et champignons."><figcaption>Risotto au potiron<small>&amp; au poulet</small></figcaption></figure>
+        <figure><img src="assets/risotto-rose.jpg" width="1080" height="1350" loading="lazy" alt="Risotto aux crevettes grillées, sauce rosée et parmesan."><figcaption>Risotto aux crevettes<small>sauce rosée &amp; parmesan</small></figcaption></figure>
+      </div>
+      <p class="quote">Le genre d’assiette qu’on déguste <span>d’abord avec les yeux.</span></p>
+      <div class="plates">
+        <figure class="big"><img src="assets/mac-boulettes.jpg" width="1362" height="1600" loading="lazy" alt="Mac &amp; cheese aux boulettes en sauce tomate, basilic et parmesan."><figcaption>Mac &amp; cheese aux boulettes</figcaption></figure>
+        <figure><img src="assets/bruschetta.jpg" width="1301" height="1600" loading="lazy" alt="Bruschettas à la tomate, avocat, saumon et anchois sur planche."><figcaption>Bruschetta mood</figcaption></figure>
+        <figure><img src="assets/salade.jpg" width="1236" height="1600" loading="lazy" alt="Salade colorée aux légumes frais et avocat."><figcaption>Colorful bites</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter sweet" id="sweet" aria-labelledby="t-sweet">
+    <div class="wrap">
+      <div class="chap-head">
+        <div><p class="kick"><span class="num">03</span> &nbsp;Chapitre</p><h2 id="t-sweet">Sw<em>eet</em></h2></div>
+        <p>A little vanilla, a lot of magic. Les douceurs et les drinks de la maison.</p>
+      </div>
+      <div class="strip">
+        <figure><img src="assets/brownies.jpg" width="720" height="1280" loading="lazy" alt="Brownie surmonté d’une boule de glace, avec noix et sauces."><figcaption>Brownies<small>et leurs toppings</small></figcaption></figure>
+        <figure><img src="assets/blanc-manger.jpg" width="900" height="1600" loading="lazy" alt="Blanc-manger coco et mangue fraîche."><figcaption>Blanc-manger<small>coco mango</small></figcaption></figure>
+        <figure><img src="assets/matcha-vanille.jpg" width="720" height="1280" loading="lazy" alt="Matcha vanille glacé dans un verre, gousse de vanille."><figcaption>Matcha vanille<small>creamy obsession</small></figcaption></figure>
+        <figure><img src="assets/ice-coffee.jpg" width="720" height="1280" loading="lazy" alt="Ice coffee vanille dans un verre à anse."><figcaption>Ice coffee<small>vanille</small></figcaption></figure>
+        <figure><img src="assets/ice-tea.jpg" width="720" height="1280" loading="lazy" alt="Trois iced teas : pêche, fraise et mangue."><figcaption>Iced tea<small>pêche · fraise · mangue</small></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter visit" id="visite" aria-labelledby="t-visit">
+    <div class="wrap">
+      <div>
+        <p class="kick"><span class="num">04</span> &nbsp;Nous trouver</p>
+        <h2 id="t-visit">Venez <em>chez Flanel</em></h2>
+        <dl>
+          <div><dt>Adresse</dt><dd>Route Afrane, km 3,5<small>Sfax 3062</small></dd></div>
+          <div><dt>Horaires &amp; réservations</dt><dd>Par message Instagram<small>Écrivez-nous pour réserver une table ou connaître nos horaires.</small></dd></div>
+        </dl>
+        <div class="acts">
+          <a class="btn btn-ink" href="https://www.google.com/maps/search/?api=1&amp;query=Flanel+Route+Afrane+km+3.5+Sfax" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Itinéraire</a>
+          <a class="btn btn-line" href="https://ig.me/m/flanelsfax" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>Message Instagram</a>
+        </div>
+      </div>
+      <figure><img src="assets/slow-morning.jpg" width="900" height="1600" loading="lazy" alt="Petit-déjeuner sur un chemin de table en jute : café, œuf au bacon, pain, brownie, cinnamon roll et jus."></figure>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap"><span>© Flanel · Salon de thé · Sfax</span><a href="https://www.instagram.com/flanelsfax/" target="_blank" rel="noopener">@flanelsfax</a></div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, KEY = 'flanel-theme';
+    try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    document.querySelector('[data-toggle]').addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

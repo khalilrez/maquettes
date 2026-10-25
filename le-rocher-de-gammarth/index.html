@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Rocher de Gammarth — Restaurant &amp; lounge vue mer</title>
+<meta name="description" content="Le Rocher de Gammarth, restaurant et lounge face à la Méditerranée, Complexe La Tour Blanche. Ouvert tous les jours de 13h à minuit en service non-stop. 26 136 132.">
+<meta name="theme-color" content="#F5F2EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D141B" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Le Rocher de Gammarth">
+<meta property="og:title" content="Le Rocher de Gammarth — Une table face à la Méditerranée">
+<meta property="og:description" content="Carpaccio de poulpe, filet de bœuf truffe et pistache, raviolis au saumon… Tous les jours de 13h à minuit, service non-stop.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La terrasse du Rocher sous les parasols, face à la mer et à la côte de Gammarth">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #F5F2EC;
+    --paper: #FFFFFF;
+    --ink: #15202A;
+    --muted: #56626D;
+    --line: #DED8CD;
+    --cognac: #B85F24;
+    --cognac-ink: #9A4C18;
+    --sea: #2C6B86;
+    --sea-ink: #23586F;
+    --slate: #15202A;
+    --focus: #9A4C18;
+    --shadow: 0 30px 60px -36px rgba(21, 32, 42, .5);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0D141B; --paper: #141E27; --ink: #EEE9E0; --muted: #A9B4BE; --line: #24313D;
+      --cognac-ink: #EB9A62; --sea-ink: #7FC0DA; --focus: #EB9A62;
+      --shadow: 0 30px 60px -36px rgba(0,0,0,.9);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0D141B; --paper: #141E27; --ink: #EEE9E0; --muted: #A9B4BE; --line: #24313D;
+    --cognac-ink: #EB9A62; --sea-ink: #7FC0DA; --focus: #EB9A62;
+    --shadow: 0 30px 60px -36px rgba(0,0,0,.9);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 Figtree, system-ui, sans-serif; overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 3px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 90; background: var(--paper); color: var(--ink); padding: 10px 14px; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1240px, 100% - 40px); margin-inline: auto; }
+  h1, h2, h3 { font-family: Italiana, Georgia, serif; font-weight: 400; }
+  h2 { font-size: clamp(42px, 5.6vw, 72px); line-height: 1; margin: 0 0 20px; letter-spacing: .01em; }
+  h3 { font-size: 28px; line-height: 1.1; margin: 0 0 6px; }
+  p { margin: 0 0 1em; }
+  .eyebrow { font: 700 12px/1.2 Figtree, sans-serif; letter-spacing: .28em; text-transform: uppercase; color: var(--cognac-ink); margin: 0 0 18px; }
+  .lead { font-size: 19px; color: var(--muted); max-width: 54ch; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 12px 24px; border-radius: 4px; font: 700 14px/1 Figtree, sans-serif; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; border: 1.5px solid transparent; transition: background .15s, color .15s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-cognac { background: var(--cognac); color: #fff; }
+  .btn-cognac:hover { background: #A2521D; }
+  .btn-light { border-color: rgba(255,255,255,.7); color: #fff; }
+  .btn-light:hover { background: rgba(255,255,255,.12); }
+  .btn-out { border-color: var(--ink); color: var(--ink); }
+  .btn-out:hover { background: var(--ink); color: var(--bg); }
+
+  .top { position: sticky; top: 0; z-index: 50; background: var(--slate); color: #EEE9E0; }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 68px; }
+  .brand { text-decoration: none; display: flex; flex-direction: column; line-height: 1; }
+  .brand b { font: 400 28px/1 Italiana, serif; letter-spacing: .08em; }
+  .brand small { font: 600 10px/1 Figtree, sans-serif; letter-spacing: .42em; text-transform: uppercase; color: #E9A877; margin-top: 4px; }
+  .nav { display: flex; align-items: center; gap: 26px; }
+  .nav a.l { text-decoration: none; font-size: 14.5px; font-weight: 500; color: #B9C3CC; }
+  .nav a.l:hover { color: #fff; }
+  .toggle { width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,.25); background: transparent; color: #EEE9E0; display: grid; place-items: center; cursor: pointer; }
+  .toggle svg { width: 18px; height: 18px; }
+  .top .btn { min-height: 44px; padding: 10px 18px; }
+  @media (max-width: 960px) { .nav a.l { display: none; } .nav { gap: 10px; } }
+  @media (max-width: 420px) { .top .btn span { display: none; } .top .btn { padding: 10px 13px; } }
+
+  .hero { position: relative; color: #fff; background: var(--slate); }
+  .hero .img { position: relative; height: min(78vh, 760px); min-height: 520px; overflow: hidden; }
+  .hero .img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+  .hero .img::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,20,27,0) 30%, rgba(13,20,27,.78) 100%), linear-gradient(90deg, rgba(13,20,27,.62), rgba(13,20,27,.15) 65%); }
+  .hero .txt { position: absolute; left: 0; right: 0; bottom: clamp(36px, 6vw, 70px); z-index: 1; }
+  .hero .kicker { text-shadow: 0 1px 10px rgba(0,0,0,.7); font: 600 13px/1 Figtree, sans-serif; letter-spacing: .34em; text-transform: uppercase; color: #F2C29E; margin: 0 0 16px; }
+  .hero h1 { margin: 0; font-size: clamp(72px, 13vw, 190px); line-height: .82; letter-spacing: .01em; }
+  .hero .sub { font-size: clamp(18px, 1.8vw, 22px); color: #E4E8EC; margin: 20px 0 28px; max-width: 42ch; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .strip { background: var(--slate); border-top: 1px solid rgba(255,255,255,.1); }
+  .strip ul { list-style: none; margin: 0 auto; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); }
+  .strip li { padding: 22px 24px; border-left: 1px solid rgba(255,255,255,.1); color: #C9D1D8; font-size: 15.5px; }
+  .strip li:first-child { border-left: 0; padding-left: 0; }
+  .strip b { display: block; font: 700 11px/1.2 Figtree, sans-serif; letter-spacing: .26em; text-transform: uppercase; color: #E9A877; margin-bottom: 6px; }
+  .strip a { color: #fff; text-decoration: none; }
+  @media (max-width: 760px) { .strip ul { grid-template-columns: 1fr; } .strip li { border-left: 0; border-top: 1px solid rgba(255,255,255,.1); padding: 16px 0; } .strip li:first-child { border-top: 0; } }
+
+  section { padding-block: clamp(70px, 9vw, 120px); }
+
+  .intro .grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(32px, 6vw, 90px); align-items: center; }
+  .intro .pics { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .intro .pics img { width: 100%; object-fit: cover; }
+  .intro .pics img:first-child { grid-column: span 2; aspect-ratio: 16/9; }
+  .intro .pics img:not(:first-child) { aspect-ratio: 4/5; }
+  .pull { margin: 28px 0 0; padding-top: 24px; border-top: 1px solid var(--line); font: 400 30px/1.2 Italiana, serif; }
+  .pull small { display: block; font: 600 12px/1 Figtree, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-top: 12px; }
+  @media (max-width: 860px) { .intro .grid { grid-template-columns: 1fr; } }
+
+  .carte { background: var(--paper); border-block: 1px solid var(--line); }
+  .carte .head { display: flex; justify-content: space-between; align-items: end; gap: 30px; flex-wrap: wrap; margin-bottom: 46px; }
+  .carte .head p { color: var(--muted); max-width: 42ch; margin: 0; }
+  .dishes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 28px; }
+  .dish { margin: 0; }
+  .dish .ph { overflow: hidden; }
+  .dish img { width: 100%; aspect-ratio: 4/5; object-fit: cover; transition: transform .5s; }
+  .dish:hover img { transform: scale(1.03); }
+  .dish figcaption { display: grid; grid-template-columns: auto 1fr; gap: 14px; padding-top: 16px; }
+  .dish .n { font: 400 24px/1 Italiana, serif; color: var(--cognac-ink); padding-top: 4px; }
+  .dish h3 { font-size: 27px; }
+  .dish p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  @media (max-width: 960px) { .dishes { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .dishes { gap: 26px 14px; } .dish h3 { font-size: 21px; } .dish p { font-size: 14px; } .dish figcaption { grid-template-columns: 1fr; gap: 4px; padding-top: 10px; } .dish .n { font-size: 18px; } }
+  .also { margin-top: 50px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--line); }
+  .also div { padding: 24px 26px; border-left: 1px solid var(--line); }
+  .also div:first-child { border-left: 0; }
+  .also b { display: block; font: 400 24px/1.1 Italiana, serif; margin-bottom: 6px; }
+  .also p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  @media (max-width: 860px) { .also { grid-template-columns: 1fr; } .also div { border-left: 0; border-top: 1px solid var(--line); } .also div:first-child { border-top: 0; } }
+
+  .golden { position: relative; color: #fff; background: #0D141B; padding: 0; }
+  .golden .g { display: grid; grid-template-columns: 1fr 1fr; min-height: 640px; }
+  .golden .g > img { width: 100%; height: 100%; object-fit: cover; }
+  .golden .t { padding: clamp(40px, 7vw, 100px); display: flex; flex-direction: column; justify-content: center; background: linear-gradient(160deg, #1A2733, #0D141B); }
+  .golden .eyebrow { color: #F2C29E; }
+  .golden p { color: #C9D1D8; font-size: 18px; max-width: 42ch; }
+  .golden .mini { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 18px; }
+  .golden .mini img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+  @media (max-width: 860px) { .golden .g { grid-template-columns: 1fr; } .golden .g > img { height: 380px; } }
+
+  .gallery .g { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-auto-rows: 260px; gap: 12px; }
+  .gallery img { width: 100%; height: 100%; object-fit: cover; }
+  .gallery img:first-child { grid-row: span 2; }
+  @media (max-width: 760px) { .gallery .g { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; } .gallery img:first-child { grid-column: span 2; grid-row: auto; } }
+
+  .info { background: var(--slate); color: #EEE9E0; }
+  .info .eyebrow { color: #F2C29E; }
+  .info .grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 90px); align-items: start; }
+  .big-hours { font: 400 clamp(56px, 8vw, 104px)/.95 Italiana, serif; margin: 6px 0 4px; }
+  .big-hours span { color: #E9A877; font-family: Figtree, sans-serif; font-weight: 300; font-size: .6em; vertical-align: .18em; }
+  .note { color: #B9C3CC; }
+  .rows { margin: 0; }
+  .rows div { display: grid; grid-template-columns: 140px 1fr; gap: 16px; padding: 16px 0; border-top: 1px solid rgba(255,255,255,.14); }
+  .rows dt { font: 700 11px/1.8 Figtree, sans-serif; letter-spacing: .24em; text-transform: uppercase; color: #E9A877; }
+  .rows dd { margin: 0; }
+  .info .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  @media (max-width: 860px) { .info .grid { grid-template-columns: 1fr; } .rows div { grid-template-columns: 1fr; gap: 2px; } }
+
+  footer { background: #0A1016; color: #8F9BA6; padding: 40px 0 120px; text-align: center; font-size: 14.5px; }
+  footer b { display: block; font: 400 30px/1 Italiana, serif; color: #EEE9E0; margin-bottom: 10px; letter-spacing: .06em; }
+  footer p { margin: 0; }
+  @media (min-width: 761px) { footer { padding-bottom: 40px; } }
+
+  .callbar { position: fixed; z-index: 60; left: 0; right: 0; bottom: 0; display: none; gap: 1px; background: #0A1016; }
+  .callbar .btn { flex: 1; border-radius: 0; min-height: 56px; }
+  .callbar .btn-dark { background: var(--slate); color: #fff; }
+  @media (max-width: 760px) { .callbar { display: flex; } }
+</style>
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/le-rocher-de-gammarth/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/le-rocher-de-gammarth/">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour Le Rocher de Gammarth. Non affiliée à l’établissement.</div>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.5 8.5 0 1 1 21 11.5Z"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Le Rocher de Gammarth, retour en haut"><b>Le Rocher</b><small>Gammarth</small></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="l" href="#table">La table</a>
+      <a class="l" href="#carte">La carte</a>
+      <a class="l" href="#terrasse">La terrasse</a>
+      <a class="l" href="#infos">Infos</a>
+      <button class="toggle" type="button" data-toggle aria-label="Changer de thème clair ou sombre"><svg aria-hidden="true"><use href="#i-moon"/></svg></button>
+      <a class="btn btn-cognac" href="tel:+21626136132"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Réserver</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="t-hero" style="padding:0">
+    <div class="img"><img src="assets/terrasse-mer.jpg" width="1440" height="1080" alt="La terrasse du Rocher sous les parasols, tables dressées face à la mer et à la côte de Gammarth"></div>
+    <div class="txt">
+      <div class="wrap">
+        <p class="kicker">Restaurant · Lounge · Gammarth</p>
+        <h1 id="t-hero">Le Rocher</h1>
+        <p class="sub">Une table face à la Méditerranée, où le produit est roi. Du déjeuner au dîner, en service non-stop.</p>
+        <div class="cta">
+          <a class="btn btn-cognac" href="tel:+21626136132"><svg aria-hidden="true"><use href="#i-phone"/></svg>Réserver une table</a>
+          <a class="btn btn-light" href="#carte">Découvrir la carte</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="strip">
+    <ul class="wrap">
+      <li><b>Tous les jours</b>13h → minuit, service non-stop</li>
+      <li><b>Réservation</b><a href="tel:+21626136132">26 136 132</a> · <a href="tel:+21636307662">36 307 662</a></li>
+      <li><b>Adresse</b>Av. Taieb Mhiri, Complexe La Tour Blanche, Gammarth</li>
+    </ul>
+  </div>
+
+  <section id="table" class="intro" aria-labelledby="t-table">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">La table</p>
+        <h2 id="t-table">Sur les flots de la Méditerranée</h2>
+        <p class="lead">Perché au-dessus de la mer, Le Rocher vous reçoit pour un déjeuner au soleil, un dîner à la bougie ou une soirée d’été sur la terrasse. Dans l’assiette : la fraîcheur d’abord, des ingrédients soigneusement sélectionnés et une cuisine sincère, généreuse et maîtrisée.</p>
+        <p class="pull">« Une table où le produit est roi, et où le plaisir se partage. »<small>La cuisine du Rocher</small></p>
+      </div>
+      <div class="pics">
+        <img src="assets/table-mer.jpg" width="1440" height="962" loading="lazy" alt="Table dressée au bord de la baie vitrée, la mer en arrière-plan">
+        <img src="assets/table-grill.jpg" width="962" height="1203" loading="lazy" alt="Grillade servie sur pierre chaude, purée et carpaccio, devant la mer">
+        <img src="assets/salle-vue.jpg" width="962" height="1203" loading="lazy" alt="La salle lumineuse, chaises blanches et vue sur la baie de Gammarth">
+      </div>
+    </div>
+  </section>
+
+  <section id="carte" class="carte" aria-labelledby="t-carte">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">La carte</p>
+          <h2 id="t-carte">De l’entrée au dessert</h2>
+        </div>
+        <p>Quelques assiettes signature, à découvrir sur place. La carte complète et les suggestions du jour sont présentées à table.</p>
+      </div>
+      <div class="dishes">
+        <figure class="dish"><div class="ph"><img src="assets/carpaccio-poulpe.jpg" width="962" height="1203" loading="lazy" alt="Carpaccio de poulpe en fines tranches, tomates cerises et roquette"></div><figcaption><span class="n">I</span><div><h3>Carpaccio de poulpe</h3><p>Tel un tableau : couleurs, finesse et fraîcheur.</p></div></figcaption></figure>
+        <figure class="dish"><div class="ph"><img src="assets/filet-boeuf.jpg" width="962" height="1203" loading="lazy" alt="Filet de bœuf nappé de sauce truffe, pistaches, sur mousseline de pommes de terre"></div><figcaption><span class="n">II</span><div><h3>Filet de bœuf truffe &amp; pistache</h3><p>Posé sur une mousseline de pommes de terre.</p></div></figcaption></figure>
+        <figure class="dish"><div class="ph"><img src="assets/raviolis-saumon.jpg" width="962" height="1203" loading="lazy" alt="Raviolis nappés de crème au saumon et d’œufs de lompe"></div><figcaption><span class="n">III</span><div><h3>Raviolis au saumon</h3><p>Crème au saumon, œufs de lompe qui éclatent en bouche.</p></div></figcaption></figure>
+        <figure class="dish"><div class="ph"><img src="assets/spaghetti-crevettes.jpg" width="962" height="1203" loading="lazy" alt="Spaghettis aux crevettes saisies dans une assiette blanche"></div><figcaption><span class="n">IV</span><div><h3>Spaghettis aux crevettes</h3><p>Des pâtes qui sentent la mer et le soleil.</p></div></figcaption></figure>
+        <figure class="dish"><div class="ph"><img src="assets/poulpe-snacke.jpg" width="962" height="1203" loading="lazy" alt="Poulpe snacké sur salade dans une assiette bleue"></div><figcaption><span class="n">V</span><div><h3>Poulpe snacké</h3><p>Tendresse, fraîcheur et gourmandise.</p></div></figcaption></figure>
+        <figure class="dish"><div class="ph"><img src="assets/profiteroles.jpg" width="962" height="1203" loading="lazy" alt="Profiteroles glacées nappées de coulis de chocolat"></div><figcaption><span class="n">VI</span><div><h3>Profiteroles glacées</h3><p>Artisanales, faites le jour même, coulis de chocolat.</p></div></figcaption></figure>
+      </div>
+      <div class="also">
+        <div><b>Burrata</b><p>Tendre à l’extérieur, extrêmement fondante à l’intérieur.</p></div>
+        <div><b>Vins de sélection</b><p>Pour accompagner chaque expérience culinaire.</p></div>
+        <div><b>Saveurs thaï</b><p>Les spécialités de Wok Thai, servies au Rocher.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="terrasse" class="golden" aria-labelledby="t-golden">
+    <div class="g">
+      <img src="assets/terrasse-soir.jpg" width="1080" height="720" loading="lazy" alt="La terrasse au crépuscule, lampadaires allumés et mer en contrebas">
+      <div class="t">
+        <p class="eyebrow">La terrasse</p>
+        <h2 id="t-golden">The golden hour is the best hour</h2>
+        <p>Quand le soleil descend sur la baie, la terrasse s’allume pour de merveilleuses soirées d’été. Et les soirs de Champions League, les grands matchs passent sur nos écrans.</p>
+        <div class="mini">
+          <img src="assets/golden-hour.jpg" width="1080" height="1350" loading="lazy" alt="La colline de Gammarth et la mer au coucher du soleil">
+          <img src="assets/facade-nuit.jpg" width="1080" height="810" loading="lazy" alt="L’enseigne Le Rocher illuminée le soir">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" aria-label="Galerie">
+    <div class="wrap g">
+      <img src="assets/salle-olivier.jpg" width="962" height="1203" loading="lazy" alt="La salle autour de l’olivier, fauteuils noirs et tables dressées">
+      <img src="assets/salade-crevettes.jpg" width="962" height="1203" loading="lazy" alt="Salade aux crevettes et noix">
+      <img src="assets/burrata.jpg" width="962" height="1203" loading="lazy" alt="Assiette de burrata servie face à la mer">
+      <img src="assets/vins.jpg" width="1440" height="1080" loading="lazy" alt="Trois bouteilles de vin de la sélection du Rocher">
+      <img src="assets/entree.jpg" width="720" height="1280" loading="lazy" alt="L’entrée du Rocher, enseigne et bassin turquoise">
+    </div>
+  </section>
+
+  <section id="infos" class="info" aria-labelledby="t-info">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Infos &amp; réservation</p>
+        <h2 id="t-info">On vous garde une table</h2>
+        <p class="big-hours">13h <span>→</span> 00h</p>
+        <p class="note">Tous les jours, service non-stop. Réservation conseillée le week-end.</p>
+        <div class="cta">
+          <a class="btn btn-cognac" href="tel:+21626136132"><svg aria-hidden="true"><use href="#i-phone"/></svg>26 136 132</a>
+          <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Rocher+Gammarth+La+Tour+Blanche"><svg aria-hidden="true"><use href="#i-pin"/></svg>Itinéraire</a>
+          <a class="btn btn-light" href="https://ig.me/m/lerocherdegammarth"><svg aria-hidden="true"><use href="#i-msg"/></svg>Message</a>
+        </div>
+      </div>
+      <dl class="rows">
+        <div><dt>Adresse</dt><dd>Avenue Taieb Mhiri, Complexe La Tour Blanche, Gammarth 2078</dd></div>
+        <div><dt>Téléphones</dt><dd><a href="tel:+21626136132">+216 26 136 132</a><br><a href="tel:+21636307662">+216 36 307 662</a></dd></div>
+        <div><dt>Horaires</dt><dd>Tous les jours de 13h à minuit</dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/lerocherdegammarth/">@lerocherdegammarth</a></dd></div>
+        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/lerochergammarth/">Le Rocher Gammarth</a></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Le Rocher</b>
+    <p>Restaurant · Lounge · Complexe La Tour Blanche, Gammarth · <a href="tel:+21626136132">26 136 132</a></p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-cognac" href="tel:+21626136132">Appeler</a>
+  <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Le+Rocher+Gammarth+La+Tour+Blanche">Itinéraire</a>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement, KEY = 'rocher-theme';
+    try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    document.querySelector('[data-toggle]').addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

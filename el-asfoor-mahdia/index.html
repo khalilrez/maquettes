@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Asfoor — Salon de thé &amp; restaurant, Corniche de Mahdia</title>
+<meta name="description" content="El Asfoor, salon de thé et restaurant sur la Corniche de Mahdia, côté Iberostar Royal El Mansour : petit-déjeuner tunisien, brunch, pizza, crêpes, thé et soirées live. Réservation au 58 329 025.">
+<meta name="theme-color" content="#F6EEE7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1B1411" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="El Asfoor">
+<meta property="og:title" content="El Asfoor — Salon de thé &amp; restaurant, Mahdia">
+<meta property="og:description" content="Une atmosphère chaleureuse, des détails raffinés et des saveurs à ressentir. Sur la Corniche de Mahdia. Réservez au 58 329 025.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Petit-déjeuner servi dans le jardin d’El Asfoor, chaises en rotin sur la pelouse">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #F6EEE7;
+    --paper: #FFFBF7;
+    --blush: #EFD9CF;
+    --ink: #2A1F1A;
+    --muted: #65554C;
+    --line: #E2D2C6;
+    --gold: #B0823E;
+    --gold-ink: #8A5F22;
+    --copper: #A4552B;
+    --sage: #7D9584;
+    --sage-soft: #DCE5DD;
+    --espresso: #1F1714;
+    --on-dark: #F6EEE7;
+    --on-dark-soft: #CDBFB3;
+    --focus: #A4552B;
+    --shadow: 0 24px 50px -30px rgba(42, 31, 26, .6);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #1B1411;
+      --paper: #241B17;
+      --blush: #2E221D;
+      --ink: #F4EAE2;
+      --muted: #C2B1A5;
+      --line: #3A2D27;
+      --gold-ink: #E2B66E;
+      --sage-soft: #1F2723;
+      --focus: #E2B66E;
+      --shadow: 0 24px 50px -30px rgba(0, 0, 0, .9);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #1B1411;
+    --paper: #241B17;
+    --blush: #2E221D;
+    --ink: #F4EAE2;
+    --muted: #C2B1A5;
+    --line: #3A2D27;
+    --gold-ink: #E2B66E;
+    --sage-soft: #1F2723;
+    --focus: #E2B66E;
+    --shadow: 0 24px 50px -30px rgba(0, 0, 0, .9);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17.5px/1.65 Jost, system-ui, sans-serif; overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 60; background: var(--paper); color: var(--ink); padding: 10px 14px; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1200px, 100% - 40px); margin-inline: auto; }
+  h1, h2, h3 { font-family: Italiana, 'Times New Roman', serif; font-weight: 400; }
+  h2 { font-size: clamp(36px, 5vw, 58px); line-height: 1.05; margin: 0 0 18px; }
+  h3 { font-size: 26px; line-height: 1.15; margin: 0 0 6px; }
+  p { margin: 0 0 1em; }
+  .eyebrow { font: 600 12.5px/1.2 Jost, sans-serif; letter-spacing: .32em; text-transform: uppercase; color: var(--gold-ink); margin: 0 0 14px; }
+  .lead { font-size: 19px; color: var(--muted); max-width: 56ch; }
+
+  /* thin gold frame, as on their photos */
+  .framed { position: relative; }
+  .framed::after { content: ""; position: absolute; inset: 12px; border: 1px solid rgba(232, 196, 130, .85); pointer-events: none; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 12px 26px; font: 600 14.5px/1 Jost, sans-serif; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; border: 1.5px solid transparent; transition: background .15s, color .15s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-gold { background: var(--gold); color: #1F1714; }
+  .btn-gold:hover { background: #C49451; }
+  .btn-line { border-color: rgba(246,238,231,.6); color: #F6EEE7; }
+  .btn-line:hover { background: rgba(246,238,231,.1); }
+  .btn-ink { background: var(--ink); color: var(--bg); }
+  .btn-out { border-color: var(--ink); color: var(--ink); }
+
+  /* header */
+  .top { position: sticky; top: 0; z-index: 40; background: var(--espresso); color: var(--on-dark); border-bottom: 1px solid rgba(176,130,62,.35); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 70px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #F6EEE7; }
+  .brand svg { width: 38px; height: 38px; color: var(--gold); flex: none; }
+  .brand b { font: 500 17px/1 Jost, sans-serif; letter-spacing: .32em; }
+  .nav { display: flex; align-items: center; gap: 26px; }
+  .nav a.l { text-decoration: none; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--on-dark-soft); }
+  .nav a.l:hover { color: #fff; }
+  .toggle { width: 44px; height: 44px; border: 1px solid rgba(246,238,231,.3); background: transparent; color: #F6EEE7; display: grid; place-items: center; cursor: pointer; border-radius: 50%; }
+  .toggle svg { width: 18px; height: 18px; }
+  .top .btn { min-height: 44px; padding: 10px 18px; }
+  @media (max-width: 940px) { .nav a.l { display: none; } .nav { gap: 10px; } }
+  @media (max-width: 420px) { .top .btn span { display: none; } .top .btn { padding: 10px 13px; } .brand b { letter-spacing: .22em; font-size: 15px; } }
+
+  /* hero */
+  .hero { background: var(--espresso); color: var(--on-dark); position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0; opacity: .07; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23F6EEE7' stroke-width='1.4'%3E%3Cpath d='M24 2l8 14-8 8-8-8zM24 46l8-14-8-8-8 8zM2 24l14-8 8 8-8 8zM46 24l-14-8-8 8 8 8z'/%3E%3C/g%3E%3C/svg%3E"); }
+  .hero .wrap { position: relative; display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(28px, 5vw, 64px); align-items: center; padding-block: clamp(48px, 7vw, 88px); }
+  .hero .bird { width: 64px; height: 64px; color: var(--gold); margin-bottom: 18px; }
+  .hero h1 { margin: 0; font-size: clamp(64px, 9vw, 128px); line-height: .9; letter-spacing: .02em; }
+  .hero .sub { font: 500 13px/1 Jost, sans-serif; letter-spacing: .42em; text-transform: uppercase; color: #E2B66E; margin: 18px 0 26px; }
+  .hero .tag { font-size: clamp(19px, 1.8vw, 22px); color: var(--on-dark-soft); max-width: 40ch; margin-bottom: 32px; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero .where { margin: 28px 0 0; font-size: 15px; color: var(--on-dark-soft); display: flex; gap: 10px; align-items: flex-start; }
+  .hero .where svg { width: 18px; height: 18px; flex: none; margin-top: 3px; color: #E2B66E; }
+  .trip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; align-items: start; }
+  .trip figure { margin: 0; }
+  .trip img { width: 100%; aspect-ratio: 9/16; object-fit: cover; }
+  .trip figure:nth-child(2) { margin-top: 48px; }
+  .trip figure:nth-child(3) { margin-top: 18px; }
+  @media (max-width: 880px) {
+    .hero .wrap { grid-template-columns: 1fr; }
+    .trip img { aspect-ratio: 3/5; }
+    .trip figure:nth-child(2) { margin-top: 28px; }
+  }
+
+  section { padding-block: clamp(64px, 9vw, 112px); }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+  @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+
+  /* ambiance */
+  .ambiance .mosaic { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 14px; }
+  .ambiance .mosaic img { width: 100%; height: 100%; object-fit: cover; }
+  .ambiance .mosaic .wide { grid-column: span 2; aspect-ratio: 16/8; }
+  .ambiance .mosaic .sq { aspect-ratio: 1/1; }
+  .facts { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 0; }
+  .facts li { display: grid; grid-template-columns: 36px 1fr; gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); }
+  .facts li:last-child { border-bottom: 1px solid var(--line); }
+  .facts svg { width: 24px; height: 24px; color: var(--gold-ink); margin-top: 2px; }
+  .facts b { display: block; font-weight: 600; }
+  .facts span { color: var(--muted); font-size: 15.5px; }
+
+  /* day */
+  .day { background: var(--blush); }
+  .head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 18px 40px; margin-bottom: 44px; }
+  .head .lead { margin: 0; max-width: 44ch; }
+  .moments { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .moment { background: var(--paper); box-shadow: var(--shadow); display: flex; flex-direction: column; }
+  .moment img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+  .moment .t { padding: 22px 24px 26px; }
+  .moment .when { font: 600 12px/1 Jost, sans-serif; letter-spacing: .26em; text-transform: uppercase; color: var(--copper); display: block; margin-bottom: 10px; }
+  :root[data-theme="dark"] .moment .when { color: #E2B66E; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .moment .when { color: #E2B66E; } }
+  .moment p { margin: 0; color: var(--muted); font-size: 16px; }
+  @media (max-width: 960px) { .moments { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .moments { grid-template-columns: 1fr; } .moment { flex-direction: row; } .moment img { width: 42%; aspect-ratio: auto; } .moment .t { padding: 16px; } .moment h3 { font-size: 23px; } }
+
+  /* sweets band */
+  .sweets { background: var(--espresso); color: var(--on-dark); }
+  .sweets .eyebrow { color: #E2B66E; }
+  .sweets .lead { color: var(--on-dark-soft); }
+  .strip { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 40px; }
+  .strip figure { margin: 0; }
+  .strip img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+  .strip figcaption { font: 500 13px/1.3 Jost, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: var(--on-dark-soft); margin-top: 10px; }
+  @media (max-width: 900px) { .strip { grid-template-columns: repeat(3, 1fr); } .strip figure:nth-child(n+4) { display: none; } }
+  @media (max-width: 520px) { .strip { grid-template-columns: 1fr 1fr; } .strip figure:nth-child(n+4) { display: block; } .strip figure:nth-child(5) { display: none; } .strip figcaption { font-size: 11.5px; letter-spacing: .12em; } }
+  .tea { margin-top: 56px; display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(24px, 5vw, 64px); align-items: center; }
+  .tea img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+  .tea blockquote { margin: 0; font: 400 clamp(28px, 3.4vw, 42px)/1.2 Italiana, serif; }
+  .tea p { color: var(--on-dark-soft); margin-top: 18px; }
+  @media (max-width: 760px) { .tea { grid-template-columns: 1fr; } }
+
+  /* soirées */
+  .nights .grid { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 18px; align-items: stretch; }
+  .nights .intro { background: var(--sage-soft); padding: clamp(24px, 3vw, 36px); display: flex; flex-direction: column; justify-content: space-between; gap: 24px; }
+  .nights .intro p { color: var(--muted); }
+  .nights .grid img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4; }
+  @media (max-width: 860px) { .nights .grid { grid-template-columns: 1fr 1fr; } .nights .intro { grid-column: span 2; } }
+
+  /* info */
+  .info { background: var(--paper); }
+  .info .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: stretch; }
+  .rows { margin: 0 0 28px; }
+  .rows div { display: grid; grid-template-columns: 130px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .rows dt { font: 600 12px/1.8 Jost, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
+  .rows dd { margin: 0; font-weight: 500; overflow-wrap: anywhere; }
+  .rows a { color: var(--gold-ink); }
+  .info .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  .info .pic { position: relative; min-height: 420px; }
+  .info .pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 860px) { .info .grid { grid-template-columns: 1fr; } .info .pic { min-height: 320px; } .rows div { grid-template-columns: 96px 1fr; } }
+
+  footer { background: var(--espresso); color: var(--on-dark-soft); padding: 48px 0 110px; font-size: 15px; text-align: center; }
+  footer svg { width: 46px; height: 46px; color: var(--gold); margin: 0 auto 12px; display: block; }
+  footer b { display: block; font: 500 18px/1 Jost, sans-serif; letter-spacing: .4em; color: #F6EEE7; margin-bottom: 14px; }
+  footer a { color: #F6EEE7; }
+  footer p { margin: 0; }
+  @media (min-width: 701px) { footer { padding-bottom: 48px; } }
+
+  .callbar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 50; display: none; gap: 8px; }
+  .callbar .btn { flex: 1; box-shadow: 0 12px 30px -10px rgba(0,0,0,.55); padding-inline: 10px; }
+  .callbar .btn-ink { background: #1F1714; color: #F6EEE7; border-color: #B0823E; }
+  @media (max-width: 700px) { .callbar { display: flex; } }
+</style>
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/el-asfoor-mahdia/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/el-asfoor-mahdia/">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour El Asfoor. Non affiliée à l’établissement.</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="bird" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="29"/><path d="M19 38c4 6 12 9 20 6 6-2 9-8 9-14 0-4-2-7-5-8"/><path d="M43 22c-2-3-6-4-9-2-3 2-3 6-1 9"/><path d="M43 22l5-1-3 4"/><circle cx="41.5" cy="24.5" r=".9" fill="currentColor"/><path d="M33 29c-6-1-12-6-14-13 6 1 11 5 14 9"/><path d="M33 29c-5 2-11 1-16-3 5-2 11-1 15 1"/><path d="M19 38l-5 3 6 0"/><path d="M28 45l-2 5M34 45l1 5"/></g></symbol>
+</svg>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="El Asfoor, accueil"><svg aria-hidden="true"><use href="#bird"/></svg><b>EL ASFOOR</b></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="l" href="#ambiance">Ambiance</a>
+      <a class="l" href="#carte">La carte</a>
+      <a class="l" href="#soirees">Soirées</a>
+      <a class="l" href="#infos">Infos</a>
+      <button class="toggle" type="button" data-toggle aria-label="Changer de thème (clair / sombre)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+      <a class="btn btn-gold" href="tel:+21658329025"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>Réserver</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="titre" style="padding:0">
+    <div class="wrap">
+      <div>
+        <svg class="bird" aria-hidden="true"><use href="#bird"/></svg>
+        <h1 id="titre">El Asfoor</h1>
+        <p class="sub">Salon de thé · Restaurant</p>
+        <p class="tag">Une atmosphère chaleureuse, des détails raffinés et des saveurs à ressentir. Bienvenue sur la Corniche de Mahdia.</p>
+        <div class="cta">
+          <a class="btn btn-gold" href="tel:+21658329025">Réserver · 58 329 025</a>
+          <a class="btn btn-line" href="#carte">Voir la carte</a>
+        </div>
+        <p class="where"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Corniche de Mahdia, côté hôtel Iberostar Royal El Mansour</p>
+      </div>
+      <div class="trip">
+        <figure class="framed"><img src="assets/four.jpg" width="900" height="1600" alt="Le four à pizza en mosaïque cuivrée, frappé du logo El Asfoor, flammes allumées"></figure>
+        <figure class="framed"><img src="assets/jardin-petit-dej.jpg" width="900" height="1600" alt="Un petit-déjeuner tunisien servi dans le jardin, devant la véranda vitrée et les palmiers"></figure>
+        <figure class="framed"><img src="assets/suspensions.jpg" width="720" height="1280" alt="Suspensions en rotin devant des claustras blancs ajourés, sous le logo de l’oiseau"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="ambiance" class="ambiance" aria-labelledby="t-amb">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Ambiance</p>
+        <h2 id="t-amb">Entre jardin, velours et lumière douce</h2>
+        <p class="lead">Des fauteuils roses, des banquettes en velours vert sauge, des claustras blancs et des suspensions en rotin à l’intérieur ; une pelouse, des palmiers et des parasols dehors. Ici, chacun trouve son coin, du café du matin au dîner.</p>
+        <ul class="facts">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 22V12M12 12c0-5 4-8 9-8-1 5-4 8-9 8zM12 14c0-4-3-7-8-7 0 4 3 7 8 7z"/></svg><div><b>Le jardin</b><span>Tables au soleil ou à l’ombre des palmiers, sur la Corniche.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3"/><path d="M3 11h18v5H3zM5 16v3M19 16v3"/></svg><div><b>Le salon</b><span>Fauteuils et banquettes pour prendre le temps, entre amis ou en famille.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><div><b>Les soirées</b><span>Musique live certains soirs : le programme est annoncé sur Instagram.</span></div></li>
+        </ul>
+      </div>
+      <div class="mosaic">
+        <img class="wide" src="assets/jardin.jpg" width="1600" height="677" loading="lazy" alt="Le jardin d’El Asfoor vu d’en haut : pelouse, palmiers, parasols et tables">
+        <img class="sq" src="assets/salon-rose.jpg" width="1080" height="1080" loading="lazy" alt="Une coupe glacée aux pommes devant les fauteuils roses du salon">
+        <img class="sq" src="assets/banquette.jpg" width="900" height="1600" loading="lazy" alt="Banquette en velours vert sauge et table en marbre, le bar en arrière-plan">
+      </div>
+    </div>
+  </section>
+
+  <section id="carte" class="day" aria-labelledby="t-carte">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">La carte</p>
+          <h2 id="t-carte">Du matin au soir</h2>
+        </div>
+        <p class="lead">Petit-déjeuner, brunch, plats, pizza, crêpes et douceurs : un aperçu de ce qui vous attend. La carte complète et les prix sont donnés par téléphone.</p>
+      </div>
+      <div class="moments">
+        <article class="moment">
+          <img src="assets/petit-dej-tunisien.jpg" width="1080" height="1080" loading="lazy" alt="Plateau de petit-déjeuner tunisien dans des plats en céramique bleue et blanche : beignets, chakchouka, dattes, tartinables">
+          <div class="t"><span class="when">Le matin</span><h3>Petit-déjeuner tunisien</h3><p>Un authentique petit-déjeuner tunisien, servi dans la céramique, et des croissants fraîchement préparés.</p></div>
+        </article>
+        <article class="moment">
+          <img src="assets/wok.jpg" width="720" height="1280" loading="lazy" alt="Wok de bœuf aux légumes dans un bol bleu">
+          <div class="t"><span class="when">Midi &amp; soir</span><h3>Les plats du chef</h3><p>Le wok de bœuf, les nouveautés qui sortent de la cuisine, les crêpes salées avec leurs sauces.</p></div>
+        </article>
+        <article class="moment">
+          <img src="assets/pizza-mer.jpg" width="640" height="1136" loading="lazy" alt="Pizza aux fruits de mer : crevettes, moules et basilic">
+          <div class="t"><span class="when">Du four</span><h3>Pizza</h3><p>Cuites dans le four en mosaïque, dont la pizza aux fruits de mer.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sweets" aria-labelledby="t-sw">
+    <div class="wrap">
+      <div class="head" style="margin-bottom:0">
+        <div>
+          <p class="eyebrow">Sweets &amp; Cup of Art</p>
+          <h2 id="t-sw">Le côté salon de thé</h2>
+        </div>
+        <p class="lead">Du chocolat intense à la pistache crémeuse : chaque bouchée compte.</p>
+      </div>
+      <div class="strip">
+        <figure><img src="assets/fondant.jpg" width="1080" height="1080" loading="lazy" alt="Fondant au chocolat coulant"><figcaption>Fondant</figcaption></figure>
+        <figure><img src="assets/crepe.jpg" width="1080" height="1080" loading="lazy" alt="Crêpe sucrée à la banane, sauce chocolat et biscuit"><figcaption>Crêpes sucrées</figcaption></figure>
+        <figure><img src="assets/opera.jpg" width="1080" height="1080" loading="lazy" alt="Gâteau au chocolat glacé, feuille d’or"><figcaption>Pâtisserie</figcaption></figure>
+        <figure><img src="assets/chocolat.jpg" width="1080" height="1080" loading="lazy" alt="Boisson chocolatée crémeuse en verre, chantilly et biscuit"><figcaption>Boissons</figcaption></figure>
+        <figure><img src="assets/smoothie.jpg" width="1080" height="1080" loading="lazy" alt="Smoothie rouge aux fruits avec menthe, en terrasse"><figcaption>Smoothies</figcaption></figure>
+      </div>
+      <div class="tea">
+        <figure class="framed" style="margin:0"><img src="assets/the.jpg" width="1080" height="1080" loading="lazy" alt="Théière en argent, verre de thé à la menthe et citron, amandes, noix de cajou et douceurs"></figure>
+        <div>
+          <p class="eyebrow">Tea time</p>
+          <blockquote>« Si vous n’avez pas encore goûté le thé El Asfoor, c’est le moment idéal. »</blockquote>
+          <p>Servi à la théière d’argent, avec ses fruits secs et une douceur maison.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="soirees" class="nights" aria-labelledby="t-nights">
+    <div class="wrap grid">
+      <div class="intro">
+        <div>
+          <p class="eyebrow">Nos soirées</p>
+          <h2 id="t-nights">Where evenings glow</h2>
+          <p>Chanteuses et chanteurs, clavier, guitare : certains soirs, El Asfoor passe en mode live. Et pendant le Ramadan, le salon se fait plus doux encore.</p>
+        </div>
+        <a class="btn btn-ink" href="https://www.instagram.com/el__asfoor/">Le programme sur Instagram</a>
+      </div>
+      <img src="assets/live-chanteuse.jpg" width="900" height="1600" loading="lazy" alt="Une chanteuse en robe noire au micro, lors d’une soirée live">
+      <img src="assets/live-piano.jpg" width="720" height="1280" loading="lazy" alt="Un chanteur accompagné au clavier lors d’une soirée">
+    </div>
+  </section>
+
+  <section id="infos" class="info" aria-labelledby="t-info">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Infos pratiques</p>
+        <h2 id="t-info">On vous garde une table</h2>
+        <dl class="rows">
+          <div><dt>Adresse</dt><dd>Corniche de Mahdia, côté hôtel Iberostar Royal El Mansour, 5111 Mahdia</dd></div>
+          <div><dt>Réserver</dt><dd><a href="tel:+21658329025">+216 58 329 025</a></dd></div>
+          <div><dt>Horaires</dt><dd>Par téléphone ou via Instagram</dd></div>
+          <div><dt>Livraison</dt><dd><a href="https://glovoapp.com/fr/tn/mahdia/stores/el-asfoor-mdh-1z74q">Commander sur Glovo</a></dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/el__asfoor/">@el__asfoor</a></dd></div>
+        </dl>
+        <div class="cta">
+          <a class="btn btn-ink" href="tel:+21658329025">Appeler</a>
+          <a class="btn btn-out" href="https://www.google.com/maps/search/?api=1&amp;query=El+Asfoor+Corniche+Mahdia">Itinéraire</a>
+          <a class="btn btn-out" href="https://ig.me/m/el__asfoor">Message</a>
+        </div>
+      </div>
+      <div class="pic framed"><img src="assets/ftayer.jpg" width="1080" height="1080" loading="lazy" alt="Petit-déjeuner tunisien en terrasse : beignet, plats en céramique, café et jus"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg aria-hidden="true"><use href="#bird"/></svg>
+    <b>EL ASFOOR</b>
+    <p>Salon de thé · Restaurant · Corniche de Mahdia · <a href="tel:+21658329025">58 329 025</a> · <a href="https://www.instagram.com/el__asfoor/">Instagram</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Réserver">
+  <a class="btn btn-gold" href="tel:+21658329025">Appeler</a>
+  <a class="btn btn-ink" href="https://www.google.com/maps/search/?api=1&amp;query=El+Asfoor+Corniche+Mahdia">Itinéraire</a>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement, KEY = 'asfoor-theme';
+    try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    document.querySelector('[data-toggle]').addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>
