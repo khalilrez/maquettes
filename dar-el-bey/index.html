@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dar El Bey · دار الباي — Restaurant tunisien, Ras Jebel (Bizerte)</title>
+<meta name="description" content="Dar El Bey, restaurant de cuisine tunisienne authentique sur la route de Rafraf, croisement Sounine, Ras Jebel (Bizerte). Cadre raffiné, vue imprenable, soirées tarab. Réservation : 98 985 161.">
+<meta name="theme-color" content="#B3121F">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dar El Bey · دار الباي">
+<meta property="og:locale" content="fr_TN">
+<meta property="og:title" content="Dar El Bey · دار الباي — Ras Jebel, Bizerte">
+<meta property="og:description" content="Cuisine tunisienne authentique · cadre raffiné · vue imprenable. Route Rafraf, croisement Sounine, Ras Jebel. Réservation : 98 985 161.">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/dar-el-bey/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/dar-el-bey/">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dar El Bey, دار الباي, en rouge chéchia sur une bande de kilim, à côté d'un coucher de soleil sur les champs de Ras Jebel">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M16 22h32l5 34H11z' fill='%23B3121F'/%3E%3Cellipse cx='32' cy='22' rx='16' ry='4' fill='%237E0C16'/%3E%3Cpath d='M32 20c6 2 10 8 11 18' stroke='%23111' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Karla:ital,wght@0,400..800;1,400&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+<style>
+  /* Colours taken from the house: chéchia red of the logo, white lace tablecloths,
+     the mergoum on the chairs (yellow, green, blue, black), Nabeul ceramic blue,
+     copper pots, the gilded frame of the Bey, the teal wall behind it. */
+  :root {
+    --lace: #FBF6EE;
+    --lace-2: #F2E9DA;
+    --lace-line: rgb(156 120 84 / .10);
+    --card: #FFFFFF;
+    --ink: #2B1B15;
+    --ink-soft: #6A5246;
+    --chechia: #B3121F;
+    --chechia-deep: #7E0C16;
+    --on-red: #FFF7EE;
+    --gold: #C59A33;
+    --copper: #B4652B;
+    --nabeul: #1F4FA0;
+    --kilim-y: #E8B419;
+    --kilim-g: #2F8A4A;
+    --teal: #1D4E4B;
+    --teal-ink: #F4EDE2;
+    --night: #24090C;
+    --night-2: #3A1115;
+    --line: color-mix(in srgb, var(--ink) 14%, transparent);
+    --focus: #1F4FA0;
+    --shadow: 0 1px 2px rgb(43 27 21 / .08), 0 10px 28px rgb(43 27 21 / .12);
+
+    --ar-display: "Reem Kufi", "Noto Kufi Arabic", "Amiri", sans-serif;
+    --serif: "Amiri", "Noto Naskh Arabic", Georgia, serif;
+    --sans: "Karla", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+    --gutter: clamp(16px, 4vw, 44px);
+    --max: 1200px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --lace: #1B1311;
+      --lace-2: #241916;
+      --lace-line: rgb(232 200 160 / .06);
+      --card: #2A1E1A;
+      --ink: #F5EADD;
+      --ink-soft: #CDB9A9;
+      --chechia: #E2453B;
+      --chechia-deep: #8E1520;
+      --gold: #DDB65A;
+      --copper: #D98A4E;
+      --nabeul: #7FA7EA;
+      --teal: #12312F;
+      --night: #120506;
+      --night-2: #2A0C10;
+      --focus: #F2C14E;
+      --shadow: 0 1px 2px rgb(0 0 0 / .35), 0 10px 28px rgb(0 0 0 / .4);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --lace: #1B1311; --lace-2: #241916; --lace-line: rgb(232 200 160 / .06); --card: #2A1E1A;
+    --ink: #F5EADD; --ink-soft: #CDB9A9; --chechia: #E2453B; --chechia-deep: #8E1520; --gold: #DDB65A;
+    --copper: #D98A4E; --nabeul: #7FA7EA; --teal: #12312F; --night: #120506; --night-2: #2A0C10;
+    --focus: #F2C14E; --shadow: 0 1px 2px rgb(0 0 0 / .35), 0 10px 28px rgb(0 0 0 / .4);
+    color-scheme: dark;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--lace);
+    color: var(--ink);
+    font: 400 1.0625rem/1.6 var(--sans);
+    overflow-x: clip;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .wrap { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
+  [lang="ar"] { font-family: var(--serif); line-height: 1.5; }
+  h1, h2, h3 { margin: 0; font-weight: 700; }
+
+  .skip { position: absolute; left: 12px; top: -80px; background: var(--card); color: var(--ink); padding: 10px 14px; border-radius: 8px; z-index: 20; }
+  .skip:focus { top: 12px; }
+
+  /* The mergoum on the chairs, woven as an SVG tile */
+  .kilim {
+    height: 40px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='40' shape-rendering='crispEdges'%3E%3Crect width='96' height='40' fill='%23B3121F'/%3E%3Crect y='5' width='96' height='3' fill='%23161012'/%3E%3Cg%3E%3Crect x='0' y='8' width='12' height='10' fill='%23E8B419'/%3E%3Crect x='12' y='8' width='12' height='10' fill='%232F8A4A'/%3E%3Crect x='24' y='8' width='12' height='10' fill='%231F4FA0'/%3E%3Crect x='36' y='8' width='12' height='10' fill='%23F7F0E4'/%3E%3Crect x='48' y='8' width='12' height='10' fill='%23E8B419'/%3E%3Crect x='60' y='8' width='12' height='10' fill='%231F4FA0'/%3E%3Crect x='72' y='8' width='12' height='10' fill='%232F8A4A'/%3E%3Crect x='84' y='8' width='12' height='10' fill='%23F7F0E4'/%3E%3C/g%3E%3Crect y='18' width='96' height='4' fill='%23161012'/%3E%3Cg%3E%3Crect x='0' y='22' width='12' height='10' fill='%232F8A4A'/%3E%3Crect x='12' y='22' width='12' height='10' fill='%23F7F0E4'/%3E%3Crect x='24' y='22' width='12' height='10' fill='%23E8B419'/%3E%3Crect x='36' y='22' width='12' height='10' fill='%231F4FA0'/%3E%3Crect x='48' y='22' width='12' height='10' fill='%232F8A4A'/%3E%3Crect x='60' y='22' width='12' height='10' fill='%23E8B419'/%3E%3Crect x='72' y='22' width='12' height='10' fill='%23F7F0E4'/%3E%3Crect x='84' y='22' width='12' height='10' fill='%231F4FA0'/%3E%3C/g%3E%3Crect y='32' width='96' height='3' fill='%23161012'/%3E%3Cpath d='M6 2l3 2-3 2-3-2zM30 2l3 2-3 2-3-2zM54 2l3 2-3 2-3-2zM78 2l3 2-3 2-3-2zM18 36l3 2-3 2-3-2zM42 36l3 2-3 2-3-2zM66 36l3 2-3 2-3-2zM90 36l3 2-3 2-3-2z' fill='%23E8B419'/%3E%3C/svg%3E") repeat-x left center / auto 100%;
+  }
+  .kilim.thin { height: 22px; }
+
+  /* Nabeul ceramic border: blue scallops, yellow hearts, green leaves */
+  .ceramic {
+    height: 26px;
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='26'%3E%3Crect width='52' height='26' fill='%23FBF6EE'/%3E%3Cpath d='M0 0h52v4H0z' fill='%231F4FA0'/%3E%3Cpath d='M2 4a24 18 0 0 0 48 0' fill='none' stroke='%231F4FA0' stroke-width='3'/%3E%3Ccircle cx='26' cy='11' r='4.5' fill='%23E8B419'/%3E%3Cpath d='M18 9c-4 0-6 3-6 6 3 0 6-2 6-6zM34 9c4 0 6 3 6 6-3 0-6-2-6-6z' fill='%232F8A4A'/%3E%3Ccircle cx='0' cy='22' r='2' fill='%23B3121F'/%3E%3Ccircle cx='52' cy='22' r='2' fill='%23B3121F'/%3E%3Cpath d='M0 24h52v2H0z' fill='%231F4FA0'/%3E%3C/svg%3E") repeat-x left top / auto 100%;
+  }
+
+  /* ---------- Header ---------- */
+  .top { background: var(--lace); position: relative; z-index: 2; }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand svg { width: 30px; height: 34px; flex: none; }
+  .brand b { font: 700 1.15rem/1 var(--serif); letter-spacing: .02em; }
+  .brand span[lang="ar"] { font: 600 1.2rem/1 var(--ar-display); color: var(--chechia); }
+  .nav { display: flex; gap: clamp(14px, 2.2vw, 28px); font-weight: 700; font-size: .95rem; }
+  .nav a { text-decoration: none; padding: 6px 2px; border-bottom: 2px solid transparent; }
+  .nav a:hover { border-bottom-color: var(--chechia); }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 48px; padding: 12px 22px; border-radius: 999px;
+    font: 800 1rem/1 var(--sans); letter-spacing: .02em; text-decoration: none;
+    border: 2px solid transparent; cursor: pointer;
+  }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-red { background: var(--chechia); color: var(--on-red); box-shadow: 0 4px 0 var(--chechia-deep); }
+  .btn-red:hover { background: var(--chechia-deep); }
+  .btn-line { border-color: currentColor; color: var(--ink); background: transparent; }
+  .btn-line:hover { background: color-mix(in srgb, var(--ink) 8%, transparent); }
+  .top .btn { min-height: 42px; padding: 10px 18px; font-size: .95rem; }
+  @media (max-width: 860px) { .nav { display: none; } }
+  @media (max-width: 400px) { .brand b { display: none; } }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    background-color: var(--lace);
+    background-image:
+      radial-gradient(circle at 50% 50%, transparent 5px, var(--lace-line) 5.5px, var(--lace-line) 7px, transparent 7.5px),
+      radial-gradient(circle at 50% 50%, var(--lace-line) 1.6px, transparent 2px);
+    background-size: 26px 26px, 13px 13px;
+    padding-block: clamp(32px, 6vw, 80px) clamp(48px, 7vw, 96px);
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+  .kicker { margin: 0 0 22px; font-weight: 700; font-size: .9rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); }
+  .kicker span { color: var(--chechia); }
+  .title { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+  .title .chechia { width: clamp(64px, 9vw, 96px); height: auto; margin-bottom: -6px; margin-inline-start: .3em; }
+  .title .ar {
+    font: 700 clamp(4.6rem, 15vw, 9.5rem)/1 var(--ar-display); color: var(--chechia);
+    letter-spacing: 0; padding-bottom: .05em;
+  }
+  .title .fr {
+    font: 700 clamp(2rem, 5vw, 3.4rem)/1 var(--serif); letter-spacing: .08em; text-transform: uppercase;
+    display: flex; align-items: center; gap: .4em;
+  }
+  .title .fr::before, .title .fr::after { content: ""; width: .9em; height: 2px; background: var(--gold); }
+  .slogan {
+    margin: 30px 0 6px; padding: 14px 20px; max-width: 32rem;
+    border-inline-start: 5px solid var(--chechia);
+    background: color-mix(in srgb, var(--card) 80%, transparent);
+    border-radius: 0 14px 14px 0;
+  }
+  .slogan q { display: block; quotes: "«" "»"; font: 700 clamp(1.45rem, 3vw, 1.9rem)/1.5 var(--serif); }
+  .slogan .gloss { margin: 4px 0 0; color: var(--ink-soft); font-style: italic; font-size: .98rem; }
+  .tagline { margin: 22px 0 28px; font: 800 clamp(.95rem, 1.8vw, 1.1rem)/1.5 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
+  .tagline i { font-style: normal; color: var(--gold); padding-inline: .35em; }
+  .ctas { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .cta-note { margin: 16px 0 0; color: var(--ink-soft); font-size: .95rem; }
+  .cta-note a { font-weight: 800; color: var(--ink); text-decoration-color: var(--chechia); text-underline-offset: 3px; }
+
+  .hero-art { position: relative; justify-self: center; width: min(100%, 460px); padding-bottom: 40px; }
+  .arch {
+    padding: 14px; border-radius: 999px 999px 22px 22px;
+    background: radial-gradient(circle, #E8B419 2px, transparent 2.6px) 0 0 / 14px 14px, #1F4FA0;
+    box-shadow: var(--shadow);
+  }
+  .arch-in { border-radius: 999px 999px 12px 12px; overflow: hidden; outline: 3px solid var(--gold); outline-offset: -3px; }
+  .arch img { width: 100%; aspect-ratio: 762 / 1000; object-fit: cover; object-position: center 35%; }
+  .arch-label {
+    position: absolute; right: -6px; top: 18%; transform: rotate(4deg);
+    background: var(--chechia); color: var(--on-red); padding: 8px 14px; border-radius: 6px;
+    font: 700 .9rem/1.2 var(--sans); box-shadow: var(--shadow);
+  }
+  .plate {
+    position: absolute; left: -26px; bottom: 0; width: clamp(140px, 36%, 190px); aspect-ratio: 1;
+    border-radius: 50%; overflow: hidden;
+    border: 7px solid #FBF6EE;
+    box-shadow: 0 0 0 5px var(--nabeul), 0 0 0 9px #FBF6EE, 0 0 0 11px var(--kilim-y), var(--shadow);
+  }
+  .plate img { width: 100%; height: 100%; object-fit: cover; }
+
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-art { width: min(100% - 24px, 380px); margin-top: 8px; }
+    .plate { left: -10px; }
+    .arch-label { right: -8px; }
+  }
+
+  /* ---------- Section heads ---------- */
+  section { scroll-margin-top: 12px; }
+  .head { display: grid; grid-template-columns: auto 1fr; align-items: end; gap: 10px 28px; margin-bottom: clamp(28px, 4vw, 44px); }
+  .head h2 { font: 700 clamp(2.4rem, 6vw, 4rem)/1 var(--serif); }
+  .head .ar-label { font: 600 clamp(1.4rem, 3vw, 2rem)/1.2 var(--ar-display); color: var(--chechia); justify-self: start; }
+  .head .lead { grid-column: 1 / -1; margin: 6px 0 0; max-width: 60ch; color: var(--ink-soft); font-size: 1.1rem; }
+  @media (max-width: 600px) {
+    .head { grid-template-columns: 1fr; gap: 8px; }
+    .head .ar-label { order: 3; }
+    .head .lead { order: 4; }
+  }
+  .eyebrow { grid-column: 1 / -1; margin: 0; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: .82rem; color: var(--copper); }
+
+  blockquote.ar-quote { margin: 0; }
+  .ar-quote p { margin: 0; font: 700 clamp(1.5rem, 3.4vw, 2.2rem)/1.5 var(--serif); }
+  .ar-quote footer { margin-top: 6px; font: italic 400 1rem/1.4 var(--sans); opacity: .85; }
+
+  /* ---------- La maison (the teal wall behind the Bey) ---------- */
+  .maison { background: var(--teal); color: var(--teal-ink); padding-block: clamp(56px, 8vw, 104px); }
+  .maison .head .ar-label { color: var(--kilim-y); }
+  .maison .head .lead { color: color-mix(in srgb, var(--teal-ink) 82%, transparent); }
+  .maison .eyebrow { color: var(--kilim-y); }
+  .bento {
+    display: grid; gap: 14px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, minmax(70px, 1fr));
+    grid-template-areas:
+      "v v v v v n n n s s s s"
+      "v v v v v n n n s s s s"
+      "v v v v v n n n s s s s"
+      "v v v v v b b b b r r r"
+      "v v v v v b b b b r r r"
+      "v v v v v q q q q q q q";
+  }
+  .bento figure { margin: 0; position: relative; overflow: hidden; border-radius: 14px; background: #0006; }
+  .bento img { width: 100%; height: 100%; object-fit: cover; }
+  .b-view img { object-position: center top; }
+  .bento figcaption {
+    position: absolute; left: 10px; bottom: 10px; right: 10px; width: fit-content; max-width: calc(100% - 20px);
+    background: rgb(20 10 8 / .72); color: #FFF7EE; padding: 5px 10px; border-radius: 6px;
+    font: 700 .85rem/1.3 var(--sans);
+  }
+  .b-view { grid-area: v; }
+  .b-night { grid-area: n; }
+  .b-sign { grid-area: s; }
+  .b-bey { grid-area: b; background: #2B1B15 !important; padding: 10px;
+    border: 6px solid var(--gold); border-radius: 4px !important;
+    box-shadow: inset 0 0 0 2px #7a5a1c, 0 0 0 2px #7a5a1c; }
+  .b-bey img { border-radius: 2px; }
+  .b-radio { grid-area: r; }
+  .b-quote { grid-area: q; background: transparent !important; display: flex; align-items: center; padding: 6px 4px; }
+  .b-quote .ar-quote p { color: #FFF7EE; }
+  .b-quote .ar-quote footer { color: var(--kilim-y); }
+  .maison-notes { list-style: none; padding: 0; margin: 28px 0 0; display: flex; flex-wrap: wrap; gap: 10px; }
+  .maison-notes li { border: 1.5px solid color-mix(in srgb, var(--teal-ink) 40%, transparent); padding: 6px 14px; border-radius: 999px; font-weight: 700; font-size: .95rem; }
+
+  @media (max-width: 860px) {
+    .bento {
+      grid-template-columns: 1fr 1fr; grid-template-rows: none; grid-auto-rows: auto;
+      grid-template-areas: "v v" "n s" "b r" "q q";
+    }
+    .b-view img { aspect-ratio: 4 / 4.4; }
+    .b-night img, .b-sign img { aspect-ratio: 3 / 4.6; }
+    .b-bey { padding: 6px; border-width: 4px; }
+    .b-bey img { aspect-ratio: 1; }
+    .b-quote { padding: 8px 0 0; }
+    .b-radio img { aspect-ratio: 1; }
+    .b-quote .ar-quote p { font-size: 1.35rem; }
+  }
+
+  /* ---------- À table ---------- */
+  .table { padding-block: clamp(56px, 8vw, 104px) clamp(40px, 6vw, 72px); }
+  .plates {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(12px, 1.8vw, 22px);
+  }
+  .plates li { margin: 0; }
+  .plates figure { margin: 0; height: 100%; display: flex; flex-direction: column; background: var(--card); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); }
+  .plates img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+  .plates figcaption { padding: 12px 14px 14px; display: grid; gap: 2px; }
+  .plates figcaption b { font: 700 1.15rem/1.25 var(--serif); }
+  .plates figcaption [lang="ar"] { font-size: 1.05rem; color: var(--chechia); line-height: 1.55; }
+  .plates .feature { grid-column: span 2; grid-row: span 2; }
+  .plates .feature img { aspect-ratio: auto; flex: 1; min-height: 0; height: 100%; }
+  .plates .feature figcaption [lang="ar"] { font-size: 1.35rem; }
+  .plates .feature figcaption b { font-size: 1.45rem; }
+
+  .chef {
+    margin-top: clamp(24px, 4vw, 44px);
+    display: grid; grid-template-columns: minmax(0, 360px) 1fr; gap: clamp(20px, 4vw, 56px); align-items: center;
+    background: var(--lace-2); border-radius: 22px; padding: clamp(16px, 3vw, 32px);
+  }
+  .chef-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .chef-photos img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 12px; }
+  .chef p.fr-quote { margin: 0 0 16px; font: 400 clamp(1.3rem, 2.6vw, 1.75rem)/1.35 var(--serif); }
+  .chef p.fr-quote::before { content: "« "; color: var(--chechia); }
+  .chef p.fr-quote::after { content: " »"; color: var(--chechia); }
+  .chef .small { margin: 0; color: var(--ink-soft); }
+  .chef .ar-quote p { color: var(--chechia); font-size: clamp(1.3rem, 2.6vw, 1.7rem); }
+
+  .menu-note {
+    margin: clamp(24px, 4vw, 40px) 0 0; display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between;
+    border: 2px dashed color-mix(in srgb, var(--copper) 60%, transparent); border-radius: 16px; padding: 16px 20px;
+  }
+  .menu-note p { margin: 0; font-weight: 700; }
+
+  @media (max-width: 960px) { .plates { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 700px) {
+    .plates { grid-template-columns: 1fr 1fr; }
+    .plates .feature { grid-row: auto; }
+    .plates .feature img { aspect-ratio: 4 / 3; height: auto; flex: none; }
+    .chef { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Soirées ---------- */
+  .soirees {
+    background:
+      radial-gradient(1200px 500px at 85% -10%, color-mix(in srgb, var(--gold) 22%, transparent), transparent 60%),
+      linear-gradient(180deg, var(--night-2), var(--night));
+    color: #FBEFE2; padding-block: clamp(56px, 8vw, 104px);
+  }
+  .soirees .head .ar-label { color: var(--kilim-y); }
+  .soirees .eyebrow { color: #E8C46A; }
+  .soirees .head .lead { color: #E7D2C0; }
+  .soirees-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(24px, 4vw, 56px); align-items: start; }
+  .flyers { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .flyers figure { margin: 0; border-radius: 14px; overflow: hidden; border: 2px solid #C59A33; background: #000; }
+  .flyers img { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: top; }
+  .flyers img.contain { object-fit: contain; object-position: center; background: #000; }
+  .flyers figcaption { padding: 10px 12px; font-weight: 700; font-size: .95rem; background: #160506; }
+  .tarab-quote { margin-top: 26px; }
+  .tarab-quote .ar-quote p { color: #FFE7A8; }
+  .tarab-quote .ar-quote footer { color: #E7D2C0; }
+  .guests h3 { font: 700 1.6rem/1.2 var(--serif); margin-bottom: 4px; }
+  .guests .sub { margin: 0 0 16px; color: #E7D2C0; }
+  .names { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .names li { padding: 7px 14px; border-radius: 999px; background: rgb(255 255 255 / .07); border: 1px solid rgb(232 196 106 / .45); font-weight: 700; font-size: .98rem; }
+  .names li.star { background: #C59A33; color: #24090C; border-color: #C59A33; }
+
+  .fetes { margin-top: clamp(40px, 6vw, 72px); }
+  .fetes h3 { font: 700 clamp(1.8rem, 4vw, 2.6rem)/1.1 var(--serif); }
+  .fetes h3 span[lang="ar"] { display: inline-block; margin-inline-start: 14px; color: var(--kilim-y); font-family: var(--serif); font-size: .8em; font-weight: 700; }
+  .fete-cards { list-style: none; padding: 0; margin: 22px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .fete-cards li { background: rgb(255 255 255 / .06); border-radius: 16px; padding: 20px; border-top: 6px solid var(--c, #B3121F); }
+  .fete-cards b { display: block; font: 700 1.3rem/1.2 var(--serif); }
+  .fete-cards [lang="ar"] { margin: 6px 0 0; color: #FFE7A8; font-size: 1.2rem; }
+  .fete-cards p { margin: 6px 0 0; color: #E7D2C0; }
+  .fetes .ctas { margin-top: 22px; }
+  .soirees .btn-line { color: #FBEFE2; }
+  .soirees .btn-red { background: #D3202E; box-shadow: 0 4px 0 #6d0a12; }
+
+  @media (max-width: 860px) {
+    .soirees-grid { grid-template-columns: 1fr; }
+    .fete-cards { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Infos ---------- */
+  .infos { padding-block: clamp(56px, 8vw, 104px); }
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 3vw, 28px); }
+  .card { background: var(--card); border-radius: 18px; padding: clamp(20px, 3vw, 32px); box-shadow: var(--shadow); border-top: 6px solid var(--chechia); }
+  .card h3 { font: 700 1.5rem/1.2 var(--serif); margin-bottom: 12px; }
+  address { font-style: normal; font-size: 1.15rem; line-height: 1.5; }
+  .copy-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  .copy { font: 800 .95rem/1 var(--sans); min-height: 44px; padding: 10px 16px; border-radius: 999px; border: 2px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; }
+  .copy:hover { background: color-mix(in srgb, var(--ink) 8%, transparent); }
+  .contact { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+  .contact a, .contact .row { display: grid; grid-template-columns: 40px 1fr; align-items: center; gap: 12px; padding: 10px 6px; border-radius: 10px; text-decoration: none; }
+  .contact a:hover { background: var(--lace-2); }
+  .contact .ico { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--lace-2); color: var(--chechia); }
+  .contact .ico svg { width: 20px; height: 20px; }
+  .contact small { display: block; color: var(--ink-soft); font-size: .85rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .contact strong { font-size: 1.1rem; }
+  .hours { margin-top: 18px; padding: 14px 16px; border-radius: 12px; background: var(--lace-2); }
+  .hours p { margin: 0; }
+  .hours .gap { color: var(--ink-soft); }
+  @media (max-width: 760px) { .info-grid { grid-template-columns: 1fr; } }
+
+  /* ---------- Footer ---------- */
+  .foot { background: var(--chechia-deep); color: #FFF1E6; }
+  .foot .wrap { padding-block: 32px 40px; display: grid; gap: 14px; justify-items: center; text-align: center; }
+  .foot .ar-big { font: 700 2.4rem/1.1 var(--ar-display); }
+  .foot .ar-quote p { font-size: 1.4rem; color: #FFE7A8; }
+  .foot p { margin: 0; }
+  .foot .fine { font-size: .85rem; opacity: .8; max-width: 60ch; }
+  .foot a { color: #FFF1E6; }
+
+  /* Phone call bar */
+  .callbar { display: none; }
+  @media (max-width: 700px) {
+    .callbar {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+      padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
+      background: color-mix(in srgb, var(--lace) 92%, transparent);
+      backdrop-filter: blur(8px); border-top: 1px solid var(--line);
+    }
+    .callbar .btn { min-height: 46px; padding: 10px 12px; box-shadow: none; }
+    body { padding-bottom: 66px; }
+  }
+</style>
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour Dar El Bey. Non affiliée à l’établissement.</div>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="chechia" viewBox="0 0 100 92">
+    <ellipse cx="50" cy="84" rx="40" ry="7" fill="#7E0C16"/>
+    <path d="M18 22 Q50 14 82 22 L90 82 Q50 92 10 82 Z" fill="#B3121F"/>
+    <path d="M18 22 Q50 14 82 22 L84 34 Q50 26 16 34 Z" fill="#000" opacity=".12"/>
+    <ellipse cx="50" cy="21" rx="32" ry="6" fill="#C8202C"/>
+    <path d="M50 20 C62 18 72 30 74 52" stroke="#151012" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M74 50 l-4 22 M74 50 l0 23 M74 50 l4 22" stroke="#151012" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM21.9 8c-.1-1.6-.4-3-1.6-4.2S17.6 2.2 16 2.1C14.3 2 9.7 2 8 2.1c-1.6.1-3 .4-4.2 1.6S2.2 6.4 2.1 8C2 9.7 2 14.3 2.1 16c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.7.1 6.3.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.7.1-6.3.2-8zm-2.1 9.8a3.3 3.3 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.7.4s-4.4.1-5.7-.4a3.3 3.3 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.7s-.1-4.4.4-5.7A3.300 3.300 0 0 1 6.3 4.6C7.6 4.1 10.6 4.2 12 4.200s4.4-.1 5.7.4a3.3 3.3 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.7s.1 4.4-.4 5.7z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Dar El Bey, accueil">
+      <svg aria-hidden="true"><use href="#chechia"/></svg>
+      <b>Dar El Bey</b>
+      <span lang="ar" dir="rtl">دار الباي</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#maison">La maison</a>
+      <a href="#table">À table</a>
+      <a href="#soirees">Soirées</a>
+      <a href="#infos">Infos</a>
+    </nav>
+    <a class="btn btn-red" href="tel:+21698985161"><svg aria-hidden="true"><use href="#i-phone"/></svg>Réserver</a>
+  </div>
+</header>
+<div class="kilim" role="presentation"></div>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker">Restaurant tunisien <span>·</span> Route Rafraf, Ras Jebel <span>·</span> Bizerte</p>
+        <h1 class="title" id="hero-title">
+          <svg class="chechia" width="96" height="88" aria-hidden="true"><use href="#chechia"/></svg>
+          <span class="ar" lang="ar" dir="rtl">دار الباي</span>
+          <span class="fr">Dar El Bey</span>
+        </h1>
+        <div class="slogan">
+          <q lang="ar" dir="rtl">اللي يشتهي شهوة يديرها في دار الباي</q>
+          <p class="gloss">Une envie ? C’est à Dar El Bey qu’on la satisfait.</p>
+        </div>
+        <p class="tagline">Cuisine tunisienne authentique<i>·</i>cadre raffiné<i>·</i>vue imprenable</p>
+        <div class="ctas">
+          <a class="btn btn-red" href="tel:+21698985161"><svg aria-hidden="true"><use href="#i-phone"/></svg>Réserver · 98 985 161</a>
+          <a class="btn btn-line" href="https://wa.me/21698985161"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+        </div>
+        <p class="cta-note">Réservation conseillée · <a href="#infos">Comment venir</a></p>
+      </div>
+
+      <div class="hero-art">
+        <div class="arch">
+          <div class="arch-in">
+            <img src="assets/hero-coucher-soleil.jpg" width="762" height="1100" fetchpriority="high"
+                 alt="Coucher de soleil sur les champs verts autour de Dar El Bey, vus depuis la terrasse au-dessus du mur blanc du jardin">
+          </div>
+        </div>
+        <p class="arch-label">Vue sur la campagne de Ras Jebel</p>
+        <div class="plate">
+          <img src="assets/ragout-nabeul.jpg" width="900" height="833"
+               alt="Un plat mijoté servi dans une assiette en céramique peinte de Nabeul, bleue et blanche">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ceramic" role="presentation"></div>
+
+  <section class="maison" id="maison" aria-labelledby="maison-title">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Le cadre</p>
+        <h2 id="maison-title">La maison</h2>
+        <p class="ar-label" lang="ar" dir="rtl">الدار</p>
+        <p class="lead">Un cadre luxueux et raffiné, avec une vue imprenable : kilims colorés, nappes en dentelle blanche, céramiques peintes, cuivres, lanternes, et le portrait du Bey qui veille sur la salle. Le soir, la terrasse s’allume face aux champs.</p>
+      </div>
+
+      <div class="bento">
+        <figure class="b-view">
+          <img src="assets/terrasse-vue.jpg" width="900" height="875" loading="lazy"
+               alt="Table de la terrasse dressée avec des assiettes de Nabeul et une corbeille à pain, face aux champs verts et aux collines en fin de journée">
+          <figcaption>La terrasse, face aux champs</figcaption>
+        </figure>
+        <figure class="b-night">
+          <img src="assets/terrasse-nuit.jpg" width="506" height="900" loading="lazy"
+               alt="L’entrée de nuit, sous des guirlandes lumineuses : mur de pierre avec les lettres DAR EL BEY et دار الباي, porte en bois cloutée, agave en pot">
+          <figcaption>L’entrée, le soir</figcaption>
+        </figure>
+        <figure class="b-sign">
+          <img src="assets/enseigne.jpg" width="589" height="900" loading="lazy"
+               alt="Gros plan sur l’enseigne en relief DAR EL BEY et دار الباي sur un mur de pierres plates">
+          <figcaption>L’enseigne</figcaption>
+        </figure>
+        <figure class="b-bey">
+          <img src="assets/portrait-bey.jpg" width="900" height="650" loading="lazy"
+               alt="Détail du portrait du Bey dans son cadre doré sculpté : uniforme brodé d’or et décorations">
+          <figcaption>Le portrait du Bey</figcaption>
+        </figure>
+        <figure class="b-radio">
+          <img src="assets/salon-radio.jpg" width="900" height="892" loading="lazy"
+               alt="Coin de salle : comptoir en brique, napperon tissé, vase en cuivre, radio ancienne et une serviette rouge pliée dans un verre">
+          <figcaption>Cuivre, brique et radio d’antan</figcaption>
+        </figure>
+        <div class="b-quote">
+          <blockquote class="ar-quote">
+            <p lang="ar" dir="rtl">دار الباي دار العز و الدلال</p>
+            <footer>Dar El Bey, la maison de l’honneur et des petits soins.</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <ul class="maison-notes" aria-label="En bref">
+        <li>Salle traditionnelle</li>
+        <li>Terrasse avec vue</li>
+        <li>Entrée illuminée le soir</li>
+        <li>Chicha</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="table" id="table" aria-labelledby="table-title">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Cuisine tunisienne · recettes traditionnelles</p>
+        <h2 id="table-title">À table</h2>
+        <p class="ar-label" lang="ar" dir="rtl">البنة عنواننا</p>
+        <p class="lead">Un menu équilibré, réconfortant et bien généreux. Quelques assiettes, telles qu’on les sert à Dar El Bey : en céramique peinte, en cuivre, en pot de terre.</p>
+      </div>
+
+      <ul class="plates" aria-label="Quelques plats de la maison">
+        <li class="feature">
+          <figure>
+            <img src="assets/couscous.jpg" width="900" height="833" loading="lazy"
+                 alt="Une assiette de Nabeul garnie, tenue à bout de bras au-dessus de la table, avec une cuillère qui soulève la garniture">
+            <figcaption>
+              <b>Le couscous de Dar El Bey</b>
+              <span lang="ar" dir="rtl">ملا بنة في الكسكسي متاع دار الباي لا قبلو و لابعدو</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/brik.jpg" width="832" height="800" loading="lazy"
+                 alt="Une brik dorée et croustillante en triangle, posée avec un demi-citron vert sur une assiette blanche">
+            <figcaption><b>Brik d’antan</b><span lang="ar" dir="rtl">بريكة زمان</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/pain.jpg" width="832" height="800" loading="lazy"
+                 alt="Corbeille de petits pains frais dans un panier tressé à franges, doublé d’un tissu à carreaux rouges, devant un kilim">
+            <figcaption><b>Le pain, tout frais</b><span lang="ar" dir="rtl">الخبز فرشك في دار الباي</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/ojja.jpg" width="900" height="833" loading="lazy"
+                 alt="Plat mijoté à la sauce tomate surmonté d’un piment vert grillé, dans une assiette de Nabeul">
+            <figcaption><b>Mijoté au piment grillé</b><span>En céramique de Nabeul</span></figcaption>
+          </figure>
+        </li>
+                <li>
+          <figure>
+            <img src="assets/fruits-de-mer.jpg" width="900" height="900" loading="lazy"
+                 alt="Pâtes aux fruits de mer et grosses crevettes, décorées d’une rose de saumon, dans une assiette creuse noire">
+            <figcaption><b>Poissons & fruits de mer</b><span lang="ar" dir="rtl">إيجا ذوق واحكم وحدك</span></figcaption>
+          </figure>
+        </li>
+                <li>
+          <figure>
+            <img src="assets/escalopes.jpg" width="832" height="832" loading="lazy"
+                 alt="Escalopes grillées nappées de sauce crémeuse, avec des pâtes, sur un plat blanc devant un kilim">
+            <figcaption><b>Escalopes grillées</b><span>Sauce bien généreuse</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/pot-de-terre.jpg" width="900" height="675" loading="lazy"
+                 alt="Une jarre en terre cuite scellée de pâte, posée sur un plateau tressé avec un couteau">
+            <figcaption><b>Cuit en jarre de terre</b><span>Ouverte à table</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/fruits.jpg" width="832" height="800" loading="lazy"
+                 alt="Coupe de fruits sur pied en verre : pastèque, melon, raisins noirs et blancs, kiwi">
+            <figcaption><b>L’assiette de fruits</b><span lang="ar" dir="rtl">بعد الماكلة البنينة تو وقيت صحن غلة</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="assets/jus.jpg" width="900" height="833" loading="lazy"
+                 alt="Un jus de citron frais versé d’une carafe dans un verre à pied">
+            <figcaption><b>Jus frais & mojito</b><span lang="ar" dir="rtl">ألوان، نكهة، وانتعاش في كل كأس</span></figcaption>
+          </figure>
+        </li>
+      </ul>
+
+      <div class="chef">
+        <div class="chef-photos">
+          <img src="assets/cheffe.jpg" width="646" height="900" loading="lazy"
+               alt="La cheffe de Dar El Bey, en veste blanche et bleue, ouvre au couteau une jarre en terre cuite scellée">
+          <img src="assets/service.jpg" width="645" height="807" loading="lazy"
+               alt="Service à table : un serveur pose une marmite en métal sur une nappe en dentelle, à côté d’une carafe de jus">
+        </div>
+        <div>
+          <p class="fr-quote">Des recettes préparées avec passion, des produits de qualité et des saveurs qui racontent notre amour de la cuisine.</p>
+          <blockquote class="ar-quote">
+            <p lang="ar" dir="rtl">الجودة في المكونات... والإتقان في كل طبق</p>
+            <footer>La qualité dans les ingrédients, le soin dans chaque assiette.</footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="menu-note">
+        <p>La carte et les prix ? Demandez-nous, on vous conseille avec plaisir.</p>
+        <a class="btn btn-line" href="tel:+21698985161"><svg aria-hidden="true"><use href="#i-phone"/></svg>98 985 161</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="kilim thin" role="presentation"></div>
+
+  <section class="soirees" id="soirees" aria-labelledby="soirees-title">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Tarab · musique live · ambiance</p>
+        <h2 id="soirees-title">Soirées & invités</h2>
+        <p class="ar-label" lang="ar" dir="rtl">السهرات</p>
+        <p class="lead">Des soirées tarab avec musique live, une ambiance conviviale et de la bonne humeur. Les prochaines soirées sont annoncées sur notre Instagram.</p>
+      </div>
+
+      <div class="soirees-grid">
+        <div>
+          <div class="flyers">
+            <figure>
+              <img src="assets/soiree-walid-yassin.jpg" width="847" height="850" loading="lazy"
+                   alt="Affiche de la soirée de l’artiste Walid Yassin à Dar El Bey, devant un décor d’arcades dorées">
+              <figcaption>Soirée avec Walid Yassin</figcaption>
+            </figure>
+            <figure>
+              <img class="contain" src="assets/soiree-kamel-sahli.jpg" width="900" height="596" loading="lazy"
+                   alt="Affiche « Soirée mémorable, en live avec Kamel Sahli » à Dar El Bey">
+              <figcaption>« Soirée mémorable » avec Kamel Sahli</figcaption>
+            </figure>
+          </div>
+          <div class="tarab-quote">
+            <blockquote class="ar-quote">
+              <p lang="ar" dir="rtl">في دار الباي متلقا كان الزهو و الطرب</p>
+              <footer>À Dar El Bey, il n’y a que la fête et le tarab.</footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="guests">
+          <h3>Ils sont passés chez nous</h3>
+          <p class="sub">Artistes et personnalités tunisiennes qui ont chanté ou dîné à Dar El Bey.</p>
+          <ul class="names">
+            <li class="star">Lotfi Bouchnak</li>
+            <li class="star">Kamel Sahli</li>
+            <li class="star">Walid Yassin</li>
+            <li>Chab Bechir</li>
+            <li>Houcine El Efrit</li>
+            <li>Asma Ben Ahmed</li>
+            <li>Chamseddin Bacha</li>
+            <li>Sabrine Belaiech</li>
+            <li>Wajiha Jendoubi</li>
+            <li>Kafon</li>
+            <li>Zaza</li>
+            <li>Rahma Ben Afana</li>
+            <li>Fahmi Riahi</li>
+            <li>Imen Cherif</li>
+            <li>Najla Tounsia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fetes">
+        <h3>Vos fêtes chez nous <span lang="ar" dir="rtl">مرحبا بيكم</span></h3>
+        <ul class="fete-cards">
+          <li style="--c:#E8B419">
+            <b>Fête du bac</b>
+            <p lang="ar" dir="rtl">فرحة، ضحكات، ولمّة ما تتعوضش</p>
+            <p>Pour fêter la réussite entre amis et en famille.</p>
+          </li>
+          <li style="--c:#2F8A4A">
+            <b>Anniversaires</b>
+            <p lang="ar" dir="rtl">وين كل مناسبة تولّي أحلى</p>
+            <p>Réunissez les vôtres autour d’une grande table.</p>
+          </li>
+          <li style="--c:#D3202E">
+            <b>Dîner en amoureux</b>
+            <p lang="ar" dir="rtl">الرومنسية في دار الباي حاجة اخري</p>
+            <p>La terrasse, les lumières du soir, la vue au coucher du soleil.</p>
+          </li>
+        </ul>
+        <div class="ctas">
+          <a class="btn btn-red" href="tel:+21698985161"><svg aria-hidden="true"><use href="#i-phone"/></svg>Organiser une fête</a>
+          <a class="btn btn-line" href="https://wa.me/21698985161"><svg aria-hidden="true"><use href="#i-wa"/></svg>En parler sur WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="infos" id="infos" aria-labelledby="infos-title">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Venir à Dar El Bey</p>
+        <h2 id="infos-title">Infos & réservation</h2>
+        <p class="ar-label" lang="ar" dir="rtl">معلومات و حجز</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="card">
+          <h3>Adresse</h3>
+          <address id="adresse">Route Rafraf, croisement Sounine<br>Ras Jebel 7070, Bizerte, Tunisie</address>
+          <div class="copy-row">
+            <button class="copy" type="button" data-copy="#adresse" hidden>Copier l’adresse</button>
+            <a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=Dar%20El%20Bey%20Ras%20Jebel%20Rafraf"><svg aria-hidden="true"><use href="#i-pin"/></svg>Itinéraire</a>
+          </div>
+          <div class="hours">
+            <p><strong>Horaires :</strong> <span class="gap">bientôt en ligne. En attendant, appelez-nous avant de venir.</span></p>
+            <p><strong>Réservation conseillée</strong>, surtout les soirs de soirée.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Réserver &amp; nous suivre</h3>
+          <ul class="contact">
+            <li><a href="tel:+21698985161"><span class="ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><span><small>Téléphone · réservation</small><strong>98 985 161</strong></span></a></li>
+            <li><a href="https://wa.me/21698985161"><span class="ico"><svg aria-hidden="true"><use href="#i-wa"/></svg></span><span><small>WhatsApp</small><strong>+216 98 985 161</strong></span></a></li>
+            <li><a href="https://www.instagram.com/darelbey_tunisie/"><span class="ico"><svg aria-hidden="true"><use href="#i-ig"/></svg></span><span><small>Instagram · plats &amp; soirées</small><strong>@darelbey_tunisie</strong></span></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Dar%20El%20Bey%20Ras%20Jebel%20Rafraf"><span class="ico"><svg aria-hidden="true"><use href="#i-pin"/></svg></span><span><small>Google Maps</small><strong>Ouvrir l’itinéraire</strong></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="kilim thin" role="presentation"></div>
+  <div class="wrap">
+    <svg width="56" height="52" aria-hidden="true"><use href="#chechia"/></svg>
+    <p class="ar-big" lang="ar" dir="rtl">دار الباي</p>
+    <blockquote class="ar-quote">
+      <p lang="ar" dir="rtl">كل طريق يوصل للبنة... يوصل لدار الباي</p>
+    </blockquote>
+    <p>Dar El Bey · Route Rafraf, croisement Sounine, Ras Jebel 7070, Bizerte · <a href="tel:+21698985161">98 985 161</a></p>
+    <p class="fine">Maquette de site proposée à Dar El Bey. Photos et textes issus du compte Instagram @darelbey_tunisie.</p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Contact rapide">
+  <a class="btn btn-red" href="tel:+21698985161"><svg aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+  <a class="btn btn-line" href="https://wa.me/21698985161"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+</nav>
+
+<script>
+  // Progressive enhancement: the address stays selectable without this.
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    if (!navigator.clipboard) return;
+    btn.hidden = false;
+    btn.addEventListener('click', function () {
+      var text = document.querySelector(btn.dataset.copy).innerText.replace(/\s*\n\s*/g, ', ').trim();
+      navigator.clipboard.writeText(text).then(function () {
+        btn.textContent = 'Adresse copiée';
+        setTimeout(function () { btn.textContent = 'Copier l’adresse'; }, 1800);
+      });
+    });
+  });
+</script>
+</body>
+</html>

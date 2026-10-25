@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Gondole — Your casual place · Sousse</title>
+<meta name="description" content="La Gondole, Sousse: classy by day, casual by night. A restaurant by day and a club by night, with a new weekly programme every Monday. Recommended by Restaurant Guru since 2020. Reservations via Instagram.">
+<meta name="theme-color" content="#D9F21A" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#120E2B" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Gondole">
+<meta property="og:title" content="Gondole — your casual place · Sousse">
+<meta property="og:description" content="Classy by day, casual by night. A new programme every Monday, a poster for every night. Recommended by Restaurant Guru since 2020. Reservations via Instagram.">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/la-gondole/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/la-gondole/">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gondole oval wordmark on a lime and blue gradient, next to a fan of La Gondole night posters">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Chakra+Petch:wght@500;700&family=Unbounded:wght@600;900&display=swap">
+<style>
+  /* ---------- Tokens: light = "Classy by day" ---------- */
+  :root {
+    color-scheme: light;
+    --red: #E8261C;
+    --yellow: #FFE40A;
+    --lime: #D9F21A;
+    --blue: #3E8EF0;
+    --deep: #2433C9;
+    --pink: #F59BC4;
+    --orange: #FF6B14;
+    --cream: #F7EBCF;
+    --ink: #17122E;
+
+    --page: var(--cream);
+    --text: var(--ink);
+    --line: var(--ink);
+    --focus: #2433C9;
+
+    --hero-bg: radial-gradient(120% 90% at 50% 55%, #F2FF2E 0%, #D9F21A 32%, #8FD36B 58%, #3E8EF0 88%);
+    --hero-fg: #2433C9;
+    --hero-ink: #17122E;
+    --logo: #2433C9;
+
+    --tick-bg: #17122E;
+    --tick-fg: #FFE40A;
+
+    --week-bg: #E8261C;
+    --week-fg: #FFE40A;
+    --week-soft: #FFF3D6;
+    --week-line: rgba(255, 228, 10, .55);
+
+    --wall-bg: #F7EBCF;
+    --wall-fg: #17122E;
+    --wall-accent: #E8261C;
+
+    --day-bg: #FFE40A;
+    --day-fg: #17122E;
+    --day-accent: #E8261C;
+
+    --visit-bg: #2433C9;
+    --visit-fg: #FFFFFF;
+    --visit-accent: #FFE40A;
+
+    --foot-bg: #17122E;
+    --foot-fg: #F7EBCF;
+
+    --btn-bg: #E8261C;
+    --btn-fg: #FFFFFF;
+    --shadow: #17122E;
+  }
+
+  /* ---------- Dark = "Casual by night" ---------- */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page: #120E2B;
+      --text: #F7EBCF;
+      --line: #F7EBCF;
+      --focus: #D9F21A;
+      --hero-bg: radial-gradient(110% 85% at 50% 55%, #2B1F7A 0%, #1A1450 40%, #120E2B 75%);
+      --hero-fg: #D9F21A;
+      --hero-ink: #F7EBCF;
+      --logo: #D9F21A;
+      --tick-bg: #D9F21A;
+      --tick-fg: #120E2B;
+      --week-bg: #1E0A12;
+      --week-fg: #FFE40A;
+      --week-soft: #F7EBCF;
+      --week-line: rgba(255, 228, 10, .35);
+      --wall-bg: #120E2B;
+      --wall-fg: #F7EBCF;
+      --wall-accent: #F59BC4;
+      --day-bg: #1F1A08;
+      --day-fg: #F7EBCF;
+      --day-accent: #FFE40A;
+      --visit-bg: #0B1550;
+      --visit-fg: #FFFFFF;
+      --visit-accent: #D9F21A;
+      --foot-bg: #07051A;
+      --foot-fg: #F7EBCF;
+      --btn-bg: #F59BC4;
+      --btn-fg: #17122E;
+      --shadow: #D9F21A;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #120E2B;
+    --text: #F7EBCF;
+    --line: #F7EBCF;
+    --focus: #D9F21A;
+    --hero-bg: radial-gradient(110% 85% at 50% 55%, #2B1F7A 0%, #1A1450 40%, #120E2B 75%);
+    --hero-fg: #D9F21A;
+    --hero-ink: #F7EBCF;
+    --logo: #D9F21A;
+    --tick-bg: #D9F21A;
+    --tick-fg: #120E2B;
+    --week-bg: #1E0A12;
+    --week-fg: #FFE40A;
+    --week-soft: #F7EBCF;
+    --week-line: rgba(255, 228, 10, .35);
+    --wall-bg: #120E2B;
+    --wall-fg: #F7EBCF;
+    --wall-accent: #F59BC4;
+    --day-bg: #1F1A08;
+    --day-fg: #F7EBCF;
+    --day-accent: #FFE40A;
+    --visit-bg: #0B1550;
+    --visit-fg: #FFFFFF;
+    --visit-accent: #D9F21A;
+    --foot-bg: #07051A;
+    --foot-fg: #F7EBCF;
+    --btn-bg: #F59BC4;
+    --btn-fg: #17122E;
+    --shadow: #D9F21A;
+  }
+
+  /* ---------- Base ---------- */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text);
+    font: 500 1.0625rem/1.55 "Chakra Petch", ui-sans-serif, system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 20; background: var(--ink); color: #fff; padding: 10px 14px; border-radius: 8px; font-weight: 700; }
+  .skip:focus { top: 12px; }
+  .sr { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .wrap { width: min(1180px, 100% - 32px); margin-inline: auto; }
+
+  .display { font-family: Anton, Impact, "Arial Narrow", sans-serif; font-weight: 400; text-transform: uppercase; line-height: .92; letter-spacing: .005em; }
+  .round { font-family: Unbounded, ui-sans-serif, system-ui, sans-serif; }
+  .label { font: 700 .8rem/1.2 "Chakra Petch", sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+
+  /* Chunky poster button */
+  .btn {
+    display: inline-flex; align-items: center; gap: .55em;
+    padding: .85em 1.3em; border: 3px solid var(--ink); border-radius: 999px;
+    background: var(--btn-bg); color: var(--btn-fg);
+    font: 700 1rem/1 "Chakra Petch", sans-serif; letter-spacing: .08em; text-transform: uppercase; text-decoration: none;
+    box-shadow: 5px 5px 0 var(--shadow);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--shadow); }
+  .btn:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 var(--shadow); }
+  .btn svg { width: 1.2em; height: 1.2em; flex: none; }
+  .btn.ghost { background: transparent; color: inherit; border-color: currentColor; box-shadow: none; }
+  .btn.ghost:hover { background: currentColor; }
+  .btn.ghost:hover span { color: var(--hero-bg-solid, #fff); }
+
+  /* ---------- Hero ---------- */
+  .hero { background: var(--hero-bg); color: var(--hero-fg); position: relative; overflow: hidden; }
+  .topbar { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding-top: 18px; color: var(--hero-ink); }
+  .topbar .label { line-height: 1.35; }
+  .topbar .r { text-align: right; }
+  .toggle {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 8px;
+    border: 2px solid currentColor; border-radius: 999px; background: transparent; color: inherit;
+    padding: 6px 12px; font: 700 .75rem/1 "Chakra Petch", sans-serif; letter-spacing: .12em; text-transform: uppercase; cursor: pointer;
+  }
+  .toggle .dot { width: 14px; height: 14px; border-radius: 50%; background: currentColor; box-shadow: inset -5px -2px 0 0 var(--lime); }
+  :root[data-theme="dark"] .toggle .dot { box-shadow: inset -5px -2px 0 0 #1A1450; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .toggle .dot { box-shadow: inset -5px -2px 0 0 #1A1450; } }
+
+  .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 24px; align-items: center; padding: 28px 0 72px; }
+  .hero h1 { margin: 0; }
+  .wordmark { width: 100%; max-width: 640px; height: auto; color: var(--logo); overflow: visible; }
+  .wordmark text { fill: currentColor; }
+  .wordmark ellipse { stroke: currentColor; }
+  .tagline { margin: 18px 0 0; font-size: clamp(2.6rem, 6.4vw, 5.4rem); color: var(--hero-ink); }
+  .tagline .dot { color: var(--hero-fg); }
+  .tagline > span { display: block; }
+  .hero p.lede { max-width: 34ch; margin: 18px 0 26px; font-size: 1.15rem; color: var(--hero-ink); }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .hero .ghost { color: var(--hero-ink); }
+  .hero .ghost:hover { background: var(--hero-ink); }
+  .hero .ghost:hover span { color: var(--page); }
+
+  .burst {
+    position: absolute; z-index: 3; right: -12px; top: -18px;
+    width: 160px; height: 160px; display: grid; place-items: center; text-align: center;
+    background: var(--yellow); color: var(--red);
+    clip-path: polygon(50.0% 0.0%, 59.1% 10.0%, 71.7% 5.0%, 75.6% 17.9%, 89.1% 18.8%, 86.9% 32.2%, 98.7% 38.9%, 91.0% 50.0%, 98.7% 61.1%, 86.9% 67.8%, 89.1% 81.2%, 75.6% 82.1%, 71.7% 95.0%, 59.1% 90.0%, 50.0% 100.0%, 40.9% 90.0%, 28.3% 95.0%, 24.4% 82.1%, 10.9% 81.2%, 13.1% 67.8%, 1.3% 61.1%, 9.0% 50.0%, 1.3% 38.9%, 13.1% 32.2%, 10.9% 18.8%, 24.4% 17.9%, 28.3% 5.0%, 40.9% 10.0%);
+    transform: rotate(12deg);
+    font: 700 .74rem/1.15 "Chakra Petch", sans-serif; letter-spacing: .06em; text-transform: uppercase;
+  }
+  .burst b { display: block; font: 400 1.5rem/1 Anton, sans-serif; letter-spacing: .02em; margin: 2px 0; }
+  .burst > span { padding: 0 10px; }
+
+  .fan { position: relative; aspect-ratio: 4 / 4.4; max-width: 470px; margin-left: auto; width: 100%; }
+  .fan img {
+    position: absolute; width: 64%; aspect-ratio: 4 / 5; object-fit: cover;
+    border: 3px solid var(--ink); box-shadow: 8px 8px 0 rgba(23, 18, 46, .85);
+  }
+  .fan img:nth-child(1) { left: 0; top: 10%; transform: rotate(-9deg); }
+  .fan img:nth-child(2) { right: 0; top: 4%; transform: rotate(8deg); }
+  .fan img:nth-child(3) { left: 18%; top: 22%; transform: rotate(-1deg); z-index: 2; }
+
+  /* ---------- Ticker ---------- */
+  .ticker { background: var(--tick-bg); color: var(--tick-fg); overflow: hidden; border-block: 3px solid var(--ink); }
+  .ticker-track { display: flex; width: max-content; animation: tick 38s linear infinite; }
+  .ticker p { margin: 0; padding: 12px 0; white-space: nowrap; font: 400 1.35rem/1 Anton, sans-serif; text-transform: uppercase; letter-spacing: .04em; }
+  .ticker p span { padding: 0 .7em; }
+  @keyframes tick { to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; } }
+
+  /* ---------- Section heads ---------- */
+  section { scroll-margin-top: 12px; }
+  .sec { padding: 84px 0 92px; }
+  .kicker { display: inline-block; margin: 0 0 14px; padding: 6px 12px; border: 2px solid currentColor; border-radius: 999px; }
+  .sec h2 { margin: 0; font-size: clamp(3rem, 9vw, 7.4rem); }
+
+  /* ---------- Week ---------- */
+  .week { background: var(--week-bg); color: var(--week-fg); }
+  .week-head { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; }
+  .week-head .sub { margin: 14px 0 0; max-width: 46ch; color: var(--week-soft); font-size: 1.1rem; }
+  .week-head .sub strong { color: var(--week-fg); }
+  .week-layout { display: grid; grid-template-columns: 1fr 300px; gap: 48px; margin-top: 44px; align-items: start; }
+  .days { list-style: none; margin: 0; padding: 0; border-top: 3px solid var(--week-fg); }
+  .day { display: grid; grid-template-columns: 150px 1fr; gap: 6px 22px; padding: 18px 0 20px; border-bottom: 2px solid var(--week-line); }
+  .day .when { padding-top: 6px; }
+  .day .when b { display: block; font: 900 1.05rem/1.1 Unbounded, sans-serif; letter-spacing: .01em; }
+  .day .when span { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--week-soft); }
+  .day h3 { margin: 0; font-size: clamp(2rem, 4.6vw, 3.3rem); }
+  .day h3 small { font-size: .5em; letter-spacing: .03em; color: var(--week-soft); vertical-align: middle; }
+  .day p { margin: 6px 0 0; color: var(--week-soft); max-width: 52ch; }
+  .day .alt { margin-top: 12px; }
+  .day .alt h3 { font-size: clamp(1.5rem, 3vw, 2.2rem); }
+  .aside-poster { position: sticky; top: 24px; }
+  .aside-poster img { border: 3px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); transform: rotate(2.5deg); }
+  .aside-poster p { margin: 22px 0 0; font-size: .95rem; color: var(--week-soft); }
+  .also { margin-top: 44px; }
+  .also h3 { margin: 0 0 14px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+  .chips li { padding: 8px 14px; border: 2px solid var(--week-fg); border-radius: 999px; font-weight: 700; letter-spacing: .04em; }
+  .chips li:nth-child(3n+1) { background: var(--week-fg); color: var(--week-bg); }
+  .chips [lang="ar"] { font-family: system-ui, "Noto Naskh Arabic", sans-serif; }
+  .week .btn { margin-top: 36px; background: var(--yellow); color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
+
+  /* ---------- Poster wall ---------- */
+  .wall { background: var(--wall-bg); color: var(--wall-fg); }
+  .wall-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 18px 40px; }
+  .wall-head p { margin: 0; max-width: 40ch; font-size: 1.1rem; }
+  .wall-head h2 span { color: var(--wall-accent); white-space: nowrap; }
+  .posters { display: grid; grid-template-columns: repeat(4, 1fr); gap: 34px 26px; list-style: none; margin: 48px 0 0; padding: 0; }
+  .posters figure { margin: 0; transition: transform .25s ease; }
+  .posters li:nth-child(4n+1) figure { transform: rotate(-1.6deg); }
+  .posters li:nth-child(4n+2) figure { transform: rotate(1.2deg); }
+  .posters li:nth-child(4n+3) figure { transform: rotate(-.6deg); }
+  .posters li:nth-child(4n+4) figure { transform: rotate(1.8deg); }
+  .posters li figure:hover { transform: rotate(0) scale(1.03); }
+  @media (prefers-reduced-motion: reduce) { .posters figure { transition: none; } .posters li figure:hover { transform: none; } }
+  .posters img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border: 3px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); background: #ddd; }
+  :root[data-theme="dark"] .posters img { box-shadow: 6px 6px 0 var(--wall-accent); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .posters img { box-shadow: 6px 6px 0 var(--wall-accent); } }
+  .posters figcaption { margin-top: 14px; display: flex; justify-content: space-between; gap: 8px; font-size: .92rem; }
+  .posters figcaption b { font: 400 1.2rem/1.05 Anton, sans-serif; text-transform: uppercase; letter-spacing: .02em; }
+  .posters figcaption span { opacity: .75; text-align: right; white-space: nowrap; }
+  .wall-note { margin: 56px 0 0; display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: center; }
+  .wall-note p { margin: 0; }
+
+  /* ---------- By day ---------- */
+  .byday { background: var(--day-bg); color: var(--day-fg); }
+  .byday-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 64px; align-items: center; }
+  .oven { position: relative; max-width: 380px; }
+  .oven img { width: 100%; aspect-ratio: 9 / 13; object-fit: cover; border: 3px solid var(--ink); box-shadow: 10px 10px 0 var(--day-accent); transform: rotate(-2.5deg); }
+  .oven .tag { position: absolute; left: -10px; bottom: 26px; background: var(--red); color: #fff; padding: 8px 14px; transform: rotate(-6deg); border: 3px solid var(--ink); }
+  .byday h2 { color: var(--day-accent); }
+  .byday h2 span { color: var(--day-fg); display: block; }
+  .byday .copy p { max-width: 48ch; font-size: 1.15rem; }
+  .menu-card { margin-top: 30px; padding: 22px 24px; border: 3px solid var(--day-fg); border-radius: 22px; display: grid; gap: 14px; max-width: 520px; }
+  .menu-card h3 { margin: 0; font-size: 2rem; }
+  .menu-card p { margin: 0 !important; font-size: 1rem !important; }
+  .menu-card .btn { justify-self: start; }
+
+  /* ---------- Visit ---------- */
+  .visit { background: var(--visit-bg); color: var(--visit-fg); }
+  .visit h2 span { color: var(--visit-accent); }
+  .visit-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 56px; margin-top: 44px; align-items: start; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; list-style: none; margin: 0; padding: 0; }
+  .card { border: 3px solid var(--visit-fg); border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-height: 190px; }
+  .card h3 { margin: 0; font-size: 1.9rem; }
+  .card p { margin: 0; opacity: .9; }
+  .card a.go { margin-top: auto; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; text-underline-offset: 4px; color: var(--visit-accent); overflow-wrap: anywhere; }
+  .card.hot { background: var(--visit-accent); color: var(--ink); border-color: var(--visit-accent); }
+  .card.hot a.go { color: var(--ink); }
+  .night-photo { margin: 0; }
+  .night-photo img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border: 3px solid var(--visit-fg); border-radius: 200px 200px 22px 22px; }
+  .night-photo figcaption { margin-top: 10px; font-size: .9rem; opacity: .85; }
+
+  /* ---------- Footer ---------- */
+  footer { background: var(--foot-bg); color: var(--foot-fg); padding: 56px 0 40px; }
+  .foot { display: grid; grid-template-columns: auto 1fr; gap: 28px 48px; align-items: center; }
+  .foot .wordmark { width: 220px; color: var(--lime); }
+  .foot p { margin: 0 0 6px; }
+  .foot .small { font-size: .88rem; opacity: .8; }
+  .foot a { text-underline-offset: 3px; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 960px) {
+    .hero-grid { grid-template-columns: 1fr; padding-bottom: 56px; }
+    .fan { margin: 8px auto 0; max-width: 400px; }
+    .week-layout { grid-template-columns: 1fr; }
+    .aside-poster { position: static; max-width: 320px; }
+    .posters { grid-template-columns: repeat(3, 1fr); }
+    .byday-grid, .visit-grid { grid-template-columns: 1fr; gap: 44px; }
+    .oven { margin-inline: auto; max-width: 320px; }
+    .night-photo { max-width: 360px; }
+  }
+  @media (max-width: 640px) {
+    body { font-size: 1rem; }
+    .sec { padding: 64px 0 72px; }
+    .topbar .label { font-size: .7rem; }
+    .fan { max-width: 330px; }
+    .burst { width: 122px; height: 122px; font-size: .6rem; right: -8px; top: -14px; }
+    .burst b { font-size: 1.2rem; }
+    .burst > span { padding: 0 8px; }
+    .week-head { grid-template-columns: 1fr; }
+    .day { grid-template-columns: 1fr; }
+    .day .when { display: flex; gap: 10px; align-items: baseline; padding-top: 0; }
+    .posters { grid-template-columns: repeat(2, 1fr); gap: 26px 16px; }
+    .posters figcaption { flex-direction: column; gap: 2px; }
+    .posters figcaption span { text-align: left; }
+    .posters figcaption b { font-size: 1.05rem; }
+    .cards { grid-template-columns: 1fr; }
+    .card { min-height: 0; }
+    .foot { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour La Gondole. Non affiliée à l’établissement.</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <p class="label" style="margin:0">Sousse<br>Tunisia</p>
+      <div class="r">
+        <p class="label" style="margin:0">Reservation via<br>Instagram</p>
+        <button class="toggle" type="button" id="theme-toggle" aria-pressed="false" hidden>
+          <span class="dot" aria-hidden="true"></span><span class="t">Night mode</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1>
+          <span class="sr">La Gondole — your casual place</span>
+          <svg class="wordmark" viewBox="0 0 640 300" role="img" aria-hidden="true" focusable="false">
+            <ellipse cx="320" cy="150" rx="300" ry="122" fill="none" stroke-width="11" transform="rotate(-7 320 150)"/>
+            <text x="322" y="168" text-anchor="middle" font-family="Unbounded, sans-serif" font-weight="900" font-size="112" letter-spacing="-5" transform="rotate(-7 320 150)">Gondole</text>
+            <text x="350" y="216" text-anchor="middle" font-family="Unbounded, sans-serif" font-weight="600" font-size="21" letter-spacing="3" transform="rotate(-7 320 150)">YOUR CASUAL PLACE</text>
+          </svg>
+        </h1>
+        <p class="tagline display"><span>Classy by day <span class="dot">·</span></span><span>Casual by night</span></p>
+        <p class="lede">A restaurant by day and a club by night in Sousse — with a new programme of nights every single week.</p>
+        <div class="hero-ctas">
+          <a class="btn" href="https://ig.me/m/restaurant_la_gondole_sousse">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+            Reserve via Instagram
+          </a>
+          <a class="btn ghost" href="#week"><span>This week’s nights</span></a>
+        </div>
+      </div>
+
+      <div class="fan">
+        <div class="burst" role="img" aria-label="Recommended by Restaurant Guru since 2020"><span>Recommended<br>by Restaurant<br>Guru <b>since 2020</b></span></div>
+        <img src="assets/h-le-club-pink.jpg" width="600" height="750" alt="Gondole le Club poster: the club’s name in red bubble letters with flowers and music notes on hot pink, Pan J &amp; Bedoui">
+        <img src="assets/h-le-club-cars.jpg" width="600" height="746" alt="Gondole le Club poster: two DJs on top of a pink off-road car loaded with speakers and records">
+        <img src="assets/h-gondole-dj.jpg" width="600" height="800" alt="Gondole poster: the name in blue graffiti letters above a cartoon DJ at the decks, drawn in blue and pink on cream">
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <p><span>Rhythm &amp; Taste</span>✺<span>Reservation via Instagram</span>✺<span>Recommended by Guru since 2020</span>✺<span>Your casual place</span>✺<span>Sousse</span>✺</p>
+    <p><span>Rhythm &amp; Taste</span>✺<span>Reservation via Instagram</span>✺<span>Recommended by Guru since 2020</span>✺<span>Your casual place</span>✺<span>Sousse</span>✺</p>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="week sec" id="week" aria-labelledby="week-title">
+    <div class="wrap">
+      <div class="week-head">
+        <div>
+          <p class="kicker label">Weekly program · Rhythm &amp; Taste</p>
+          <h2 class="display" id="week-title">The week at Gondole</h2>
+          <p class="sub">Seven nights, seven moods. The line-up changes every week — <strong>the new programme goes up on Instagram every Monday.</strong> Save the dates.</p>
+        </div>
+      </div>
+
+      <div class="week-layout">
+        <ol class="days">
+          <li class="day">
+            <div class="when"><b>Lundi</b><span>Monday</span></div>
+            <div>
+              <h3 class="display">The Freshest Kidz</h3>
+              <p>DJ Guirat sets the tone, with guests on deck. Fresh energy, same good vibes.</p>
+            </div>
+          </li>
+          <li class="day">
+            <div class="when"><b>Mardi</b><span>Tuesday</span></div>
+            <div>
+              <h3 class="display">Laissez-moi chanter</h3>
+              <p>Karaoke night with Golden Team Karaoke — the mic is yours and the stage is waiting.</p>
+            </div>
+          </li>
+          <li class="day">
+            <div class="when"><b>Mercredi</b><span>Wednesday</span></div>
+            <div>
+              <h3 class="display">Rake It Up</h3>
+              <p>Turning it up the right way, midweek.</p>
+            </div>
+          </li>
+          <li class="day">
+            <div class="when"><b>Jeudi</b><span>Thursday</span></div>
+            <div>
+              <h3 class="display">Legacy</h3>
+              <p>Chambeh &amp; guests — where sound meets story and every beat leaves a mark.</p>
+            </div>
+          </li>
+          <li class="day">
+            <div class="when"><b>Vendredi</b><span>Friday</span></div>
+            <div>
+              <h3 class="display">Gondole le Club</h3>
+              <p>Friday nights, reimagined: genre-bending guest sets that keep you moving all night long.</p>
+              <div class="alt">
+                <h3 class="display"><small>also</small> Soulmates</h3>
+              </div>
+            </div>
+          </li>
+          <li class="day">
+            <div class="when"><b>Samedi</b><span>Saturday</span></div>
+            <div>
+              <h3 class="display">Guest nights</h3>
+              <p>A different invitation each Saturday — Warehouse Romance, an extended set with Hamdi Ryder, ITIZ WHAT IT IS…</p>
+            </div>
+          </li>
+          <li class="day">
+            <div class="when"><b>Dimanche</b><span>Sunday</span></div>
+            <div>
+              <h3 class="display">Disco Bisco <small>/ Biscothèque</small></h3>
+              <p>Get ready to dance till late — or catch the Fantasy Club residents: no rules, just vibes, music &amp; main character energy.</p>
+            </div>
+          </li>
+        </ol>
+
+        <aside class="aside-poster" aria-label="Example weekly programme poster">
+          <img src="assets/programme.jpg" width="600" height="750" loading="lazy" alt="A Weekly Program poster, Rhythm &amp; Taste: the Gondole oval logo on a lime-to-blue gradient above the nights from Monday to Saturday">
+          <p>Every Monday, the week lands as one poster like this. Nights, guests and dates — reservation via Instagram.</p>
+        </aside>
+      </div>
+
+      <div class="also">
+        <h3 class="label">Also on the calendar, from time to time</h3>
+        <ul class="chips">
+          <li>4 Cats</li>
+          <li>MIAMOR</li>
+          <li>Selecta Night</li>
+          <li>Haroun &amp; Friends</li>
+          <li>Arabic Night with a Tunisian twist</li>
+          <li>Zouba &amp; Zanouba · <span lang="ar" dir="rtl">زوبة و زنوبة</span></li>
+          <li>L’Afrique c’est Chic</li>
+          <li>Nostalgia</li>
+          <li>Reflection</li>
+          <li>Acamar</li>
+        </ul>
+      </div>
+
+      <a class="btn" href="https://www.instagram.com/restaurant_la_gondole_sousse/">See this week’s programme</a>
+    </div>
+  </section>
+
+  <section class="wall sec" id="posters" aria-labelledby="wall-title">
+    <div class="wrap">
+      <div class="wall-head">
+        <div>
+          <p class="kicker label">The poster wall</p>
+          <h2 class="display" id="wall-title">One night, <span>one poster</span></h2>
+        </div>
+        <p>Every night at Gondole gets its own poster. A few favourites from the wall — drawn for us by Amine Hattab.</p>
+      </div>
+
+      <ul class="posters">
+        <li><figure><img src="assets/p-rake-it-up.jpg" width="600" height="745" loading="lazy" alt="Rake It Up poster: a DJ crouching in streetwear inside a yellow starburst on red, with the title in blue brush script"><figcaption><b>Rake It Up</b><span>Mercredi</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-legacy.jpg" width="600" height="728" loading="lazy" alt="Legacy poster: Chambeh &amp; Guesmy in tall condensed yellow letters over an orange turntable"><figcaption><b>Legacy</b><span>Jeudi</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-biscotheque.jpg" width="600" height="695" loading="lazy" alt="Biscothèque poster: a red vinyl record and the title in bold red letters on yellow"><figcaption><b>Biscothèque</b><span>Dimanche</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-miamor.jpg" width="600" height="750" loading="lazy" alt="MIAMOR Off Edition poster: a retro illustration of a surfer riding a wave, with the guest DJs’ names below"><figcaption><b>MIAMOR</b><span>Special</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-itiz.jpg" width="600" height="750" loading="lazy" alt="ITIZ WHAT IT IS poster: an old radio with plants and a disco ball on a dark background, Khalil Annabi"><figcaption><b>ITIZ What It Is</b><span>Samedi</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-haroun-friends.jpg" width="600" height="750" loading="lazy" alt="Haroun &amp; Friends poster: pink dancing figures, moons and stars drawn on red"><figcaption><b>Haroun &amp; Friends</b><span>Special</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-four-cats.jpg" width="600" height="750" loading="lazy" alt="Four Cats poster: four cartoon cat girls in streetwear on red"><figcaption><b>4 Cats</b><span>New concept</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-disco-bisco.jpg" width="600" height="717" loading="lazy" alt="Disco Bisco poster: a blue record player and the title in black bubble letters on cream with blue leaves"><figcaption><b>Disco Bisco</b><span>Dimanche</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-soulmates.jpg" width="600" height="761" loading="lazy" alt="Soulmates poster: soft orange and green botanical shapes on cream, Khaled Mrabet &amp; Saif Touati"><figcaption><b>Soulmates</b><span>Vendredi</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-extended.jpg" width="600" height="745" loading="lazy" alt="Extended poster: Hamdi Ryder at the wheel of a white van under red bubble lettering"><figcaption><b>Extended</b><span>Samedi</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-laissez-moi-chanter.jpg" width="600" height="750" loading="lazy" alt="Laissez moi chanter poster: a giant pink microphone on red for karaoke night"><figcaption><b>Laissez-moi chanter</b><span>Mardi</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-afrique-chic.jpg" width="600" height="750" loading="lazy" alt="L’Afrique c’est Chic poster: three sculpted heads on a pink and patterned background"><figcaption><b>L’Afrique c’est Chic</b><span>Special</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-zouba-zanouba.jpg" width="600" height="750" loading="lazy" alt="Zouba &amp; Zanouba Arabic night poster: two women in a red and pink oriental frame with Arabic lettering"><figcaption><b>Arabic Night</b><span lang="ar" dir="rtl">زوبة و زنوبة</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-fantasy-club.jpg" width="600" height="756" loading="lazy" alt="Fantasy Club residents poster: three green cartoon mushrooms on yellow"><figcaption><b>Fantasy Club</b><span>Dimanche</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-freshest-kidz.jpg" width="600" height="735" loading="lazy" alt="The Freshest Kidz poster: a child’s face cut into big red letters on blue"><figcaption><b>Freshest Kidz</b><span>Lundi</span></figcaption></figure></li>
+        <li><figure><img src="assets/p-le-club.jpg" width="600" height="722" loading="lazy" alt="Gondole le Club poster: the club’s name in pink bubble letters with flowers on electric blue, Aly Mrabet &amp; Khaled Mrabet"><figcaption><b>Gondole le Club</b><span>Vendredi</span></figcaption></figure></li>
+      </ul>
+
+      <div class="wall-note">
+        <a class="btn" href="https://www.instagram.com/restaurant_la_gondole_sousse/">Follow the wall on Instagram</a>
+        <p>New posters every week at <strong>@restaurant_la_gondole_sousse</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="byday sec" id="by-day" aria-labelledby="day-title">
+    <div class="wrap byday-grid">
+      <div class="oven">
+        <img src="assets/la-vera-pizza.jpg" width="560" height="994" loading="lazy" alt="Fire burning inside the pizza oven at La Gondole, under the La Vera Pizza sign">
+      </div>
+      <div class="copy">
+        <p class="kicker label">Rhythm &amp; Taste</p>
+        <h2 class="display" id="day-title">Classy <span>by day</span></h2>
+        <p>Before the decks warm up, Gondole is a restaurant. The fire is lit under the <strong>La Vera Pizza</strong> sign — <em lang="fr">pizza au feu de bois</em>.</p>
+        <p>Come for the table, stay for the rhythm.</p>
+        <div class="menu-card">
+          <h3 class="display">Menu on request</h3>
+          <p>Want to know what’s on the table today? No menu or prices online yet: ask us on Instagram.</p>
+          <a class="btn" href="https://ig.me/m/restaurant_la_gondole_sousse">Ask us on Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit sec" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <p class="kicker label">Visit</p>
+      <h2 class="display" id="visit-title">See you <span>in Sousse</span></h2>
+      <div class="visit-grid">
+        <ul class="cards">
+          <li class="card hot">
+            <h3 class="display">Reservations</h3>
+            <p>Reservations are via Instagram only. Send us a message with the night and the number of guests.</p>
+            <a class="go" href="https://ig.me/m/restaurant_la_gondole_sousse">Message us on Instagram →</a>
+          </li>
+          <li class="card">
+            <h3 class="display">Find us</h3>
+            <p>La Gondole, Sousse, Tunisia. Opening hours: ask us on Instagram.</p>
+            <a class="go" href="https://maps.app.goo.gl/nU7pAwJoR6AGZZB8">Open in Google Maps →</a>
+          </li>
+          <li class="card">
+            <h3 class="display">Instagram</h3>
+            <p><strong>@restaurant_la_gondole_sousse</strong> — the weekly programme every Monday, a poster for every night.</p>
+            <a class="go" href="https://www.instagram.com/restaurant_la_gondole_sousse/">Open Instagram →</a>
+          </li>
+          <li class="card">
+            <h3 class="display">Facebook</h3>
+            <p>News and photos on our Facebook page, <strong>restaurantlagondole</strong>.</p>
+            <a class="go" href="https://www.facebook.com/restaurantlagondole">Open Facebook →</a>
+          </li>
+        </ul>
+        <figure class="night-photo">
+          <img src="assets/sparklers.jpg" width="560" height="994" loading="lazy" alt="Guests celebrating with sparklers in the club at night, under a woven pendant lamp">
+          <figcaption>Casual by night.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <svg class="wordmark" viewBox="0 0 640 300" role="img" aria-label="Gondole — your casual place">
+      <ellipse cx="320" cy="150" rx="300" ry="122" fill="none" stroke-width="13" transform="rotate(-7 320 150)"/>
+      <text x="322" y="168" text-anchor="middle" font-family="Unbounded, sans-serif" font-weight="900" font-size="112" letter-spacing="-5" transform="rotate(-7 320 150)">Gondole</text>
+      <text x="350" y="216" text-anchor="middle" font-family="Unbounded, sans-serif" font-weight="600" font-size="21" letter-spacing="3" transform="rotate(-7 320 150)">YOUR CASUAL PLACE</text>
+    </svg>
+    <div>
+      <p><strong>La Gondole</strong> · Classy by day, casual by night · Sousse, Tunisia</p>
+      <p>Recommended by Restaurant Guru every year since 2020 · Reservation via <a href="https://ig.me/m/restaurant_la_gondole_sousse">Instagram</a></p>
+      <p class="small">Posters by Amine Hattab · visuals by Mohsen Trabelsi</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Day / Night switch. Works without JS (follows the system setting).
+  (function () {
+    var root = document.documentElement, btn = document.getElementById('theme-toggle');
+        try { var saved = localStorage.getItem('gondole-theme'); if (saved) root.dataset.theme = saved; } catch (e) {}
+    function isNight() {
+      return root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+    function sync() {
+      var n = isNight();
+      btn.setAttribute('aria-pressed', String(n));
+    }
+    btn.hidden = false;
+    sync();
+    btn.addEventListener('click', function () {
+      root.dataset.theme = isNight() ? 'light' : 'dark';
+      try { localStorage.setItem('gondole-theme', root.dataset.theme); } catch (e) {}
+      sync();
+    });
+  })();
+</script>
+</body>
+</html>
