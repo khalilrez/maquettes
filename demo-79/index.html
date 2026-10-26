@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salle Dalia — Salle des fêtes de prestige à Sousse</title>
+<meta name="description" content="Salle Dalia, salle des fêtes haut de gamme à Sousse : mariages, hennés et grandes soirées dans un décor grandiose. Deux groupes électrogènes. Réservation au 00 000 000.">
+<meta name="theme-color" content="#FAF6EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1220" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Salle Dalia">
+<meta property="og:title" content="Salle Dalia — Salle des fêtes de prestige, Sousse">
+<meta property="og:description" content="Mariages et hennés dans un cadre chic et lumineux, à Sousse. Demandez votre date : 00 000 000.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La façade blanche à colonnes de la Salle Dalia, illuminée au crépuscule">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Outfit:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #FAF6EF;
+    --paper: #FFFFFF;
+    --ivory: #F2EADB;
+    --ink: #1A1B26;
+    --muted: #5C5A61;
+    --line: #E6DCCB;
+    --gold: #B8913F;
+    --gold-ink: #8C6A23;
+    --gold-hi: #E9C979;
+    --night: #0D1220;
+    --night-2: #151C30;
+    --on-night: #F5EFE3;
+    --on-night-soft: #BFC3D2;
+    --focus: #8C6A23;
+    --shadow: 0 30px 60px -36px rgba(26, 27, 38, .55);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0D1220;
+      --paper: #141A2C;
+      --ivory: #182036;
+      --ink: #F3EEE4;
+      --muted: #B7BACA;
+      --line: #263049;
+      --gold-ink: #E9C979;
+      --focus: #E9C979;
+      --shadow: 0 30px 60px -36px rgba(0, 0, 0, .9);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0D1220;
+    --paper: #141A2C;
+    --ivory: #182036;
+    --ink: #F3EEE4;
+    --muted: #B7BACA;
+    --line: #263049;
+    --gold-ink: #E9C979;
+    --focus: #E9C979;
+    --shadow: 0 30px 60px -36px rgba(0, 0, 0, .9);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17.5px/1.7 Outfit, system-ui, sans-serif; overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 60; background: var(--paper); color: var(--ink); padding: 10px 14px; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1200px, 100% - 40px); margin-inline: auto; }
+  .ar { font-family: Amiri, serif; }
+  h1, h2, h3 { font-family: 'Bodoni Moda', Didot, serif; font-weight: 500; }
+  h2 { font-size: clamp(34px, 4.8vw, 56px); line-height: 1.06; margin: 0 0 18px; letter-spacing: -.01em; }
+  h2 em { font-style: italic; color: var(--gold-ink); }
+  h3 { font-size: 24px; line-height: 1.2; margin: 0 0 8px; }
+  p { margin: 0 0 1em; }
+  .eyebrow { font: 500 12.5px/1.2 Outfit, sans-serif; letter-spacing: .34em; text-transform: uppercase; color: var(--gold-ink); margin: 0 0 16px; display: inline-flex; align-items: center; gap: 12px; }
+  .eyebrow::before, .center .eyebrow::after { content: ""; width: 28px; height: 1px; background: currentColor; }
+  .lead { font-size: 19px; font-weight: 300; color: var(--muted); max-width: 58ch; }
+  .center { text-align: center; }
+  .center .lead { margin-inline: auto; }
+  .bloom { width: 26px; height: 22px; color: var(--gold); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 13px 28px; font: 500 14.5px/1 Outfit, sans-serif; letter-spacing: .16em; text-transform: uppercase; text-decoration: none; border: 1px solid transparent; transition: background .2s, color .2s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-gold { background: linear-gradient(135deg, #D7B465, #B8913F 55%, #9E7A2E); color: #14100A; }
+  .btn-gold:hover { background: #C9A24F; }
+  .btn-ghost { border-color: rgba(245,239,227,.65); color: #F5EFE3; }
+  .btn-ghost:hover { background: rgba(245,239,227,.1); }
+  .btn-out { border-color: var(--ink); color: var(--ink); }
+  .btn-night { background: var(--night); color: #F5EFE3; }
+  :root[data-theme="dark"] .btn-night { background: #F5EFE3; color: #0D1220; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn-night { background: #F5EFE3; color: #0D1220; } }
+
+  /* header */
+  .top { position: absolute; top: 0; left: 0; right: 0; z-index: 40; color: #F5EFE3; }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 84px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .brand .bloom { color: var(--gold-hi); }
+  .brand b { font: italic 500 23px/1 'Bodoni Moda', serif; letter-spacing: .02em; }
+  .nav { display: flex; align-items: center; gap: 28px; }
+  .nav a.l { text-decoration: none; font-size: 14px; letter-spacing: .16em; text-transform: uppercase; color: rgba(245,239,227,.85); }
+  .nav a.l:hover { color: #fff; }
+  .toggle { width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(245,239,227,.45); background: rgba(13,18,32,.25); color: #F5EFE3; display: grid; place-items: center; cursor: pointer; }
+  .toggle svg { width: 18px; height: 18px; }
+  .top .btn { min-height: 44px; padding: 10px 18px; }
+  @media (max-width: 960px) { .nav a.l { display: none; } .nav { gap: 10px; } }
+  @media (max-width: 440px) { .top .btn span { display: none; } .top .btn { padding: 10px 13px; } .brand b { font-size: 20px; } }
+
+  /* hero */
+  .hero { position: relative; min-height: min(92vh, 860px); display: grid; align-items: end; color: #F5EFE3; background: var(--night); overflow: hidden; }
+  .hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,18,32,.55) 0%, rgba(13,18,32,0) 20%, rgba(13,18,32,.25) 42%, rgba(13,18,32,.86) 66%, rgba(13,18,32,.96) 100%); }
+  .hero .wrap { position: relative; z-index: 1; padding: 140px 0 clamp(40px, 6vw, 72px); text-align: center; }
+  .hero .eyebrow { color: var(--gold-hi); }
+  .hero .eyebrow::after { content: ""; width: 28px; height: 1px; background: currentColor; }
+  .hero h1 { margin: 0; font-size: clamp(50px, 7.6vw, 104px); line-height: .95; letter-spacing: .01em; text-shadow: 0 4px 30px rgba(0,0,0,.35); }
+  .hero h1 i { font-weight: 500; color: var(--gold-hi); }
+  .hero .tag { font-size: clamp(18px, 1.8vw, 21px); font-weight: 300; max-width: 52ch; margin: 22px auto 30px; color: #E7E3DA; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  @media (max-width: 700px) {
+    .hero { min-height: 0; display: block; }
+    .hero > img { position: relative; height: 300px; }
+    .hero::after { background: linear-gradient(180deg, rgba(13,18,32,.55) 0%, rgba(13,18,32,0) 30%, rgba(13,18,32,0) 32%, transparent 100%); height: 300px; }
+    .hero .wrap { padding: 28px 0 44px; }
+  }
+
+  .promises { background: var(--night-2); color: var(--on-night); border-top: 1px solid rgba(233,201,121,.25); }
+  .promises ul { list-style: none; margin: 0 auto; padding: 30px 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .promises li { display: flex; gap: 16px; align-items: flex-start; }
+  .promises svg { width: 30px; height: 30px; color: var(--gold-hi); flex: none; margin-top: 2px; }
+  .promises b { display: block; font: 500 20px/1.2 'Bodoni Moda', serif; color: #fff; margin-bottom: 4px; }
+  .promises span { font-size: 15px; color: var(--on-night-soft); font-weight: 300; }
+  @media (max-width: 860px) { .promises ul { grid-template-columns: 1fr; gap: 18px; } }
+
+  section { padding-block: clamp(68px, 9vw, 120px); }
+
+  /* la salle — bento */
+  .bento { display: grid; grid-template-columns: 1.15fr 1fr 1fr; grid-template-rows: 300px 300px; gap: 14px; margin-top: 48px; }
+  .bento figure { margin: 0; position: relative; overflow: hidden; }
+  .bento img { width: 100%; height: 100%; object-fit: cover; }
+  .bento figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 18px 14px; color: #fff; font: 400 14px/1.3 Outfit, sans-serif; letter-spacing: .14em; text-transform: uppercase; background: linear-gradient(0deg, rgba(13,18,32,.8), transparent); }
+  .bento .b1 { grid-row: span 2; }
+  .bento .b1 img { object-position: 50% 60%; }
+  .bento .b4 { grid-column: span 2; }
+  .bento .b4 img { object-position: 50% 55%; }
+  @media (max-width: 860px) { .bento { grid-template-columns: 1fr 1fr; grid-template-rows: 420px 240px 240px; } .bento .b1 { grid-row: auto; grid-column: span 2; } .bento .b4 { grid-column: span 2; } }
+  @media (max-width: 520px) { .bento { grid-template-rows: 380px 200px 220px; gap: 10px; } }
+
+  /* events */
+  .events { background: var(--ivory); }
+  .ev-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 48px; }
+  .ev { background: var(--paper); box-shadow: var(--shadow); }
+  .ev img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+  .ev .t { padding: 24px 26px 28px; }
+  .ev .num { font: italic 500 15px/1 'Bodoni Moda', serif; color: var(--gold-ink); display: block; margin-bottom: 10px; }
+  .ev p { margin: 0; color: var(--muted); font-size: 16px; font-weight: 300; }
+  .ev .ar { display: block; font-size: 22px; color: var(--gold-ink); margin-bottom: 4px; }
+  @media (max-width: 900px) { .ev-grid { grid-template-columns: 1fr; } .ev { display: grid; grid-template-columns: 40% 1fr; } .ev img { height: 100%; aspect-ratio: auto; } }
+  @media (max-width: 520px) { .ev { grid-template-columns: 1fr; } .ev img { aspect-ratio: 16/11; } }
+
+  /* power */
+  .power { background: var(--night); color: var(--on-night); position: relative; overflow: hidden; }
+  .power .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+  .power .eyebrow { color: var(--gold-hi); }
+  .power .lead { color: var(--on-night-soft); }
+  .power blockquote { margin: 26px 0 0; padding: 22px 26px; border: 1px solid rgba(233,201,121,.35); }
+  .power blockquote p { margin: 0; font-size: 27px; line-height: 1.6; color: #fff; }
+  .power blockquote cite { display: block; margin-top: 8px; font: 300 14.5px/1.4 Outfit, sans-serif; font-style: normal; color: var(--on-night-soft); }
+  .gen { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .gen div { border: 1px solid rgba(233,201,121,.35); padding: 28px 22px; text-align: center; }
+  .gen svg { width: 52px; height: 52px; color: var(--gold-hi); margin: 0 auto 14px; display: block; }
+  .gen b { display: block; font: 500 44px/1 'Bodoni Moda', serif; color: #fff; }
+  .gen span { font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--on-night-soft); }
+  @media (max-width: 860px) { .power .wrap { grid-template-columns: 1fr; } }
+
+  /* details */
+  .details .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+  .details .pics { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .details .pics img { width: 100%; aspect-ratio: 9/16; object-fit: cover; }
+  .details .pics img:nth-child(2) { margin-top: 40px; }
+  .details ul { list-style: none; padding: 0; margin: 24px 0 0; columns: 2; column-gap: 24px; }
+  .details li { padding: 8px 0 8px 24px; position: relative; break-inside: avoid; font-weight: 400; }
+  .details li::before { content: "◆"; position: absolute; left: 0; top: 9px; font-size: 11px; color: var(--gold); }
+  @media (max-width: 860px) { .details .split { grid-template-columns: 1fr; } }
+  @media (max-width: 420px) { .details ul { columns: 1; } }
+
+  /* book */
+  .book { background: var(--ivory); }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 48px 0 40px; counter-reset: s; }
+  .steps li { list-style: none; padding: 0 28px; border-left: 1px solid var(--line); counter-increment: s; }
+  .steps li:first-child { border-left: 0; padding-left: 0; }
+  .steps li::before { content: "0" counter(s); display: block; font: italic 500 46px/1 'Bodoni Moda', serif; color: var(--gold-ink); margin-bottom: 12px; }
+  .steps p { margin: 0; color: var(--muted); font-weight: 300; }
+  .steps ol { padding: 0; }
+  @media (max-width: 860px) { .steps { grid-template-columns: 1fr; gap: 24px; } .steps li { border-left: 0; padding: 0; } }
+  .book .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .book .phones { margin-top: 18px; font-size: 15px; color: var(--muted); }
+
+  /* infos */
+  .info .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: stretch; }
+  .rows { margin: 0 0 28px; }
+  .rows div { display: grid; grid-template-columns: 130px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .rows dt { font: 500 12px/1.8 Outfit, sans-serif; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); }
+  .rows dd { margin: 0; font-weight: 500; overflow-wrap: anywhere; }
+  .rows a { color: var(--gold-ink); }
+  .info .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  .info .pic { position: relative; min-height: 380px; }
+  .info .pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 860px) { .info .grid { grid-template-columns: 1fr; } .info .pic { min-height: 240px; } .rows div { grid-template-columns: 96px 1fr; } }
+
+  footer { background: var(--night); color: var(--on-night-soft); padding: 52px 0 110px; text-align: center; font-size: 15px; font-weight: 300; }
+  footer .bloom { width: 34px; height: 30px; margin: 0 auto 12px; display: block; color: var(--gold-hi); }
+  footer b { display: block; font: 500 30px/1 'Bodoni Moda', serif; color: #F5EFE3; margin-bottom: 12px; }
+  footer a { color: #F5EFE3; }
+  footer p { margin: 0; }
+  @media (min-width: 701px) { footer { padding-bottom: 52px; } }
+
+  .callbar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 50; display: none; gap: 8px; }
+  .callbar .btn { flex: 1; padding-inline: 10px; box-shadow: 0 12px 30px -10px rgba(0,0,0,.55); }
+  .callbar .btn-dark { background: #0D1220; color: #F5EFE3; border-color: #B8913F; }
+  @media (max-width: 700px) { .callbar { display: flex; } }
+</style>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/demo-79/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/demo-79/">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="bloom" viewBox="0 0 26 22"><g fill="none" stroke="currentColor" stroke-width="1.2"><ellipse cx="13" cy="5.2" rx="2.1" ry="4.4" transform="rotate(0 13 11)"/><ellipse cx="13" cy="5.2" rx="2.1" ry="4.4" transform="rotate(45 13 11)"/><ellipse cx="13" cy="5.2" rx="2.1" ry="4.4" transform="rotate(90 13 11)"/><ellipse cx="13" cy="5.2" rx="2.1" ry="4.4" transform="rotate(135 13 11)"/><ellipse cx="13" cy="5.2" rx="2.1" ry="4.4" transform="rotate(180 13 11)"/><ellipse cx="13" cy="5.2" rx="2.1" ry="4.4" transform="rotate(225 13 11)"/><ellipse cx="13" cy="5.2" rx="2.1" ry="4.4" transform="rotate(270 13 11)"/><ellipse cx="13" cy="5.2" rx="2.1" ry="4.4" transform="rotate(315 13 11)"/><circle cx="13" cy="11" r="2.4" fill="currentColor"/></g></symbol>
+</svg>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Salle Dalia, accueil"><svg class="bloom" aria-hidden="true"><use href="#bloom"/></svg><b>Salle Dalia</b></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="l" href="#salle">La salle</a>
+      <a class="l" href="#evenements">Événements</a>
+      <a class="l" href="#reserver">Réserver</a>
+      <a class="l" href="#acces">Accès</a>
+      <button class="toggle" type="button" data-toggle aria-label="Changer de thème (clair / sombre)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+      <a class="btn btn-gold" href="tel:+21600000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>Votre date</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="titre" style="padding:0">
+    <img src="assets/img-07.jpg" width="1136" height="640" alt="La façade blanche de la Salle Dalia au crépuscule : fronton orné, colonnes, fenêtres en arc et guirlandes lumineuses dorées">
+    <div class="wrap">
+      <p class="eyebrow">Salle des fêtes · Sousse</p>
+      <h1 id="titre">Salle <i>Dalia</i></h1>
+      <p class="tag">Une nouvelle adresse d’exception à Sousse. Un décor grandiose, une atmosphère de conte et des instants rares à vivre avec ceux que vous aimez, pour que votre grand jour reste gravé.</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="tel:+21600000000">Demander une date</a>
+        <a class="btn btn-ghost" href="#salle">Découvrir la salle</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="promises">
+    <ul class="wrap" aria-label="Salle Dalia en bref">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 2v3M12 5c-3 0-5 2-5 4h10c0-2-2-4-5-4zM6 9l-2 5h16l-2-5M8 14l1 4M16 14l-1 4M12 14v6"/></svg><div><b>Un décor grandiose</b><span>Lustres de cristal, grand escalier blanc, colonnes et kosha fleurie.</span></div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><div><b>Zéro coupure</b><span>Deux groupes électrogènes : votre fête continue, quoi qu’il arrive.</span></div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Facile à trouver</b><span>À Sousse, accès simple et parking à proximité.</span></div></li>
+    </ul>
+  </div>
+
+  <section id="salle" aria-labelledby="t-salle">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">La salle</p>
+        <h2 id="t-salle">Un décor <em>chic et lumineux</em></h2>
+        <p class="lead">De l’entrée sous les colonnes jusqu’à la kosha, chaque espace a été pensé pour que vos photos soient à la hauteur du jour J.</p>
+      </div>
+      <div class="bento">
+        <figure class="b1"><img src="assets/img-05.jpg" width="720" height="1280" loading="lazy" alt="Le grand escalier blanc illuminé sous un lustre de cristal, devant un mur de fleurs en papier"><figcaption>Le grand escalier</figcaption></figure>
+        <figure class="b2"><img src="assets/img-08.jpg" width="576" height="1024" loading="lazy" alt="La kosha : un canapé blanc devant trois arches lumineuses, sous un plafond fleuri"><figcaption>La kosha</figcaption></figure>
+        <figure class="b3"><img src="assets/img-06.jpg" width="1280" height="720" loading="lazy" alt="La façade illuminée la nuit"><figcaption>La façade, la nuit</figcaption></figure>
+        <figure class="b4"><img src="assets/img-10.jpg" width="720" height="1280" loading="lazy" alt="La salle dressée : colonnes-lanternes dorées, lustre de cristal, salons blancs et kosha drapée"><figcaption>Lustres &amp; lanternes dorées</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="evenements" class="events" aria-labelledby="t-ev">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">Vos événements</p>
+        <h2 id="t-ev">Pour les plus <em>beaux moments</em></h2>
+      </div>
+      <div class="ev-grid">
+        <article class="ev">
+          <img src="assets/img-04.jpg" width="720" height="1280" loading="lazy" alt="Les mariés sur les marches de l’entrée, entre les colonnes et sous le lustre extérieur">
+          <div class="t"><span class="num">I.</span><h3>Le mariage</h3><p>Votre grand jour dans un cadre de prestige, de l’arrivée sur les marches jusqu’à la dernière danse.</p></div>
+        </article>
+        <article class="ev">
+          <img src="assets/img-09.jpg" width="720" height="1280" loading="lazy" alt="Une mariée en tenue traditionnelle dorée traverse la salle">
+          <div class="t"><span class="num">II.</span><span class="ar" lang="ar" dir="rtl">الحنة</span><h3>La henna</h3><p>Une nuit de fête dans les règles de l’art : tenues traditionnelles, troupes et chants, dans une salle qui met chaque coutume en valeur.</p></div>
+        </article>
+        <article class="ev">
+          <img src="assets/img-05.jpg" width="720" height="1280" loading="lazy" alt="Une invitée en robe de soirée monte le grand escalier blanc illuminé">
+          <div class="t"><span class="num">III.</span><h3>Les séances photo</h3><p>Escalier, colonnes, façade illuminée : un décor prêt pour vos photographes et vidéastes.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="power" aria-labelledby="t-pow">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">L’esprit tranquille</p>
+        <h2 id="t-pow">Une coupure de courant&nbsp;? Pas le soir de votre fête.</h2>
+        <p class="lead">La salle est équipée de deux groupes électrogènes. Si le courant saute dans le quartier, la musique et la lumière continuent.</p>
+        <blockquote>
+          <p class="ar" lang="ar" dir="rtl">الضو ما يقصش، والفرحة تكمل للآخر</p>
+          <cite>« La lumière ne s’éteint pas, la fête va jusqu’au bout. »</cite>
+        </blockquote>
+      </div>
+      <div class="gen" aria-hidden="true">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M13 8.5 9.5 12.5H12l-1 3 3.5-4H12z"/><path d="M6 18v2M18 18v2"/></svg><b>1</b><span>Groupe principal</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M13 8.5 9.5 12.5H12l-1 3 3.5-4H12z"/><path d="M6 18v2M18 18v2"/></svg><b>2</b><span>Groupe de secours</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="details" aria-labelledby="t-det">
+    <div class="wrap split">
+      <div class="pics">
+        <img src="assets/img-02.jpg" width="720" height="1280" loading="lazy" alt="Service du café en cezve sur plateau, avec un grand plat de baklawa">
+        <img src="assets/img-03.jpg" width="720" height="1280" loading="lazy" alt="Coupe de dragées vertes et mauves décorée de branches d’olivier">
+        <img src="assets/img-01.jpg" width="720" height="1280" loading="lazy" alt="Buffet de fête : verrines, riz, souris d’agneau et pâtisseries">
+      </div>
+      <div>
+        <p class="eyebrow">Les détails</p>
+        <h2 id="t-det">Une équipe et des <em>partenaires</em></h2>
+        <p class="lead">À Dalia, la salle n’est qu’un début : il y a aussi une équipe, un réseau de prestataires de confiance et beaucoup de souvenirs partagés. La salle collabore régulièrement avec :</p>
+        <ul>
+          <li>Traiteurs</li><li>Décorateurs</li><li>Fleuristes</li><li>Troupes &amp; DJ</li><li>Photographes</li><li>Vidéastes</li><li>Techniciens</li><li>Artistes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserver" class="book" aria-labelledby="t-book">
+    <div class="wrap center">
+      <p class="eyebrow">Réserver</p>
+      <h2 id="t-book">Réservez votre date <em>pour la nouvelle saison</em></h2>
+      <p class="lead">Le calendrier de la prochaine saison est ouvert. Les meilleures dates sont vite prises : appelez-nous pour connaître les disponibilités.</p>
+      <ol class="steps" style="text-align:left;padding:0">
+        <li><h3>Appelez</h3><p>Au 00 000 000, ou par message sur nos réseaux.</p></li>
+        <li><h3>Visitez</h3><p>Venez voir la salle, l’escalier et la kosha avec vos proches.</p></li>
+        <li><h3>Réservez</h3><p>Fixez votre date et préparez la plus belle nuit de votre vie.</p></li>
+      </ol>
+      <div class="cta">
+        <a class="btn btn-gold" href="tel:+21600000000">Appeler · 00 000 000</a>
+        <a class="btn btn-out" href="#">Message Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="acces" class="info" aria-labelledby="t-acc">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Accès</p>
+        <h2 id="t-acc">Nous trouver à Sousse</h2>
+        <dl class="rows">
+          <div><dt>Adresse</dt><dd>Centre-ville, Sousse</dd></div>
+          <div><dt>Téléphone</dt><dd><a href="tel:+21600000000">00 000 000</a></dd></div>
+          <div><dt>Visites</dt><dd>Sur appel, pour fixer un rendez-vous</dd></div>
+          <div><dt>Instagram</dt><dd><a href="#">Instagram</a></dd></div>
+        </dl>
+        <div class="cta">
+          <a class="btn btn-night" href="#">Itinéraire</a>
+          <a class="btn btn-out" href="tel:+21600000000">Appeler</a>
+        </div>
+      </div>
+      <div class="pic"><img src="assets/img-07.jpg" width="1136" height="640" loading="lazy" alt="La Salle Dalia et son parvis, vus du ciel au crépuscule"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg class="bloom" aria-hidden="true"><use href="#bloom"/></svg>
+    <b>Salle Dalia</b>
+    <p>© Salle Dalia · Salle des fêtes · Sousse · <a href="tel:+21600000000">00 000 000</a> · <a href="#">Instagram</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Réserver">
+  <a class="btn btn-gold" href="tel:+21600000000">Appeler</a>
+  <a class="btn btn-dark" href="#">Itinéraire</a>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement, KEY = 'dalia-theme';
+    try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    document.querySelector('[data-toggle]').addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

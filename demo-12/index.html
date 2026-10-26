@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café Nomade — Café, pizza &amp; resto à Houmt Souk, Djerba</title>
+<meta name="description" content="Café Nomade, au centre-ville de Houmt Souk : petits-déjeuners, cafés, crêpes, pizzas, plats, desserts et Nomade Box. Bien plus qu'un café : un moment à part. Tél. 00 000 000.">
+<meta name="theme-color" content="#14213D">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_TN">
+<meta property="og:site_name" content="Café Nomade">
+<meta property="og:title" content="Café Nomade — Houmt Souk, Djerba">
+<meta property="og:description" content="Bien plus qu'un café, un moment à part : petit-déj, crêpes, pizzas, pâtes, desserts et Nomade Box, au centre-ville.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Une Nomade Box sur une table en bois : sandwichs grillés, frites et sauces">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%2314213D'/%3E%3Cpath d='M18 80h64' stroke='%23F0C35E' stroke-width='6'/%3E%3Ctext x='50' y='66' font-family='Arial,sans-serif' font-weight='700' font-size='58' text-anchor='middle' fill='%23F7F2EA'%3En%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Noto+Kufi+Arabic:wght@600&display=swap" rel="stylesheet">
+<style>
+  /* Palette: a navy vertical sign against a blue sky, the white vaulted room,
+     velvet chairs (bottle green, petrol blue, mustard) and warm wood tables. */
+  :root {
+    --bg: #F7F2EA; --bg-2: #EFE6D8; --card: #FFFFFF; --ink: #14213D; --soft: #4B5670;
+    --navy: #14213D; --sky: #2A62D6; --gold: #B7772B; --velvet: #2F5D50; --mustard: #D9A43A;
+    --line: rgb(20 33 61 / .13); --focus: #2A62D6; --on-accent: #FFFFFF;
+    --serif: "Bodoni Moda", "Didot", Georgia, serif;
+    --sans: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --gutter: clamp(16px, 4vw, 56px); --max: 1200px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0D1528; --bg-2: #121D36; --card: #17233F; --ink: #F3EEE6; --soft: #B6BED2;
+      --sky: #7FA7FF; --gold: #E2A95E; --velvet: #8CC7B4; --mustard: #F0C35E;
+      --line: rgb(243 238 230 / .14); --focus: #7FA7FF; --on-accent: #0D1528; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0D1528; --bg-2: #121D36; --card: #17233F; --ink: #F3EEE6; --soft: #B6BED2;
+    --sky: #7FA7FF; --gold: #E2A95E; --velvet: #8CC7B4; --mustard: #F0C35E;
+    --line: rgb(243 238 230 / .14); --focus: #7FA7FF; --on-accent: #0D1528; color-scheme: dark;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.0625rem/1.6 var(--sans); overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 50; background: var(--sky); color: #fff; padding: 10px 16px; border-radius: 6px; font-weight: 700; text-decoration: none; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
+  [lang="ar"] { font-family: "Noto Kufi Arabic", sans-serif; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55em; min-height: 48px; padding: .75em 1.4em; border-radius: 4px;
+    font: 700 .95rem/1 var(--sans); letter-spacing: .06em; text-transform: uppercase; text-decoration: none; border: 2px solid transparent; cursor: pointer; }
+  .btn svg { width: 1.15em; height: 1.15em; flex: none; }
+  .btn-main { background: var(--sky); color: #fff; }
+  :root[data-theme="dark"] .btn-main { color: #0D1528; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn-main { color: #0D1528; } }
+  .btn-main:hover { filter: brightness(1.08); }
+  .btn-line { border-color: currentColor; color: var(--ink); }
+  .btn-line:hover { background: var(--bg-2); }
+
+  /* header */
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 16px; }
+  .logo { text-decoration: none; display: inline-grid; line-height: 1; }
+  .logo b { font: 800 1.55rem/1 var(--sans); letter-spacing: .02em; text-transform: lowercase; padding-bottom: 5px; border-bottom: 3px solid var(--mustard); }
+  .logo b::after { content: "."; color: var(--mustard); }
+  .logo small { font: 500 italic .72rem/1 var(--serif); letter-spacing: .12em; color: var(--soft); margin-top: 6px; }
+  .nav { display: flex; align-items: center; gap: clamp(8px, 2vw, 26px); }
+  .nav a { text-decoration: none; font-weight: 500; color: var(--soft); padding: 8px 2px; }
+  .nav a:hover { color: var(--ink); }
+  .theme { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; display: grid; place-items: center; }
+  .theme svg { width: 20px; height: 20px; }
+  .theme .moon { display: none; }
+  :root[data-theme="dark"] .theme .sun { display: none; } :root[data-theme="dark"] .theme .moon { display: block; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .theme .sun { display: none; } :root:not([data-theme="light"]) .theme .moon { display: block; } }
+  @media (max-width: 760px) { .nav a { display: none; } }
+
+  /* hero: the vertical sign */
+  .hero { display: grid; grid-template-columns: auto 1fr 1fr; gap: clamp(20px, 3.5vw, 48px); align-items: stretch; padding: clamp(8px, 2vw, 24px) 0 clamp(48px, 7vw, 96px); }
+  .sign { background: #14213D; color: #F7F2EA; border-radius: 10px; padding: 26px 18px; display: grid; justify-items: center; align-content: space-between; gap: 18px;
+    box-shadow: inset 0 0 0 3px #14213D, inset 0 0 0 5px rgb(247 242 234 / .55); }
+  :root[data-theme="dark"] .sign { background: #050A16; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sign { background: #050A16; } }
+  .sign span { writing-mode: vertical-rl; transform: rotate(180deg); font: 500 clamp(2.8rem, 5vw, 4.3rem)/1 var(--serif); letter-spacing: .1em; }
+  .sign ul { list-style: none; margin: 0; padding: 0; text-align: center; font: 700 .72rem/1.55 var(--sans); letter-spacing: .2em; text-transform: uppercase; border-top: 1px solid rgb(247 242 234 / .4); padding-top: 12px; }
+  .hero-txt { align-self: center; }
+  .kicker { margin: 0 0 14px; font: 700 .78rem/1.3 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--gold); }
+  h1 { margin: 0; font: 500 clamp(2.6rem, 5.6vw, 4.8rem)/1.02 var(--serif); }
+  h1 i { color: var(--sky); }
+  .lede { color: var(--soft); font-size: clamp(1.05rem, 1.6vw, 1.22rem); max-width: 36ch; margin: 20px 0 28px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .addr { display: flex; gap: 10px; align-items: center; margin-top: 26px; font-weight: 500; color: var(--soft); }
+  .addr svg { width: 20px; height: 20px; color: var(--sky); flex: none; }
+  .hero-pics { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 12px; height: clamp(460px, 68vh, 640px); }
+  .hero-pics .tall img { object-position: 50% 80%; }
+  .hero-pics figure { margin: 0; border-radius: 10px; overflow: hidden; background: var(--bg-2); }
+  .hero-pics img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-pics .tall { grid-row: span 2; border-radius: 999px 999px 10px 10px; }
+  @media (max-width: 980px) {
+    .hero { grid-template-columns: auto 1fr; }
+    .hero-pics { grid-column: 1 / -1; height: auto; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto; }
+    .hero-pics img { aspect-ratio: 3 / 4; }
+    .hero-pics .tall { grid-row: auto; }
+  }
+  @media (max-width: 560px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-pics { gap: 8px; }
+    .top .logo { visibility: hidden; }
+    .sign { grid-auto-flow: column; align-items: center; justify-content: space-between; padding: 14px 18px; }
+    .sign span { writing-mode: horizontal-tb; transform: none; font-size: 2.6rem; }
+    .sign ul { border-top: 0; border-left: 1px solid rgb(247 242 234 / .4); padding: 0 0 0 14px; text-align: left; }
+  }
+
+  /* ribbon */
+  .ribbon { background: var(--navy); color: #F7F2EA; }
+  :root[data-theme="dark"] .ribbon { background: #050A16; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .ribbon { background: #050A16; } }
+  .ribbon ul { list-style: none; margin: 0; padding: 18px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 34px; font: 500 italic clamp(1.1rem, 2vw, 1.4rem)/1.2 var(--serif); }
+  .ribbon li::before { content: "✦"; font-style: normal; font-size: .7em; color: var(--mustard); margin-right: 12px; vertical-align: .15em; }
+
+  section { padding-block: clamp(64px, 9vw, 120px); }
+  .head { display: grid; grid-template-columns: 1fr auto; gap: 12px 40px; align-items: end; margin-bottom: clamp(28px, 4vw, 52px); }
+  h2 { margin: 0; font: 500 clamp(2.2rem, 5vw, 3.6rem)/1.05 var(--serif); }
+  h2 i { color: var(--sky); }
+  .head p { margin: 0; color: var(--soft); max-width: 44ch; }
+  @media (max-width: 760px) { .head { grid-template-columns: 1fr; } }
+
+  /* carte */
+  .menu { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }
+  .dish { grid-column: span 2; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+  .dish.big { grid-column: span 3; }
+  .dish figure { margin: 0; position: relative; }
+  .dish img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .dish.big img { aspect-ratio: 16 / 11; }
+  .dish .tag { position: absolute; left: 12px; top: 12px; background: var(--navy); color: #F7F2EA; font: 700 .72rem/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; padding: 8px 10px; border-radius: 3px; }
+  .dish div { padding: 18px 20px 22px; }
+  .dish h3 { margin: 0 0 6px; font: 500 1.45rem/1.15 var(--serif); }
+  .dish p { margin: 0; color: var(--soft); font-size: .97rem; }
+  .price { display: inline-block; margin-top: 12px; font: 700 1.05rem/1 var(--sans); color: var(--gold); }
+  @media (max-width: 900px) { .menu { grid-template-columns: 1fr 1fr; } .dish, .dish.big { grid-column: span 1; } }
+  @media (max-width: 560px) { .menu { grid-template-columns: 1fr; } }
+
+  /* box feature */
+  .box { background: var(--bg-2); }
+  .box-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+  .box-pics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .box-pics img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 10px; }
+  .box-pics img:last-child { margin-top: 48px; }
+  .receipt { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: clamp(20px, 3vw, 32px); margin-top: 24px; max-width: 460px;
+    background-image: radial-gradient(circle at 10px 0, transparent 9px, var(--card) 10px); }
+  .receipt h3 { margin: 0 0 12px; font: 700 .8rem/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--soft); }
+  .receipt ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .receipt li { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px dashed var(--line); padding-bottom: 8px; }
+  .receipt .total { display: flex; justify-content: space-between; align-items: baseline; margin-top: 14px; font: 500 1.6rem/1 var(--serif); }
+  .receipt .total b { color: var(--gold); }
+  .receipt small { display: block; color: var(--soft); margin-top: 10px; font-size: .85rem; }
+  .ar-line { font-size: 1.15rem; color: var(--velvet); margin: 18px 0 0; }
+  @media (max-width: 860px) { .box-grid { grid-template-columns: 1fr; } }
+
+  /* lieu */
+  .place { display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+  .place figure { margin: 0; border-radius: 10px; overflow: hidden; position: relative; }
+  .place img { width: 100%; height: 100%; object-fit: cover; }
+  .place figcaption { position: absolute; left: 12px; bottom: 12px; background: rgb(20 33 61 / .82); color: #F7F2EA; font: 500 .85rem/1.2 var(--sans); padding: 7px 11px; border-radius: 3px; }
+  .p1 { grid-column: span 5; grid-row: span 2; } .p2 { grid-column: span 4; } .p3 { grid-column: span 3; grid-row: span 2; } .p4 { grid-column: span 4; }
+  .place .p2 img, .place .p4 img { aspect-ratio: 4 / 3; }
+  .quote { grid-column: 1 / -1; margin: 18px 0 0; font: 500 italic clamp(1.6rem, 3.4vw, 2.6rem)/1.2 var(--serif); text-align: center; }
+  @media (max-width: 760px) { .place { grid-template-columns: 1fr 1fr; } .p1, .p2, .p3, .p4 { grid-column: span 1; grid-row: auto; } .place img { aspect-ratio: 3 / 4; } }
+
+  /* infos */
+  .infos { background: var(--navy); color: #F7F2EA; }
+  :root[data-theme="dark"] .infos { background: #050A16; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .infos { background: #050A16; } }
+  .infos h2 { color: #F7F2EA; } .infos h2 i { color: #9DBBFF; }
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 36px; }
+  .info-card { border: 1px solid rgb(247 242 234 / .25); border-radius: 10px; padding: 24px; }
+  .info-card h3 { margin: 0 0 10px; font: 700 .78rem/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: #F0C35E; }
+  .info-card p { margin: 0 0 16px; color: #DCE2F0; }
+  .info-card a.link { color: #fff; font-weight: 700; text-underline-offset: 4px; }
+  .infos .btn-main { background: #F7F2EA; color: #14213D; }
+  .infos .btn-line { color: #F7F2EA; }
+  .infos .btn-line:hover { background: rgb(255 255 255 / .08); }
+  @media (max-width: 860px) { .info-grid { grid-template-columns: 1fr; } }
+
+  footer { padding-block: 30px; border-top: 1px solid var(--line); }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; align-items: center; color: var(--soft); font-size: .95rem; }
+</style>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/demo-12/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/demo-12/">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="wrap top">
+  <a class="logo" href="#" aria-label="Café Nomade, accueil"><b>Nomade</b><small>café · resto · Djerba</small></a>
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="#carte">La carte</a>
+    <a href="#box">Nomade Box</a>
+    <a href="#lieu">Le lieu</a>
+    <a href="#infos">Venir</a>
+    <button class="theme" type="button" aria-label="Changer de thème (clair / sombre)">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="wrap hero">
+    <div class="sign" aria-hidden="true">
+      <span>NOMADE</span>
+      <ul><li>Pizza</li><li>Resto</li><li>Café</li><li>Brunch</li></ul>
+    </div>
+    <div class="hero-txt">
+      <p class="kicker">Houmt Souk · Djerba</p>
+      <h1>Bien plus qu'un café, <i>un moment à part</i>.</h1>
+      <p class="lede">Petit-déjeuner, cafés, crêpes, pizzas, pâtes et boxes à partager, dans une salle blanche voûtée aux fauteuils de velours.</p>
+      <div class="cta">
+        <a class="btn btn-main" href="tel:+21600000000">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+          00 000 000</a>
+        <a class="btn btn-line" href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Itinéraire</a>
+      </div>
+      <p class="addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>Centre-ville, Houmt Souk</p>
+    </div>
+    <div class="hero-pics">
+      <figure class="tall"><img src="assets/img-12.jpg" width="640" height="860" alt="La salle du Nomade : voûte blanche, arches, appliques noires et fauteuils en velours vert, bleu et moutarde"></figure>
+      <figure><img src="assets/img-05.jpg" width="1080" height="1350" alt="Assiette de crêpes au chocolat, jus d'orange et café au lait sur une table en bois"></figure>
+      <figure><img src="assets/img-08.jpg" width="900" height="1600" alt="L'enseigne verticale bleu marine du café sur fond de ciel bleu"></figure>
+    </div>
+  </div>
+
+  <div class="ribbon" aria-label="Nos rubriques">
+    <ul><li>Cafés</li><li>Petit déj</li><li>Crêpes</li><li>Nos pizzas</li><li>Plats</li><li>Box Nomade</li></ul>
+  </div>
+
+  <section id="carte" aria-labelledby="carte-t">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="carte-t">La <i>carte</i>, du matin au soir</h2>
+        <p>Un aperçu de ce qui sort de la cuisine du Nomade. La carte complète et les prix du jour sont disponibles sur place.</p>
+      </div>
+      <div class="menu">
+        <article class="dish big">
+          <figure><img src="assets/img-09.jpg" width="640" height="1136" loading="lazy" alt="Plateau de petit-déjeuner : poêlons, charcuterie, fromages, viennoiseries, café et jus"><span class="tag">Petit déj</span></figure>
+          <div><h3>Le nouveau petit-déjeuner</h3><p>Chaque matin mérite un vrai rendez-vous : sucré, salé, café chaud et jus frais pour bien commencer la journée.</p></div>
+        </article>
+        <article class="dish big">
+          <figure><img src="assets/img-06.jpg" width="1280" height="1600" loading="lazy" alt="Quatre desserts en verrine : Pistachio Dream, Nutella Bliss et Tiramisu Classico"><span class="tag">Desserts</span></figure>
+          <div><h3>Pistachio Dream, Nutella Bliss, Tiramisu</h3><p>L'élégance du tiramisu, l'intensité du chocolat et la douceur de la pistache.</p></div>
+        </article>
+        <article class="dish">
+          <figure><img src="assets/img-01.jpg" width="640" height="1136" loading="lazy" alt="Poêlée de tagliatelles à la sauce tomate pimentée"><span class="tag">Pâtes</span></figure>
+          <div><h3>Tagliatelle all'arrabbiata</h3><p>Envie de piquant ? Et sa version crémeuse au poulet, flambée à la poêle.</p></div>
+        </article>
+        <article class="dish">
+          <figure><img src="assets/img-10.jpg" width="640" height="1136" loading="lazy" alt="Assiette noire avec un plat crémeux, émincé de poulet et feuille de basilic"><span class="tag">Plats</span></figure>
+          <div><h3>Élégance à table</h3><p>Des plats dressés avec soin, à midi comme le soir, et des fruits de mer préparés à notre façon.</p></div>
+        </article>
+        <article class="dish">
+          <figure><img src="assets/img-04.jpg" width="640" height="1136" loading="lazy" alt="Burger et frites servis sur une planche noire"><span class="tag">Burgers &amp; tacos</span></figure>
+          <div><h3>Burgers, tacos &amp; cheese naan</h3><p>Pour les jours où l'on veut un peu de tout : burger, tacos et notre cheese naan.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="box" class="box" aria-labelledby="box-t">
+    <div class="wrap box-grid">
+      <div class="box-pics">
+        <img src="assets/img-02.jpg" width="1200" height="1600" loading="lazy" alt="Nomade Box sur une table : tacos, cheese naan, frites et deux mojitos">
+        <img src="assets/img-03.jpg" width="900" height="1600" loading="lazy" alt="Plateau en bois garni de sandwichs grillés, frites, sauces et canettes">
+      </div>
+      <div>
+        <p class="kicker">À partager</p>
+        <h2 id="box-t">L'heure de la <i>Nomade Box</i></h2>
+        <p style="color:var(--soft)">Généreuses, savoureuses et faites pour partager. Les boxes évoluent avec les saisons, pour chaque appétit et chaque budget.</p>
+        <div class="receipt">
+          <h3>Nomade Box</h3>
+          <ul><li><span>Tacos</span><span>×2</span></li><li><span>Cheese naan</span><span>×2</span></li><li><span>Mojitos</span><span>×2</span></li><li><span>Nuggets &amp; frites</span><span>✓</span></li></ul>
+          <p class="total"><span>Total</span><b>42 DT</b></p>
+          <small>Prix indicatif, à confirmer sur place.</small>
+        </div>
+        <p class="ar-line" lang="ar" dir="rtl">بوكسات لكل الأذواق</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="lieu" aria-labelledby="lieu-t">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="lieu-t">Un décor, une pause, <i>une halte signée Nomade.</i></h2>
+      </div>
+      <div class="place">
+        <figure class="p1"><img src="assets/img-11.jpg" width="640" height="1136" loading="lazy" alt="Tables dressées pour le petit-déjeuner devant un mur de briques blanches et des oiseaux de paradis"><figcaption>Le brunch du matin</figcaption></figure>
+        <figure class="p2"><img src="assets/img-13.jpg" width="640" height="1136" loading="lazy" alt="Table en bois avec une box et des canettes, chaises tressées et plantes vertes"><figcaption>Un moment pour soi</figcaption></figure>
+        <figure class="p3"><img src="assets/img-07.jpg" width="640" height="1136" loading="lazy" alt="L'enseigne Nomade éclairée la nuit sur l'avenue"><figcaption>Le soir, au centre-ville</figcaption></figure>
+        <figure class="p4"><img src="assets/img-12.jpg" width="640" height="860" loading="lazy" alt="La salle voûtée et ses fauteuils en velours"><figcaption>La salle</figcaption></figure>
+        <p class="quote">« Prenez le temps, installez-vous : la table est prête au Nomade. »</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" class="infos" aria-labelledby="infos-t">
+    <div class="wrap">
+      <p class="kicker" style="color:#F0C35E">Venir au Nomade</p>
+      <h2 id="infos-t">On vous attend à <i>Houmt Souk</i></h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Adresse</h3>
+          <p>Centre-ville<br>Houmt Souk, Djerba</p>
+          <a class="btn btn-main" href="#">Ouvrir dans Maps</a>
+        </div>
+        <div class="info-card">
+          <h3>Réserver une table</h3>
+          <p>Pour une table, une box à emporter ou un groupe, appelez-nous.</p>
+          <a class="btn btn-main" href="tel:+21600000000">Appeler le 00 000 000</a>
+        </div>
+        <div class="info-card">
+          <h3>Horaires &amp; nouveautés</h3>
+          <p>Horaires du jour, nouvelles boxes et menus du Ramadan : demandez-nous par message.</p>
+          <a class="btn btn-line" href="https://wa.me/21600000000?text=Bonjour%20Caf%C3%A9%20Nomade">Message WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b style="font-family:var(--sans);font-weight:800;color:var(--ink)">nomade.</b> Café · Houmt Souk, Djerba</span>
+    <a href="mailto:contact@exemple.tn">contact@exemple.tn</a>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.querySelector('.theme');
+    try { var s = localStorage.getItem('nomade-theme'); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    btn.addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('nomade-theme', next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

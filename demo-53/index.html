@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juno Coffee House — Café à Mrezga, Nabeul</title>
+<meta name="description" content="Juno Coffee House, coffee shop à Mrezga (Nabeul) : espresso, latte, iced latte, matcha, smoothies et croissants dans les fameux gobelets turquoise. Brew. Taste. Unwind.">
+<meta name="theme-color" content="#37A299" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#08201C" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Juno Coffee House">
+<meta property="og:title" content="Juno Coffee House — Mrezga, Nabeul">
+<meta property="og:description" content="Parfois, un bon café suffit à faire une belle journée. Espresso, iced latte, matcha et smoothies à Mrezga.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Un gobelet Juno turquoise tenu devant un rideau turquoise">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #FFFFFF;
+    --soft: #EEF7F6;
+    --ink: #0B2622;
+    --muted: #46605C;
+    --line: #D4E7E4;
+    --teal: #37A299;
+    --teal-deep: #1F7C74;
+    --forest: #0B3B33;
+    --on-teal: #062420;
+    --pink: #F5B8CC;
+    --card: #FFFFFF;
+    --link: #1A6F68;
+    --focus: #0B3B33;
+    --shadow: 0 22px 44px -28px rgba(6, 50, 45, .55);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #08201C;
+      --soft: #0D2C27;
+      --ink: #EAF6F4;
+      --muted: #A8C6C1;
+      --line: #1D433D;
+      --card: #10322C;
+      --link: #7FD8CF;
+      --focus: #9FE7DF;
+      --shadow: 0 22px 44px -28px rgba(0, 0, 0, .9);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #08201C;
+    --soft: #0D2C27;
+    --ink: #EAF6F4;
+    --muted: #A8C6C1;
+    --line: #1D433D;
+    --card: #10322C;
+    --link: #7FD8CF;
+    --focus: #9FE7DF;
+    --shadow: 0 22px 44px -28px rgba(0, 0, 0, .9);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.6 Outfit, system-ui, sans-serif; overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 8px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 60; background: var(--card); color: var(--ink); padding: 10px 14px; border-radius: 8px; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1200px, 100% - 40px); margin-inline: auto; }
+  .mark { display: block; fill: none; stroke: currentColor; stroke-linecap: square; stroke-linejoin: miter; }
+
+  .kicker { font: 600 13px/1 'Josefin Sans', sans-serif; letter-spacing: .32em; text-transform: uppercase; color: var(--teal-deep); margin: 0 0 14px; }
+  :root[data-theme="dark"] .kicker { color: #7FD8CF; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kicker { color: #7FD8CF; } }
+  h2 { font: 800 clamp(34px, 5vw, 60px)/1 Outfit, sans-serif; letter-spacing: -.03em; margin: 0 0 18px; }
+  h3 { font: 700 22px/1.2 Outfit, sans-serif; margin: 0 0 6px; letter-spacing: -.01em; }
+  p { margin: 0 0 1em; }
+  .lead { font-size: 19px; color: var(--muted); max-width: 54ch; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 12px 24px; border-radius: 999px; font: 700 16px/1 Outfit, sans-serif; text-decoration: none; border: 2px solid transparent; transition: transform .15s ease; }
+  .btn:hover { transform: translateY(-2px); }
+  .btn svg { width: 19px; height: 19px; flex: none; }
+  .btn-dark { background: var(--forest); color: #fff; }
+  .btn-white { background: #fff; color: var(--forest); }
+  .btn-line { border-color: currentColor; }
+
+  /* header */
+  .top { position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 66px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+  .brand .mark { width: 74px; height: 25px; stroke-width: 6; }
+  .brand small { font: 400 11px/1.1 'Josefin Sans', sans-serif; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); }
+  .nav { display: flex; align-items: center; gap: 24px; }
+  .nav a.l { text-decoration: none; font-weight: 500; color: var(--muted); }
+  .nav a.l:hover { color: var(--ink); }
+  .toggle { width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--line); background: transparent; color: var(--ink); display: grid; place-items: center; cursor: pointer; }
+  .toggle svg { width: 19px; height: 19px; }
+  .top .btn { min-height: 44px; padding: 10px 18px; font-size: 15px; }
+  @media (max-width: 880px) { .nav a.l { display: none; } .nav { gap: 10px; } }
+  @media (max-width: 420px) { .top .btn span { display: none; } .top .btn { padding: 10px 13px; } .brand small { display: none; } }
+
+  /* hero */
+  .hero { background: var(--teal); color: var(--on-teal); overflow: hidden; position: relative; }
+  .hero .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; padding-block: 56px 72px; }
+  .hero h1 { margin: 0; color: #fff; }
+  .hero h1 .mark { width: min(100%, 520px); height: auto; stroke-width: 4.2; }
+  .hero h1 span { display: block; font: 300 clamp(16px, 2vw, 22px)/1 'Josefin Sans', sans-serif; letter-spacing: .62em; text-transform: uppercase; margin: 20px 0 0 4px; }
+  .hero .tag { font: 800 clamp(28px, 3.6vw, 44px)/1.05 Outfit, sans-serif; letter-spacing: -.03em; margin: 34px 0 14px; color: var(--forest); }
+  .hero p.sub { font-size: 19px; max-width: 44ch; margin-bottom: 30px; color: #0B2E29; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero .cta .btn-line { color: var(--forest); }
+  .hero .pic { position: relative; justify-self: center; width: min(100%, 440px); }
+  .hero .pic img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 999px 999px 32px 32px; box-shadow: 0 40px 60px -30px rgba(4,40,35,.7); }
+  .sticker { position: absolute; left: -34px; bottom: 40px; width: 130px; height: 130px; border-radius: 50%; background: #fff; color: var(--forest); display: grid; place-items: center; text-align: center; font: 700 14px/1.15 Outfit, sans-serif; padding: 18px; transform: rotate(-10deg); box-shadow: var(--shadow); }
+  .sticker b { display: block; font-size: 22px; letter-spacing: -.02em; }
+  @media (max-width: 860px) {
+    .hero .wrap { grid-template-columns: 1fr; padding-block: 40px 56px; }
+    .hero .pic { width: calc(100% - 40px); max-width: 360px; }
+    .sticker { left: -20px; width: 110px; height: 110px; font-size: 12.5px; }
+    .sticker b { font-size: 18px; }
+  }
+
+  .ticker { background: var(--forest); color: #CFEDEA; overflow: hidden; white-space: nowrap; font: 300 18px/1 'Josefin Sans', sans-serif; letter-spacing: .3em; text-transform: uppercase; padding: 18px 0; }
+  .ticker div { display: inline-block; animation: slide 38s linear infinite; }
+  .ticker span { margin: 0 26px; }
+  .ticker span::after { content: "●"; margin-left: 52px; color: var(--teal); font-size: 10px; vertical-align: middle; }
+  @keyframes slide { to { transform: translateX(-50%); } }
+
+  section { padding-block: clamp(64px, 9vw, 112px); }
+  .head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px 40px; margin-bottom: 40px; }
+  .head .lead { margin: 0; max-width: 44ch; }
+
+  /* menu */
+  .menu { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
+  .card { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 28px; overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+  .card img { width: 100%; object-fit: cover; aspect-ratio: 4/5; }
+  .card figcaption { padding: 18px 22px 22px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .card .pill { display: inline-block; font: 700 12px/1 Outfit, sans-serif; letter-spacing: .08em; text-transform: uppercase; background: var(--teal); color: var(--on-teal); padding: 7px 11px; border-radius: 999px; margin-bottom: 10px; }
+  .c-big { grid-column: span 6; grid-row: span 2; }
+  .c-big img { aspect-ratio: auto; flex: 1; min-height: 0; height: 100%; }
+  .c-s { grid-column: span 3; }
+  .c-s img { aspect-ratio: 1/1; }
+  @media (max-width: 960px) { .menu { grid-template-columns: 1fr 1fr; } .c-big { grid-column: span 2; grid-row: auto; } .c-big img { aspect-ratio: 4/3; height: auto; } .c-s { grid-column: span 1; } }
+  @media (max-width: 480px) { .menu { gap: 12px; } .card { border-radius: 20px; } .card figcaption { padding: 14px 14px 16px; } .card h3 { font-size: 18px; } .card p { font-size: 14px; } }
+  .menu-note { margin: 26px 0 0; color: var(--muted); }
+  .menu-note a { color: var(--link); font-weight: 700; }
+
+  /* moments rail */
+  .moments { background: var(--soft); }
+  .rail { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(240px, 300px); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 4px 18px; margin: 0; list-style: none; }
+  .rail li { scroll-snap-align: start; }
+  .rail figure { margin: 0; }
+  .rail img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 24px; }
+  .rail figcaption { margin-top: 10px; font-weight: 700; }
+  .rail figcaption span { display: block; font-weight: 400; color: var(--muted); font-size: 15px; }
+  .rail::-webkit-scrollbar { height: 8px; } .rail::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 8px; }
+
+  /* 80s */
+  .eighties { background: #2B1408; color: #FCE9CF; position: relative; overflow: hidden; }
+  .eighties::before { content: ""; position: absolute; inset: auto -10% -40% -10%; height: 80%; background: repeating-linear-gradient(90deg, rgba(255,140,60,.18) 0 2px, transparent 2px 60px), repeating-linear-gradient(0deg, rgba(255,140,60,.18) 0 2px, transparent 2px 40px); transform: perspective(400px) rotateX(60deg); pointer-events: none; }
+  .eighties .wrap { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .eighties h2 { font-style: italic; background: linear-gradient(90deg, #FF8A3D, #FF4FA3, #37C9BE); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .eighties .kicker { color: #FFB27A; }
+  .eighties p { color: #F2D9BA; }
+  .eighties .duo { display: grid; grid-template-columns: 1.2fr .8fr; gap: 14px; align-items: end; }
+  .eighties .duo img { border-radius: 18px; width: 100%; object-fit: cover; border: 3px solid #FCE9CF; }
+  .eighties .duo .a { aspect-ratio: 4/5; transform: rotate(-2deg); }
+  .eighties .duo .b { aspect-ratio: 9/16; transform: rotate(3deg); }
+  @media (max-width: 860px) { .eighties .wrap { grid-template-columns: 1fr; } }
+
+  /* house */
+  .house .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
+  .house .pics { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .house .pics img { width: 100%; object-fit: cover; border-radius: 24px; }
+  .house .pics .a { aspect-ratio: 4/5; }
+  .house .pics .b { aspect-ratio: 9/16; margin-top: 50px; }
+  @media (max-width: 860px) { .house .wrap { grid-template-columns: 1fr; } }
+
+  /* info */
+  .info { background: var(--forest); color: #EAF6F4; }
+  .info .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .tile { border-radius: 28px; padding: 28px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); }
+  .tile h3 { color: #fff; }
+  .tile p { color: #BFE0DB; }
+  .tile .btn { margin-top: 6px; }
+  .info h2 { color: #fff; }
+  .info .kicker { color: #7FD8CF; }
+  @media (max-width: 900px) { .info .grid { grid-template-columns: 1fr; } }
+
+  footer { background: #061A17; color: #9CC3BD; padding: 44px 0 100px; font-size: 15px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 18px 32px; align-items: center; justify-content: space-between; }
+  footer .mark { width: 92px; height: 31px; stroke-width: 6; color: #fff; }
+  footer a { color: #fff; }
+
+  .dock { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 50; display: none; gap: 8px; }
+  .dock .btn { flex: 1; box-shadow: 0 14px 30px -12px rgba(0,0,0,.5); }
+  .dock .btn-white { border-color: var(--forest); }
+  @media (max-width: 700px) { .dock { display: flex; } }
+</style>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/demo-53/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/demo-53/">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="juno" viewBox="0 0 300 100"><g stroke-linecap="round" stroke-linejoin="round"><path d="M36 15v1M36 40v38q0 14-16 14"/><path d="M78 40v26a20 20 0 0 0 40 0M118 40v48"/><path d="M152 88V40M152 62a20 20 0 0 1 40 0v26"/><circle cx="250" cy="64" r="24"/></g></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Juno Coffee House, accueil"><svg class="mark" viewBox="0 0 300 100" aria-hidden="true"><use href="#juno"/></svg><small>Coffee<br>House</small></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="l" href="#carte">La carte</a>
+      <a class="l" href="#moments">Moments</a>
+      <a class="l" href="#maison">La maison</a>
+      <a class="l" href="#infos">Venir</a>
+      <button class="toggle" type="button" data-toggle aria-label="Changer de thème (clair / sombre)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-dark" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Itinéraire</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="titre">
+    <div class="wrap">
+      <div>
+        <h1 id="titre"><svg class="mark" viewBox="0 0 300 100" role="img" aria-label="Juno"><use href="#juno"/></svg><span>Coffee House</span></h1>
+        <p class="tag">Brew. Taste. Unwind.</p>
+        <p class="sub">Parfois, un bon café suffit à faire une belle journée. Chez Juno, chaque tasse donne envie de lever le pied et de prendre son temps — à Mrezga, Nabeul.</p>
+        <div class="cta">
+          <a class="btn btn-dark" href="#">Nous trouver</a>
+          <a class="btn btn-line" href="#carte">Choose your mood</a>
+        </div>
+      </div>
+      <div class="pic">
+        <img src="assets/img-14.jpg" width="1270" height="1600" alt="Une main tient un gobelet Juno turquoise devant un rideau de velours turquoise">
+        <p class="sticker"><span><b>Mrezga</b>Nabeul</span></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div><span>A cup</span><span>For every moment</span><span>Pause Time</span><span>Twin cup therapy</span><span>Brew. Taste. Unwind.</span><span>A cup</span><span>For every moment</span><span>Pause Time</span><span>Twin cup therapy</span><span>Brew. Taste. Unwind.</span></div></div>
+
+  <section id="carte" aria-labelledby="t-carte">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="kicker">La carte</p>
+          <h2 id="t-carte">Yalla, choose your mood</h2>
+        </div>
+        <p class="lead">Chaud ou glacé, intense ou tout doux : du premier espresso du matin au smoothie de l’après-midi.</p>
+      </div>
+      <div class="menu">
+        <figure class="card c-big">
+          <img src="assets/img-12.jpg" width="1280" height="1600" loading="lazy" alt="Deux boissons glacées Juno : un iced latte et un iced matcha framboise">
+          <figcaption><span class="pill">Iced</span><h3>Iced latte · Iced matcha raspberry</h3><p>Les deux stars glacées de la maison : le latte tout en nuances, et le matcha posé sur un lit de framboise.</p></figcaption>
+        </figure>
+        <figure class="card c-s">
+          <img src="assets/img-09.jpg" width="1136" height="1408" loading="lazy" alt="Un barista verse un latte art dans un gobelet Juno turquoise">
+          <figcaption><span class="pill">Hot</span><h3>Latte</h3><p>Latte art, gobelet turquoise : c’est Pause Time.</p></figcaption>
+        </figure>
+        <figure class="card c-s">
+          <img src="assets/img-05.jpg" width="1280" height="1600" loading="lazy" alt="Un espresso coule de la machine dans un gobelet Juno vert sapin">
+          <figcaption><span class="pill">Hot</span><h3>Espresso</h3><p>Le réflexe de chaque matin.</p></figcaption>
+        </figure>
+        <figure class="card c-s">
+          <img src="assets/img-10.jpg" width="1280" height="1600" loading="lazy" alt="Un grand gobelet de matcha glacé Juno">
+          <figcaption><span class="pill">Matcha</span><h3>Matcha</h3><p>Vert, frais, généreux.</p></figcaption>
+        </figure>
+        <figure class="card c-s">
+          <img src="assets/img-04.jpg" width="1088" height="1344" loading="lazy" alt="Un croissant doré posé sur deux gobelets Juno">
+          <figcaption><span class="pill">Food</span><h3>Croissant</h3><p>Pour accompagner le café, à deux c’est mieux.</p></figcaption>
+        </figure>
+      </div>
+      <p class="menu-note">Smoothies, frappés et nouveautés du moment : demandez au comptoir.</p>
+    </div>
+  </section>
+
+  <section id="moments" class="moments" aria-labelledby="t-mom">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="kicker">A cup for every moment</p>
+          <h2 id="t-mom">Juno, partout avec vous</h2>
+        </div>
+        <p class="lead">Où qu’on aille, Juno est du trajet. From work mode to chill mode, Juno is there.</p>
+      </div>
+      <ul class="rail" aria-label="Moments café (faire défiler)">
+        <li><figure><img src="assets/img-08.jpg" width="1280" height="1600" loading="lazy" alt="Un iced latte Juno attaché par la ceinture sur un siège de voiture en cuir"><figcaption>En route<span>Où qu’on aille, Juno est du trajet.</span></figcaption></figure></li>
+        <li><figure><img src="assets/img-16.jpg" width="1280" height="1600" loading="lazy" alt="Deux boissons glacées Juno posées sur le capot d’une voiture rouge"><figcaption>Twin Cup Therapy<span>Un latte, un matcha, et c’est reparti.</span></figcaption></figure></li>
+        <li><figure><img src="assets/img-13.jpg" width="1261" height="1600" loading="lazy" alt="Un gobelet Juno vu dans le rétroviseur d’une voiture"><figcaption>Le réflexe du matin<span>Juno, dans le rétro.</span></figcaption></figure></li>
+        <li><figure><img src="assets/img-15.jpg" width="1280" height="1600" loading="lazy" alt="Lunettes de soleil, écouteurs et gobelet Juno dans un porte-gobelets en carton sur l’asphalte"><figcaption>Un trio qui a du style<span>Le compte est bon.</span></figcaption></figure></li>
+        <li><figure><img src="assets/img-07.jpg" width="1088" height="1344" loading="lazy" alt="Deux gobelets Juno décollent comme des fusées"><figcaption>Décollage immédiat<span>La tête dans les étoiles.</span></figcaption></figure></li>
+        <li><figure><img src="assets/img-11.jpg" width="1295" height="1600" loading="lazy" alt="Affiche illustrée : un gobelet Juno géant rempli de petites scènes de café"><figcaption>A cup for every moment.<span>From work mode to chill mode.</span></figcaption></figure></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="eighties" aria-labelledby="t-80">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Retro week</p>
+        <h2 id="t-80">Juno goes back to the ’80s</h2>
+        <p>Vestes coupe-vent, boombox et néons : quand Juno suit une tendance, c’est toute l’équipe qui remonte le temps. Bon café, bonne humeur, belle équipe.</p>
+      </div>
+      <div class="duo">
+        <img class="a" src="assets/img-02.jpg" width="1280" height="1600" loading="lazy" alt="Un couple en tenue des années 80 devant la devanture turquoise Juno Coffee House">
+        <img class="b" src="assets/img-01.jpg" width="540" height="960" loading="lazy" alt="Trois baristas en tenue rétro au comptoir, sous des affiches rétro">
+      </div>
+    </div>
+  </section>
+
+  <section id="maison" class="house" aria-labelledby="t-mai">
+    <div class="wrap">
+      <div class="pics">
+        <img class="a" src="assets/img-06.jpg" width="1120" height="1408" loading="lazy" alt="La devanture Juno Coffee House au crépuscule, auvent turquoise et terrasse éclairée">
+        <img class="b" src="assets/img-03.jpg" width="900" height="1600" loading="lazy" alt="Le comptoir Juno, son mur turquoise et son arbre aux fleurs roses">
+      </div>
+      <div>
+        <p class="kicker">La maison</p>
+        <h2 id="t-mai">Il pleut dehors ? Rentrez chez Juno.</h2>
+        <p class="lead">L’auvent turquoise, le comptoir en bois, l’arbre en fleurs roses et une équipe qui a toujours le mot pour rire : bienvenue à la maison, à Mrezga.</p>
+        <p class="lead">Un café pour démarrer la semaine, un iced latte pour la route, un coin pour se poser quand il pleut.</p>
+        <a class="btn btn-dark" href="#">Nous suivre</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" class="info" aria-labelledby="t-info">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="kicker">Venir</p>
+          <h2 id="t-info">On vous garde une tasse</h2>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="tile">
+          <h3>Adresse</h3>
+          <p>Centre, Mrezga<br>Nabeul</p>
+          <a class="btn btn-white" href="#">Itinéraire</a>
+        </div>
+        <div class="tile">
+          <h3>Horaires</h3>
+          <p>Pour le café du matin comme pour la pause de l’après-midi : horaires à jour sur nos réseaux.</p>
+          <a class="btn btn-white" href="#">Nos réseaux</a>
+        </div>
+        <div class="tile">
+          <h3>Une question ?</h3>
+          <p>Commande pour un groupe, événement, partenariat : écrivez-nous.</p>
+          <a class="btn btn-white" href="#">Message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg class="mark" viewBox="0 0 300 100" role="img" aria-label="Juno"><use href="#juno"/></svg>
+    <p style="margin:0">Juno Coffee House · Mrezga, Nabeul · <a href="#">Instagram</a></p>
+    <p style="margin:0">Made with love by the Juno crew</p>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Accès rapide">
+  <a class="btn btn-white" href="#">Itinéraire</a>
+  <a class="btn btn-dark" href="#">Message</a>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement, KEY = 'juno-theme';
+    try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    document.querySelector('[data-toggle]').addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

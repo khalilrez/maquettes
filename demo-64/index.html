@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poterie Émeraude — Céramique artisanale, showroom à Nabeul</title>
+<meta name="description" content="Poterie Émeraude : pièces uniques en céramique façonnées à la main à Nabeul. Cactus, pommes de pin, tabourets, pots, vasques et miroirs en faïence. Commande par WhatsApp, livraison sur Tunis.">
+<meta name="theme-color" content="#F3EDE3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1A16" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Poterie Émeraude">
+<meta property="og:title" content="Poterie Émeraude — Céramique artisanale, Nabeul">
+<meta property="og:description" content="Pièces uniques façonnées à la main : cactus émaillés, pommes de pin, tabourets, pots, vasques et miroirs. Showroom à Nabeul, livraison sur Tunis.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cactus et vases en céramique émaillée vert et turquoise sur une étagère du showroom">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #F3EDE3;
+    --paper: #FBF8F2;
+    --clay: #E7DCCB;
+    --ink: #10251F;
+    --muted: #4C5D56;
+    --line: #D9CDBA;
+    --emerald: #0B6B4D;
+    --teal: #0F7F86;
+    --cobalt: #1C4E9C;
+    --sun: #D9A21B;
+    --plum: #5B2E5E;
+    --accent-ink: #0B6B4D;
+    --on-dark: #F3EDE3;
+    --deep: #0E2A23;
+    --focus: #1C4E9C;
+    --shadow: 0 22px 46px -28px rgba(16, 37, 31, .6);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0C1A16;
+      --paper: #12241F;
+      --clay: #172C26;
+      --ink: #EEF2EC;
+      --muted: #A9BDB4;
+      --line: #25403A;
+      --accent-ink: #5FD0AE;
+      --deep: #081310;
+      --focus: #8FB4FF;
+      --shadow: 0 22px 46px -28px rgba(0, 0, 0, .9);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0C1A16;
+    --paper: #12241F;
+    --clay: #172C26;
+    --ink: #EEF2EC;
+    --muted: #A9BDB4;
+    --line: #25403A;
+    --accent-ink: #5FD0AE;
+    --deep: #081310;
+    --focus: #8FB4FF;
+    --shadow: 0 22px 46px -28px rgba(0, 0, 0, .9);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 'Instrument Sans', system-ui, sans-serif; overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 60; background: var(--paper); color: var(--ink); padding: 10px 14px; border-radius: 8px; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1200px, 100% - 40px); margin-inline: auto; }
+  .serif { font-family: 'Young Serif', Georgia, serif; font-weight: 400; }
+  h1, h2, h3 { font-family: 'Young Serif', Georgia, serif; font-weight: 400; letter-spacing: -.01em; }
+  h2 { font-size: clamp(32px, 4.4vw, 50px); line-height: 1.08; margin: 0 0 18px; }
+  h3 { font-size: 22px; line-height: 1.2; margin: 0 0 6px; }
+  p { margin: 0 0 1em; }
+  .eyebrow { font: 700 12.5px/1.2 'Instrument Sans', sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--accent-ink); margin: 0 0 14px; display: flex; align-items: center; gap: 10px; }
+  .eyebrow::before { content: ""; width: 22px; height: 10px; border-radius: 0 0 11px 11px; background: linear-gradient(90deg, var(--emerald), var(--teal) 50%, var(--cobalt)); }
+  .lead { font-size: 18.5px; color: var(--muted); max-width: 58ch; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 12px 22px; border-radius: 999px; font: 700 15.5px/1 'Instrument Sans', sans-serif; text-decoration: none; border: 2px solid transparent; transition: transform .15s ease, background .15s; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn svg { width: 19px; height: 19px; flex: none; }
+  .btn-glaze { background: var(--emerald); color: #fff; }
+  .btn-glaze:hover { background: #08583F; }
+  .btn-out { border-color: var(--ink); color: var(--ink); }
+  .btn-cream { background: #F3EDE3; color: #10251F; }
+
+  /* header */
+  .top { position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 68px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .brand .mark { width: 40px; height: 40px; flex: none; }
+  .brand b { display: block; font: 400 18px/1 'Young Serif', serif; letter-spacing: .16em; text-transform: uppercase; }
+  .brand small { display: block; font: 700 10.5px/1 'Instrument Sans', sans-serif; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); margin-top: 5px; }
+  .nav { display: flex; align-items: center; gap: 24px; }
+  .nav a.l { text-decoration: none; font-weight: 600; font-size: 15px; color: var(--muted); }
+  .nav a.l:hover { color: var(--ink); }
+  .toggle { width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--line); background: var(--paper); color: var(--ink); display: grid; place-items: center; cursor: pointer; }
+  .toggle svg { width: 18px; height: 18px; }
+  .top .btn { min-height: 44px; padding: 10px 18px; }
+  @media (max-width: 920px) { .nav a.l { display: none; } .nav { gap: 10px; } }
+  @media (max-width: 420px) { .top .btn span { display: none; } .top .btn { padding: 10px 13px; } .brand small { letter-spacing: .14em; } }
+
+  /* hero */
+  .hero { padding: clamp(36px, 6vw, 72px) 0 0; position: relative; }
+  .hero .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+  .hero h1 { font-size: clamp(50px, 7.4vw, 104px); line-height: .95; margin: 0 0 22px; letter-spacing: -.02em; }
+  .hero h1 em { font-style: normal; color: var(--accent-ink); display: block; }
+  .hero .tag { font-size: clamp(18px, 1.7vw, 21px); color: var(--muted); max-width: 46ch; margin-bottom: 30px; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero .meta { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 30px 0 0; padding: 0; list-style: none; font-size: 14.5px; font-weight: 600; color: var(--muted); }
+  .hero .meta li { display: flex; align-items: center; gap: 8px; }
+  .hero .meta li::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--teal); }
+  .arch { position: relative; }
+  .arch img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: 30% 78%; border-radius: 999px 999px 26px 26px; box-shadow: var(--shadow); }
+  .arch .seal { position: absolute; left: -28px; bottom: 34px; width: 128px; height: 128px; border-radius: 50%; background: var(--sun); color: #10251F; display: grid; place-items: center; text-align: center; font: 700 12px/1.25 'Instrument Sans', sans-serif; letter-spacing: .08em; text-transform: uppercase; transform: rotate(-10deg); box-shadow: 0 14px 30px -14px rgba(0,0,0,.5); }
+  .arch .seal b { display: block; font: 400 28px/1 'Young Serif', serif; letter-spacing: 0; text-transform: none; margin-bottom: 4px; }
+  @media (max-width: 860px) {
+    .hero .wrap { grid-template-columns: 1fr; }
+    .arch { max-width: 460px; width: 100%; margin-inline: auto; }
+    .arch .seal { left: -6px; width: 108px; height: 108px; font-size: 11px; }
+  }
+
+  /* glaze drip divider */
+  .drip { display: block; width: 100%; height: 70px; margin-top: clamp(40px, 6vw, 80px); color: var(--emerald); }
+  .families { background: var(--emerald); color: #F3EDE3; padding: 6px 0 26px; }
+  .families ul { list-style: none; margin: 0 auto; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 12px; }
+  .families li { font: 600 15px/1 'Instrument Sans', sans-serif; padding: 10px 16px; border-radius: 999px; border: 1.5px solid rgba(243,237,227,.45); }
+  .families p { text-align: center; margin: 0 0 18px; font: 400 22px/1.3 'Young Serif', serif; }
+
+  section { padding-block: clamp(64px, 9vw, 112px); }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+  @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+
+  /* artist */
+  .artist .pics { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .artist .pics img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; }
+  .artist .pics .a { aspect-ratio: 3/4; border-radius: 160px 160px 18px 18px; }
+  .artist .pics .b { aspect-ratio: 3/4; margin-top: 56px; }
+  blockquote { margin: 26px 0 0; padding: 22px 26px; background: var(--clay); border-left: 5px solid var(--teal); border-radius: 0 16px 16px 0; font: 400 21px/1.4 'Young Serif', serif; }
+  blockquote cite { display: block; margin-top: 10px; font: 600 13px/1.2 'Instrument Sans', sans-serif; font-style: normal; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+
+  /* collections */
+  .collections { background: var(--paper); }
+  .head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 18px 40px; margin-bottom: 44px; }
+  .head .lead { margin: 0; max-width: 44ch; }
+  .grid6 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .card { margin: 0; background: var(--bg); border-radius: 22px; overflow: hidden; border: 1px solid var(--line); display: flex; flex-direction: column; }
+  .card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+  .card figcaption { padding: 20px 22px 24px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .card .k { display: inline-block; font: 700 11px/1 'Instrument Sans', sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 10px; }
+  @media (max-width: 960px) { .grid6 { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .grid6 { grid-template-columns: 1fr; } .card { flex-direction: row; } .card img { width: 40%; aspect-ratio: auto; } .card figcaption { padding: 16px 16px 18px; } }
+
+  /* colours */
+  .colours { background: var(--deep); color: var(--on-dark); position: relative; overflow: hidden; }
+  .colours .lead { color: #B9CCC4; }
+  .colours .eyebrow { color: #7FE0C2; }
+  .swatches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 30px; }
+  .sw { border-radius: 16px; padding: 16px; min-height: 120px; display: flex; flex-direction: column; justify-content: flex-end; font-weight: 700; font-size: 15px; }
+  .sw small { display: block; font-weight: 500; opacity: .85; font-size: 13px; }
+  .sw.t { background: linear-gradient(160deg, #19A3A3, #0B5E6B); color: #fff; }
+  .sw.j { background: linear-gradient(160deg, #F2C230, #B9820E); color: #1C1405; }
+  .sw.v { background: linear-gradient(160deg, #7A3F7F, #3B1C40); color: #fff; }
+  .colours .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .colours .duo img { border-radius: 20px; width: 100%; height: 100%; object-fit: cover; aspect-ratio: 3/4; }
+  @media (max-width: 520px) { .swatches { grid-template-columns: 1fr; } .sw { min-height: 74px; } }
+
+  /* sur mesure */
+  .bespoke .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 10px; }
+  .tile { background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: 26px; }
+  .tile .ic { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; background: color-mix(in srgb, var(--teal) 16%, transparent); color: var(--accent-ink); margin-bottom: 16px; }
+  .tile .ic svg { width: 22px; height: 22px; }
+  .tile p { color: var(--muted); margin: 0; font-size: 15.5px; }
+  .ref { margin-top: 28px; display: grid; grid-template-columns: 300px 1fr; background: var(--cobalt); color: #fff; border-radius: 24px; overflow: hidden; }
+  .ref img { width: 100%; height: 100%; object-fit: cover; min-height: 260px; }
+  .ref div { padding: clamp(24px, 4vw, 44px); align-self: center; }
+  .ref .eyebrow { color: #CFE0FF; }
+  .ref .eyebrow::before { background: #F2C230; }
+  .ref h3 { font-size: clamp(24px, 2.6vw, 32px); }
+  .ref p { color: #DCE6FB; margin: 0; max-width: 56ch; }
+  @media (max-width: 900px) { .bespoke .cards { grid-template-columns: 1fr; } .ref { grid-template-columns: 1fr; } .ref img { aspect-ratio: 16/10; min-height: 0; } }
+
+  /* salons */
+  .salons { background: var(--clay); }
+  .tl { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .tl li { background: var(--paper); border-radius: 22px; overflow: hidden; border: 1px solid var(--line); }
+  .tl img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+  .tl .t { padding: 20px 22px 24px; }
+  .tl .when { font: 700 12px/1 'Instrument Sans', sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); display: block; margin-bottom: 10px; }
+  .tl p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  @media (max-width: 900px) { .tl { grid-template-columns: 1fr; } }
+
+  /* gallery */
+  .gallery .mason { columns: 4 240px; column-gap: 14px; }
+  @media (max-width: 560px) { .gallery .mason { columns: 2; column-gap: 10px; } .gallery .mason img { margin-bottom: 10px; border-radius: 12px; } }
+  .gallery .mason img { width: 100%; margin-bottom: 14px; border-radius: 16px; break-inside: avoid; }
+
+  /* visit */
+  .visit { background: var(--paper); }
+  .visit .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 44px; align-items: stretch; }
+  .rows { margin: 0 0 26px; }
+  .rows div { display: grid; grid-template-columns: 130px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .rows dt { font: 700 12px/1.7 'Instrument Sans', sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .rows dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+  .rows a { color: var(--accent-ink); }
+  .visit .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  .visit .photo { border-radius: 999px 999px 24px 24px; overflow: hidden; position: relative; min-height: 380px; }
+  .visit .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 860px) { .visit .grid { grid-template-columns: 1fr; } .visit .photo { min-height: 340px; max-width: 420px; width: 100%; margin-inline: auto; } .rows div { grid-template-columns: 100px 1fr; } }
+
+  footer { background: var(--deep); color: #B9CCC4; padding: 44px 0 110px; font-size: 15px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 30px; align-items: center; justify-content: space-between; }
+  footer b { font: 400 26px/1 'Young Serif', serif; color: #F3EDE3; }
+  footer a { color: #F3EDE3; }
+  @media (min-width: 701px) { footer { padding-bottom: 44px; } }
+
+  .callbar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 50; display: none; gap: 8px; }
+  .callbar .btn { flex: 1; box-shadow: 0 12px 30px -10px rgba(0,0,0,.55); }
+  .callbar .btn-cream { border-color: #0B6B4D; }
+  @media (max-width: 700px) { .callbar { display: flex; } }
+</style>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/demo-64/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/demo-64/">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Poterie Émeraude, accueil">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="6" width="28" height="28" rx="3" transform="rotate(45 20 20)" fill="#0B6B4D"/><path d="M20 9c3 4 3 7 0 11-3-4-3-7 0-11zM20 31c-3-4-3-7 0-11 3 4 3 7 0 11zM9 20c4-3 7-3 11 0-4 3-7 3-11 0zM31 20c-4 3-7 3-11 0 4-3 7-3 11 0z" fill="#0F7F86"/><circle cx="20" cy="20" r="2.8" fill="#D9A21B"/></svg>
+      <span><b>Émeraude</b><small>Poterie · Nabeul</small></span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="l" href="#atelier">L’artiste</a>
+      <a class="l" href="#creations">Créations</a>
+      <a class="l" href="#sur-mesure">Sur mesure</a>
+      <a class="l" href="#showroom">Showroom</a>
+      <button class="toggle" type="button" data-toggle aria-label="Changer de thème (clair / sombre)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+      <a class="btn btn-glaze" href="https://wa.me/21600000000?text=Bonjour%20Poterie%20%C3%89meraude"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4.3-.5c.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/></svg><span>Commander</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="titre" style="padding-bottom:0">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Céramique artisanale · Nabeul</p>
+        <h1 id="titre">Poterie <em>Émeraude</em></h1>
+        <p class="tag">Chaque pièce est unique, imaginée avec soin et tournée à la main : la terre, l’émail et la lumière s’y répondent, au salon comme au jardin.</p>
+        <div class="cta">
+          <a class="btn btn-glaze" href="https://wa.me/21600000000?text=Bonjour%20Poterie%20%C3%89meraude"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>WhatsApp · 00 000 000</a>
+          <a class="btn btn-out" href="#creations">Voir les créations</a>
+        </div>
+        <ul class="meta" aria-label="En bref">
+          <li>Showroom à Nabeul</li>
+          <li>Pièces uniques, faites main</li>
+          <li>Livraison sur Tunis</li>
+        </ul>
+      </div>
+      <div class="arch">
+        <img src="assets/img-02.jpg" width="1440" height="1440" alt="Cactus sculptés, pommes de pin et lanterne ajourée en céramique émaillée vert émeraude et turquoise, alignés sur une étagère du showroom">
+        <div class="seal" aria-hidden="true"><span><b>100 %</b>fait main</span></div>
+      </div>
+    </div>
+    <svg class="drip" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 70V34c60 0 80 30 120 30s50-40 110-40 70 20 120 20 40-30 100-30 60 36 120 36 50-24 110-24 70 34 130 34 50-40 110-40 70 22 120 22 60-28 110-28 70 32 130 32 50-26 80-26 40 10 60 10V70z"/></svg>
+  </section>
+
+  <div class="families">
+    <div class="wrap">
+      <p>Tout ce qui sort de l’atelier</p>
+      <ul aria-label="Familles de pièces">
+        <li>Faïence &amp; zliz</li><li>Assiettes</li><li>Bouteilles</li><li>Pots &amp; petits pots</li><li>Tables &amp; tabourets</li><li>Tajine au four</li><li>Fontaines</li><li>Vasques</li><li>Miroirs</li><li>Tableaux en faïence</li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="atelier" class="artist" aria-labelledby="t-art">
+    <div class="wrap split">
+      <div class="pics">
+        <img class="a" src="assets/img-07.jpg" width="1440" height="1440" loading="lazy" alt="Une coupe en pomme de pin émaillée jaune soleil et vert olive">
+        <img class="b" src="assets/img-01.jpg" width="1280" height="1600" loading="lazy" alt="Deux grands bougeoirs tournés, émaillés vert bouteille">
+      </div>
+      <div>
+        <p class="eyebrow">L’artiste</p>
+        <h2 id="t-art">Un potier formé à la céramique d’art</h2>
+        <p class="lead">Notre potier a suivi une formation artistique, spécialité céramique. Depuis, chaque pièce de l’atelier mêle la tradition de la terre cuite tunisienne et une vraie liberté d’artiste.</p>
+        <p class="lead">Vases majestueux, assiettes aux dessins minutieux, objets du quotidien transformés en joyaux : rien n’est fait en série.</p>
+        <blockquote>« Une courbe, un émail, une lumière : chaque pièce a sa propre voix. »<cite>Poterie Émeraude</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="creations" class="collections" aria-labelledby="t-cre">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Les créations</p>
+          <h2 id="t-cre">Pour l’intérieur comme pour le jardin</h2>
+        </div>
+        <p class="lead">Quelques familles de pièces que l’on retrouve au showroom. Chaque modèle existe en plusieurs tailles et couleurs : demandez ce qui est disponible.</p>
+      </div>
+      <div class="grid6">
+        <figure class="card">
+          <img src="assets/img-10.jpg" width="1440" height="1440" loading="lazy" alt="Trois grands pots émaillés vert et turquoise devant l’entrée du showroom">
+          <figcaption><span class="k">Pots &amp; jardinières</span><h3>Les grands pots</h3><p>Élégance rustique ou touche moderne, en différentes tailles et couleurs.</p></figcaption>
+        </figure>
+        <figure class="card">
+          <img src="assets/img-04.jpg" width="1440" height="1440" loading="lazy" alt="Trois grenades en céramique émaillée vert profond sur un plateau">
+          <figcaption><span class="k">Objets déco</span><h3>Grenades &amp; pommes de pin</h3><p>Les motifs de la Méditerranée, émaillés en reflets profonds.</p></figcaption>
+        </figure>
+        <figure class="card">
+          <img src="assets/img-14.jpg" width="1440" height="1438" loading="lazy" alt="Gros plan sur un tabouret en céramique à l’émail vert-de-gris">
+          <figcaption><span class="k">Mobilier</span><h3>Tabourets &amp; tables</h3><p>Des pièces pleines de couleurs, à poser au salon ou en terrasse.</p></figcaption>
+        </figure>
+        <figure class="card">
+          <img src="assets/img-16.jpg" width="1440" height="1440" loading="lazy" alt="Deux vasques vert émeraude sous un miroir encadré de carreaux en faïence">
+          <figcaption><span class="k">Salle de bain</span><h3>Vasques &amp; miroirs</h3><p>Lavabos émaillés et miroirs encadrés de faïence, disponibles au showroom.</p></figcaption>
+        </figure>
+        <figure class="card">
+          <img src="assets/img-15.jpg" width="960" height="960" loading="lazy" alt="Vases turquoise et pomme de pin bleu pétrole sur une étagère blanche">
+          <figcaption><span class="k">Vases</span><h3>Vases &amp; coupelles</h3><p>Du turquoise profond au bleu nuit, pour une table ou une console.</p></figcaption>
+        </figure>
+        <figure class="card">
+          <img src="assets/img-09.jpg" width="960" height="960" loading="lazy" alt="Grands pots aux reflets métallisés bronze, l’un orné de pastilles en relief">
+          <figcaption><span class="k">Finitions</span><h3>Reflets métallisés</h3><p>Bronze, cuivre, anthracite : des finitions plus contemporaines.</p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="colours" aria-labelledby="t-col">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">La couleur</p>
+        <h2 id="t-col">Une palette venue de la Méditerranée</h2>
+        <p class="lead">Des émaux qui vibrent selon l’heure : turquoises intenses, jaunes lumineux, violets profonds. La marque de fabrique de l’atelier.</p>
+        <div class="swatches" aria-hidden="true">
+          <div class="sw t">Turquoise<small>profond</small></div>
+          <div class="sw j">Jaune<small>solaire</small></div>
+          <div class="sw v">Violet<small>mystique</small></div>
+        </div>
+      </div>
+      <div class="duo">
+        <img src="assets/img-06.jpg" width="640" height="1138" loading="lazy" alt="Pot à pommes de pin en relief, émail bleu cobalt et pétrole">
+        <img src="assets/img-03.jpg" width="900" height="1600" loading="lazy" alt="Étagères chargées de pots et coupes vert, turquoise et olive">
+      </div>
+    </div>
+  </section>
+
+  <section id="sur-mesure" class="bespoke" aria-labelledby="t-sm">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Sur mesure</p>
+          <h2 id="t-sm">Particuliers, hôtels, architectes</h2>
+        </div>
+        <p class="lead">Écrivez-nous sur WhatsApp avec une photo de votre espace : on vous conseille la taille, la forme et la couleur.</p>
+      </div>
+      <div class="cards">
+        <div class="tile">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3c3 4 6 6 6 11a6 6 0 0 1-12 0c0-5 3-7 6-11z"/></svg></div>
+          <h3>Commande personnalisée</h3><p>Une couleur, une taille, une série de pots assortis : passez commande et personnalisez vos envies par WhatsApp.</p>
+        </div>
+        <div class="tile">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></div>
+          <h3>Livraison sur Tunis</h3><p>Livraison rapide disponible sur Tunis. Pour les autres villes, demandez-nous.</p>
+        </div>
+        <div class="tile">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg></div>
+          <h3>Hôtels &amp; projets</h3><p>Grandes pièces, vasques, miroirs et faïence pour habiller halls, terrasses et salles de bain.</p>
+        </div>
+      </div>
+      <div class="ref">
+        <img src="assets/img-08.jpg" width="1440" height="1440" loading="lazy" alt="Un grand pot émaillé bleu turquoise et nuit, planté d’un arbuste, sur une terrasse d’hôtel">
+        <div>
+          <p class="eyebrow">Projets d’hôtels</p>
+          <h3>Un hôtel à Tunis</h3>
+          <p>Exemple de projet pour une terrasse d’hôtel : des pièces grand format, pensées pour un lieu, qui montrent une partie du savoir-faire de l’atelier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="salons" aria-labelledby="t-sal">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Les salons</p>
+          <h2 id="t-sal">Rendez-vous en salon</h2>
+        </div>
+        <p class="lead">L’atelier expose chaque année dans les grands salons d’artisanat. Demandez-nous les prochaines dates.</p>
+      </div>
+      <ul class="tl">
+        <li><img src="assets/img-11.jpg" width="1350" height="1080" loading="lazy" alt="Le stand de l’atelier : étagères de vases et tabourets turquoise, verts et cobalt"><div class="t"><span class="when">Printemps</span><h3>Salon de l’artisanat d’art</h3><p>Une sélection de grandes pièces et de nouveautés.</p></div></li>
+        <li><img src="assets/img-13.jpg" width="1440" height="1440" loading="lazy" alt="Tabourets verts et étagères de céramiques bleues sur un stand de salon"><div class="t"><span class="when">Hiver</span><h3>Foire de la décoration</h3><p>Tabourets, vases et pièces de jardin.</p></div></li>
+        <li><img src="assets/img-12.jpg" width="1440" height="1440" loading="lazy" alt="Un stand de salon : tabourets, vases et étagères de céramiques sur sol bleu"><div class="t"><span class="when">Début d’été</span><h3>Salon de l’artisanat</h3><p>Dix jours de rencontres autour de la céramique.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="gallery" aria-labelledby="t-gal">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Galerie</p>
+          <h2 id="t-gal">Au showroom</h2>
+        </div>
+        <a class="btn btn-out" href="https://wa.me/21600000000?text=Bonjour%20Poterie%20%C3%89meraude">Recevoir plus de photos</a>
+      </div>
+      <div class="mason">
+        <img src="assets/img-05.jpg" width="1200" height="1200" loading="lazy" alt="Miroir encadré de carreaux de faïence bleus au-dessus d’une vasque bleu cobalt, contre un mur de pierre">
+        <img src="assets/img-01.jpg" width="1280" height="1600" loading="lazy" alt="Deux bougeoirs émaillés vert bouteille">
+        <img src="assets/img-11.jpg" width="1350" height="1080" loading="lazy" alt="Vue d’ensemble d’un stand rempli de céramiques bleues et vertes">
+        <img src="assets/img-04.jpg" width="1440" height="1440" loading="lazy" alt="Grenades en céramique verte">
+        <img src="assets/img-09.jpg" width="960" height="960" loading="lazy" alt="Pots aux reflets bronze">
+        <img src="assets/img-07.jpg" width="1440" height="1440" loading="lazy" alt="Coupe pomme de pin jaune et verte">
+        <img src="assets/img-16.jpg" width="1440" height="1440" loading="lazy" alt="Vasques vertes et miroir en faïence">
+        <img src="assets/img-10.jpg" width="1440" height="1440" loading="lazy" alt="Grands pots verts et turquoise">
+      </div>
+    </div>
+  </section>
+
+  <section id="showroom" class="visit" aria-labelledby="t-vis">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Showroom</p>
+        <h2 id="t-vis">Venez voir les pièces en vrai</h2>
+        <p class="lead">Une céramique se choisit à la lumière, en la touchant. Passez au showroom à Nabeul, ou envoyez-nous un message pour recevoir des photos des pièces disponibles.</p>
+        <dl class="rows">
+          <div><dt>Showroom</dt><dd>Nabeul, Cap Bon</dd></div>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/21600000000?text=Bonjour%20Poterie%20%C3%89meraude">+216 00 000 000</a></dd></div>
+          <div><dt>Téléphone</dt><dd><a href="tel:+21600000000">00 000 000</a></dd></div>
+          <div><dt>E-mail</dt><dd><a href="mailto:contact@exemple.tn">contact@exemple.tn</a></dd></div>
+          <div><dt>Horaires</dt><dd>À demander par message ou téléphone</dd></div>
+        </dl>
+        <div class="cta">
+          <a class="btn btn-glaze" href="https://wa.me/21600000000?text=Bonjour%20Poterie%20%C3%89meraude">WhatsApp</a>
+          <a class="btn btn-out" href="tel:+21600000000">Appeler</a>
+          <a class="btn btn-out" href="mailto:contact@exemple.tn">E-mail</a>
+        </div>
+      </div>
+      <div class="photo"><img src="assets/img-05.jpg" width="1200" height="1200" loading="lazy" alt="Un miroir habillé de faïence bleue au-dessus d’une vasque cobalt"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Poterie Émeraude</b>
+    <p style="margin:0">Céramique artisanale · Nabeul · <a href="https://wa.me/21600000000?text=Bonjour%20Poterie%20%C3%89meraude">00 000 000</a> · <a href="mailto:contact@exemple.tn">contact@exemple.tn</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Contacter l’atelier">
+  <a class="btn btn-glaze" href="https://wa.me/21600000000?text=Bonjour%20Poterie%20%C3%89meraude">WhatsApp</a>
+  <a class="btn btn-cream" href="tel:+21600000000">Appeler</a>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement, KEY = 'emeraude-theme';
+    try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    document.querySelector('[data-toggle]').addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

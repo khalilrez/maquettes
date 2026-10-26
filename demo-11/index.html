@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il Gelso — Depuis 1974 · Centre-ville, Tunis</title>
+<meta name="description" content="Il Gelso, restaurant de cuisine méditerranéenne soignée au centre-ville de Tunis, depuis 1974. Pizza, pasta, poisson, viande et desserts dans un décor vintage. Du lundi au samedi, 12h–minuit. Réservation : 00 000 000.">
+<meta name="theme-color" content="#B8222B">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_TN">
+<meta property="og:site_name" content="Il Gelso">
+<meta property="og:title" content="Il Gelso Tunis — depuis 1974">
+<meta property="og:description" content="Un charme d’antan, un cœur italien : la table rétro du centre-ville de Tunis. Réservez au 00 000 000.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La façade d’Il Gelso, enseignes rouges et balcons en fer forgé, centre-ville de Tunis">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B8222B'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-style='italic' font-weight='700' font-size='60' text-anchor='middle' fill='%23F5ECDD'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Playfair+Display:ital,wght@0,500;1,400;1,600&family=Libre+Franklin:wght@400;500;700&family=Noto+Naskh+Arabic:wght@700&display=swap" rel="stylesheet">
+<style>
+  /* Downtown Tunis: the red script signs and neon over the white stucco arch, copper pots,
+     the bronze bust, warm lamps on old wood, and the black-and-white checkered floor. */
+  :root {
+    --bg: #F6EEE1;
+    --bg-2: #EFE2CC;
+    --panel: #FFFBF4;
+    --ink: #2A1B14;
+    --ink-soft: #64503F;
+    --red: #B8222B;
+    --red-ink: #FFF4E6;
+    --copper: #A35A22;
+    --gold: #D9A55B;
+    --night: #1E130E;
+    --line: rgb(42 27 20 / .15);
+    --focus: #B8222B;
+    --shadow: 0 20px 48px rgb(42 27 20 / .22);
+    --script: "Lobster Two", "Brush Script MT", cursive;
+    --serif: "Playfair Display", "Didot", Georgia, serif;
+    --sans: "Libre Franklin", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --gutter: clamp(16px, 4vw, 52px);
+    --max: 1200px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1A110C; --bg-2: #22170F; --panel: #2A1D15; --ink: #F6EEE1; --ink-soft: #D2C1AC;
+      --red: #E2454B; --copper: #E09A5F; --night: #110A07; --line: rgb(246 238 225 / .15); --focus: #E09A5F;
+      --shadow: 0 20px 48px rgb(0 0 0 / .55); color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1A110C; --bg-2: #22170F; --panel: #2A1D15; --ink: #F6EEE1; --ink-soft: #D2C1AC;
+    --red: #E2454B; --copper: #E09A5F; --night: #110A07; --line: rgb(246 238 225 / .15); --focus: #E09A5F;
+    --shadow: 0 20px 48px rgb(0 0 0 / .55); color-scheme: dark;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.05rem/1.65 var(--sans); overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 50; background: var(--red); color: #fff; padding: 10px 16px; border-radius: 6px; font-weight: 700; text-decoration: none; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
+  h1, h2, h3 { margin: 0; font-weight: 400; }
+  section { padding-block: clamp(64px, 9vw, 116px); }
+  .eyebrow { font: 700 .76rem/1.3 var(--sans); letter-spacing: .26em; text-transform: uppercase; color: var(--copper); margin: 0 0 14px; }
+  .h2 { font: italic 400 clamp(2.3rem, 5vw, 3.9rem)/1.04 var(--serif); }
+  .h2 b { font-weight: 600; color: var(--red); }
+  .lead { font-size: 1.12rem; color: var(--ink-soft); max-width: 54ch; }
+  .script { font: italic 700 1em/1 var(--script); color: var(--red); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55em; min-height: 48px; padding: .7em 1.4em; border-radius: 4px;
+    font: 700 .86rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; border: 2px solid transparent; cursor: pointer; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-red { background: var(--red); color: #FFF4E6; }
+  .btn-red:hover { background: var(--ink); color: var(--bg); }
+  .btn-line { border-color: currentColor; }
+  .btn-line:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+  /* Header */
+  .top { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 68px; }
+  .logo { white-space: nowrap; font: normal 700 clamp(1.3rem, 4.2vw, 1.6rem)/1 var(--script); color: var(--red); text-decoration: none; display: inline-block; border: 2px solid currentColor; border-radius: 999px; padding: 6px 14px 5px; letter-spacing: .04em; }
+  .nav { display: flex; align-items: center; gap: clamp(12px, 2vw, 26px); }
+  .nav a:not(.btn) { text-decoration: none; font: 500 .8rem/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--ink-soft); }
+  .nav a:not(.btn):hover { color: var(--red); }
+  .nav .btn { min-height: 42px; padding: .55em 1.1em; }
+  .theme { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; display: grid; place-items: center; }
+  .theme svg { width: 20px; height: 20px; }
+  @media (max-width: 880px) { .nav a:not(.btn) { display: none; } }
+  @media (max-width: 380px) { .nav .btn span { display: none; } }
+
+  /* Hero */
+  .hero { padding-block: clamp(36px, 5vw, 64px) clamp(48px, 7vw, 88px); }
+  .hero-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+  .frame { position: relative; margin: 0; padding: 14px; background: var(--panel); box-shadow: var(--shadow); rotate: -1.5deg; }
+  .frame img { width: 100%; aspect-ratio: 4 / 4.6; object-fit: cover; filter: saturate(1.05) contrast(1.02); }
+  .frame figcaption { font: italic 400 1rem/1.3 var(--serif); color: var(--ink-soft); padding: 12px 4px 2px; display: flex; justify-content: space-between; gap: 12px; }
+  .frame [lang="ar"] { font: 700 1.2rem/1 "Noto Naskh Arabic", serif; color: var(--red); }
+  .since { position: absolute; right: -18px; top: -18px; width: 120px; height: 120px; border-radius: 50%; background: var(--red); color: #FFF4E6; display: grid; place-content: center; text-align: center; rotate: 10deg; box-shadow: var(--shadow); border: 3px double #FFF4E6; }
+  .since small { display: block; margin-bottom: 4px; font: 700 .66rem/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; }
+  .since b { font: 600 2rem/1 var(--serif); }
+  .hero h1 { font: italic 700 clamp(4.2rem, 11vw, 8.6rem)/.9 var(--script); color: var(--red); rotate: -4deg; transform-origin: left; margin: 6px 0 22px; }
+  .hero .tag { font: italic 400 clamp(1.5rem, 2.7vw, 2.1rem)/1.25 var(--serif); margin: 0 0 14px; max-width: 22ch; }
+  .facts { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 8px; }
+  .facts li { display: flex; gap: 12px; align-items: baseline; border-top: 1px solid var(--line); padding-top: 8px; }
+  .facts b { font: 700 .72rem/1.6 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--copper); min-width: 92px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  @media (max-width: 880px) { .hero-grid { grid-template-columns: 1fr; } .hero-grid .frame { max-width: 460px; } .since { right: -6px; width: 96px; height: 96px; } .since b { font-size: 1.6rem; } }
+
+  .damier { height: 40px; background: repeating-conic-gradient(#1E130E 0 25%, #F6EEE1 0 50%) 0 0 / 40px 40px; }
+
+  /* La maison */
+  .maison { background: var(--night); color: #F6EEE1; }
+  .maison .lead { color: #D2C1AC; }
+  .maison .eyebrow { color: var(--gold); }
+  .maison .h2 b { color: #F07A6E; }
+  .maison .grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+  .reel { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .reel figure { margin: 0; }
+  .reel figure:nth-child(2) { margin-top: 50px; }
+  .reel img { width: 100%; aspect-ratio: 3 / 4.8; object-fit: cover; border-radius: 160px 160px 6px 6px; }
+  .reel figcaption { font: italic 400 .95rem/1.3 var(--serif); color: #D2C1AC; margin-top: 8px; text-align: center; }
+  blockquote { margin: 28px 0 0; padding-left: 18px; border-left: 3px solid var(--gold); font: italic 400 1.35rem/1.4 var(--serif); }
+  @media (max-width: 880px) { .maison .grid { grid-template-columns: 1fr; } }
+
+  /* Signatures */
+  .sig header { text-align: center; max-width: 720px; margin-inline: auto; }
+  .sig .lead { margin-inline: auto; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 50px; }
+  .card { background: var(--panel); padding: 12px 12px 20px; box-shadow: 0 10px 28px rgb(42 27 20 / .12); }
+  .card:nth-child(odd) { rotate: -1deg; } .card:nth-child(even) { rotate: 1deg; }
+  .card img { width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover; }
+  .card h3 { font: italic 700 1.9rem/1 var(--script); color: var(--red); margin: 16px 6px 6px; }
+  .card p { margin: 0 6px; color: var(--ink-soft); font-size: .98rem; }
+  @media (max-width: 960px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } .card { rotate: 0deg !important; } }
+
+  /* Ce soir */
+  .soir { background: var(--bg-2); }
+  .soir .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+  .trio { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 12px; }
+  .trio figure { margin: 0; overflow: hidden; }
+  .trio img { width: 100%; height: 100%; object-fit: cover; }
+  .trio figure:first-child { grid-row: span 2; }
+  .summer { margin-top: 30px; padding: 20px 22px; border: 1.5px dashed var(--copper); border-radius: 6px; }
+  .summer b { font: italic 600 1.3rem/1.2 var(--serif); display: block; margin-bottom: 4px; }
+  .summer p { margin: 0; color: var(--ink-soft); }
+  @media (max-width: 880px) { .soir .grid { grid-template-columns: 1fr; } }
+
+  /* Infos */
+  .infos .box { display: grid; grid-template-columns: 1.1fr .9fr; background: var(--red); color: #FFF4E6; box-shadow: var(--shadow); }
+  :root[data-theme="dark"] .infos .box { background: #7E1A20; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .infos .box { background: #7E1A20; } }
+  .infos .txt { padding: clamp(28px, 5vw, 60px); }
+  .infos .eyebrow { color: #FFD9B0; }
+  .infos h2 { font: italic 700 clamp(2.6rem, 5vw, 3.8rem)/1 var(--script); margin-bottom: 18px; }
+  .infos address { font: italic 400 1.5rem/1.3 var(--serif); margin-bottom: 18px; }
+  .infos dl { display: grid; grid-template-columns: auto 1fr; gap: 8px 22px; margin: 0 0 26px; }
+  .infos dt { font: 700 .72rem/1.9 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: #FFD9B0; }
+  .infos dd { margin: 0; }
+  .infos dd a { font-weight: 700; }
+  .infos .links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .infos .btn-cream { background: #FFF4E6; color: #2A1B14; }
+  .infos .btn-cream:hover { background: #2A1B14; color: #FFF4E6; }
+  .infos .btn-line { color: #FFF4E6; }
+  .infos .btn-line:hover { background: #FFF4E6; color: #2A1B14; border-color: #FFF4E6; }
+  .infos figure { margin: 0; position: relative; min-height: 380px; }
+  .infos figure img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 860px) { .infos .box { grid-template-columns: 1fr; } .infos figure { min-height: 0; aspect-ratio: 4 / 3; } }
+
+  footer { padding: 34px 0 44px; color: var(--ink-soft); font-size: .92rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: center; }
+  footer .logo { font-size: 1.7rem; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/demo-11/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/demo-11/">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Il Gelso, accueil">Il Gelso</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#maison">La maison</a>
+      <a href="#signatures">Signatures</a>
+      <a href="#soir">Ce soir</a>
+      <a href="#infos">Infos</a>
+      <button class="theme" type="button" aria-label="Changer de thème (clair / sombre)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
+      <a aria-label="Réserver" class="btn btn-red" href="tel:+21600000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>Réserver</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="hero" aria-labelledby="titre">
+    <div class="wrap hero-grid">
+      <figure class="frame">
+        <img src="assets/img-06.jpg" width="1313" height="1600" alt="La façade d’Il Gelso : enseignes rouges, balcons en fer forgé et porte en arc">
+        <figcaption><span>Centre-ville, Tunis</span><span lang="ar" dir="rtl">إيل جيلسو</span></figcaption>
+        <div class="since" aria-hidden="true"><div><small>depuis</small><b>1974</b></div></div>
+      </figure>
+      <div>
+        <p class="eyebrow">Cuisine méditerranéenne soignée · Tunis</p>
+        <h1 id="titre">Il Gelso</h1>
+        <p class="tag">Un charme d’antan, un cœur italien. Comme autrefois.</p>
+        <p class="lead">Depuis 1974, des recettes qui traversent le temps et des tables où l’on se sent bien, en plein centre-ville.</p>
+        <ul class="facts">
+          <li><b>Ouvert</b><span>Du lundi au samedi · 12h – minuit</span></li>
+          <li><b>Adresse</b><span>Centre-ville, Tunis</span></li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-red" href="tel:+21600000000">Réserver · 00 000 000</a>
+          <a class="btn btn-line" href="#signatures">Nos signatures</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="damier" aria-hidden="true"></div>
+
+  <section class="maison" id="maison" aria-labelledby="t-maison">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">La maison</p>
+        <h2 class="h2" id="t-maison">Un lieu <b>de caractère</b>, comme ses histoires</h2>
+        <p class="lead">Les cuivres, le buste de bronze, les murs de stuc blanc, le damier noir et blanc et les lampes qui réchauffent le bois : chez Il Gelso, chaque objet raconte quelque chose.</p>
+        <blockquote>Le charme, ça ne se démode pas.</blockquote>
+      </div>
+      <div class="reel">
+        <figure><img src="assets/img-04.jpg" width="1200" height="1600" alt="Casseroles et samovar en cuivre sur le comptoir en bois" loading="lazy"><figcaption>Les cuivres</figcaption></figure>
+        <figure><img src="assets/img-11.jpg" width="640" height="1000" alt="La salle : pilier en stuc blanc, appliques, damier noir et blanc" loading="lazy"><figcaption>La salle</figcaption></figure>
+        <figure><img src="assets/img-01.jpg" width="720" height="1100" alt="Buste en bronze dans la salle, lampe et cuivres" loading="lazy"><figcaption>Le buste</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sig" id="signatures" aria-labelledby="t-sig">
+    <div class="wrap">
+      <header>
+        <p class="eyebrow">Nos signatures</p>
+        <h2 class="h2" id="t-sig">La Méditerranée dans l’assiette, <b>servie avec cœur</b></h2>
+        <p class="lead">Des assiettes faites pour être partagées : les plats circulent, les verres trinquent, et chacun goûte un peu de tout.</p>
+      </header>
+      <div class="cards">
+        <article class="card"><img src="assets/img-13.jpg" width="1600" height="1600" alt="Spaghetti à la tomate et aux moules, verre de vin rouge" loading="lazy"><h3>Pasta</h3><p>Une pluie de parmesan, et le bonheur suit.</p></article>
+        <article class="card"><img src="assets/img-10.jpg" width="1200" height="1600" style="object-position: 50% 40%" alt="Pizza garnie à la main, bacs d’olives et de garnitures" loading="lazy"><h3>Pizza</h3><p>À midi, une pizza qui a tout pour plaire.</p></article>
+        <article class="card"><img src="assets/img-07.jpg" width="1144" height="1600" style="object-position: 50% 45%" alt="Plat gratiné aux moules porté par un serveur" loading="lazy"><h3>La mer</h3><p>Les signatures poisson et fruits de mer de la maison.</p></article>
+        <article class="card"><img src="assets/img-12.jpg" width="1200" height="1600" style="object-position: 50% 60%" alt="Viande sur l’os et riz, verre de vin rouge" loading="lazy"><h3>La viande</h3><p>Les grandes assiettes du soir, à savourer lentement.</p></article>
+        <article class="card"><img src="assets/img-08.jpg" width="1200" height="1600" alt="Tablée qui partage des plats, mains et verres de vin" loading="lazy"><h3>À partager</h3><p>On arrive affamé, on repart avec des souvenirs.</p></article>
+        <article class="card"><img src="assets/img-05.jpg" width="1170" height="1054" alt="Dessert à la crème et au chocolat" loading="lazy"><h3>Dolci</h3><p>Un dessert ? Ou deux, pour goûter ?</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soir" id="soir" aria-labelledby="t-soir">
+    <div class="wrap grid">
+      <div class="trio">
+        <figure><img src="assets/img-14.jpg" width="1218" height="1600" alt="Parmesan saupoudré sur un plat de spaghetti aux moules" loading="lazy"></figure>
+        <figure><img src="assets/img-03.jpg" width="912" height="1200" style="aspect-ratio: 4 / 3" alt="Deux verres de vin rouge qui trinquent" loading="lazy"></figure>
+        <figure><img src="assets/img-02.jpg" width="1200" height="1600" style="aspect-ratio: 4 / 3" alt="La carte entre les mains, verres de vin blanc" loading="lazy"></figure>
+      </div>
+      <div>
+        <p class="eyebrow">Ce soir, au Gelso</p>
+        <h2 class="h2" id="t-soir">Un verre de vin, une pizza napolitaine, <b>et le temps qui ralentit</b></h2>
+        <p class="lead">Des chansons italiennes en fond, une lumière dorée, et des soirées dignes d’un film d’autrefois. Bonne table, bon vin, bonne compagnie.</p>
+        <div class="summer"><b>L’été, horaires de saison</b><p>Pendant la saison estivale, les horaires peuvent changer : appelez-nous avant de venir.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="infos" id="infos" aria-labelledby="t-infos">
+    <div class="wrap">
+      <div class="box">
+        <div class="txt">
+          <p class="eyebrow">Réservez votre table</p>
+          <h2 id="t-infos">À très vite !</h2>
+          <address>Centre-ville<br>Tunis</address>
+          <dl>
+            <dt>Ouvert</dt><dd>Du lundi au samedi, de 12h à minuit</dd>
+            <dt>Fermé</dt><dd>Le dimanche</dd>
+            <dt>Réservation</dt><dd><a href="tel:+21600000000">00 000 000</a></dd>
+          </dl>
+          <div class="links">
+            <a class="btn btn-cream" href="#">Itinéraire</a>
+            <a class="btn btn-line" href="tel:+21600000000">Appeler</a>
+            <a class="btn btn-line" href="#">Instagram</a>
+            <a class="btn btn-line" href="#">Facebook</a>
+          </div>
+        </div>
+        <figure><img src="assets/img-09.jpg" width="1200" height="1600" alt="Préparation des pizzas, sauce tomate et mozzarella" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="logo">Il Gelso</span>
+    <span>© Il Gelso · Depuis 1974 · Centre-ville, Tunis · <a href="#">Instagram</a></span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.querySelector('.theme');
+    try { var t = localStorage.getItem('ig-theme'); if (t) root.setAttribute('data-theme', t); } catch (e) {}
+    btn.addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme');
+      var dark = cur ? cur === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+      root.setAttribute('data-theme', dark ? 'light' : 'dark');
+      try { localStorage.setItem('ig-theme', dark ? 'light' : 'dark'); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

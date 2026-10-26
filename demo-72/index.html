@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Néroli Café &amp; Lounge — Toit-terrasse face à la mer, Zarzis</title>
+<meta name="description" content="Le Néroli, café et lounge à Zarzis : cuisine actuelle et soignée sur un toit-terrasse, avec vue sur la ville et la mer. Petit-déjeuner, brunch, pizza au feu de bois, cocktails. Tél. 00 000 000.">
+<meta name="theme-color" content="#F2ECE0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F0F0F" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Le Néroli Café &amp; Lounge">
+<meta property="og:title" content="Le Néroli Café &amp; Lounge — Zarzis">
+<meta property="og:description" content="Cuisine actuelle sur un toit-terrasse, vue sur la ville et la mer. Petit-déjeuner, brunch, pizza au feu de bois et cocktails. 00 000 000.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La terrasse du Néroli au coucher du soleil, fauteuils et parasols">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Special+Elite&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #F2ECE0;
+    --paper: #FAF6EE;
+    --ink: #141414;
+    --muted: #55514A;
+    --line: #D6CDBC;
+    --red: #A3241C;
+    --red-ink: #A3241C;
+    --night: #0F0F0F;
+    --on-night: #F2ECE0;
+    --on-night-soft: #BDB6A8;
+    --focus: #A3241C;
+    --shadow: 0 24px 46px -28px rgba(0, 0, 0, .5);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0F0F0F;
+      --paper: #191817;
+      --ink: #F2ECE0;
+      --muted: #BDB6A8;
+      --line: #2E2C29;
+      --red-ink: #E5675C;
+      --focus: #E5675C;
+      --shadow: 0 24px 46px -28px rgba(0, 0, 0, .95);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0F0F0F;
+    --paper: #191817;
+    --ink: #F2ECE0;
+    --muted: #BDB6A8;
+    --line: #2E2C29;
+    --red-ink: #E5675C;
+    --focus: #E5675C;
+    --shadow: 0 24px 46px -28px rgba(0, 0, 0, .95);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.7 'Libre Franklin', system-ui, sans-serif; overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 80; background: var(--paper); color: var(--ink); padding: 10px 14px; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1180px, 100% - 40px); margin-inline: auto; }
+  h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; }
+  h2 { font-size: clamp(38px, 5.4vw, 64px); line-height: 1; margin: 0 0 18px; text-transform: uppercase; letter-spacing: .02em; }
+  h3 { font-size: 25px; line-height: 1.15; margin: 0 0 6px; font-weight: 700; }
+  p { margin: 0 0 1em; }
+  .act { font: 400 15px/1.2 'Special Elite', monospace; letter-spacing: .12em; color: var(--red-ink); margin: 0 0 12px; text-transform: uppercase; }
+  .lead { font-size: 18.5px; color: var(--muted); max-width: 54ch; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 12px 24px; font: 700 14.5px/1 'Libre Franklin', sans-serif; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; border: 2px solid transparent; transition: background .15s, color .15s; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-cream { background: #F2ECE0; color: #141414; }
+  .btn-cream:hover { background: #fff; }
+  .btn-red { background: var(--red); color: #fff; }
+  .btn-red:hover { background: #8A1C15; }
+  .btn-line { border-color: rgba(242,236,224,.55); color: #F2ECE0; }
+  .btn-line:hover { background: rgba(242,236,224,.08); }
+  .btn-ink { background: var(--ink); color: var(--bg); }
+  .btn-out { border-color: var(--ink); color: var(--ink); }
+
+  /* header */
+  .top { position: sticky; top: 0; z-index: 50; background: var(--night); color: var(--on-night); border-bottom: 1px solid #2B2B2B; }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 68px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #F2ECE0; }
+  .brand img { width: 44px; height: 44px; border-radius: 12px; box-shadow: 0 0 0 1.5px #F2ECE0; }
+  .brand b { font: italic 700 23px/1 'Playfair Display', serif; letter-spacing: .01em; }
+  .brand small { display: block; font: 400 11px/1 'Special Elite', monospace; letter-spacing: .2em; color: var(--on-night-soft); margin-top: 4px; }
+  .nav { display: flex; align-items: center; gap: 24px; }
+  .nav a.l { text-decoration: none; font: 400 14px/1 'Special Elite', monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--on-night-soft); }
+  .nav a.l:hover { color: #fff; }
+  .toggle { width: 44px; height: 44px; border: 1.5px solid #3A3A3A; background: transparent; color: #F2ECE0; display: grid; place-items: center; cursor: pointer; border-radius: 50%; }
+  .toggle svg { width: 18px; height: 18px; }
+  .top .btn { min-height: 44px; padding: 10px 16px; }
+  @media (max-width: 940px) { .nav a.l { display: none; } .nav { gap: 10px; } }
+  @media (max-width: 420px) { .top .btn span { display: none; } .top .btn { padding: 10px 12px; } }
+
+  /* hero: title card */
+  .hero { background: var(--night); color: var(--on-night); position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(70% 90% at 25% 40%, rgba(255,255,255,.07), transparent 70%); }
+  .hero .wrap { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(28px, 5vw, 70px); align-items: center; padding-block: clamp(40px, 6vw, 80px); }
+  .card { position: relative; border: 2px solid rgba(242,236,224,.85); padding: clamp(30px, 4.5vw, 56px) clamp(22px, 4vw, 48px); text-align: center; }
+  .card::before { content: ""; position: absolute; inset: 8px; border: 1px solid rgba(242,236,224,.4); pointer-events: none; }
+  .card .corner { position: absolute; width: 26px; height: 26px; border: 2px solid rgba(242,236,224,.85); }
+  .card .c1 { top: -8px; left: -8px; border-right: 0; border-bottom: 0; }
+  .card .c2 { top: -8px; right: -8px; border-left: 0; border-bottom: 0; }
+  .card .c3 { bottom: -8px; left: -8px; border-right: 0; border-top: 0; }
+  .card .c4 { bottom: -8px; right: -8px; border-left: 0; border-top: 0; }
+  .card .pre { font: 400 14px/1 'Special Elite', monospace; letter-spacing: .3em; text-transform: uppercase; color: var(--on-night-soft); margin: 0 0 14px; }
+  .hero h1 { margin: 0; font-size: clamp(64px, 9vw, 120px); line-height: .95; }
+  .hero h1 span { display: block; font-size: .42em; font-style: italic; font-weight: 700; }
+  .card .sub { font: 400 15px/1 'Special Elite', monospace; letter-spacing: .3em; text-transform: uppercase; margin: 16px 0 22px; display: flex; align-items: center; justify-content: center; gap: 12px; }
+  .card .sub::before, .card .sub::after { content: ""; width: 30px; height: 1px; background: currentColor; }
+  .card .tag { font: 700 italic clamp(19px, 1.9vw, 23px)/1.4 'Playfair Display', serif; color: #E2DBCC; max-width: 34ch; margin: 0 auto 26px; }
+  .card .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .film { position: relative; background: #1C1C1C; padding: 22px 26px; }
+  .film::before, .film::after { content: ""; position: absolute; top: 0; bottom: 0; width: 14px; background: repeating-linear-gradient(180deg, transparent 0 8px, #F2ECE0 8px 18px, transparent 18px 26px); opacity: .85; }
+  .film::before { left: 6px; }
+  .film::after { right: 6px; }
+  .film img { width: 100%; aspect-ratio: 4/5; object-fit: cover; filter: contrast(1.04); }
+  .film figcaption { font: 400 13px/1.3 'Special Elite', monospace; letter-spacing: .14em; color: var(--on-night-soft); margin-top: 12px; text-transform: uppercase; text-align: center; }
+  @media (max-width: 880px) { .hero .wrap { grid-template-columns: 1fr; } .film img { aspect-ratio: 4/4; } }
+
+  section { padding-block: clamp(64px, 9vw, 110px); }
+  .head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px 40px; margin-bottom: 42px; }
+  .head .lead { margin: 0; max-width: 46ch; }
+
+  /* matin */
+  .morning .grid { display: grid; grid-template-columns: 1.1fr 1fr 1fr; grid-template-rows: auto auto; gap: 16px; }
+  .morning figure { margin: 0; background: var(--paper); border: 1px solid var(--line); padding: 10px 10px 0; box-shadow: var(--shadow); }
+  .morning figure img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+  .morning figure.tall { grid-row: span 2; }
+  .morning figure.tall img { aspect-ratio: auto; height: calc(100% - 46px); }
+  .morning figcaption { font: 400 14px/1 'Special Elite', monospace; letter-spacing: .08em; padding: 14px 4px 16px; text-align: center; }
+  @media (max-width: 860px) { .morning .grid { grid-template-columns: 1fr 1fr; } .morning figure.tall { grid-row: auto; grid-column: span 2; } .morning figure.tall img { height: auto; aspect-ratio: 16/11; } }
+
+  /* toit */
+  .roof { background: var(--night); color: var(--on-night); }
+  .roof .lead { color: var(--on-night-soft); }
+  .roof .act { color: #E5675C; }
+  .roof .grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+  .roof .pics { display: grid; grid-template-columns: 1.2fr 1fr; gap: 14px; }
+  .roof .pics img { width: 100%; object-fit: cover; }
+  .roof .pics .w { grid-column: span 2; aspect-ratio: 4/3; }
+  .roof .pics .s { aspect-ratio: 1/1; }
+  .group { margin-top: 24px; border: 1.5px dashed rgba(242,236,224,.4); padding: 18px 20px; }
+  .group b { display: block; font: 700 21px/1.2 'Playfair Display', serif; margin-bottom: 4px; }
+  .group span { color: var(--on-night-soft); font-size: 15.5px; }
+  @media (max-width: 860px) { .roof .grid { grid-template-columns: 1fr; } }
+
+  /* table */
+  .table .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .plate { background: var(--paper); border: 1px solid var(--line); display: flex; flex-direction: column; }
+  .plate img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+  .plate .t { padding: 20px 22px 24px; }
+  .plate .k { font: 400 13px/1 'Special Elite', monospace; letter-spacing: .12em; color: var(--red-ink); text-transform: uppercase; display: block; margin-bottom: 10px; }
+  .plate p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  @media (max-width: 860px) { .table .grid { grid-template-columns: 1fr; } .plate { flex-direction: row; } .plate img { width: 40%; aspect-ratio: auto; object-fit: cover; } }
+  @media (max-width: 480px) { .plate { flex-direction: column; } .plate img { width: 100%; aspect-ratio: 16/11; } }
+
+  /* soir */
+  .evening { background: var(--paper); border-block: 1px solid var(--line); }
+  .strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; background: #141414; padding: 26px 30px; position: relative; }
+  .strip::before, .strip::after { content: ""; position: absolute; left: 0; right: 0; height: 12px; background: repeating-linear-gradient(90deg, transparent 0 8px, #F2ECE0 8px 20px, transparent 20px 28px); opacity: .85; }
+  .strip::before { top: 7px; }
+  .strip::after { bottom: 7px; }
+  .strip img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-inline: 6px solid #141414; }
+  @media (max-width: 600px) { .strip { padding: 24px 10px; } .strip img { border-inline-width: 3px; } }
+  .nights { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 34px; }
+  .nights div { border-top: 2px solid var(--ink); padding-top: 14px; }
+  .nights b { display: block; font: 700 22px/1.2 'Playfair Display', serif; margin-bottom: 4px; }
+  .nights span { color: var(--muted); font-size: 15.5px; }
+  @media (max-width: 760px) { .nights { grid-template-columns: 1fr; } }
+
+  /* info */
+  .info .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: stretch; }
+  .rows { margin: 0 0 28px; }
+  .rows div { display: grid; grid-template-columns: 130px 1fr; gap: 16px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+  .rows div:first-child { border-top: 1px solid var(--line); }
+  .rows dt { font: 400 13px/1.9 'Special Elite', monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .rows dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+  .rows a { color: var(--red-ink); }
+  .info .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  .info .pic { position: relative; min-height: 420px; }
+  .info .pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 860px) { .info .grid { grid-template-columns: 1fr; } .info .pic { min-height: 320px; } .rows div { grid-template-columns: 100px 1fr; } }
+
+  footer { background: var(--night); color: var(--on-night-soft); padding: 54px 0 112px; text-align: center; font-size: 15px; }
+  footer .fin { display: inline-block; font: 900 italic 54px/1 'Playfair Display', serif; color: #F2ECE0; border: 2px solid #F2ECE0; padding: 10px 34px 14px; margin-bottom: 18px; outline: 1px solid rgba(242,236,224,.4); outline-offset: 5px; }
+  footer a { color: #F2ECE0; }
+  footer p { margin: 0; }
+  @media (min-width: 701px) { footer { padding-bottom: 54px; } }
+
+  .callbar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60; display: none; gap: 8px; }
+  .callbar .btn { flex: 1; box-shadow: 0 12px 30px -10px rgba(0,0,0,.6); padding-inline: 8px; }
+  .callbar .btn-dark { background: #141414; color: #F2ECE0; border-color: #F2ECE0; }
+  @media (max-width: 700px) { .callbar { display: flex; } }
+</style>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/demo-72/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/demo-72/">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M21 12a8.5 8.5 0 0 1-12.5 7.5L3 21l1.6-5A8.5 8.5 0 1 1 21 12z"/></symbol>
+</svg>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Le Néroli, accueil"><img src="assets/img-09.jpg" width="300" height="300" alt=""><span><b>Le Néroli</b><small>Café · Lounge · Zarzis</small></span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="l" href="#matin">Le matin</a>
+      <a class="l" href="#terrasse">La terrasse</a>
+      <a class="l" href="#table">À table</a>
+      <a class="l" href="#soir">Le soir</a>
+      <a class="l" href="#infos">Infos</a>
+      <button class="toggle" type="button" data-toggle aria-label="Changer de thème (clair / sombre)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <a class="btn btn-cream" href="tel:+21600000000"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Réserver</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="titre" style="padding:0">
+    <div class="wrap">
+      <div class="card">
+        <span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
+        <p class="pre">Zarzis · face à la mer</p>
+        <h1 id="titre"><span>Le</span>Néroli</h1>
+        <p class="sub">Café · Lounge</p>
+        <p class="tag">Une cuisine actuelle et soignée, servie sur un toit-terrasse chic, entre les toits de la ville et la mer.</p>
+        <div class="cta">
+          <a class="btn btn-cream" href="tel:+21600000000"><svg aria-hidden="true"><use href="#i-phone"/></svg>00 000 000</a>
+          <a class="btn btn-line" href="#table">La carte</a>
+        </div>
+      </div>
+      <figure class="film" style="margin:0">
+        <img src="assets/img-03.jpg" width="720" height="1280" alt="Un cappuccino sur une table blanche, la terrasse et la mer au crépuscule derrière la baie vitrée">
+        <figcaption>Scène 1 · Un café face à la mer</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="matin" class="morning" aria-labelledby="t-matin">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="act">Acte I · Le matin</p>
+          <h2 id="t-matin">Un petit-déj qui donne le sourire</h2>
+        </div>
+        <p class="lead">Le matin mérite mieux qu’un simple repas : des saveurs gourmandes, des produits frais, une table soignée. Au Néroli, la journée démarre du bon pied.</p>
+      </div>
+      <div class="grid">
+        <figure class="tall"><img src="assets/img-14.jpg" width="960" height="1200" loading="lazy" alt="Présentoirs à étages garnis de viennoiseries, gâteaux et salé, dans la salle lumineuse"><figcaption>Brunch à étages</figcaption></figure>
+        <figure><img src="assets/img-11.jpg" width="788" height="788" loading="lazy" alt="Petit-déjeuner traditionnel servi dans la céramique bleue et blanche"><figcaption>Petit-déj traditionnel</figcaption></figure>
+        <figure><img src="assets/img-02.jpg" width="960" height="960" loading="lazy" alt="Plateaux de brunch : omelette, fromage, charcuterie, calamars, cake et fruits"><figcaption>Les brunchs</figcaption></figure>
+        <figure><img src="assets/img-01.jpg" width="1254" height="1254" loading="lazy" alt="Affiche du petit-déjeuner de la maison"><figcaption>Frais · généreux · délicieux</figcaption></figure>
+        <figure><img src="assets/img-06.jpg" width="468" height="832" loading="lazy" alt="Étagère en métal garnie de pâtes, carpaccio et salade, devant un canapé violet"><figcaption>Le nouveau menu</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="terrasse" class="roof" aria-labelledby="t-roof">
+    <div class="wrap grid">
+      <div>
+        <p class="act">Acte II · Le décor</p>
+        <h2 id="t-roof">Un toit-terrasse sur la ville et la mer</h2>
+        <p class="lead">Baies vitrées, parasols, fauteuils en rotin noir et lumière dorée en fin de journée : au Néroli, le cadre compte autant que l’assiette.</p>
+        <div class="group">
+          <b>Terrasse de l’étage</b>
+          <span>Disponible uniquement sur réservation, pour les groupes de 20 personnes ou plus. Contactez-nous pour en parler.</span>
+        </div>
+      </div>
+      <div class="pics">
+        <img class="w" src="assets/img-15.jpg" width="960" height="720" loading="lazy" alt="La terrasse au coucher du soleil : fauteuils noirs, parasols et façade vitrée">
+        <img class="s" src="assets/img-07.jpg" width="720" height="720" loading="lazy" alt="L’entrée du café la nuit, enseigne ronde éclairée et pelouse">
+        <img class="s" src="assets/img-13.jpg" width="1280" height="1600" loading="lazy" alt="Corbeille de fruits sculptés sur une table, la nuit">
+      </div>
+    </div>
+  </section>
+
+  <section id="table" class="table" aria-labelledby="t-table">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="act">Acte III · À table</p>
+          <h2 id="t-table">La cuisine en scène</h2>
+        </div>
+        <p class="lead">Une cuisine moderne, généreuse et soignée dans l’assiette, du four à bois aux douceurs glacées.</p>
+      </div>
+      <div class="grid">
+        <article class="plate"><img src="assets/img-12.jpg" width="1254" height="1254" loading="lazy" alt="Affiche d’une pizza au feu de bois"><div class="t"><span class="k">Au feu de bois</span><h3>Pizza Marina</h3><p>Notre pizza vedette : cuite au feu de bois, à l’ancienne, et préparée avec soin.</p></div></article>
+        <article class="plate"><img src="assets/img-08.jpg" width="1440" height="1440" loading="lazy" alt="Pièce de viande grillée, sauce crémeuse aux champignons et purée"><div class="t"><span class="k">Plats</span><h3>Viandes en sauce</h3><p>Grillées, nappées de sauce crémeuse, servies avec purée et légumes.</p></div></article>
+        <article class="plate"><img src="assets/img-10.jpg" width="1254" height="1254" loading="lazy" alt="Affiche d’un milkshake glacé"><div class="t"><span class="k">Pause fraîcheur</span><h3>Milkshakes</h3><p>Grosse chaleur dehors ? Rien de tel qu’un milkshake bien glacé et gourmand.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="soir" class="evening" aria-labelledby="t-soir">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="act">Acte IV · Le soir</p>
+          <h2 id="t-soir">Cocktails &amp; soirées</h2>
+        </div>
+        <p class="lead">Quand le soleil descend sur la terrasse, place aux cocktails colorés, à la musique et aux grandes soirées.</p>
+      </div>
+      <div class="strip">
+        <img src="assets/img-04.jpg" width="894" height="1118" loading="lazy" alt="Un cocktail de la maison, garni de fruits, sur fond de nuit">
+        <img src="assets/img-05.jpg" width="574" height="574" loading="lazy" alt="Deux cocktails roses aux fruits rouges et pastèque, menthe fraîche">
+        <img src="assets/img-16.jpg" width="982" height="1228" loading="lazy" alt="Trois cocktails colorés alignés sur une table blanche, le soir">
+      </div>
+      <div class="nights">
+        <div><b>Réveillon du Nouvel An</b><span>Dîner de gala avec chanteurs en live.</span></div>
+        <div><b>Soirs de match</b><span>Les grands matchs de la Tunisie en direct, annoncés sur nos réseaux : ambiance 100 % football.</span></div>
+        <div><b>Ramadan</b><span>Les soirées du mois sacré, annoncées sur nos réseaux.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" class="info" aria-labelledby="t-info">
+    <div class="wrap grid">
+      <div>
+        <p class="act">Infos pratiques</p>
+        <h2 id="t-info">Réservez votre table</h2>
+        <dl class="rows">
+          <div><dt>Adresse</dt><dd>Zarzis, face à la mer</dd></div>
+          <div><dt>Téléphone</dt><dd><a href="tel:+21600000000">00 000 000</a></dd></div>
+          <div><dt>Horaires</dt><dd>Sur demande, par téléphone</dd></div>
+          <div><dt>Groupes</dt><dd>Terrasse de l’étage dès 20 personnes, sur réservation</dd></div>
+          <div><dt>Instagram</dt><dd><a href="#">Instagram</a></dd></div>
+        </dl>
+        <div class="cta">
+          <a class="btn btn-red" href="tel:+21600000000"><svg aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
+          <a class="btn btn-out" href="#"><svg aria-hidden="true"><use href="#i-pin"/></svg>Itinéraire</a>
+          <a class="btn btn-out" href="#"><svg aria-hidden="true"><use href="#i-msg"/></svg>Message</a>
+        </div>
+      </div>
+      <div class="pic"><img src="assets/img-15.jpg" width="960" height="720" loading="lazy" alt="La terrasse du Néroli au crépuscule"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="fin">Fin</span>
+    <p>… mais revenez vite. © Le Néroli Café &amp; Lounge, Zarzis · <a href="tel:+21600000000">00 000 000</a> · <a href="#">Instagram</a></p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-red" href="tel:+21600000000">Appeler</a>
+  <a class="btn btn-dark" href="#">Itinéraire</a>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement, KEY = 'neroli-theme';
+    try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    document.querySelector('[data-toggle]').addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Myrte — Restaurant sur les remparts de la médina, Hammamet</title>
+<meta name="description" content="Le Myrte, restaurant et wine bar perché sur les remparts de la vieille médina de Hammamet, face au golfe. Ouvert tous les jours de 12h à 00h, service continu.">
+<meta name="theme-color" content="#F6F0E4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1823" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Le Myrte">
+<meta property="og:title" content="Le Myrte — Hammamet">
+<meta property="og:description" content="Perché sur les remparts de la vieille médina de Hammamet, avec le golfe à perte de vue. Tous les jours, 12h – 00h.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Une table ronde dressée sur la terrasse des remparts au coucher du soleil, les remparts et le golfe de Hammamet en arrière-plan">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&family=Mulish:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --linen: #F6F0E4;
+    --card: #FFFCF6;
+    --ink: #1D2630;
+    --muted: #59606A;
+    --line: #E2D6C0;
+    --stone: #D2AA6E;
+    --stone-hi: #DDBA84;
+    --stone-lo: #B58A50;
+    --stone-ink: #2A1C0C;
+    --stone-ink-soft: #4A3519;
+    --sea: #12477A;
+    --sea-deep: #0D355C;
+    --on-sea: #F4EFE4;
+    --on-sea-soft: #BFD3E8;
+    --sunset: #C2531D;
+    --night: #0C1823;
+    --on-night: #EDE5D6;
+    --focus: #D9682B;
+    --btn: #12477A;
+    --btn-ink: #FFFFFF;
+    --serif: "Marcellus", "Iowan Old Style", Georgia, serif;
+    --caps: "Marcellus SC", "Marcellus", Georgia, serif;
+    --sans: "Mulish", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --wrap: 1180px;
+    --gutter: clamp(16px, 4vw, 40px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --linen: #0C1823;
+      --card: #13222F;
+      --ink: #EDE5D6;
+      --muted: #A9B0B8;
+      --line: #263644;
+      --stone: #6B5333;
+      --stone-hi: #775D3A;
+      --stone-lo: #57432A;
+      --stone-ink: #F4E9D6;
+      --stone-ink-soft: #E0CDAE;
+      --sea: #0E3354;
+      --sea-deep: #0A2740;
+      --on-sea: #EEF2F6;
+      --on-sea-soft: #A9C3DD;
+      --sunset: #F0915A;
+      --night: #070F17;
+      --on-night: #EDE5D6;
+      --focus: #F0915A;
+      --btn: #E7B877;
+      --btn-ink: #1A1206;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --linen: #0C1823; --card: #13222F; --ink: #EDE5D6; --muted: #A9B0B8; --line: #263644;
+    --stone: #6B5333; --stone-hi: #775D3A; --stone-lo: #57432A; --stone-ink: #F4E9D6; --stone-ink-soft: #E0CDAE;
+    --sea: #0E3354; --sea-deep: #0A2740; --on-sea: #EEF2F6; --on-sea-soft: #A9C3DD; --sunset: #F0915A;
+    --night: #070F17; --on-night: #EDE5D6; --focus: #F0915A; --btn: #E7B877; --btn-ink: #1A1206;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 72px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0; background: var(--linen); color: var(--ink);
+    font: 400 17px/1.65 var(--sans); overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; text-underline-offset: 3px; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 3px; }
+  .skip { position: absolute; left: 12px; top: -80px; background: var(--card); color: var(--ink); padding: 10px 14px; z-index: 50; border-radius: 4px; }
+  .skip:focus { top: 12px; }
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.1; margin: 0; letter-spacing: .01em; }
+  h2 { font-size: clamp(34px, 5vw, 56px); }
+  h3 { font-size: 22px; }
+  p { margin: 0 0 1em; }
+  .eyebrow { font: 700 12px/1.2 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--sunset); margin: 0 0 14px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* Stone: ashlar courses + grain, used by hero parapet and infos */
+  .stone {
+    background-color: var(--stone);
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .25 0 0 0 0 .16 0 0 0 0 .05 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E"),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='112'%3E%3Cg fill='none' stroke='%233c260c' stroke-opacity='.12' stroke-width='2'%3E%3Cpath d='M0 1H240M0 57H240M70 1V57M190 1V57M10 57V112M130 57V112'/%3E%3C/g%3E%3Cg fill='%23fff' fill-opacity='.05'%3E%3Crect x='72' y='3' width='116' height='52'/%3E%3Crect x='12' y='59' width='116' height='52'/%3E%3C/g%3E%3C/svg%3E"),
+      linear-gradient(180deg, var(--stone-hi), var(--stone) 45%, var(--stone-lo));
+    color: var(--stone-ink);
+  }
+  /* Crenellations: merlons cut from the same stone */
+  .merlons { position: relative; }
+  .merlons::before {
+    content: ""; position: absolute; left: 0; right: 0; top: -34px; height: 35px;
+    background: inherit; background-position: 0 -20px;
+    -webkit-mask: repeating-linear-gradient(90deg, #000 0 52px, transparent 52px 84px) 16px 0;
+    mask: repeating-linear-gradient(90deg, #000 0 52px, transparent 52px 84px) 16px 0;
+  }
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 12px 22px;
+    background: var(--btn); color: var(--btn-ink); text-decoration: none; border-radius: 2px;
+    font: 700 15px/1.2 var(--sans); letter-spacing: .06em; text-transform: uppercase;
+    border: 2px solid var(--btn);
+  }
+  .btn:hover { filter: brightness(1.12); }
+  .btn.ghost { background: transparent; color: inherit; border-color: currentColor; }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+
+  /* Top bar */
+  .top { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--linen) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; gap: 20px; min-height: 60px; }
+  .brand { font: 400 19px/1 "Marcellus SC", var(--serif); color: var(--ink); text-decoration: none; letter-spacing: .16em; text-transform: uppercase; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; }
+  .brand svg { width: 22px; height: 22px; flex: none; color: var(--sunset); }
+  .nav { display: flex; gap: 22px; margin-left: auto; font-size: 14px; font-weight: 600; }
+  .nav a { text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
+  .nav a:hover { border-color: var(--sunset); }
+  .top .btn { min-height: 40px; padding: 8px 16px; font-size: 13px; }
+  @media (max-width: 900px) { .nav { display: none; } .top .btn { margin-left: auto; } }
+
+  /* Hero: the view over the parapet */
+  .hero-view { margin: 0; position: relative; background: #3b4f66; }
+  .hero-view img { width: 100%; height: clamp(340px, calc(100svh - 440px), 680px); object-fit: cover; object-position: 50% 52%; }
+  .hero-view figcaption { position: absolute; right: var(--gutter); top: 16px; font-size: 12px; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.6); letter-spacing: .04em; }
+  .parapet { padding: 34px 0 48px; }
+  .parapet .wrap { display: grid; grid-template-columns: 1.25fr 1fr; gap: 28px 56px; align-items: end; }
+  .parapet .eyebrow { color: var(--stone-ink-soft); }
+  .parapet h1 {
+    font-size: clamp(54px, 10vw, 128px); line-height: .92; color: var(--stone-ink);
+    text-shadow: 0 1px 0 rgba(255,240,210,.35), 0 -1px 0 rgba(40,24,6,.35);
+  }
+  .parapet h1 span { display: block; font-size: .3em; letter-spacing: .08em; margin: 0 0 .1em .08em; font-family: var(--caps); color: var(--stone-ink-soft); }
+  .parapet .lede { font: 400 clamp(20px, 2.3vw, 26px)/1.35 var(--serif); margin: 22px 0 0; max-width: 30ch; color: var(--stone-ink); }
+  .hours-plaque { border-top: 2px solid var(--stone-ink); padding-top: 18px; }
+  .hours-plaque dl { margin: 0 0 22px; display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; }
+  .hours-plaque dt { font: 700 12px/1.9 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--stone-ink-soft); }
+  .hours-plaque dd { margin: 0; font-weight: 600; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .parapet .btn.ghost { color: var(--stone-ink); }
+  .en { font-size: 14px; color: var(--stone-ink-soft); margin: 18px 0 0; font-style: italic; }
+  @media (max-width: 820px) {
+    .hero-view img { height: clamp(260px, calc(100svh - 400px), 460px); object-position: 30% 60%; }
+    .parapet { padding: 30px 0 40px; }
+    .parapet .wrap { grid-template-columns: 1fr; }
+    .merlons::before { top: -24px; height: 25px; -webkit-mask: repeating-linear-gradient(90deg, #000 0 34px, transparent 34px 56px) 10px 0; mask: repeating-linear-gradient(90deg, #000 0 34px, transparent 34px 56px) 10px 0; }
+  }
+
+  section { padding: clamp(64px, 9vw, 120px) 0; }
+  .head { max-width: 720px; margin-bottom: clamp(32px, 5vw, 56px); }
+  .head p.intro { font-size: 19px; color: var(--muted); margin-top: 18px; }
+
+  /* Le lieu */
+  .lieu-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+  .lieu-grid figure { margin: 0; position: relative; overflow: hidden; background: var(--line); }
+  .lieu-grid img { width: 100%; height: 100%; object-fit: cover; }
+  .lieu-grid figcaption { position: absolute; left: 0; bottom: 0; right: 0; padding: 28px 14px 10px; font-size: 13px; font-weight: 600; color: #fff; background: linear-gradient(transparent, rgba(8,16,24,.7)); }
+  .g-salle { grid-column: 1 / 8; aspect-ratio: 3 / 2; }
+  .g-arche { grid-column: 8 / 13; grid-row: span 2; }
+  .g-crep { grid-column: 1 / 5; aspect-ratio: 4 / 3; }
+  .g-nuit { grid-column: 5 / 8; aspect-ratio: 3 / 4; }
+  .g-nuit img { object-position: 30% 50%; }
+  @media (max-width: 820px) {
+    .lieu-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .g-salle { grid-column: 1 / 3; }
+    .g-arche { grid-column: 1 / 2; grid-row: span 2; }
+    .g-crep { grid-column: 2 / 3; aspect-ratio: 3 / 4; }
+    .g-nuit { grid-column: 2 / 3; aspect-ratio: 3 / 4; }
+  }
+
+  /* Way in */
+  .way { margin-top: clamp(48px, 7vw, 88px); display: grid; grid-template-columns: 1fr 1fr; gap: 0; background: var(--card); border: 1px solid var(--line); }
+  .way figure { margin: 0; min-height: 100%; }
+  .way figure img { width: 100%; height: 100%; object-fit: cover; }
+  .way-body { padding: clamp(26px, 4vw, 52px); }
+  .way-body h3 { font-size: clamp(28px, 3.4vw, 40px); margin-bottom: 22px; }
+  .steps { list-style: none; margin: 0 0 26px; padding: 0; position: relative; }
+  .steps::before { content: ""; position: absolute; left: 15px; top: 14px; bottom: 14px; border-left: 2px dashed var(--stone-lo); }
+  .steps li { position: relative; padding: 4px 0 18px 52px; }
+  .steps li::before {
+    content: counter(list-item); position: absolute; left: 0; top: 2px; width: 32px; height: 32px;
+    display: grid; place-items: center; background: var(--stone); color: var(--stone-ink);
+    font: 400 16px/1 var(--serif);
+  }
+  .steps li:last-child::before { background: var(--sea); color: #fff; }
+  .steps strong { display: block; font-family: var(--serif); font-weight: 400; font-size: 20px; }
+  .steps span { color: var(--muted); font-size: 15px; }
+  .notice { border-left: 4px solid var(--sunset); padding: 12px 16px; background: color-mix(in srgb, var(--sunset) 9%, transparent); margin: 0; font-size: 16px; }
+  @media (max-width: 820px) { .way { grid-template-columns: 1fr; } .way figure img { aspect-ratio: 4 / 3; } }
+
+  /* Horizon band */
+  .horizon { position: relative; padding: 0; background: var(--night); }
+  .horizon img { width: 100%; height: clamp(320px, 52vw, 640px); object-fit: cover; object-position: 50% 60%; }
+  @media (max-width: 820px) { .horizon img { object-position: 0% 60%; } }
+  .horizon blockquote { position: absolute; left: 0; right: 0; top: clamp(24px, 6vw, 72px); margin: 0; text-align: center; color: #fff; font: 400 clamp(26px, 4.4vw, 54px)/1.15 var(--serif); padding: 0 var(--gutter); text-shadow: 0 2px 18px rgba(0,0,0,.45); }
+  .horizon blockquote cite { display: block; margin-top: 12px; font: 700 12px/1.3 var(--sans); letter-spacing: .2em; text-transform: uppercase; font-style: normal; opacity: .9; }
+
+  /* Cuisine — Mediterranean blue */
+  .cuisine { background: var(--sea); color: var(--on-sea); }
+  .cuisine .eyebrow { color: var(--stone-hi); }
+  :root[data-theme="dark"] .cuisine .eyebrow { color: #E7B877; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cuisine .eyebrow { color: #E7B877; } }
+  .cuisine .head p.intro { color: var(--on-sea-soft); }
+  .cuisine .head { max-width: 860px; }
+  .tagline { font-size: clamp(32px, 4.6vw, 54px); line-height: 1.12; }
+  .plates { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .plates li { margin: 0; }
+  .plates figure { margin: 0; }
+  .plates img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: var(--sea-deep); }
+  .plates figcaption { font: 400 18px/1.25 var(--serif); padding-top: 10px; }
+  .plates .feature { grid-column: span 2; grid-row: span 2; }
+  .plates .feature img { aspect-ratio: auto; height: calc(100% - 44px); }
+  .plates .feature figure { height: 100%; }
+  .plates .feature img { object-position: 50% 85%; }
+  .plates .feature figcaption { font-size: 24px; }
+  .cuisine .note { margin-top: 32px; color: var(--on-sea-soft); font-size: 15px; }
+  .cuisine .note a { color: var(--on-sea); font-weight: 700; }
+  @media (max-width: 820px) {
+    .plates { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .plates .feature { grid-row: auto; }
+    .plates .feature img { aspect-ratio: 4 / 5; height: auto; }
+    .plates figcaption { font-size: 16px; }
+  }
+
+  /* Wine bar — night */
+  .wine { background: var(--night); color: var(--on-night); }
+  .split { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(28px, 6vw, 80px); align-items: center; }
+  .split figure { margin: 0; }
+  .split h2 { margin-bottom: 20px; }
+  .wine .eyebrow { color: #E7B877; }
+  .wine p.big { font: 400 clamp(22px, 2.6vw, 30px)/1.3 var(--serif); }
+  .badge-hours { display: inline-flex; flex-direction: column; border: 1px solid rgba(231,184,119,.6); padding: 14px 20px; margin: 8px 0 18px; }
+  .badge-hours b { font: 400 30px/1.1 var(--serif); color: #E7B877; }
+  .badge-hours small { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
+  .wine .muted { color: #AEB6BF; font-size: 15px; }
+  @media (max-width: 820px) { .split { grid-template-columns: 1fr; } }
+
+  /* Soirées */
+  .soirees .split { grid-template-columns: 1fr 1.1fr; }
+  .soirees blockquote { margin: 18px 0 22px; padding-left: 18px; border-left: 3px solid var(--stone); font: 400 clamp(22px, 2.6vw, 30px)/1.3 var(--serif); }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0 0 22px; }
+  .tags li { border: 1px solid var(--line); background: var(--card); padding: 6px 12px; font-size: 14px; font-weight: 600; }
+  .soirees .muted { color: var(--muted); }
+  @media (max-width: 820px) { .soirees .split { grid-template-columns: 1fr; } .soirees figure { order: -1; } }
+
+  /* Infos — back on the stone */
+  .infos { margin-top: 30px; padding-top: clamp(56px, 8vw, 96px); }
+  .infos .eyebrow { color: var(--stone-ink-soft); }
+  .infos h2 { color: var(--stone-ink); }
+  .info-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 16px; margin-top: 36px; }
+  .info { background: color-mix(in srgb, var(--card) 88%, transparent); color: var(--ink); padding: 24px; border: 1px solid rgba(60,38,12,.2); }
+  .info h3 { font-size: 13px; font-family: var(--sans); font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+  .info address { font-style: normal; font: 400 22px/1.35 var(--serif); }
+  .info .big { font: 400 26px/1.2 var(--serif); }
+  .info p { margin: 0 0 8px; }
+  .copy { margin-top: 12px; font: 600 14px/1 var(--sans); padding: 9px 14px; min-height: 38px; background: transparent; color: var(--ink); border: 1px solid var(--line); cursor: pointer; border-radius: 2px; }
+  .copy:hover { border-color: var(--sunset); }
+  .linklist { list-style: none; margin: 0; padding: 0; }
+  .linklist li + li { border-top: 1px solid var(--line); }
+  .linklist a { display: flex; justify-content: space-between; gap: 10px; padding: 11px 0; text-decoration: none; font-weight: 600; }
+  .linklist a::after { content: "→"; color: var(--sunset); }
+  .linklist a:hover { color: var(--sunset); }
+  .hours-table { width: 100%; border-collapse: collapse; }
+  .hours-table th, .hours-table td { text-align: left; padding: 8px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .hours-table th { font-weight: 600; padding-right: 12px; }
+  .member { margin-top: 28px; display: flex; gap: 14px; align-items: center; font-size: 15px; color: var(--stone-ink); }
+  .member .seal { flex: none; width: 46px; height: 46px; border: 2px solid var(--stone-ink); border-radius: 50%; display: grid; place-items: center; font: 700 11px/1 var(--sans); letter-spacing: .06em; }
+  @media (max-width: 980px) { .info-grid { grid-template-columns: 1fr 1fr; } .info.addr { grid-column: 1 / -1; } }
+  @media (max-width: 620px) { .info-grid { grid-template-columns: 1fr; } }
+
+  footer { background: var(--stone-lo); color: var(--stone-ink); padding: 22px 0 26px; font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+
+  /* Phone call bar */
+  .callbar { display: none; }
+  @media (max-width: 620px) {
+    body { padding-bottom: 72px; }
+    .callbar {
+      display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; gap: 10px;
+      padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: var(--night); border-top: 1px solid rgba(231,184,119,.35);
+    }
+    .callbar a { flex: 1; justify-content: center; min-height: 48px; padding: 10px; font-size: 14px; }
+    .callbar .btn { background: #E7B877; color: #1A1206; border-color: #E7B877; }
+    .callbar .btn.ghost { background: transparent; color: #EDE5D6; border-color: rgba(237,229,214,.5); }
+  }
+</style>
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/demo-33/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/demo-33/">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 22V3"/><path d="M12 7c-3-1-5-3-5-5 3 0 5 2 5 5zM12 7c3-1 5-3 5-5-3 0-5 2-5 5zM12 13c-3.5-1-6-3.5-6-6 3.5 0 6 2.5 6 6zM12 13c3.5-1 6-3.5 6-6-3.5 0-6 2.5-6 6z" fill="currentColor" fill-opacity=".25"/><circle cx="8" cy="18" r="1.6" fill="currentColor"/><circle cx="16" cy="18" r="1.6" fill="currentColor"/></svg>Le Myrte</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#lieu">Le lieu</a>
+      <a href="#cuisine">La cuisine</a>
+      <a href="#wine-bar">Wine Bar</a>
+      <a href="#soirees">Soirées</a>
+      <a href="#infos">Infos</a>
+    </nav>
+    <a class="btn" href="tel:+21600000000">Réserver</a>
+  </div>
+</header>
+
+<main id="main">
+  <div id="top">
+    <figure class="hero-view">
+      <img src="assets/img-05.jpg" width="1800" height="1350" fetchpriority="high"
+           alt="Une table ronde nappée de blanc, verres bleus, dressée sur la terrasse des remparts au coucher du soleil ; à gauche les remparts, au fond le golfe de Hammamet">
+    </figure>
+    <div class="parapet stone merlons">
+      <div class="wrap">
+        <div>
+          <p class="eyebrow">Restaurant · Wine Bar — La Médina, Hammamet</p>
+          <h1><span>Le</span> Myrte</h1>
+          <p class="lede">Perché sur les remparts de la vieille médina de Hammamet, les yeux dans le golfe.</p>
+        </div>
+        <div class="hours-plaque">
+          <dl>
+            <dt>Restaurant</dt><dd>Tous les jours, 12h – 00h · service continu</dd>
+            <dt>Wine Bar</dt><dd>Tous les soirs, 17h – minuit</dd>
+            <dt>Où</dt><dd>Sur les remparts, La Médina</dd>
+          </dl>
+          <div class="cta">
+            <a class="btn" href="tel:+21600000000">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+              Réserver · 00 000 000
+            </a>
+            <a class="btn ghost" href="#trouver">Nous trouver</a>
+          </div>
+          <p class="en" lang="en">Restaurant &amp; wine bar perched on the ramparts of Hammamet’s old medina, overlooking the bay. Open every day from noon until midnight.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="lieu" aria-labelledby="lieu-t">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Le lieu</p>
+        <h2 id="lieu-t">Une table de caractère au cœur de la vieille ville</h2>
+        <p class="intro">Des murs de pierre ocre, une terrasse ouverte sur la mer et une salle largement vitrée : au Myrte, toutes les tables ont vue sur le golfe de Hammamet.</p>
+      </div>
+      <div class="lieu-grid">
+        <figure class="g-salle">
+          <img src="assets/img-17.jpg" width="1000" height="1000" loading="lazy" alt="La salle du restaurant : tables nappées de blanc, verres bleus et lampes, devant de grandes baies vitrées ouvertes sur le golfe à la tombée du jour">
+          <figcaption>La salle, face au golfe</figcaption>
+        </figure>
+        <figure class="g-arche">
+          <img src="assets/img-01.jpg" width="600" height="1067" loading="lazy" alt="Une arche en pierre de la médina de Hammamet, ruelle pavée et murs blanchis à la chaux au-delà">
+          <figcaption>Par les ruelles de la médina</figcaption>
+        </figure>
+        <figure class="g-crep">
+          <img src="assets/img-16.jpg" width="1000" height="667" loading="lazy" alt="Des convives dînent à la lueur des lampes, derrière les vitres le golfe bleu nuit au crépuscule">
+          <figcaption>L’heure bleue</figcaption>
+        </figure>
+        <figure class="g-nuit">
+          <img src="assets/img-04.jpg" width="1000" height="666" loading="lazy" alt="Les remparts éclairés à la nuit tombée, avec la terrasse vitrée du restaurant tout en haut">
+          <figcaption>Les remparts, la nuit</figcaption>
+        </figure>
+      </div>
+
+      <div class="way" id="trouver">
+        <figure>
+          <img src="assets/img-03.jpg" width="1000" height="1000" loading="lazy" alt="Un mur de pierre dorée sous le ciel bleu, avec les baies vitrées du restaurant au sommet">
+        </figure>
+        <div class="way-body">
+          <p class="eyebrow">Comment nous trouver</p>
+          <h3>Grimpez jusqu’aux remparts</h3>
+          <ol class="steps">
+            <li><strong>La Médina de Hammamet</strong><span>Entrez dans la vieille ville, au bord de la mer.</span></li>
+            <li><strong>Les remparts</strong><span>Suivez les murs de pierre et prenez de la hauteur.</span></li>
+            <li><strong>Au sommet : Le Myrte</strong><span>Le golfe s’ouvre devant vous, votre table aussi.</span></li>
+          </ol>
+          <p class="notice">Le Myrte est au sommet des remparts. En chemin, ne vous laissez pas détourner&nbsp;: montez jusqu’en haut.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="horizon" aria-label="La vue">
+    <img src="assets/img-02.jpg" width="1400" height="932" loading="lazy" alt="Coucher de soleil orangé sur le golfe de Hammamet, des barques sur l’eau calme">
+    <blockquote>
+      <p style="margin:0">« Tout le golfe de Hammamet, à portée de regard. »</p>
+      <cite>Depuis le restaurant</cite>
+    </blockquote>
+  </section>
+
+  <section id="cuisine" class="cuisine" aria-labelledby="cuisine-t">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">La cuisine</p>
+        <h2 id="cuisine-t" class="tagline">Une cuisine soignée, une carte généreuse, des produits du jour.</h2>
+        <p class="intro">Un repas qui reste en mémoire, au cœur de la vieille ville de Hammamet.</p>
+      </div>
+      <ul class="plates">
+        <li class="feature"><figure>
+          <img src="assets/img-10.jpg" width="600" height="750" loading="lazy" alt="Couscous au poisson garni de légumes, piment vert et pois chiches">
+          <figcaption>Couscous au poisson</figcaption></figure></li>
+        <li><figure>
+          <img src="assets/img-07.jpg" width="600" height="750" loading="lazy" alt="Fines tranches de loup en carpaccio, aneth et baies roses">
+          <figcaption>Carpaccio de loup</figcaption></figure></li>
+        <li><figure>
+          <img src="assets/img-14.jpg" width="600" height="750" loading="lazy" alt="Filets de sardines disposés en rosace avec des agrumes sur une assiette bleue">
+          <figcaption>Filets de sardines</figcaption></figure></li>
+        <li><figure>
+          <img src="assets/img-08.jpg" width="600" height="750" loading="lazy" alt="Assiette de charmoula dressée sur une assiette sombre">
+          <figcaption>Charmoula</figcaption></figure></li>
+        <li><figure>
+          <img src="assets/img-13.jpg" width="600" height="750" loading="lazy" alt="Filet de bœuf nappé de sauce aux champignons, légumes verts">
+          <figcaption>Filet de bœuf à la sauce champignons</figcaption></figure></li>
+        <li><figure>
+          <img src="assets/img-12.jpg" width="600" height="750" loading="lazy" alt="Pâtes aux grosses crevettes en sauce tomate">
+          <figcaption>Crevettes &amp; pâtes</figcaption></figure></li>
+        <li><figure>
+          <img src="assets/img-11.jpg" width="600" height="750" loading="lazy" alt="Crème brûlée caramélisée dans un plat blanc">
+          <figcaption>Crème brûlée</figcaption></figure></li>
+        <li><figure>
+          <img src="assets/img-09.jpg" width="600" height="750" loading="lazy" alt="Cheesecake nappé d’une gelée d’orange sur une assiette bleue">
+          <figcaption>Cheesecake orange</figcaption></figure></li>
+        <li><figure>
+          <img src="assets/img-15.jpg" width="600" height="750" loading="lazy" alt="Assortiment de pâtisseries tunisiennes sur un plateau en métal martelé">
+          <figcaption>Pâtisserie tunisienne traditionnelle</figcaption></figure></li>
+      </ul>
+      <p class="note">Quelques assiettes de la maison. Une question sur la carte&nbsp;? <a href="tel:+21600000000">Appelez-nous au 00 000 000</a>.</p>
+    </div>
+  </section>
+
+  <section id="wine-bar" class="wine" aria-labelledby="wine-t">
+    <div class="wrap split">
+      <figure>
+        <img src="assets/img-18.jpg" width="1000" height="719" loading="lazy" alt="Au bar, le soir : un verre sous une lampe à abat-jour tressé, le serveur souriant dans la pénombre">
+      </figure>
+      <div>
+        <p class="eyebrow">Le Wine Bar</p>
+        <h2 id="wine-t">La cave du domaine</h2>
+        <p class="big">Une sélection de vins du pays, à découvrir au Wine Bar.</p>
+        <div class="badge-hours"><small>Tous les soirs</small><b>17h – minuit</b></div>
+        <p class="muted">Des vins tunisiens choisis avec soin, à déguster au-dessus des remparts quand la médina s’allume.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="soirees" class="soirees" aria-labelledby="soirees-t">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Soirées</p>
+        <h2 id="soirees-t">Le Ney, au fil du dîner</h2>
+        <blockquote>Le souffle du ney, la flûte des montagnes, accompagne votre soirée.</blockquote>
+        <p>Pour les dîners d’exception, la musique s’invite à table.</p>
+        <ul class="tags" aria-label="Exemples de soirées">
+          <li>Saint-Valentin</li>
+          <li>Iftar</li>
+        </ul>
+        <p class="muted">Les prochaines dates sont annoncées sur nos réseaux. Réservation au <a href="tel:+21600000000">00 000 000</a>.</p>
+      </div>
+      <figure>
+        <img src="assets/img-06.jpg" width="1000" height="762" loading="lazy" alt="Un musicien en tenue traditionnelle brodée joue du ney entre les tables, le soir, devant les baies vitrées">
+      </figure>
+    </div>
+  </section>
+
+  <section id="infos" class="infos stone merlons" aria-labelledby="infos-t">
+    <div class="wrap">
+      <p class="eyebrow">Infos &amp; réservation</p>
+      <h2 id="infos-t">Nous rendre visite</h2>
+      <div class="info-grid">
+        <div class="info addr">
+          <h3>Adresse</h3>
+          <address id="addr">Restaurant Le Myrte<br>La Médina, Hammamet, Tunisie</address>
+          <p style="margin-top:8px">Sur les remparts.</p>
+          <button class="copy" type="button" data-copy="#addr" hidden>Copier l’adresse</button>
+          <ul class="linklist" style="margin-top:14px">
+            <li><a href="#">Ouvrir dans Google Maps</a></li>
+          </ul>
+        </div>
+        <div class="info">
+          <h3>Horaires</h3>
+          <table class="hours-table">
+            <tr><th scope="row">Restaurant</th><td>Tous les jours<br>12h – 00h, service continu</td></tr>
+            <tr><th scope="row">Wine Bar</th><td>Tous les soirs<br>17h – minuit</td></tr>
+          </table>
+        </div>
+        <div class="info">
+          <h3>Réservation</h3>
+          <p class="big"><a href="tel:+21600000000">+216 00 000 000</a></p>
+          <ul class="linklist">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="member"><span class="seal" aria-hidden="true">FTRT</span>Membre de la Fédération Tunisienne des Restaurants Touristiques.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Le Myrte · La Médina, Hammamet</span>
+    <span>Photos : images d’illustration</span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn" href="tel:+21600000000">Réserver</a>
+  <a class="btn ghost" href="#">Itinéraire</a>
+</div>
+
+<script>
+  // Progressive enhancement: the address stays selectable without this.
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    if (!navigator.clipboard) return;
+    btn.hidden = false;
+    btn.addEventListener('click', function () {
+      var el = document.querySelector(btn.dataset.copy);
+      var text = el.innerText.replace(/\s*\n\s*/g, ', ').trim();
+      navigator.clipboard.writeText(text).then(function () {
+        btn.textContent = 'Adresse copiée';
+        setTimeout(function () { btn.textContent = 'Copier l’adresse'; }, 1800);
+      });
+    });
+  });
+</script>
+</body>
+</html>

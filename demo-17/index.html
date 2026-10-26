@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cobalt Café-Resto — Raffinement &amp; bonne table, centre-ville de Sousse</title>
+<meta name="description" content="Cobalt, café-resto du centre-ville de Sousse : brunch, plats, desserts, drinks et tous les matchs de la Ligue 1. Réservation au 00 000 000.">
+<meta name="theme-color" content="#F4F1EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1430" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Cobalt Café-Resto">
+<meta property="og:title" content="Cobalt — Café-Resto, centre-ville de Sousse">
+<meta property="og:description" content="Raffinement &amp; bonne table, un accueil aux petits soins, des produits choisis. Brunch, plats, drinks et soirées. Réservez au 00 000 000.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La terrasse du Cobalt en centre-ville de Sousse">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&family=Noto+Naskh+Arabic:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #F4F1EA;
+    --paper: #FFFFFF;
+    --ink: #0F1A33;
+    --muted: #4F5870;
+    --line: #DCD6CA;
+    --navy: #13265C;
+    --navy-2: #0B1430;
+    --blue: #2F5BD3;
+    --wood: #A0582A;
+    --wood-soft: #EAD9C7;
+    --on-navy: #F4F1EA;
+    --on-navy-soft: #C3CCE4;
+    --accent-ink: #13265C;
+    --focus: #2F5BD3;
+    --shadow: 0 20px 44px -26px rgba(15, 26, 51, .55);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0B1430;
+      --paper: #111D40;
+      --ink: #EEF1F8;
+      --muted: #AEB8D2;
+      --line: #263561;
+      --wood: #E1945F;
+      --wood-soft: #2A2340;
+      --accent-ink: #9DB6FF;
+      --focus: #9DB6FF;
+      --shadow: 0 20px 44px -26px rgba(0, 0, 0, .9);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0B1430;
+    --paper: #111D40;
+    --ink: #EEF1F8;
+    --muted: #AEB8D2;
+    --line: #263561;
+    --wood: #E1945F;
+    --wood-soft: #2A2340;
+    --accent-ink: #9DB6FF;
+    --focus: #9DB6FF;
+    --shadow: 0 20px 44px -26px rgba(0, 0, 0, .9);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 Manrope, system-ui, sans-serif; overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 60; background: var(--paper); color: var(--ink); padding: 10px 14px; border-radius: 6px; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1200px, 100% - 40px); margin-inline: auto; }
+  .ar { font-family: 'Noto Naskh Arabic', serif; }
+  .logo { font-family: Fraunces, Georgia, serif; text-transform: uppercase; letter-spacing: .2em; font-weight: 500; line-height: 1; }
+
+  /* zellige band, after the blue tile coaster */
+  .tiles { height: 22px; background-color: var(--navy);
+    background-image:
+      radial-gradient(circle at 50% 50%, #F4F1EA 0 3px, transparent 3.5px),
+      conic-gradient(from 45deg at 50% 50%, #2F5BD3 0 25%, #13265C 0 50%, #2F5BD3 0 75%, #13265C 0);
+    background-size: 22px 22px; }
+
+  .eyebrow { font: 800 12px/1.2 Manrope, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--wood); margin: 0 0 12px; }
+  h2 { font: 700 clamp(32px, 4.6vw, 52px)/1.05 Fraunces, Georgia, serif; margin: 0 0 18px; letter-spacing: -.015em; }
+  h3 { font: 700 21px/1.2 Fraunces, Georgia, serif; margin: 0 0 6px; }
+  p { margin: 0 0 1em; }
+  .lead { font-size: 18.5px; color: var(--muted); max-width: 58ch; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 12px 22px; border-radius: 12px; font: 800 15px/1 Manrope, sans-serif; text-decoration: none; border: 2px solid transparent; transition: transform .15s ease; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn-light { background: #F4F1EA; color: #0F1A33; }
+  .btn-ghost { border-color: rgba(244,241,234,.7); color: #F4F1EA; }
+  .btn-navy { background: var(--navy); color: #F4F1EA; }
+  :root[data-theme="dark"] .btn-navy { background: #F4F1EA; color: #0F1A33; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn-navy { background: #F4F1EA; color: #0F1A33; } }
+  .btn-out { border-color: var(--ink); color: var(--ink); }
+
+  /* header */
+  .top { position: sticky; top: 0; z-index: 40; background: var(--navy-2); color: var(--on-navy); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 64px; }
+  .top .logo { font-size: 22px; text-decoration: none; color: #fff; display: inline-flex; align-items: center; }
+  .nav { display: flex; align-items: center; gap: 24px; }
+  .nav a.l { text-decoration: none; font-weight: 600; font-size: 15px; color: var(--on-navy-soft); }
+  .nav a.l:hover { color: #fff; }
+  .toggle { width: 42px; height: 42px; border-radius: 12px; border: 1.5px solid rgba(244,241,234,.35); background: transparent; color: #fff; display: grid; place-items: center; cursor: pointer; }
+  .toggle svg { width: 18px; height: 18px; }
+  .top .btn { min-height: 42px; padding: 9px 16px; }
+  @media (max-width: 900px) { .nav a.l { display: none; } .nav { gap: 10px; } }
+
+  /* hero */
+  .hero { position: relative; background: var(--navy-2); color: var(--on-navy); }
+  .hero .photo { position: absolute; inset: 0 0 0 42%; }
+  .hero .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .hero .photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--navy-2) 0%, rgba(11,20,48,.35) 30%, rgba(11,20,48,0) 60%); }
+  .hero .wrap { position: relative; min-height: min(78vh, 720px); display: grid; align-content: center; padding-block: 64px; }
+  .hero .box { max-width: 560px; }
+  .hero .eyebrow { color: #E8B48A; }
+  .hero h1 { margin: 0; }
+  .hero h1 .logo { display: block; font-size: clamp(46px, 7.4vw, 96px); color: #fff; letter-spacing: .14em; }
+  .hero h1 small { display: block; font: 800 13px/1 Manrope, sans-serif; letter-spacing: .5em; text-transform: uppercase; color: var(--on-navy-soft); margin: 4px 0 0 6px; }
+  .hero .tag { font: 500 clamp(21px, 2.3vw, 27px)/1.35 Fraunces, serif; margin: 26px 0 30px; color: #fff; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero .ar { font-size: 22px; color: #E8B48A; margin: 24px 0 0; display: table; }
+  @media (max-width: 820px) {
+    .hero .photo { position: relative; inset: auto; height: 300px; }
+    .hero .photo::after { background: linear-gradient(0deg, var(--navy-2) 0%, rgba(11,20,48,0) 45%); }
+    .hero .wrap { min-height: 0; padding-block: 8px 48px; }
+  }
+
+  .claims { background: var(--paper); border-bottom: 1px solid var(--line); }
+  .claims ul { list-style: none; margin: 0 auto; padding: 22px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .claims li { display: flex; gap: 12px; align-items: center; font-weight: 700; font-size: 15px; }
+  .claims b { font: 700 28px/1 Fraunces, serif; color: var(--accent-ink); min-width: 40px; }
+  @media (max-width: 820px) { .claims ul { grid-template-columns: 1fr 1fr; } .claims li { flex-direction: column; align-items: flex-start; gap: 4px; font-size: 14px; } .claims b { font-size: 22px; } }
+
+  section { padding-block: clamp(64px, 9vw, 112px); }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
+  @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+
+  .place .pics { display: grid; grid-template-columns: 1.3fr 1fr; gap: 14px; }
+  .place .pics img { border-radius: 16px; width: 100%; height: 100%; object-fit: cover; }
+  .place .pics .p1 { aspect-ratio: 4/5; }
+  .place .pics .stack { display: grid; gap: 14px; }
+  .place .pics .stack img { aspect-ratio: 1/1; }
+
+  /* carte */
+  .carte { background: var(--wood-soft); }
+  .head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 18px 40px; margin-bottom: 40px; }
+  .head .lead { margin: 0; max-width: 46ch; }
+  .menu { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }
+  .item { background: var(--paper); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; margin: 0; }
+  .item img { width: 100%; object-fit: cover; aspect-ratio: 4/3; }
+  .item figcaption { padding: 18px 20px 22px; }
+  .item p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .item .k { display: inline-block; font: 800 11px/1 Manrope, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); background: color-mix(in srgb, var(--accent-ink) 12%, transparent); padding: 6px 9px; border-radius: 6px; margin-bottom: 10px; }
+  .i1 { grid-column: span 3; grid-row: span 2; }
+  .i1 img { aspect-ratio: auto; height: 100%; min-height: 0; flex: 1; }
+  .i2, .i3 { grid-column: span 3; }
+  .i4, .i5, .i6 { grid-column: span 2; }
+  .i2 { flex-direction: row; } .i3 { flex-direction: row; }
+  .i2 img, .i3 img { width: 45%; aspect-ratio: auto; }
+  .i2 figcaption, .i3 figcaption { align-self: center; }
+  @media (max-width: 960px) {
+    .menu { grid-template-columns: 1fr 1fr; }
+    .i1, .i2, .i3, .i4, .i5, .i6 { grid-column: span 1; grid-row: auto; flex-direction: column; }
+    .i1 { grid-column: span 2; }
+    .i1 img { aspect-ratio: 4/3; height: auto; }
+    .i2 img, .i3 img { width: 100%; aspect-ratio: 4/3; }
+  }
+  @media (max-width: 520px) { .menu { grid-template-columns: 1fr; } .i1 { grid-column: auto; } }
+  .menu-note { margin: 28px 0 0; color: var(--muted); font-size: 15.5px; }
+  .menu-note a { color: var(--accent-ink); font-weight: 800; }
+
+  /* kitchen band */
+  .kitchen { position: relative; color: #fff; padding: 0; background: #1a0d05; }
+  .kitchen img { width: 100%; height: clamp(480px, 52vw, 560px); object-fit: cover; opacity: .85; }
+  .kitchen .over { position: absolute; inset: 0; display: grid; align-items: end; background: linear-gradient(0deg, rgba(10,6,3,.88), rgba(10,6,3,0) 65%); }
+  .kitchen .over .wrap { padding-bottom: clamp(32px, 5vw, 64px); }
+  .kitchen h2 { max-width: 18ch; }
+  .kitchen p { max-width: 52ch; color: #F3E2D2; }
+  .kitchen .eyebrow { color: #F0B98C; }
+
+  /* events */
+  .events .list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .ev { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; }
+  .ev img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+  .ev .t { padding: 20px 22px 24px; }
+  .ev .when { font: 800 12px/1 Manrope, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--wood); margin-bottom: 10px; display: block; }
+  .ev p { color: var(--muted); margin: 0; font-size: 15.5px; }
+  .ev .ar { display: block; font-size: 19px; color: var(--ink); margin: 2px 0 8px; }
+  @media (max-width: 900px) { .events .list { grid-template-columns: 1fr; } .ev { flex-direction: row; } .ev img { width: 38%; aspect-ratio: auto; } }
+  @media (max-width: 520px) { .ev { flex-direction: column; } .ev img { width: 100%; aspect-ratio: 16/10; } }
+  .full { margin-top: 28px; display: flex; gap: 18px; align-items: center; background: var(--navy); color: #F4F1EA; border-radius: 18px; padding: 22px 26px; }
+  .full b { font: 700 24px/1.1 Fraunces, serif; }
+  .full p { margin: 0; color: var(--on-navy-soft); }
+  .full .btn { margin-left: auto; flex: none; }
+  @media (max-width: 700px) { .full { flex-direction: column; align-items: flex-start; } .full .btn { margin-left: 0; } }
+
+  /* info */
+  .info { background: var(--paper); }
+  .info .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: stretch; }
+  .info .facade { border-radius: 18px; overflow: hidden; position: relative; min-height: 340px; }
+  .info .facade img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .rows { display: grid; gap: 0; margin: 0 0 26px; }
+  .rows div { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .rows dt { font: 800 12px/1.6 Manrope, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .rows dd { margin: 0; font-weight: 600; }
+  .rows a { color: var(--accent-ink); }
+  .info .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  @media (max-width: 860px) { .info .grid { grid-template-columns: 1fr; } .info .facade { min-height: 300px; } .rows div { grid-template-columns: 96px 1fr; } }
+
+  footer { background: var(--navy-2); color: var(--on-navy-soft); padding: 40px 0 100px; font-size: 15px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 30px; align-items: center; justify-content: space-between; }
+  footer .logo { font-size: 26px; color: #fff; display: inline-flex; align-items: center; }
+  footer a { color: #fff; }
+
+  .callbar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 50; display: none; gap: 8px; }
+  .callbar .btn { flex: 1; box-shadow: 0 12px 30px -10px rgba(0,0,0,.55); }
+  .callbar .btn-light { border-color: #13265C; }
+  @media (max-width: 700px) { .callbar { display: flex; } }
+</style>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/demo-17/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/demo-17/">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#main" aria-label="Cobalt, accueil"><svg aria-hidden="true" viewBox="0 0 20 20" style="width:.9em;height:.9em;vertical-align:-.08em;margin-right:.45em"><circle cx="10" cy="10" r="8" fill="none" stroke="#E8B48A" stroke-width="1.6"/><circle cx="10" cy="10" r="3.2" fill="#E8B48A"/></svg>Cobalt</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="l" href="#lieu">Le lieu</a>
+      <a class="l" href="#carte">La carte</a>
+      <a class="l" href="#rendez-vous">Rendez-vous</a>
+      <a class="l" href="#infos">Infos</a>
+      <button class="toggle" type="button" data-toggle aria-label="Changer de thème (clair / sombre)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+      <a class="btn btn-light" href="tel:+21600000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Réserver</a>
+    </nav>
+  </div>
+</header>
+<div class="tiles" aria-hidden="true"></div>
+
+<main id="main">
+  <section class="hero" aria-labelledby="titre" style="padding:0">
+    <div class="photo"><img src="assets/img-12.jpg" width="1440" height="960" alt="La terrasse du Cobalt, avec ses parasols bleus et ses jardinières, en centre-ville de Sousse"></div>
+    <div class="wrap">
+      <div class="box">
+        <p class="eyebrow">Café-Resto · Centre-ville, Sousse</p>
+        <h1 id="titre"><span class="logo">Cobalt</span><small>Café · Resto</small></h1>
+        <p class="tag">Raffinement &amp; bonne table, un accueil aux petits soins et des produits bien choisis — du brunch du matin aux soirées de match.</p>
+        <div class="cta">
+          <a class="btn btn-light" href="tel:+21600000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>00 000 000</a>
+          <a class="btn btn-ghost" href="#carte">Voir la carte</a>
+        </div>
+        <p class="ar" lang="ar" dir="rtl">مرحبا بيكم</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="claims">
+    <ul class="wrap" aria-label="Le Cobalt en bref">
+      <li><b>☕</b>Au cœur de Sousse</li>
+      <li><b>◆</b>Raffinement &amp; bonne table</li>
+      <li><b>✦</b>Un accueil aux petits soins</li>
+      <li><b>❀</b>Des produits choisis</li>
+    </ul>
+  </div>
+
+  <section id="lieu" class="place" aria-labelledby="t-lieu">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Le lieu</p>
+        <h2 id="t-lieu">Un vaste espace, pensé dans chaque détail</h2>
+        <p class="lead">Un lieu élégant et confortable, aménagé avec soin : une terrasse au calme en plein centre-ville, des banquettes bleu nuit, un mur végétal, des boiseries chaudes et un bar où chaque boisson est servie sur son carreau de faïence bleue.</p>
+        <p class="lead">Un café pour le matin, un restaurant pour midi et le soir, un rendez-vous pour les grands matchs et les soirées.</p>
+      </div>
+      <div class="pics">
+        <img class="p1" src="assets/img-03.jpg" width="640" height="620" loading="lazy" alt="Le bar du Cobalt en noir et blanc : étagères à bouteilles et machine à café">
+        <div class="stack">
+          <img src="assets/img-04.jpg" width="1320" height="1100" loading="lazy" alt="Un cocktail à la fraise posé sur un dessous-de-verre en faïence bleue, sur un comptoir en marbre">
+          <img src="assets/img-12.jpg" width="1440" height="960" loading="lazy" alt="La terrasse et ses parasols bleus">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="carte" class="carte" aria-labelledby="t-carte">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">La carte</p>
+          <h2 id="t-carte">Du brunch au dessert</h2>
+        </div>
+        <p class="lead">Brunch, petit-déjeuner, plats, pizza, drinks… et des desserts qui ne passent pas inaperçus.</p>
+      </div>
+      <div class="menu">
+        <figure class="item i1">
+          <img src="assets/img-05.jpg" width="1200" height="1600" loading="lazy" alt="Le présentoir à étages du brunch : charcuterie et fromage, pancakes, cakes, chou à la crème rose et feuilletés">
+          <figcaption><span class="k">Brunch</span><h3>Le Brunch Grand Matin</h3><p>Un présentoir à étages, du salé au sucré, pour prendre son temps le matin.</p></figcaption>
+        </figure>
+        <figure class="item i2">
+          <img src="assets/img-11.jpg" width="720" height="480" loading="lazy" alt="Une cocotte de moules à la tomate, avec pain grillé et frites gaufrées sur une planche en bois">
+          <figcaption><span class="k">Nos plats</span><h3>Moules &amp; pain grillé</h3><p>Servies sur planche, avec frites.</p></figcaption>
+        </figure>
+        <figure class="item i3">
+          <img src="assets/img-08.jpg" width="1600" height="1067" loading="lazy" alt="Un gâteau au spéculoos nappé de crème, avec agrumes et menthe">
+          <figcaption><span class="k">Desserts</span><h3>Fondant &amp; coloré</h3><p>Le dessert au spéculoos, difficile à partager.</p></figcaption>
+        </figure>
+        <figure class="item i4">
+          <img src="assets/img-02.jpg" width="720" height="900" loading="lazy" alt="Assiette de fromage en copeaux, roses de charcuterie, tomate et basilic">
+          <figcaption><span class="k">Petit-déjeuner</span><h3>Le matin</h3><p>Salé, frais, généreux.</p></figcaption>
+        </figure>
+        <figure class="item i5">
+          <img src="assets/img-04.jpg" width="1320" height="1100" loading="lazy" alt="Un smoothie fraise servi sur un carreau de faïence">
+          <figcaption><span class="k">Drinks</span><h3>Au bar</h3><p>Drinks fruités, cocktails maison et café.</p></figcaption>
+        </figure>
+        <figure class="item i6">
+          <img src="assets/img-06.jpg" width="720" height="1280" loading="lazy" alt="Une cheffe en toque présente un plat sous un néon « 80’s »">
+          <figcaption><span class="k">Pizza &amp; plus</span><h3>Nouvelle carte</h3><p>Demandez les nouveautés du moment.</p></figcaption>
+        </figure>
+      </div>
+      <p class="menu-note">La carte complète et les prix : demandez-les par téléphone au <a href="tel:+21600000000">00 000 000</a> ou <a href="#">par message</a>.</p>
+    </div>
+  </section>
+
+  <section class="kitchen" aria-labelledby="t-cuis">
+    <img src="assets/img-07.jpg" width="1320" height="1300" loading="lazy" alt="En cuisine, un chef fait flamber une poêle sur le piano">
+    <div class="over">
+      <div class="wrap">
+        <p class="eyebrow">En coulisses</p>
+        <h2 id="t-cuis">L’équipe Cobalt, en cuisine comme en salle</h2>
+        <p>Il fait chaud derrière les fourneaux, mais la bonne humeur reste de mise. C’est l’équipe qui fait la maison : un service attentif, de l’accueil jusqu’au dessert.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="rendez-vous" class="events" aria-labelledby="t-rdv">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Les rendez-vous</p>
+          <h2 id="t-rdv">Toute l’année au Cobalt</h2>
+        </div>
+        <p class="lead">Matchs, soirées à thème et grandes fêtes : l’agenda complet est mis à jour chaque semaine.</p>
+      </div>
+      <div class="list">
+        <article class="ev">
+          <img src="assets/img-01.jpg" width="1080" height="1080" loading="lazy" alt="Affiche d’un match ESS contre EST diffusé au Cobalt">
+          <div class="t"><span class="when">Saison 2026 / 2027</span><h3>Tous les matchs de Ligue 1</h3><p>Tous les matchs de la Ligue professionnelle 1 sont diffusés au café. Réservez votre table les soirs de derby.</p></div>
+        </article>
+        <article class="ev">
+          <img src="assets/img-06.jpg" width="720" height="1280" loading="lazy" alt="Décor néon « 80’s » en cuisine pour la soirée Rétro 80’s">
+          <div class="t"><span class="when">Soirées à thème</span><h3>Soirée Rétro années 80</h3><p>Néons, cassettes et ambiance rétro : l’équipe se met au diapason.</p></div>
+        </article>
+        <article class="ev">
+          <img src="assets/img-10.jpg" width="1080" height="1080" loading="lazy" alt="Le menu du petit-déjeuner spécial Mouled, illustré de plats traditionnels">
+          <div class="t"><span class="when">Les traditions</span><span class="ar" lang="ar" dir="rtl">ليالي رمضان · المولد النبوي</span><h3>Ramadan &amp; Mouled</h3><p>Soirées de Ramadan, soirée du Mouled avec troupe et petit-déjeuner spécial : les grandes fêtes se vivent au Cobalt.</p></div>
+        </article>
+      </div>
+      <div class="full">
+        <div><b>Les tables partent vite.</b><p>Pensez à réserver, en particulier le week-end et les soirs de match.</p></div>
+        <a class="btn btn-light" href="tel:+21600000000">Réserver · 00 000 000</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" class="info" aria-labelledby="t-info">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Infos pratiques</p>
+        <h2 id="t-info">On vous attend en centre-ville</h2>
+        <dl class="rows">
+          <div><dt>Adresse</dt><dd>Centre-ville, Sousse</dd></div>
+          <div><dt>Réserver</dt><dd><a href="tel:+21600000000">00 000 000</a></dd></div>
+          <div><dt>Horaires</dt><dd>Par téléphone</dd></div>
+          <div><dt>E-mail</dt><dd><a href="mailto:contact@exemple.tn">contact@exemple.tn</a></dd></div>
+        </dl>
+        <div class="cta">
+          <a class="btn btn-navy" href="tel:+21600000000">Appeler</a>
+          <a class="btn btn-out" href="#">Itinéraire</a>
+          <a class="btn btn-out" href="https://wa.me/21600000000">WhatsApp</a>
+        </div>
+      </div>
+      <div class="facade"><img src="assets/img-09.jpg" width="640" height="900" loading="lazy" alt="La façade du Cobalt en centre-ville de Sousse"></div>
+    </div>
+  </section>
+</main>
+
+<div class="tiles" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">
+    <span class="logo"><svg aria-hidden="true" viewBox="0 0 20 20" style="width:.9em;height:.9em;vertical-align:-.08em;margin-right:.45em"><circle cx="10" cy="10" r="8" fill="none" stroke="#E8B48A" stroke-width="1.6"/><circle cx="10" cy="10" r="3.2" fill="#E8B48A"/></svg>Cobalt</span>
+    <p style="margin:0">Café-Resto · Centre-ville, Sousse · <a href="tel:+21600000000">00 000 000</a> · <a href="mailto:contact@exemple.tn">contact@exemple.tn</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Réserver">
+  <a class="btn btn-light" href="tel:+21600000000">Appeler</a>
+  <a class="btn btn-navy" style="background:#13265C;color:#fff;border-color:#9DB6FF" href="https://wa.me/21600000000">WhatsApp</a>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement, KEY = 'cobalt-theme';
+    try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    document.querySelector('[data-toggle]').addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

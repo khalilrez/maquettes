@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dar Sakina — Dôme écologique, maison d’hôte à Béja</title>
+<meta name="description" content="Dar Sakina, maison d’hôte en dômes écologiques dans la campagne de Béja : séjours au calme, mariages, team-buildings, séances photo. Réservation par WhatsApp au 00 000 000.">
+<meta name="theme-color" content="#F7F1E4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14130F" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Dar Sakina">
+<meta property="og:title" content="Dar Sakina — Dôme écologique, Béja">
+<meta property="og:description" content="Prendre le temps, au cœur de la nature. Des dômes en pleine campagne de Béja, pour dormir, se marier ou simplement souffler. Réservation par WhatsApp : 00 000 000.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Le dôme ocre de Dar Sakina et sa girouette, sous un ciel d’orage doré">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #F7F1E4;
+    --paper: #FFFCF5;
+    --sand: #EDE2CB;
+    --ink: #23201A;
+    --muted: #5F584B;
+    --line: #DED1B6;
+    --ochre: #D59A2A;
+    --ochre-ink: #8E5F0C;
+    --clay: #B5602E;
+    --grass: #4E7A2E;
+    --sky: #3E7CB1;
+    --night: #1D1A14;
+    --focus: #3E7CB1;
+    --shadow: 0 26px 50px -30px rgba(35, 32, 26, .6);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #14130F;
+      --paper: #1D1B16;
+      --sand: #24211A;
+      --ink: #F3EEE3;
+      --muted: #BDB4A2;
+      --line: #36322A;
+      --ochre-ink: #F0BE5C;
+      --focus: #8DC1F0;
+      --shadow: 0 26px 50px -30px rgba(0, 0, 0, .9);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #14130F;
+    --paper: #1D1B16;
+    --sand: #24211A;
+    --ink: #F3EEE3;
+    --muted: #BDB4A2;
+    --line: #36322A;
+    --ochre-ink: #F0BE5C;
+    --focus: #8DC1F0;
+    --shadow: 0 26px 50px -30px rgba(0, 0, 0, .9);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17.5px/1.65 'Nunito Sans', system-ui, sans-serif; overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+  .skip { position: absolute; left: 12px; top: -80px; z-index: 60; background: var(--paper); color: var(--ink); padding: 10px 14px; border-radius: 8px; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1200px, 100% - 40px); margin-inline: auto; }
+  h1, h2, h3 { font-family: 'DM Serif Display', Georgia, serif; font-weight: 400; }
+  h2 { font-size: clamp(34px, 4.8vw, 56px); line-height: 1.05; margin: 0 0 18px; }
+  h2 em { color: var(--ochre-ink); }
+  h3 { font-size: 25px; line-height: 1.15; margin: 0 0 8px; }
+  p { margin: 0 0 1em; }
+  .hand { font-family: Caveat, cursive; font-weight: 600; }
+  .eyebrow { font: 800 12.5px/1.2 'Nunito Sans', sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--ochre-ink); margin: 0 0 14px; }
+  .lead { font-size: 19px; color: var(--muted); max-width: 58ch; }
+
+  /* berber motif band */
+  .motif { height: 22px; color: var(--ink); background:
+      linear-gradient(135deg, transparent 0 50%, currentColor 50% 56%, transparent 56%) 0 0 / 22px 22px,
+      linear-gradient(45deg, transparent 0 44%, currentColor 44% 50%, transparent 50%) 0 0 / 22px 22px;
+    opacity: .85; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 12px 24px; border-radius: 999px; font: 800 15.5px/1 'Nunito Sans', sans-serif; text-decoration: none; border: 2px solid transparent; transition: transform .15s, background .15s; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn svg { width: 19px; height: 19px; flex: none; }
+  .btn-wa { background: #1E8B4C; color: #fff; }
+  .btn-wa:hover { background: #18733F; }
+  .btn-ochre { background: var(--ochre); color: #1D1A14; }
+  .btn-ghost { border-color: rgba(255,255,255,.75); color: #fff; }
+  .btn-out { border-color: var(--ink); color: var(--ink); }
+
+  /* header */
+  .top { position: absolute; top: 0; left: 0; right: 0; z-index: 40; color: #fff; }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 80px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand svg { width: 40px; height: 34px; flex: none; }
+  .brand b { font: 600 30px/1 Caveat, cursive; letter-spacing: .01em; }
+  .nav { display: flex; align-items: center; gap: 24px; }
+  .nav a.l { text-decoration: none; font-weight: 700; font-size: 15px; color: rgba(255,255,255,.9); text-shadow: 0 1px 8px rgba(0,0,0,.4); }
+  .nav a.l:hover { color: #fff; }
+  .toggle { width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,.55); background: rgba(0,0,0,.18); color: #fff; display: grid; place-items: center; cursor: pointer; }
+  .toggle svg { width: 18px; height: 18px; }
+  .top .btn { min-height: 44px; padding: 10px 18px; }
+  @media (max-width: 920px) { .nav a.l { display: none; } .nav { gap: 10px; } }
+  @media (max-width: 420px) { .top .btn span { display: none; } .top .btn { padding: 10px 13px; } }
+
+  /* hero */
+  .hero { position: relative; min-height: min(94vh, 880px); display: grid; align-items: center; color: #fff; background: #2B2312; overflow: hidden; }
+  .hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 60%; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,16,8,.6) 0%, rgba(20,16,8,0) 16%), linear-gradient(90deg, rgba(20,16,8,.78) 0%, rgba(20,16,8,.45) 38%, rgba(20,16,8,0) 65%), linear-gradient(0deg, rgba(20,16,8,.5), transparent 30%); }
+  .hero .wrap { position: relative; z-index: 1; padding-block: 120px 80px; }
+  .hero .box { max-width: 560px; }
+  .hero .eyebrow { color: #F6CB6E; }
+  .hero h1 { margin: 0; font-size: clamp(66px, 10vw, 136px); line-height: .9; }
+  .hero .slogan { font-size: clamp(30px, 3.4vw, 42px); color: #F6CB6E; margin: 14px 0 18px; line-height: 1.1; }
+  .hero .tag { font-size: clamp(18px, 1.7vw, 21px); color: #F1EADB; max-width: 44ch; margin-bottom: 30px; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero .stats { display: flex; gap: 30px; margin-top: 36px; flex-wrap: wrap; }
+  .hero .stats b { display: block; font: 400 32px/1 'DM Serif Display', serif; }
+  .hero .stats span { font-size: 14px; color: #E2D9C6; }
+  @media (max-width: 760px) {
+    .hero { min-height: 0; display: block; }
+    .hero > img { position: relative; height: 320px; object-position: 55% 60%; }
+    .hero::after { background: linear-gradient(180deg, rgba(20,16,8,.6) 0%, rgba(20,16,8,0) 30%); height: 320px; }
+    .hero .wrap { padding-block: 28px 48px; }
+    .top .brand, .top .nav a.l { text-shadow: 0 1px 10px rgba(0,0,0,.6); }
+  }
+
+  section { padding-block: clamp(64px, 9vw, 112px); }
+
+  /* intro */
+  .intro .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+  .domes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: end; }
+  .domes img { width: 100%; object-fit: cover; border-radius: 50% 50% 18px 18px / 38% 38% 18px 18px; box-shadow: var(--shadow); }
+  .domes .d1 { aspect-ratio: 3/4.2; }
+  .domes .d2 { aspect-ratio: 3/3.6; }
+  @media (max-width: 860px) { .intro .wrap { grid-template-columns: 1fr; } }
+
+  /* the domes */
+  .stay { background: var(--sand); }
+  .head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 18px 40px; margin-bottom: 44px; }
+  .head .lead { margin: 0; max-width: 46ch; }
+  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 230px; gap: 14px; grid-auto-flow: dense; }
+  .gallery figure { margin: 0; position: relative; overflow: hidden; border-radius: 18px; }
+  .gallery img { width: 100%; height: 100%; object-fit: cover; }
+  .gallery figcaption { position: absolute; left: 12px; bottom: 12px; background: rgba(29,26,20,.78); color: #fff; font-size: 14px; font-weight: 700; padding: 6px 12px; border-radius: 999px; }
+  .g1 { grid-column: span 2; grid-row: span 2; }
+  .g4 { grid-row: span 2; }
+  .g5 { grid-column: span 2; }
+  @media (max-width: 900px) { .gallery { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; } .g4 { grid-row: span 1; } .g7 { display: none; } }
+  @media (max-width: 480px) { .gallery { grid-auto-rows: 170px; gap: 10px; } }
+
+  /* activities */
+  .acts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .act { background: var(--paper); border-radius: 22px; overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+  .act img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+  .act .t { padding: 22px 24px 26px; }
+  .act .k { font: 800 12px/1 'Nunito Sans', sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--grass); display: block; margin-bottom: 10px; }
+  :root[data-theme="dark"] .act .k { color: #9CCB74; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .act .k { color: #9CCB74; } }
+  .act p { margin: 0; color: var(--muted); font-size: 16px; }
+  @media (max-width: 900px) { .acts { grid-template-columns: 1fr; } .act { flex-direction: row; } .act img { width: 40%; aspect-ratio: auto; } }
+  @media (max-width: 520px) { .act { flex-direction: column; } .act img { width: 100%; aspect-ratio: 16/10; } }
+  .also { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .also span { padding: 9px 16px; border-radius: 999px; border: 1.5px solid var(--line); font-weight: 700; font-size: 15px; background: var(--paper); }
+
+  /* land */
+  .land { position: relative; color: #fff; padding: 0; background: #2C3A22; }
+  .land .pics { display: grid; grid-template-columns: 1fr 1.4fr 1fr; }
+  .land .pics img { width: 100%; height: clamp(420px, 48vw, 560px); object-fit: cover; min-width: 0; }
+  .land .over { position: absolute; inset: 0; display: grid; align-items: end; background: linear-gradient(0deg, rgba(16,20,10,.85), rgba(16,20,10,0) 60%); }
+  .land .over .wrap { padding-bottom: clamp(28px, 5vw, 60px); }
+  .land .eyebrow { color: #F6CB6E; }
+  .land p { max-width: 52ch; color: #EDE6D6; margin: 0; }
+  @media (max-width: 700px) { .land .pics { grid-template-columns: 1fr 1fr; } .land .pics img { height: 460px; } .land .pics img:last-child { display: none; } }
+
+  /* book */
+  .book .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: stretch; }
+  .note { background: var(--paper); border: 1.5px dashed var(--ochre); border-radius: 18px; padding: 18px 22px; margin: 0 0 26px; }
+  .note b { display: block; font: 400 22px/1.2 'DM Serif Display', serif; margin-bottom: 4px; }
+  .note p { margin: 0; color: var(--muted); font-size: 16px; }
+  .rows { margin: 0 0 26px; }
+  .rows div { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+  .rows dt { font: 800 12px/1.7 'Nunito Sans', sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .rows dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+  .rows a { color: var(--ochre-ink); }
+  .book .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+  .book .pic { position: relative; min-height: 420px; border-radius: 50% 50% 22px 22px / 30% 30% 22px 22px; overflow: hidden; }
+  .book .pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 860px) { .book .grid { grid-template-columns: 1fr; } .book .pic { min-height: 360px; max-width: 440px; width: 100%; margin-inline: auto; } .rows div { grid-template-columns: 96px 1fr; } }
+
+  footer { background: var(--night); color: #CFC6B4; padding: 44px 0 110px; font-size: 15px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 30px; align-items: center; justify-content: space-between; }
+  footer b { font: 400 30px/1 'DM Serif Display', serif; color: #fff; }
+  footer .hand { font-size: 26px; color: #F6CB6E; }
+  footer a { color: #fff; }
+  footer p { margin: 0; }
+  @media (min-width: 701px) { footer { padding-bottom: 44px; } }
+
+  .callbar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 50; display: none; gap: 8px; }
+  .callbar .btn { flex: 1; box-shadow: 0 12px 30px -10px rgba(0,0,0,.55); padding-inline: 10px; }
+  @media (max-width: 700px) { .callbar { display: flex; } }
+</style>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/demo-34/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/demo-34/">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sprig" viewBox="0 0 40 34"><circle cx="20" cy="17" r="15" fill="none" stroke="#C9743A" stroke-width="2"/><path d="M13 26 C17 20 22 14 28 9" fill="none" stroke="#3A2A10" stroke-width="1.4" stroke-linecap="round"/><ellipse cx="17" cy="18" rx="4.2" ry="1.9" transform="rotate(-60 17 18)" fill="#C9743A"/><ellipse cx="23" cy="18" rx="4.2" ry="1.9" transform="rotate(10 23 18)" fill="#C9743A"/><ellipse cx="22" cy="11" rx="4" ry="1.8" transform="rotate(-70 22 11)" fill="#C9743A"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.7-1.2-1.5-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4.3-.5c.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 2.2.9 2.6.7 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/></symbol>
+</svg>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Dar Sakina, accueil"><svg aria-hidden="true"><use href="#sprig"/></svg><b>Dar Sakina</b></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="l" href="#domes">Les dômes</a>
+      <a class="l" href="#evenements">Événements</a>
+      <a class="l" href="#campagne">La campagne</a>
+      <a class="l" href="#reserver">Réserver</a>
+      <button class="toggle" type="button" data-toggle aria-label="Changer de thème (clair / sombre)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+      <a class="btn btn-wa" href="https://wa.me/21600000000"><svg aria-hidden="true"><use href="#wa"/></svg><span>Réserver</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="titre" style="padding:0">
+    <img src="assets/img-04.jpg" width="1440" height="960" alt="Le dôme ocre de Dar Sakina, coiffé d’une girouette, sous un ciel d’orage traversé de soleil">
+    <div class="wrap">
+      <div class="box">
+        <p class="eyebrow">Dôme écologique · Maison d’hôte · Béja</p>
+        <h1 id="titre">Dar Sakina</h1>
+        <p class="slogan hand">Prendre le temps, au cœur de la nature</p>
+        <p class="tag">Des dômes blancs et ocre posés en pleine campagne de Béja, entre champs de tournesols et collines. Pour dormir, se marier, travailler en équipe, ou simplement souffler.</p>
+        <div class="cta">
+          <a class="btn btn-wa" href="https://wa.me/21600000000"><svg aria-hidden="true"><use href="#wa"/></svg>WhatsApp · 00 000 000</a>
+          <a class="btn btn-ghost" href="#domes">Découvrir le lieu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro" aria-labelledby="t-intro">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Le lieu</p>
+        <h2 id="t-intro">Une maison d’hôte <em>pas comme les autres</em></h2>
+        <p class="lead">En pleine campagne, à quelques minutes de Béja, Dar Sakina a été construite en dômes : des voûtes arrondies, chaulées de blanc et décorées de motifs noirs, ou enduites d’ocre comme la terre d’ici.</p>
+        <p class="lead">Dedans, des chambres-cocons aux murs courbes. Dehors, la pelouse, la piscine ronde, les palmiers et le silence de la campagne.</p>
+      </div>
+      <div class="domes">
+        <img class="d1" src="assets/img-07.jpg" width="640" height="976" alt="Dômes blancs ornés de motifs noirs, palmiers en pots, et le dôme ocre au fond">
+        <img class="d2" src="assets/img-09.jpg" width="900" height="1600" alt="Vue à travers une arche intérieure : un salon aux canapés façon vache, sous une voûte blanche">
+      </div>
+    </div>
+  </section>
+
+  <div class="motif" aria-hidden="true"></div>
+
+  <section id="domes" class="stay" aria-labelledby="t-domes">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Les dômes</p>
+          <h2 id="t-domes">Dormir sous une voûte</h2>
+        </div>
+        <p class="lead">Des espaces arrondis, à l’écart de tout, pour se poser quelques jours dans le calme et la beauté de la nature.</p>
+      </div>
+      <div class="gallery">
+        <figure class="g1"><img src="assets/img-08.jpg" width="1440" height="1440" loading="lazy" alt="Trois dômes blancs aux motifs noirs, palmier, piscine ronde et pelouse"><figcaption>Les dômes blancs</figcaption></figure>
+        <figure class="g2"><img src="assets/img-13.jpg" width="640" height="521" loading="lazy" alt="Un salon sous voûte blanche, fauteuil en peau de mouton et lumière mauve"><figcaption>À l’intérieur</figcaption></figure>
+        <figure class="g3"><img src="assets/img-05.jpg" width="640" height="435" loading="lazy" alt="Le dôme ocre entre les branches d’oliviers"><figcaption>Le dôme ocre</figcaption></figure>
+        <figure class="g4"><img src="assets/img-12.jpg" width="640" height="1136" loading="lazy" alt="Un portail en métal découpé en forme d’arbre ouvre sur le jardin et ses pas japonais"><figcaption>Le jardin</figcaption></figure>
+        <figure class="g5"><img src="assets/img-11.jpg" width="640" height="480" loading="lazy" alt="La piscine ronde devant les dômes et un grand palmier"><figcaption>La piscine</figcaption></figure>
+        <figure class="g6"><img src="assets/img-06.jpg" width="640" height="857" loading="lazy" alt="Les dômes sous un grand ciel bleu, roses rouges au premier plan"><figcaption>Sous le ciel de Béja</figcaption></figure>
+        <figure class="g7"><img src="assets/img-01.jpg" width="640" height="1136" loading="lazy" alt="Le bassin et la maison blanche au coucher du soleil"><figcaption>Au coucher du soleil</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="evenements" aria-labelledby="t-ev">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Événements</p>
+          <h2 id="t-ev">Un décor qu’on n’oublie pas</h2>
+        </div>
+        <p class="lead">Les dômes, la pelouse et la lumière de la campagne font de Dar Sakina un lieu à part pour les grands jours.</p>
+      </div>
+      <div class="acts">
+        <article class="act">
+          <img src="assets/img-02.jpg" width="640" height="862" loading="lazy" alt="Cérémonie en plein air : rangées de chaises blanches, parasols de paille et deux paons sur la pelouse">
+          <div class="t"><span class="k">Mariages &amp; fêtes</span><h3>Dire oui au milieu des paons</h3><p>Cérémonie sur la pelouse, soirée sous les lumières : un mariage qui ne ressemble à aucun autre.</p></div>
+        </article>
+        <article class="act">
+          <img src="assets/img-04.jpg" width="1440" height="960" loading="lazy" alt="Le dôme ocre sous un ciel spectaculaire">
+          <div class="t"><span class="k">Groupes &amp; entreprises</span><h3>Team-buildings &amp; ateliers</h3><p>Une journée au vert pour une équipe ou un groupe, loin du bureau, avec randonnées et ateliers.</p></div>
+        </article>
+        <article class="act">
+          <img src="assets/img-07.jpg" width="640" height="976" loading="lazy" alt="Dômes blancs aux motifs noirs, décor de séance photo">
+          <div class="t"><span class="k">Images</span><h3>Shootings &amp; tournages</h3><p>Créateurs, photographes et vidéastes y ont déjà tourné collections de mode et films : le décor parle de lui-même.</p></div>
+        </article>
+      </div>
+      <div class="also" aria-label="Aussi">
+        <span>Séjours au calme</span><span>Randonnées</span><span>Ateliers</span><span>Team-buildings</span><span>Mariages</span><span>Séances photo</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="campagne" class="land" aria-labelledby="t-land">
+    <div class="pics">
+      <img src="assets/img-14.jpg" width="640" height="370" loading="lazy" alt="Un champ de tournesols devant les collines de Béja">
+      <img src="assets/img-15.jpg" width="900" height="1600" loading="lazy" alt="Vue aérienne : la maison blanche, les dômes et la campagne vallonnée autour">
+      <img src="assets/img-10.jpg" width="900" height="1600" loading="lazy" alt="Grand ciel nuageux sur les collines, la maison blanche au loin">
+    </div>
+    <div class="over">
+      <div class="wrap">
+        <p class="eyebrow">La campagne</p>
+        <h2 id="t-land">Le grand air de Béja</h2>
+        <p>Tournesols, champs de blé, oliviers et collines à perte de vue : la région de Béja se découvre à pied, au rythme lent de la campagne.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserver" class="book" aria-labelledby="t-book">
+    <div class="wrap grid">
+      <div>
+        <p class="eyebrow">Réserver</p>
+        <h2 id="t-book">Un message, et on vous répond</h2>
+        <div class="note"><b>Les dates partent vite.</b><p>Dar Sakina affiche souvent complet, surtout pendant les vacances : écrivez-nous tôt.</p></div>
+        <dl class="rows">
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/21600000000">00 000 000</a></dd></div>
+          <div><dt>E-mail</dt><dd><a href="mailto:contact@exemple.tn">contact@exemple.tn</a></dd></div>
+          <div><dt>Adresse</dt><dd>Campagne de Béja</dd></div>
+          <div><dt>Réseaux</dt><dd><a href="#">Instagram</a> · <a href="#">Facebook</a></dd></div>
+        </dl>
+        <div class="cta">
+          <a class="btn btn-wa" href="https://wa.me/21600000000"><svg aria-hidden="true"><use href="#wa"/></svg>WhatsApp</a>
+          <a class="btn btn-out" href="#">Itinéraire</a>
+          <a class="btn btn-out" href="mailto:contact@exemple.tn">E-mail</a>
+        </div>
+      </div>
+      <div class="pic"><img src="assets/img-06.jpg" width="640" height="857" loading="lazy" alt="Les dômes blancs de Dar Sakina sous un grand ciel bleu"></div>
+    </div>
+  </section>
+</main>
+
+<div class="motif" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">
+    <div><b>Dar Sakina</b> <span class="hand">le calme au cœur de la nature</span></div>
+    <p>Dôme écologique · Campagne de Béja · <a href="https://wa.me/21600000000">00 000 000</a> · <a href="#">Instagram</a></p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Réserver">
+  <a class="btn btn-wa" href="https://wa.me/21600000000">WhatsApp</a>
+  <a class="btn btn-ochre" href="#">Itinéraire</a>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement, KEY = 'darsakina-theme';
+    try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    document.querySelector('[data-toggle]').addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

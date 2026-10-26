@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pâtisserie La Gerbe — Gâteaux, glaces & douceurs, Monastir</title>
+<meta name="description" content="Pâtisserie La Gerbe, centre-ville de Monastir : pièces montées, gâteaux d’anniversaire, cheesecakes, glaces artisanales, café et pâtisserie tunisienne. Commandes par message.">
+<meta name="theme-color" content="#1B3A8C" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1330" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Pâtisserie La Gerbe">
+<meta property="og:title" content="Pâtisserie La Gerbe — Monastir">
+<meta property="og:description" content="Pièces montées, gâteaux d’anniversaire, cheesecakes, glaces artisanales, café et douceurs tunisiennes, au centre-ville de Monastir.">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Une pièce montée blanche, un cheesecake à la pistache et une glace fruits des bois de La Gerbe">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Amiri:wght@400;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #FBF8F2; --bg-2: #EEF2FA; --card: #FFFFFF; --ink: #121B33; --muted: #4A5470; --line: #DCE2F0;
+    --blue: #1B3A8C; --blue-2: #2C55B8; --on-blue: #FFFFFF; --sky: #BFD3EE; --gold: #A57A22; --gold-hi: #D9B45A;
+    --focus: #C8901C; --shadow: 0 24px 50px -28px rgba(20, 40, 100, .45);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0A1330; --bg-2: #0F1B42; --card: #13214D; --ink: #EEF2FC; --muted: #B4BFDC; --line: #24366A;
+      --blue: #9DB8F2; --blue-2: #BFD1F8; --on-blue: #0A1330; --sky: #1F3470; --gold: #E2C06E; --focus: #F2CF7C;
+      --shadow: 0 24px 50px -28px rgba(0,0,0,.85);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0A1330; --bg-2: #0F1B42; --card: #13214D; --ink: #EEF2FC; --muted: #B4BFDC; --line: #24366A;
+    --blue: #9DB8F2; --blue-2: #BFD1F8; --on-blue: #0A1330; --sky: #1F3470; --gold: #E2C06E; --focus: #F2CF7C;
+    --shadow: 0 24px 50px -28px rgba(0,0,0,.85);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 'DM Sans', system-ui, sans-serif; overflow-x: hidden; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: 12px; top: -80px; background: var(--card); color: var(--ink); padding: 10px 14px; z-index: 90; }
+  .skip:focus { top: 12px; }
+  .wrap { width: min(1180px, 100% - 40px); margin-inline: auto; }
+  [lang="ar"] { font-family: Amiri, serif; }
+  .script { font-family: 'Pinyon Script', cursive; font-weight: 400; }
+  .eyebrow { font: 700 12px/1.2 'DM Sans', sans-serif; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); margin: 0 0 14px; }
+  h2 { font: 400 clamp(34px, 4.8vw, 56px)/1.08 Prata, Georgia, serif; margin: 0 0 18px; color: var(--blue); }
+  h2 .script { color: var(--gold); font-size: 1.15em; }
+  h3 { font: 400 22px/1.2 Prata, serif; margin: 0 0 6px; }
+  p { margin: 0 0 1em; }
+  .lead { font-size: 18.5px; color: var(--muted); max-width: 54ch; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 12px 24px; border-radius: 999px; font: 700 15px/1 'DM Sans', sans-serif; text-decoration: none; border: 2px solid transparent; transition: transform .15s ease; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn svg { width: 19px; height: 19px; flex: none; }
+  .btn-blue { background: var(--blue); color: var(--on-blue); }
+  .btn-gold { background: var(--gold-hi); color: #1A1406; }
+  .btn-line { border-color: currentColor; }
+  .btn-white { background: #fff; color: #1B3A8C; }
+
+  /* scalloped edge, like a cake doily */
+  .scallop { height: 18px; background: radial-gradient(circle at 12px -2px, transparent 12px, var(--to) 13px) 0 0 / 24px 18px repeat-x; }
+
+  .top { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 72px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--blue); }
+  .brand svg { width: 42px; height: 42px; flex: none; }
+  .brand span { display: grid; line-height: 1; }
+  .brand b { font: italic 400 24px/1 Prata, serif; letter-spacing: .03em; }
+  .brand small { font: 700 9.5px/1 'DM Sans', sans-serif; letter-spacing: .4em; color: var(--gold); margin-top: 5px; }
+  .nav { display: flex; align-items: center; gap: 24px; }
+  .nav a.l { text-decoration: none; font-weight: 500; font-size: 15px; color: var(--muted); }
+  .nav a.l:hover { color: var(--blue); }
+  .toggle { width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--line); background: var(--card); color: var(--blue); display: grid; place-items: center; cursor: pointer; }
+  .toggle svg { width: 19px; height: 19px; }
+  .top .btn { min-height: 44px; padding: 10px 18px; }
+  @media (max-width: 920px) { .nav a.l { display: none; } .nav { gap: 10px; } }
+  @media (max-width: 420px) { .top .btn span { display: none; } .top .btn { padding: 10px 13px; } .brand b { font-size: 19px; } }
+
+  /* hero: royal blue like their boxes and cups */
+  .hero { --to: var(--bg); background: radial-gradient(70% 70% at 75% 40%, #3A63C4 0%, transparent 70%), #1B3A8C; color: #fff; position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.09) 1.2px, transparent 1.4px); background-size: 22px 22px; pointer-events: none; }
+  .hero .wrap { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: 50px; align-items: center; padding-block: 60px 70px; }
+  .sheaf { width: 70px; height: 52px; color: var(--gold-hi); margin-bottom: 10px; }
+  .hero h1 { margin: 0; font: 400 clamp(52px, 7.6vw, 104px)/.98 Prata, Georgia, serif; letter-spacing: .02em; }
+  .hero h1 .script { display: block; font-size: .62em; color: var(--gold-hi); margin: 0 0 -.05em .1em; letter-spacing: 0; }
+  .hero .ar { text-align: left; font: 700 clamp(24px, 2.6vw, 32px)/1.5 Amiri, serif; color: #DDE7FA; margin: 20px 0 6px; }
+  .hero p.sub { font-size: 19px; color: #DDE7FA; max-width: 44ch; margin-bottom: 30px; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero .btn-line { color: #fff; }
+  .hero .addr { display: flex; align-items: center; gap: 10px; margin-top: 30px; font-size: 15px; color: #DDE7FA; }
+  .hero .addr svg { width: 18px; height: 18px; color: var(--gold-hi); flex: none; }
+  .cake { position: relative; margin: 0; justify-self: center; width: min(100%, 440px); }
+  .cake img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 220px 220px 24px 24px; border: 6px solid #fff; box-shadow: 0 34px 60px -30px rgba(0,0,0,.7); }
+  .cake figcaption { position: absolute; right: -18px; bottom: 30px; background: #fff; color: #1B3A8C; padding: 12px 18px; border-radius: 14px; font: 400 17px/1.25 Prata, serif; box-shadow: 0 14px 30px -14px rgba(0,0,0,.5); max-width: 200px; }
+  .cake figcaption b { display: block; font: 700 11px/1 'DM Sans', sans-serif; letter-spacing: .2em; text-transform: uppercase; color: #A57A22; margin-bottom: 6px; }
+  .hero + .scallop { margin-top: -18px; position: relative; }
+  @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; padding-block: 40px 60px; } .cake { width: calc(100% - 30px); max-width: 400px; } .cake figcaption { right: -10px; } }
+
+  section { padding-block: clamp(64px, 9vw, 116px); }
+  .center { text-align: center; } .center .lead { margin-inline: auto; }
+
+  /* univers chips */
+  .univers { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 34px auto 0; padding: 0; list-style: none; max-width: 900px; }
+  .univers li { display: flex; align-items: center; gap: 10px; padding: 10px 18px 10px 10px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); font-weight: 500; box-shadow: 0 8px 20px -16px rgba(20,40,100,.5); }
+  .univers li i { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--bg-2); color: var(--blue); font-style: normal; font-size: 15px; }
+
+  /* occasions */
+  .occ { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 50px; }
+  .occ article { background: var(--card); border-radius: 26px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); display: flex; flex-direction: column; }
+  .occ img { width: 100%; aspect-ratio: 4/4.4; object-fit: cover; }
+  .occ div { padding: 22px 24px 26px; }
+  .occ p { color: var(--muted); margin: 0; font-size: 16px; }
+  @media (max-width: 860px) { .occ { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; } }
+
+  /* signatures */
+  .sig { background: var(--bg-2); --to: var(--bg-2); }
+  .sig-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .tile { margin: 0; position: relative; border-radius: 22px; overflow: hidden; background: var(--card); }
+  .tile img { width: 100%; aspect-ratio: 4/5; object-fit: cover; transition: transform .5s ease; }
+  .tile:hover img { transform: scale(1.04); }
+  .tile figcaption { padding: 14px 16px 18px; }
+  .tile figcaption span { display: block; font-size: 14px; color: var(--muted); }
+  .tile.big { grid-column: span 2; grid-row: span 2; }
+  .tile.big img { aspect-ratio: auto; height: calc(100% - 78px); min-height: 320px; }
+  @media (max-width: 900px) { .sig-grid { grid-template-columns: 1fr 1fr; } .tile.big { grid-row: auto; } .tile.big img { height: auto; aspect-ratio: 4/4; } }
+
+  /* gelaterie: blue cups row */
+  .gelato { background: #1B3A8C; color: #fff; }
+  .gelato h2 { color: #fff; }
+  .gelato .lead { color: #DDE7FA; }
+  .cups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 40px; }
+  .cups figure { margin: 0; border-radius: 24px; overflow: hidden; background: #fff; }
+  .cups img { width: 100%; aspect-ratio: 5/6; object-fit: cover; }
+  .flavours { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; padding: 0; list-style: none; }
+  .flavours li { border: 1.5px solid rgba(255,255,255,.4); border-radius: 999px; padding: 7px 16px; font-weight: 500; }
+  @media (max-width: 700px) { .cups { grid-template-columns: 1fr 1fr; } .cups figure:last-child { grid-column: span 2; } .cups figure:last-child img { aspect-ratio: 16/10; } }
+
+  /* tradition + café split */
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 6vw, 80px); align-items: center; }
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: end; }
+  .duo img { width: 100%; object-fit: cover; border-radius: 20px; aspect-ratio: 9/14; }
+  .duo img:last-child { margin-bottom: 40px; }
+  .ar-quote { font: 700 clamp(26px, 3vw, 36px)/1.5 Amiri, serif; color: var(--blue); margin: 0 0 6px; }
+  .ar-tr { font-style: italic; color: var(--muted); margin-bottom: 20px; }
+  @media (max-width: 860px) { .split { grid-template-columns: 1fr; } .split.rev > :first-child { order: 2; } }
+
+  /* commande */
+  .order { background: var(--card); border: 1px solid var(--line); border-radius: 30px; padding: clamp(28px, 5vw, 56px); display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; box-shadow: var(--shadow); }
+  .order ol { margin: 20px 0 28px; padding: 0; list-style: none; counter-reset: o; display: grid; gap: 14px; }
+  .order li { display: grid; grid-template-columns: 40px 1fr; gap: 14px; align-items: start; }
+  .order li::before { counter-increment: o; content: counter(o); width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--blue); color: var(--on-blue); font: 400 18px/1 Prata, serif; }
+  .order .row { display: flex; flex-wrap: wrap; gap: 12px; }
+  .order img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 22px; }
+  @media (max-width: 860px) { .order { grid-template-columns: 1fr; } }
+
+  /* infos */
+  .infos { display: grid; grid-template-columns: .9fr 1.1fr; gap: 30px; align-items: stretch; }
+  .shop { position: relative; border-radius: 26px; overflow: hidden; min-height: 400px; }
+  .shop img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 26px; padding: clamp(24px, 4vw, 44px); }
+  .card dl { display: grid; grid-template-columns: auto 1fr; gap: 14px 26px; margin: 0 0 28px; }
+  .card dt { font: 700 11.5px/1.8 'DM Sans', sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+  .card dd { margin: 0; font-weight: 500; }
+  .card .row { display: flex; flex-wrap: wrap; gap: 12px; }
+  @media (max-width: 860px) { .infos { grid-template-columns: 1fr; } .shop { min-height: 340px; } .card dl { grid-template-columns: 1fr; gap: 2px; } .card dd { margin-bottom: 12px; } }
+
+  footer { background: #0E1E4D; color: #C9D5F0; padding: 50px 0 120px; text-align: center; font-size: 15px; }
+  footer b { font: 400 26px/1 Prata, serif; letter-spacing: .14em; color: #fff; display: block; margin-bottom: 8px; }
+  footer a { color: #E2C06E; }
+  @media (min-width: 761px) { footer { padding-bottom: 50px; } }
+  .stick { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60; display: none; grid-template-columns: 1.3fr 1fr; gap: 8px; padding: 8px; border-radius: 999px; background: rgba(14,30,77,.95); box-shadow: 0 12px 30px -10px rgba(0,0,0,.6); }
+  .stick .btn { min-height: 48px; padding: 10px; }
+  .stick .btn-line { color: #fff; border-color: rgba(255,255,255,.45); }
+  @media (max-width: 760px) { .stick { display: grid; } }
+</style>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/demo-69/assets/og.jpg">
+<meta property="og:url" content="https://khalilrez.github.io/maquettes/demo-69/">
+</head>
+<body>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
+<a class="skip" href="#main">Aller au contenu</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sheaf" viewBox="0 0 70 52"><g transform="translate(35 26) rotate(0)"><ellipse cx="0" cy="-20" rx="2" ry="3.6" fill="currentColor"/><ellipse cx="-3" cy="-15.0" rx="2" ry="3.8" transform="rotate(-30 -3 -15.0)" fill="currentColor"/><ellipse cx="3" cy="-15.0" rx="2" ry="3.8" transform="rotate(30 3 -15.0)" fill="currentColor"/><ellipse cx="-3" cy="-9.5" rx="2" ry="3.8" transform="rotate(-30 -3 -9.5)" fill="currentColor"/><ellipse cx="3" cy="-9.5" rx="2" ry="3.8" transform="rotate(30 3 -9.5)" fill="currentColor"/><ellipse cx="-3" cy="-4.0" rx="2" ry="3.8" transform="rotate(-30 -3 -4.0)" fill="currentColor"/><ellipse cx="3" cy="-4.0" rx="2" ry="3.8" transform="rotate(30 3 -4.0)" fill="currentColor"/><ellipse cx="-3" cy="1.5" rx="2" ry="3.8" transform="rotate(-30 -3 1.5)" fill="currentColor"/><ellipse cx="3" cy="1.5" rx="2" ry="3.8" transform="rotate(30 3 1.5)" fill="currentColor"/><path d="M0 -17V22" stroke="currentColor" stroke-width="1.8" fill="none"/></g><g transform="translate(24 28) rotate(-24)"><ellipse cx="0" cy="-20" rx="2" ry="3.6" fill="currentColor"/><ellipse cx="-3" cy="-15.0" rx="2" ry="3.8" transform="rotate(-30 -3 -15.0)" fill="currentColor"/><ellipse cx="3" cy="-15.0" rx="2" ry="3.8" transform="rotate(30 3 -15.0)" fill="currentColor"/><ellipse cx="-3" cy="-9.5" rx="2" ry="3.8" transform="rotate(-30 -3 -9.5)" fill="currentColor"/><ellipse cx="3" cy="-9.5" rx="2" ry="3.8" transform="rotate(30 3 -9.5)" fill="currentColor"/><ellipse cx="-3" cy="-4.0" rx="2" ry="3.8" transform="rotate(-30 -3 -4.0)" fill="currentColor"/><ellipse cx="3" cy="-4.0" rx="2" ry="3.8" transform="rotate(30 3 -4.0)" fill="currentColor"/><ellipse cx="-3" cy="1.5" rx="2" ry="3.8" transform="rotate(-30 -3 1.5)" fill="currentColor"/><ellipse cx="3" cy="1.5" rx="2" ry="3.8" transform="rotate(30 3 1.5)" fill="currentColor"/><path d="M0 -17V22" stroke="currentColor" stroke-width="1.8" fill="none"/></g><g transform="translate(46 28) rotate(24)"><ellipse cx="0" cy="-20" rx="2" ry="3.6" fill="currentColor"/><ellipse cx="-3" cy="-15.0" rx="2" ry="3.8" transform="rotate(-30 -3 -15.0)" fill="currentColor"/><ellipse cx="3" cy="-15.0" rx="2" ry="3.8" transform="rotate(30 3 -15.0)" fill="currentColor"/><ellipse cx="-3" cy="-9.5" rx="2" ry="3.8" transform="rotate(-30 -3 -9.5)" fill="currentColor"/><ellipse cx="3" cy="-9.5" rx="2" ry="3.8" transform="rotate(30 3 -9.5)" fill="currentColor"/><ellipse cx="-3" cy="-4.0" rx="2" ry="3.8" transform="rotate(-30 -3 -4.0)" fill="currentColor"/><ellipse cx="3" cy="-4.0" rx="2" ry="3.8" transform="rotate(30 3 -4.0)" fill="currentColor"/><ellipse cx="-3" cy="1.5" rx="2" ry="3.8" transform="rotate(-30 -3 1.5)" fill="currentColor"/><ellipse cx="3" cy="1.5" rx="2" ry="3.8" transform="rotate(30 3 1.5)" fill="currentColor"/><path d="M0 -17V22" stroke="currentColor" stroke-width="1.8" fill="none"/></g><path d="M26 40h18" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></symbol>
+</svg>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Pâtisserie La Gerbe, accueil">
+      <svg viewBox="0 0 42 42" aria-hidden="true"><path d="M2 41V20a19 19 0 0 1 38 0v21z" fill="#1B3A8C"/><path d="M5.5 38V20a15.5 15.5 0 0 1 31 0v18z" fill="none" stroke="#D9B45A" stroke-width="1"/><ellipse cx="21" cy="9" rx="1.6" ry="3" fill="#D9B45A"/><ellipse cx="18.4" cy="13" rx="1.7" ry="3.2" transform="rotate(-32 18.4 13)" fill="#D9B45A"/><ellipse cx="23.6" cy="13" rx="1.7" ry="3.2" transform="rotate(32 23.6 13)" fill="#D9B45A"/><ellipse cx="18.4" cy="18" rx="1.7" ry="3.2" transform="rotate(-32 18.4 18)" fill="#D9B45A"/><ellipse cx="23.6" cy="18" rx="1.7" ry="3.2" transform="rotate(32 23.6 18)" fill="#D9B45A"/><ellipse cx="18.4" cy="23" rx="1.7" ry="3.2" transform="rotate(-32 18.4 23)" fill="#D9B45A"/><ellipse cx="23.6" cy="23" rx="1.7" ry="3.2" transform="rotate(32 23.6 23)" fill="#D9B45A"/><ellipse cx="18.4" cy="28" rx="1.7" ry="3.2" transform="rotate(-32 18.4 28)" fill="#D9B45A"/><ellipse cx="23.6" cy="28" rx="1.7" ry="3.2" transform="rotate(32 23.6 28)" fill="#D9B45A"/><path d="M21 12v23" stroke="#D9B45A" stroke-width="1.4" stroke-linecap="round"/></svg>
+      <span><b>La Gerbe</b><small>PÂTISSERIE</small></span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="l" href="#occasions">Occasions</a>
+      <a class="l" href="#signatures">Signatures</a>
+      <a class="l" href="#gelaterie">Gelaterie</a>
+      <a class="l" href="#commander">Commander</a>
+      <a class="l" href="#infos">Infos</a>
+      <button class="toggle" type="button" aria-label="Changer de thème (clair / sombre)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="btn btn-blue" href="https://wa.me/21600000000" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg><span>Commander</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="titre" style="padding:0">
+    <div class="wrap">
+      <div>
+        <svg class="sheaf" aria-hidden="true"><use href="#sheaf"/></svg>
+        <h1 id="titre"><span class="script">Pâtisserie</span>La Gerbe</h1>
+        <p class="ar" lang="ar" dir="rtl">طعم التقاليد… في كل لقمة</p>
+        <p class="sub">Pièces montées, gâteaux d’anniversaire, cheesecakes, glaces artisanales, café et douceurs tunisiennes, au cœur de Monastir.</p>
+        <div class="cta">
+          <a class="btn btn-gold" href="https://wa.me/21600000000" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>Commander un gâteau</a>
+          <a class="btn btn-line" href="#" target="_blank" rel="noopener">Nous trouver</a>
+        </div>
+        <p class="addr"><svg aria-hidden="true"><use href="#pin"/></svg>Centre-ville, Monastir</p>
+      </div>
+      <figure class="cake">
+        <img src="assets/img-14.jpg" width="1279" height="1600" alt="Pièce montée blanche à trois étages, décor doré, roses et plumes, sur fond bleu ciel">
+        <figcaption><b>Wedding cake</b>Pour vos fiançailles et mariages</figcaption>
+      </figure>
+    </div>
+  </section>
+  <div class="scallop" style="--to: var(--bg); background-color: #1B3A8C;" aria-hidden="true"></div>
+
+  <section id="occasions" aria-labelledby="t-occ">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">Pour chaque moment</p>
+        <h2 id="t-occ">Vos plus beaux moments, <span class="script">en douceur</span></h2>
+        <p class="lead">Une pièce montée qui célèbre l’amour, un gâteau qui rend l’anniversaire inoubliable, un coffret pour la soutenance : La Gerbe façonne vos idées en douceurs.</p>
+      </div>
+      <div class="occ">
+        <article>
+          <img src="assets/img-06.jpg" width="1279" height="1600" alt="Gâteau de fiançailles blanc aux roses rouges et initiales dorées" loading="lazy">
+          <div><h3>Fiançailles &amp; mariages</h3><p>Pièces montées et wedding cakes, des créations fines pour un grand jour.</p></div>
+        </article>
+        <article>
+          <img src="assets/img-01.jpg" width="1279" height="1600" alt="Gâteau d’anniversaire rose avec arc-en-ciel et prénom doré" loading="lazy">
+          <div><h3>Anniversaires</h3><p>Des gâteaux aussi jolis que bons, pour souffler les bougies en beauté.</p></div>
+        </article>
+        <article>
+          <img src="assets/img-12.jpg" width="1337" height="1600" alt="Pack Émeraude : coffret de macarons et bouteilles de jus frais avec toque de diplômé" loading="lazy">
+          <div><h3>Soutenances &amp; réussites</h3><p>Pack Émeraude, coffret soutenance : macarons fins et jus frais pour fêter le diplôme.</p></div>
+        </article>
+      </div>
+      <ul class="univers" aria-label="Nos univers">
+        <li><i aria-hidden="true">✦</i>Coffrets personnalisés</li>
+        <li><i aria-hidden="true">✦</i>Bûches &amp; réveillon</li>
+        <li><i aria-hidden="true">✦</i>Verrines</li>
+        <li><i aria-hidden="true">✦</i>Dattes farcies</li>
+        <li><i aria-hidden="true">✦</i>Saint-Valentin</li>
+        <li><i aria-hidden="true">✦</i><span lang="ar" dir="rtl">حلو العيد</span>&nbsp;· Aïd</li>
+        <li><i aria-hidden="true">✦</i><span lang="ar" dir="rtl">رمضان</span>&nbsp;· Ramadan</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sig" id="signatures" aria-labelledby="t-sig">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:44px">
+        <p class="eyebrow">Les signatures</p>
+        <h2 id="t-sig">Chaque gâteau, <span class="script">une fête</span></h2>
+      </div>
+      <div class="sig-grid">
+        <figure class="tile big"><img src="assets/img-04.jpg" width="1280" height="1600" alt="Cheesecake à la pistache entier, rosaces de crème et éclats de pistache" loading="lazy"><figcaption><h3>Pistachio Cheesecake</h3><span>Onctueux, avec de la pistache à chaque bouchée.</span></figcaption></figure>
+        <figure class="tile"><img src="assets/img-15.jpg" width="1280" height="1600" alt="Red velvet cheesecake décoré de fraises" loading="lazy"><figcaption><h3>Red Velvet Cheesecake</h3></figcaption></figure>
+        <figure class="tile"><img src="assets/img-07.jpg" width="1333" height="1600" alt="Forêt noire aux fraises et kiwis, chantilly" loading="lazy"><figcaption><h3>Forêt Noire</h3></figcaption></figure>
+        <figure class="tile"><img src="assets/img-11.jpg" width="1332" height="1600" alt="Magnum cakes framboise, pistache et vanille" loading="lazy"><figcaption><h3>Magnum Cakes</h3><span>Framboise · pistache · vanille</span></figcaption></figure>
+        <figure class="tile"><img src="assets/img-16.jpg" width="1333" height="1600" alt="Tiramisu en couches, poudré de cacao" loading="lazy"><figcaption><h3>Tiramisu</h3><span>Classique, ou version Lotus.</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="gelato" id="gelaterie" aria-labelledby="t-gel">
+    <div class="wrap">
+      <p class="eyebrow" style="color:#E2C06E">Gelaterie</p>
+      <h2 id="t-gel">Glaces artisanales, servies dans le pot bleu</h2>
+      <p class="lead">Aux beaux jours, une glace La Gerbe s’impose. Et pour composer la vôtre : le frozen yogurt et ses toppings.</p>
+      <div class="cups">
+        <figure><img src="assets/img-09.jpg" width="1333" height="1600" alt="Glace Golden Noisette au chocolat et noisettes dans le pot bleu La Gerbe" loading="lazy"></figure>
+        <figure><img src="assets/img-08.jpg" width="1333" height="1600" alt="Glace fruits des bois nappée de coulis rouge" loading="lazy"></figure>
+        <figure><img src="assets/img-10.jpg" width="1333" height="1600" alt="Glace Lemon Garden, citron et pistache" loading="lazy"></figure>
+      </div>
+      <ul class="flavours" aria-label="Parfums mis en avant">
+        <li>Golden Noisette</li><li>Fruits des bois</li><li>Lemon Garden</li><li>Pistache</li><li>Frozen yogurt</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="t-trad">
+    <div class="wrap split">
+      <div class="duo">
+        <img src="assets/img-13.jpg" width="720" height="1280" alt="Plateau de petites douceurs tunisiennes aux fruits secs, sous cloche" loading="lazy">
+        <img src="assets/img-03.jpg" width="720" height="1280" alt="Pâtisseries, tartes et cafés vus de dessus" loading="lazy">
+      </div>
+      <div>
+        <p class="eyebrow">Tradition &amp; café</p>
+        <h2 id="t-trad">Le goût d’ici, <span class="script">avec un café</span></h2>
+        <p class="ar-quote" lang="ar" dir="rtl">حلويات تونسية</p>
+        <p class="ar-tr">Pâtisserie tunisienne traditionnelle, faite main selon les recettes d’ici.</p>
+        <p class="lead">Pour l’Aïd, le Ramadan ou une réussite au bac, les douceurs traditionnelles côtoient les créations modernes. Et sur place, une pause gourmande : café, café glacé et votre dessert préféré.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="commander" aria-labelledby="t-cmd" style="padding-top:0">
+    <div class="wrap">
+      <div class="order">
+        <div>
+          <p class="eyebrow">Commander</p>
+          <h2 id="t-cmd">Un gâteau sur mesure&nbsp;?</h2>
+          <ol>
+            <li><span><b>Choisissez l’occasion</b><br>Fiançailles, anniversaire, soutenance, coffret…</span></li>
+            <li><span><b>Envoyez votre idée</b><br>Une photo, un thème, un prénom, le nombre de parts.</span></li>
+            <li><span><b>Validez les détails</b><br>Date, taille et décor, directement avec l’équipe.</span></li>
+          </ol>
+          <div class="row">
+            <a class="btn btn-blue" href="https://wa.me/21600000000" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>Écrire un message</a>
+          </div>
+        </div>
+        <img src="assets/img-02.jpg" width="1280" height="1600" alt="Café glacé au chocolat devant le logo La Gerbe" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" aria-labelledby="t-infos" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">Infos pratiques</p>
+      <h2 id="t-infos">Venir à La Gerbe</h2>
+      <div class="infos">
+        <div class="shop"><img src="assets/img-05.jpg" width="640" height="1136" alt="La façade blanche et l’enseigne bleue « La Gerbe Pâtisserie »" loading="lazy"></div>
+        <div class="card">
+          <dl>
+            <dt>Adresse</dt><dd>Centre-ville, Monastir</dd>
+            <dt>Commandes</dt><dd>Par message WhatsApp</dd>
+            <dt>Horaires</dt><dd>Sur demande, par message</dd>
+            <dt>Téléphone</dt><dd><a href="tel:+21600000000">00 000 000</a></dd>
+            <dt>E-mail</dt><dd><a href="mailto:contact@exemple.tn">contact@exemple.tn</a></dd>
+          </dl>
+          <div class="row">
+            <a class="btn btn-blue" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Itinéraire</a>
+            <a class="btn btn-line" href="https://wa.me/21600000000" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>Message</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <b>LA GERBE</b>
+  <p>Pâtisserie · Gelaterie · Café — Centre-ville, Monastir</p>
+  <p><a href="#" target="_blank" rel="noopener">Instagram</a></p>
+</footer>
+
+<nav class="stick" aria-label="Accès rapide">
+  <a class="btn btn-gold" href="https://wa.me/21600000000" target="_blank" rel="noopener">Commander</a>
+  <a class="btn btn-line" href="#" target="_blank" rel="noopener">Itinéraire</a>
+</nav>
+
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.querySelector('.toggle');
+    try { var s = localStorage.getItem('gerbe-theme'); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    btn.addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme') ? root.getAttribute('data-theme') === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+      var next = dark ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('gerbe-theme', next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>
