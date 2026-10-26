@@ -3,26 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yardbirds — American diner in La Marsa · Breakfast, lunch &amp; dinner</title>
-<meta name="description" content="Yardbirds, an American-style diner steps from the beach in La Marsa (13 Rue Mongi Slim). Pancakes, French toast, burgers, fried chicken, pasta and milkshakes. Tuesday–Sunday, 9am–10pm. Delivery on Glovo.">
+<title>Songbirds — American diner in La Marsa · Breakfast, lunch &amp; dinner</title>
+<meta name="description" content="Songbirds, an American-style diner steps from the beach in La Marsa. Pancakes, French toast, burgers, fried chicken, pasta and milkshakes. Tuesday–Sunday, 9am–10pm. Delivery available.">
 <meta name="theme-color" content="#111111">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Yardbirds">
-<meta property="og:title" content="Yardbirds — the American diner of La Marsa">
+<meta property="og:site_name" content="Songbirds">
+<meta property="og:title" content="Songbirds — the American diner of La Marsa">
 <meta property="og:description" content="From 9am pancakes to 9pm burgers, steps from La Marsa beach. Breakfast, lunch &amp; dinner, Tuesday to Sunday.">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Flight pancakes with blueberries, whipped cream, banana and berry compote">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23111'/%3E%3Ctext x='50' y='70' font-family='cursive' font-size='62' text-anchor='middle' fill='%23fff'%3Ey%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23111'/%3E%3Ctext x='50' y='68' font-family='cursive' font-size='60' text-anchor='middle' fill='%23E8B33A'%3Es%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Archivo:wdth,wght@62..125,400..900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
 <style>
-  /* Taken from the diner itself: the black awning with the white "yardbirds" script, black & white
-     pinwheel tiles over bottle-green wall tiles, warm wood tables, gingham curtains, and the
-     cream plates with their mustard and blue rims. */
+  /* Palette: black awning with white script, black & white tiles over bottle green, warm wood,
+     gingham, and cream plates with mustard and blue rims. */
   :root {
     --bg: #FAF6EE;
     --bg-2: #F1EADC;
@@ -90,7 +89,7 @@
   .top::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 10px;
     background: radial-gradient(circle at 12px 0, #111 11px, transparent 12px) 0 0 / 24px 10px repeat-x; }
   .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 66px; }
-  .logo { font: 400 2.1rem/1 var(--script); text-decoration: none; color: #fff; transform: rotate(-4deg); display: inline-block; padding: 4px 2px 8px; }
+  .logo { font: 400 2.1rem/1 var(--script); text-decoration: underline wavy var(--mustard) 2px; text-underline-offset: 6px; color: #fff; transform: rotate(3deg); display: inline-block; padding: 4px 2px 8px; }
   .nav { display: flex; align-items: center; gap: clamp(10px, 2vw, 26px); }
   .nav a:not(.btn) { text-decoration: none; font: 700 .82rem/1 var(--wide); font-stretch: 120%; letter-spacing: .14em; text-transform: uppercase; color: #D9D4CB; }
   .nav a:not(.btn):hover { color: var(--mustard); }
@@ -218,7 +217,7 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="#" aria-label="Yardbirds, home">yardbirds</a>
+    <a class="logo" href="#" aria-label="Songbirds, home">songbirds</a>
     <nav class="nav" aria-label="Main">
       <a href="#menu">Menu</a>
       <a href="#diner">The diner</a>
@@ -236,17 +235,17 @@
       <div>
         <p class="eyebrow">American-style diner · La Marsa Plage</p>
         <h1 id="title">Pancakes<span class="s">to burgers,</span>9am to 10pm</h1>
-        <p class="lead">Breakfast, lunch &amp; dinner just steps from the beach, in a diner whose walls belong to the legends of film and music.</p>
+        <p class="lead">Breakfast, lunch &amp; dinner just steps from the beach, in a diner decorated with icons of the big screen and the stage.</p>
         <ul class="facts" aria-label="Good to know">
-          <li>Tuesday – Sunday</li><li>Gluten-free options</li><li>Delivery on Glovo</li>
+          <li>Tuesday – Sunday</li><li>Gluten-free options</li><li>Delivery available</li>
         </ul>
         <div class="cta">
           <a class="btn btn-ink" href="#menu">See the menu</a>
-          <a class="btn btn-line" href="https://ig.me/m/yardbirds_tn" target="_blank" rel="noopener">Message us</a>
+          <a class="btn btn-line" href="mailto:contact@exemple.tn">Message us</a>
         </div>
       </div>
       <div class="hero-art">
-        <figure class="plate"><img src="assets/flight-pancakes.jpg" width="1440" height="1440" alt="Flight pancakes: blueberries, whipped cream, banana, nuts and berry compote on a mustard-and-blue rimmed plate"></figure>
+        <figure class="plate"><img src="assets/img-05.jpg" width="1440" height="1440" alt="Flight pancakes: blueberries, whipped cream, banana, nuts and berry compote on a mustard-and-blue rimmed plate"></figure>
         <div class="stamp" aria-hidden="true"><div><small>open</small><b>9–10</b></div></div>
         <div class="neon" aria-hidden="true">
           <svg class="n1" viewBox="0 0 48 48"><path d="M8 20c0-8 7-12 16-12s16 4 16 12z"/><path d="M6 26h36M8 31h32"/><path d="M8 36c0 3 2 4 4 4h24c2 0 4-1 4-4z"/></svg>
@@ -260,16 +259,16 @@
 
   <section class="clock" aria-labelledby="t-clock">
     <div class="wrap">
-      <p class="eyebrow">From morning vibes to night vibes</p>
-      <h2 class="h2" id="t-clock">Same great food, <span class="s">different mood</span></h2>
-      <p class="lead">A cozy breakfast spot at 9 in the morning, a chill hangout by 9 at night.</p>
+      <p class="eyebrow">Open from breakfast till late</p>
+      <h2 class="h2" id="t-clock">One kitchen, <span class="s">two moods</span></h2>
+      <p class="lead">Coffee and pancakes in the morning, burgers and shakes after dark.</p>
       <div class="clock-grid">
         <article class="shift">
-          <img src="assets/breakfast-plate.jpg" width="1440" height="1440" alt="Breakfast plate with scrambled eggs, salad, toast and a croquette" loading="lazy">
+          <img src="assets/img-01.jpg" width="1440" height="1440" alt="Breakfast plate with scrambled eggs, salad, toast and a croquette" loading="lazy">
           <div><time>9 AM</time><h3>Breakfast is served</h3><p>Tall pancakes, brioche French toast, huevos rancheros, organic eggs and fast fiber WiFi if you came to work.</p></div>
         </article>
         <article class="shift night">
-          <img src="assets/burger.jpg" width="1440" height="960" alt="Hands holding a stacked burger over a plate of chips" loading="lazy">
+          <img src="assets/img-02.jpg" width="1440" height="960" alt="Hands holding a stacked burger over a plate of chips" loading="lazy">
           <div><time>9 PM</time><h3>The burger hours</h3><p>Stacked, saucy burgers fresh off the grill, golden fried chicken, a milkshake for the road.</p></div>
         </article>
       </div>
@@ -283,37 +282,37 @@
           <p class="eyebrow">What’s cooking</p>
           <h2 class="h2" id="t-menu">The <span class="s">diner</span> menu</h2>
         </div>
-        <p class="lead">Whatever you’re craving today, we’re probably cooking it. A taste of the house favourites:</p>
+        <p class="lead">Sweet, savoury, or both: here are some of the house favourites.</p>
       </header>
       <div class="board">
         <article class="cat" style="--c: var(--mustard)">
-          <img style="object-position:50% 85%" src="assets/pancakes-nutella.jpg" width="1280" height="1600" alt="Pancakes under warm Nutella and toasted almonds, sugar being dusted on top" loading="lazy">
+          <img style="object-position:50% 85%" src="assets/img-13.jpg" width="1280" height="1600" alt="Pancakes under warm Nutella and toasted almonds, sugar being dusted on top" loading="lazy">
           <div class="body"><h3>Breakfast</h3><ul>
-            <li>Pancakes, Nutella &amp; almonds<small>tall, airy, melting</small></li>
-            <li>Flight pancakes<small>a little bit of everything</small></li>
+            <li>Pancakes, Nutella &amp; almonds<small>fluffy stack</small></li>
+            <li>Flight pancakes<small>a mixed sampler</small></li>
             <li>Brioche French toast</li>
             <li>Huevos rancheros</li>
           </ul></div>
         </article>
         <article class="cat" style="--c: var(--red)">
-          <img src="assets/fried-chicken.jpg" width="1440" height="960" alt="Fried chicken with a side and chips on a white plate" loading="lazy">
+          <img src="assets/img-07.jpg" width="1440" height="960" alt="Fried chicken with a side and chips on a white plate" loading="lazy">
           <div class="body"><h3>From the grill</h3><ul>
-            <li>Burgers<small>bold, juicy, stacked</small></li>
+            <li>Burgers<small>double patty, house sauce</small></li>
             <li>Fried chicken<small>golden and crispy</small></li>
             <li>Chicken burrito</li>
           </ul></div>
         </article>
         <article class="cat" style="--c: var(--green)">
-          <img src="assets/meatballs.jpg" width="1080" height="1350" alt="A fork twirled with spaghetti and a meatball in thick tomato sauce" loading="lazy">
+          <img src="assets/img-10.jpg" width="1080" height="1350" alt="A fork twirled with spaghetti and a meatball in thick tomato sauce" loading="lazy">
           <div class="body"><h3>Pasta &amp; sides</h3><ul>
-            <li>Pasta &amp; meatballs<small>thick sauce, juicy meatballs</small></li>
+            <li>Pasta &amp; meatballs<small>rich tomato sauce</small></li>
             <li>Mashed potatoes &amp; gravy</li>
             <li>Mac &amp; cheese</li>
             <li>Lemon rice salad · green salad</li>
           </ul></div>
         </article>
         <article class="cat" style="--c: var(--blue)">
-          <img src="assets/iced-tea-lemonade.jpg" width="1440" height="1440" alt="An iced tea with orange and a red lemonade with lime in front of black and white tiles" loading="lazy">
+          <img src="assets/img-09.jpg" width="1440" height="1440" alt="An iced tea with orange and a red lemonade with lime in front of black and white tiles" loading="lazy">
           <div class="body"><h3>Shakes &amp; sips</h3><ul>
             <li>Milkshakes<small>vanilla, chocolate or strawberry</small></li>
             <li>Iced tea</li>
@@ -321,22 +320,22 @@
           </ul></div>
         </article>
       </div>
-      <p class="note">Gluten-free options available — just ask. Full menu and today’s specials on <a href="https://www.instagram.com/yardbirds_tn/" target="_blank" rel="noopener">@yardbirds_tn</a>.</p>
+      <p class="note">Gluten-free options available — just ask. Full menu and today’s specials at the counter.</p>
     </div>
   </section>
 
   <section class="gallery" id="gallery" aria-labelledby="t-gallery">
     <div class="wrap">
       <p class="eyebrow">Fresh off the pass</p>
-      <h2 class="h2" id="t-gallery">Bites worth <span class="s">an Oscar</span></h2>
+      <h2 class="h2" id="t-gallery">Plates that <span class="s">steal the show</span></h2>
       <div class="grid-g">
-        <figure class="tall"><img src="assets/french-toast.jpg" width="1152" height="1440" alt="Brioche French toast with caramel, pecans and cream" loading="lazy"><figcaption>Brioche French toast</figcaption></figure>
-        <figure class="wide"><img src="assets/pasta.jpg" width="1440" height="1018" alt="A bowl of pasta held in front of a gingham curtain" loading="lazy"><figcaption>Pasta</figcaption></figure>
-        <figure><img src="assets/milkshake.jpg" width="1080" height="1350" alt="A strawberry milkshake with sprinkles in a tall glass" loading="lazy"><figcaption>Milkshake</figcaption></figure>
-        <figure class="tall"><img src="assets/salad.jpg" width="1280" height="1600" alt="Salad with tomatoes, greens and a creamy cheese drizzled with balsamic" loading="lazy"><figcaption>Fresh salads</figcaption></figure>
-        <figure><img src="assets/pancakes-berries.jpg" width="1080" height="1350" alt="Pancakes with raspberries and peanut butter drizzle" loading="lazy"><figcaption>Sweet mess</figcaption></figure>
-        <figure><img src="assets/burrito.jpg" width="1440" height="1440" alt="Chicken burrito cut in half with chips" loading="lazy"><figcaption>Chicken burrito</figcaption></figure>
-        <figure class="wide"><img src="assets/huevos.jpg" width="1440" height="1440" alt="Huevos rancheros being photographed on a phone" loading="lazy"><figcaption>Huevos rancheros</figcaption></figure>
+        <figure class="tall"><img src="assets/img-06.jpg" width="1152" height="1440" alt="Brioche French toast with caramel, pecans and cream" loading="lazy"><figcaption>Brioche French toast</figcaption></figure>
+        <figure class="wide"><img src="assets/img-14.jpg" width="1440" height="1018" alt="A bowl of pasta held in front of a gingham curtain" loading="lazy"><figcaption>Pasta</figcaption></figure>
+        <figure><img src="assets/img-11.jpg" width="1080" height="1350" alt="A strawberry milkshake with sprinkles in a tall glass" loading="lazy"><figcaption>Milkshake</figcaption></figure>
+        <figure class="tall"><img src="assets/img-15.jpg" width="1280" height="1600" alt="Salad with tomatoes, greens and a creamy cheese drizzled with balsamic" loading="lazy"><figcaption>Fresh salads</figcaption></figure>
+        <figure><img src="assets/img-12.jpg" width="1080" height="1350" alt="Pancakes with raspberries and peanut butter drizzle" loading="lazy"><figcaption>Berry pancakes</figcaption></figure>
+        <figure><img src="assets/img-03.jpg" width="1440" height="1440" alt="Chicken burrito cut in half with chips" loading="lazy"><figcaption>Chicken burrito</figcaption></figure>
+        <figure class="wide"><img src="assets/img-08.jpg" width="1440" height="1440" alt="Huevos rancheros being photographed on a phone" loading="lazy"><figcaption>Huevos rancheros</figcaption></figure>
       </div>
     </div>
   </section>
@@ -345,8 +344,8 @@
     <div class="wrap grid">
       <div>
         <p class="eyebrow">The diner</p>
-        <h2 class="h2" id="t-diner">Where the <span class="s">legends</span> live on</h2>
-        <p class="lead">Our walls celebrate the golden age of film and the legendary stars of music. Come see if you can spot your favourites — epic tunes, iconic flavours, and a booth with your name on it.</p>
+        <h2 class="h2" id="t-diner">Retro <span class="s">vibes</span>, all day</h2>
+        <p class="lead">Framed photos of classic cinema and music icons cover the walls. Grab a booth, put on a good song, and order a shake.</p>
         <ul class="perks">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 18c3-2 5-2 8 0s5 2 8 0 3-1 4-1M2 13c3-2 5-2 8 0s5 2 8 0"/><circle cx="17" cy="6" r="3"/></svg>Steps from the beach</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1.2" fill="currentColor"/></svg>Fast fiber WiFi</li>
@@ -355,8 +354,8 @@
         </ul>
       </div>
       <div class="frames">
-        <figure><img src="assets/wall-icon.jpg" width="1440" height="1440" alt="A framed black and white photograph of a music legend on the diner wall" loading="lazy"></figure>
-        <figure><img src="assets/speaker.jpg" width="1080" height="1350" alt="A wooden vintage speaker on the diner wall" loading="lazy"></figure>
+        <figure><img src="assets/img-17.jpg" width="1440" height="1440" alt="A framed black and white photograph of a music legend on the diner wall" loading="lazy"></figure>
+        <figure><img src="assets/img-16.jpg" width="1080" height="1350" alt="A wooden vintage speaker on the diner wall" loading="lazy"></figure>
       </div>
     </div>
   </section>
@@ -367,21 +366,20 @@
         <div class="txt">
           <p class="eyebrow">Come by</p>
           <h2 id="t-visit">See you soon!</h2>
-          <address>13, Rue Mongi Slim<br>La Marsa Plage, Tunis 2078</address>
+          <address>Centre-ville<br>La Marsa Plage, Tunis</address>
           <dl>
             <dt>Open</dt><dd>Tuesday – Sunday · 9am – 10pm</dd>
             <dt>Serving</dt><dd>Breakfast, lunch &amp; dinner</dd>
-            <dt>Delivery</dt><dd>On Glovo</dd>
-            <dt>Phone</dt><dd><a href="tel:+21699332882">99 332 882</a></dd>
+            <dt>Delivery</dt><dd>Available</dd>
+            <dt>Phone</dt><dd><a href="tel:+21600000000">00 000 000</a></dd>
           </dl>
           <div class="links">
-            <a class="btn btn-mustard" href="https://www.google.com/maps/search/?api=1&amp;query=Yardbirds+13+Rue+Mongi+Slim+La+Marsa" target="_blank" rel="noopener">Directions</a>
-            <a class="btn btn-line" href="tel:+21699332882">Call</a>
-            <a class="btn btn-line" href="https://ig.me/m/yardbirds_tn" target="_blank" rel="noopener">Instagram DM</a>
-            <a class="btn btn-line" href="https://www.facebook.com/YardBirdsTN" target="_blank" rel="noopener">Facebook</a>
+            <a class="btn btn-mustard" href="#">Directions</a>
+            <a class="btn btn-line" href="tel:+21600000000">Call</a>
+            <a class="btn btn-line" href="mailto:contact@exemple.tn">E-mail</a>
           </div>
         </div>
-        <figure><img src="assets/curtain.jpg" width="1440" height="1440" alt="Gingham curtain and green plant by the diner window" loading="lazy"></figure>
+        <figure><img src="assets/img-04.jpg" width="1440" height="1440" alt="Gingham curtain and green plant by the diner window" loading="lazy"></figure>
       </div>
     </div>
   </section>
@@ -389,20 +387,20 @@
 
 <footer>
   <div class="wrap">
-    <span class="logo-f">yardbirds</span>
-    <span>American-style diner · 13 Rue Mongi Slim, La Marsa Plage · <a href="https://www.instagram.com/yardbirds_tn/" target="_blank" rel="noopener">@yardbirds_tn</a></span>
+    <span class="logo-f">songbirds</span>
+    <span>American-style diner · La Marsa Plage · <a href="mailto:contact@exemple.tn">contact@exemple.tn</a></span>
   </div>
 </footer>
 
 <script>
   (function () {
     var root = document.documentElement, btn = document.querySelector('.theme');
-    try { var t = localStorage.getItem('yb-theme'); if (t) root.setAttribute('data-theme', t); } catch (e) {}
+    try { var t = localStorage.getItem('sb-theme'); if (t) root.setAttribute('data-theme', t); } catch (e) {}
     btn.addEventListener('click', function () {
       var cur = root.getAttribute('data-theme');
       var dark = cur ? cur === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
       root.setAttribute('data-theme', dark ? 'light' : 'dark');
-      try { localStorage.setItem('yb-theme', dark ? 'light' : 'dark'); } catch (e) {}
+      try { localStorage.setItem('sb-theme', dark ? 'light' : 'dark'); } catch (e) {}
     });
   })();
 </script>
