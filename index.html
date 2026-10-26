@@ -1,2 +1,116 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Maquettes</title></head>
-<body style="font:16px/1.5 system-ui,sans-serif;max-width:640px;margin:48px auto;padding:0 16px"><h1>Maquettes</h1><p>Propositions de sites non officielles réalisées par Khalil Rezgui.</p></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Khalil Rezgui — Sites web</title>
+<meta name="description" content="83 maquettes de sites pour cafés, restaurants, maisons d'hôtes, salons et artisans en Tunisie.">
+<meta property="og:title" content="Khalil Rezgui — Sites web pour les lieux de Tunisie">
+<meta property="og:description" content="83 maquettes de sites pour cafés, restaurants, maisons d'hôtes, salons et artisans.">
+<meta property="og:image" content="https://khalilrez.github.io/maquettes/_portfolio/demo-05.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f2ea;--card:#fffdf8;--ink:#1d1b18;--muted:#6b645a;--line:#e3dccf;--accent:#b4532a;--accent-ink:#fff;--chip:#ece5d8}
+@media (prefers-color-scheme:dark){:root{--bg:#151412;--card:#1f1d1a;--ink:#f1ece3;--muted:#a59c8e;--line:#34302a;--accent:#e2814f;--accent-ink:#1a0f08;--chip:#2a2723}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+@media(min-width:720px){.wrap{padding:0 32px}}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.brand{font:600 15px Inter;letter-spacing:.02em;text-decoration:none}
+.brand span{color:var(--accent)}
+.cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;font-size:14px;padding:10px 18px;border-radius:999px}
+.cta:hover{filter:brightness(1.08)}
+.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.hero{padding:48px 0 32px}
+.hero h1{font:800 clamp(38px,7vw,84px)/1.02 Fraunces,Georgia,serif;letter-spacing:-.02em;margin:0 0 20px;max-width:14ch}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--accent)}
+.hero p{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:56ch;margin:0 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0;margin:40px 0 0}
+.stats b{display:block;font:700 clamp(26px,4vw,40px)/1 Fraunces,serif}
+.stats span{color:var(--muted);font-size:14px}
+.filters{position:sticky;top:0;z-index:5;background:var(--bg);padding:16px 0;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.filters button{flex:none;border:1px solid var(--line);background:var(--chip);color:var(--ink);font:500 14px Inter;padding:8px 14px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filters button small{opacity:.6;margin-left:4px}
+.grid{display:grid;grid-template-columns:1fr;gap:20px;padding:8px 0 64px}
+@media(min-width:620px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.12)}
+.card:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.shot{aspect-ratio:16/10;background:var(--chip);overflow:hidden;border-bottom:1px solid var(--line)}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.meta{padding:14px 16px 16px}
+.meta h3{font:600 20px/1.2 Fraunces,serif;margin:0 0 4px}
+.meta p{margin:0;color:var(--muted);font-size:14px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.8em}
+.tags{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.tags span{font-size:12px;font-weight:500;background:var(--chip);padding:3px 9px;border-radius:999px;color:var(--muted)}
+.how{border-top:1px solid var(--line);padding:56px 0}
+.how h2,.contact h2{font:700 clamp(28px,4vw,44px)/1.1 Fraunces,serif;margin:0 0 28px}
+.steps{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+.steps div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.steps b{font:700 32px Fraunces,serif;color:var(--accent)}
+.steps h3{margin:6px 0 6px;font-size:18px}
+.steps p{margin:0;color:var(--muted)}
+.contact{background:var(--ink);color:var(--bg);border-radius:24px;padding:40px 24px;margin:0 0 40px}
+@media(min-width:720px){.contact{padding:56px}}
+.contact p{color:inherit;opacity:.75;max-width:52ch;margin:0 0 24px}
+.contact .ghost{color:var(--bg);border-color:rgba(255,255,255,.3)}
+footer{color:var(--muted);font-size:13px;padding:0 0 40px}
+.empty{color:var(--muted);padding:24px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a class="brand" href="#">Khalil <span>Rezgui</span></a><a class="cta" href="#contact">Me contacter</a></header>
+<section class="hero">
+<h1>Des sites qui ressemblent <em>à votre lieu.</em></h1>
+<p>Je crée des sites sur mesure pour les cafés, restaurants, maisons d'hôtes, salons et artisans en Tunisie : votre carte, vos horaires, l'itinéraire et la réservation en un geste, pensés d'abord pour le téléphone.</p>
+<div class="actions"><a class="cta" href="#travaux">Voir les maquettes</a><a class="cta ghost" href="https://wa.me/21692428859">WhatsApp</a></div>
+<div class="stats"><div><b>83</b><span>maquettes</span></div><div><b>6</b><span>univers</span></div><div><b>100&nbsp;%</b><span>adaptés au mobile</span></div></div>
+</section>
+<section id="travaux" aria-label="Maquettes">
+<div class="filters" role="toolbar" aria-label="Filtrer par type"></div>
+<div class="grid" id="grid"></div>
+</section>
+<section class="how">
+<h2>Comment ça marche</h2>
+<div class="steps">
+<div><b>1</b><h3>On échange</h3><p>Un appel ou un café : votre lieu, votre clientèle, ce que vos clients demandent le plus.</p></div>
+<div><b>2</b><h3>Je prépare la maquette</h3><p>Vos couleurs, vos photos, votre carte. Vous la voyez en ligne avant de décider quoi que ce soit.</p></div>
+<div><b>3</b><h3>Mise en ligne</h3><p>Votre nom de domaine, le lien dans votre bio Instagram, et les mises à jour quand vous en avez besoin.</p></div>
+</div>
+</section>
+<section class="contact" id="contact">
+<h2>Un projet pour votre lieu&nbsp;?</h2>
+<p>Écrivez-moi : je vous réponds sous 24&nbsp;h et je vous montre ce que ça pourrait donner pour vous.</p>
+<div class="actions"><a class="cta" href="https://wa.me/21692428859">WhatsApp · 92 428 859</a><a class="cta ghost" href="mailto:khalilrezgui0@gmail.com">khalilrezgui0@gmail.com</a></div>
+</section>
+<footer>Les maquettes présentées sont des démonstrations : noms, logos, photos et coordonnées sont fictifs. © Khalil Rezgui</footer>
+</div>
+<script>
+const DATA=[{"id": "demo-01", "name": "Mistral", "sub": "", "city": "Sfax", "cat": "cafe", "lang": "fr"}, {"id": "demo-02", "name": "Céladon", "sub": "Atelier de création florale à Tunis depuis 2020", "city": "Tunis", "cat": "artisan", "lang": "fr"}, {"id": "demo-03", "name": "Mina Coiffure", "sub": "Salon de coiffure", "city": "Sousse", "cat": "beaute", "lang": "fr"}, {"id": "demo-04", "name": "Le Ponton", "sub": "Restaurant &amp; Café, rooftop face à la mer", "city": "Ghar El Melh", "cat": "restaurant", "lang": "fr"}, {"id": "demo-05", "name": "Onyx Djerba", "sub": "Restaurant, Terrasse &amp; Lounge · Midoun", "city": "Djerba", "cat": "evenement", "lang": "fr"}, {"id": "demo-06", "name": "Sirocco Restaurant &amp; Lounge", "sub": "Fruits de mer les pieds dans l’eau · Rafraf", "city": "Raf Raf", "cat": "restaurant", "lang": "fr"}, {"id": "demo-07", "name": "Nougatine", "sub": "Restaurant, Pâtisserie &amp; Café à Bizerte", "city": "Bizerte", "cat": "cafe", "lang": "fr"}, {"id": "demo-08", "name": "L’Amarre", "sub": "Café Restaurant, Port de plaisance de Tabarka", "city": "Tabarka", "cat": "cafe", "lang": "fr"}, {"id": "demo-09", "name": "Dar Mrayet", "sub": "Salon de thé, restaurant &amp; rooftop · Médina de Tunis", "city": "Tunis", "cat": "restaurant", "lang": "fr"}, {"id": "demo-10", "name": "Palma Resto &amp; Café", "sub": "Nabeul, depuis 2010", "city": "Nabeul", "cat": "cafe", "lang": "fr"}, {"id": "demo-11", "name": "Il Gelso", "sub": "Depuis 1974 · Centre-ville, Tunis", "city": "Tunis", "cat": "restaurant", "lang": "fr"}, {"id": "demo-12", "name": "Café Nomade", "sub": "Café, pizza &amp; resto à Houmt Souk, Djerba", "city": "Djerba", "cat": "cafe", "lang": "fr"}, {"id": "demo-13", "name": "Chez Lucien", "sub": "Restaurant les pieds dans le sable, Gammarth", "city": "Gammarth", "cat": "restaurant", "lang": "fr"}, {"id": "demo-14", "name": "Tertulia", "sub": "Jardin &amp; Tapas", "city": "Gammarth", "cat": "restaurant", "lang": "fr"}, {"id": "demo-15", "name": "Le Ricochet", "sub": "", "city": "Mahdia", "cat": "cafe", "lang": "fr"}, {"id": "demo-16", "name": "Restaurant Le Figuier", "sub": "Poissons &amp; fruits de mer, Remla, Kerkennah", "city": "Kerkennah", "cat": "restaurant", "lang": "fr"}, {"id": "demo-17", "name": "Cobalt Café-Resto", "sub": "Raffinement &amp; bonne table, centre-ville de Sousse", "city": "Sousse", "cat": "restaurant", "lang": "fr"}, {"id": "demo-18", "name": "PARALLÈLE Coffee Shop", "sub": "", "city": "Sfax", "cat": "cafe", "lang": "fr"}, {"id": "demo-19", "name": "Maison Sidra", "sub": "Boutique-atelier au cœur de Tunis", "city": "Tunis", "cat": "artisan", "lang": "fr"}, {"id": "demo-20", "name": "Il Melograno Resto", "sub": "Pizzas, pâtes &amp; box · Sahloul, Sousse", "city": "Sousse", "cat": "restaurant", "lang": "fr"}, {"id": "demo-21", "name": "Mirador Rooftop", "sub": "Restaurant lounge, Zarzis", "city": "Zarzis", "cat": "cafe", "lang": "fr"}, {"id": "demo-22", "name": "Les Lentisques", "sub": "Maison d’hôtes à Tabarka", "city": "Tabarka", "cat": "sejour", "lang": "fr"}, {"id": "demo-23", "name": "Fornace", "sub": "Pizza au feu de bois, panuzzo &amp; cuisine italienne", "city": "Gammarth", "cat": "restaurant", "lang": "fr"}, {"id": "demo-24", "name": "Forge Gym Sousse", "sub": "Salle de sport, piscine, hammam &amp; sauna", "city": "Sousse", "cat": "beaute", "lang": "fr"}, {"id": "demo-25", "name": "Diar Ramla", "sub": "", "city": "Tozeur", "cat": "sejour", "lang": "fr"}, {"id": "demo-26", "name": "Dar Kenza", "sub": "Maison d’hôtes vue mer à Tabarka", "city": "Tabarka", "cat": "sejour", "lang": "fr"}, {"id": "demo-27", "name": "Ardoise Café", "sub": "Coffee shop, breakfast &amp; crêpes, Gabès", "city": "Gabès", "cat": "cafe", "lang": "fr"}, {"id": "demo-28", "name": "La Bobine ciné-café", "sub": "Brunch, repas &amp; karaoké", "city": "Monastir", "cat": "cafe", "lang": "fr"}, {"id": "demo-29", "name": "Le Patio Indigo", "sub": "Restaurant &amp; lounge vue mer", "city": "Gammarth", "cat": "restaurant", "lang": "fr"}, {"id": "demo-30", "name": "Nalu Bar Mahdia", "sub": "Waves &amp; Beats · Food, DJ sets, Football live", "city": "Mahdia", "cat": "evenement", "lang": "fr"}, {"id": "demo-31", "name": "Tahwissa", "sub": "Coffee House &amp; Brunch, Sidi Bou Saïd", "city": "Sidi Bou Said", "cat": "cafe", "lang": "fr"}, {"id": "demo-32", "name": "Mezyena", "sub": "Bar à salade · Menzah 5, L’Aouina, Charguia 2", "city": "El Menzah 5", "cat": "restaurant", "lang": "en"}, {"id": "demo-33", "name": "Le Myrte", "sub": "Restaurant sur les remparts de la médina, Hammamet", "city": "Hammamet", "cat": "restaurant", "lang": "fr"}, {"id": "demo-34", "name": "Dar Sakina", "sub": "Dôme écologique, maison d’hôte à Béja", "city": "Béja", "cat": "sejour", "lang": "fr"}, {"id": "demo-35", "name": "L’Écrin La Marsa", "sub": "Couleur, ombré &amp; coupe", "city": "La Marsa", "cat": "beaute", "lang": "fr"}, {"id": "demo-36", "name": "Rosie’s Diner", "sub": "American diner in La Marsa · Breakfast, lunch &amp; dinner", "city": "La Marsa", "cat": "cafe", "lang": "en"}, {"id": "demo-37", "name": "Bergamote", "sub": "Salon de thé &amp; pizzeria au feu de bois · Houmt Souk, Djerba", "city": "Djerba", "cat": "cafe", "lang": "fr"}, {"id": "demo-38", "name": "Lanterna", "sub": "", "city": "Mahdia", "cat": "cafe", "lang": "fr"}, {"id": "demo-39", "name": "Rosmarino Djerba", "sub": "", "city": "Djerba", "cat": "restaurant", "lang": "fr"}, {"id": "demo-40", "name": "Maisons Kamen", "sub": "A quiet retreat deep in the Aïn Draham forest", "city": "Aïn Draham", "cat": "sejour", "lang": "en"}, {"id": "demo-41", "name": "Restaurant La Tonnelle", "sub": "Cuisine méditerranéenne raffinée, Mahdia", "city": "Mahdia", "cat": "restaurant", "lang": "fr"}, {"id": "demo-42", "name": "El Fanous", "sub": "الفانوس · Café-resto, Médina de Tunis", "city": "Tunis", "cat": "cafe", "lang": "fr"}, {"id": "demo-43", "name": "Velours Café-Restaurant", "sub": "Pizza au feu de bois &amp; cocktails, Sfax", "city": "Sfax", "cat": "cafe", "lang": "fr"}, {"id": "demo-44", "name": "Centre Nakhla", "sub": "Restaurant, pâtisserie, café maure &amp; salle de fêtes", "city": "Korba", "cat": "restaurant", "lang": "fr"}, {"id": "demo-45", "name": "Dar Merjane", "sub": "", "city": "Rejiche", "cat": "sejour", "lang": "fr"}, {"id": "demo-46", "name": "Salon Ambre", "sub": "Salon moderne hommes &amp; femmes", "city": "Sousse", "cat": "beaute", "lang": "fr"}, {"id": "demo-47", "name": "Dar Ouarda", "sub": "Chambres d’hôtes &amp; cuisine maison à Djerba Midoun", "city": "Djerba", "cat": "sejour", "lang": "fr"}, {"id": "demo-48", "name": "Dar Selwa", "sub": "Gîte écologique, restaurant du terroir &amp; team building à Zaghouan", "city": "Zaghouan", "cat": "sejour", "lang": "fr"}, {"id": "demo-49", "name": "Girandola", "sub": "Cuisine italienne à Ennasr · Pasta, pizza e niente più", "city": "Tunis", "cat": "restaurant", "lang": "fr"}, {"id": "demo-50", "name": "Rayhana Djerba", "sub": "", "city": "Djerba", "cat": "restaurant", "lang": "fr"}, {"id": "demo-51", "name": "Maëva Salon", "sub": "Spa tête japonais · La Marsa &amp; Nabeul", "city": "La Marsa", "cat": "beaute", "lang": "fr"}, {"id": "demo-52", "name": "Ondine", "sub": "", "city": "Sousse", "cat": "beaute", "lang": "fr"}, {"id": "demo-53", "name": "Juno Coffee House", "sub": "Café à Mrezga, Nabeul", "city": "Mrezga", "cat": "cafe", "lang": "fr"}, {"id": "demo-54", "name": "Dar Ghalia", "sub": "Maison d’hôtes avec piscine, près de Zaghouan", "city": "Zaghouan", "cat": "sejour", "lang": "fr"}, {"id": "demo-55", "name": "Lazuli Café-Lounge", "sub": "", "city": "Sfax", "cat": "cafe", "lang": "fr"}, {"id": "demo-56", "name": "Espace Ivoire Gammarth", "sub": "Mariages &amp; réceptions en plein air", "city": "Gammarth", "cat": "evenement", "lang": "fr"}, {"id": "demo-57", "name": "Velluto Restaurant &amp; Lounge", "sub": "Restaurant &amp; Lounge, Mrezga", "city": "Hammamet", "cat": "restaurant", "lang": "fr"}, {"id": "demo-58", "name": "Le Galet Café Lounge", "sub": "Restaurant face à la mer, Zarzis", "city": "Zarzis", "cat": "restaurant", "lang": "fr"}, {"id": "demo-59", "name": "Café Naoura", "sub": "Salon de thé à Djerbahood, Erriadh", "city": "Djerba", "cat": "artisan", "lang": "fr"}, {"id": "demo-60", "name": "Gramophone Coffeeshop", "sub": "Coffee &amp; breakfast à Houmt Souk", "city": "Djerba", "cat": "cafe", "lang": "fr"}, {"id": "demo-61", "name": "Dar Mounira", "sub": "Restaurant tunisien, Ras Jebel (Bizerte)", "city": "Ras Jebel", "cat": "restaurant", "lang": "fr"}, {"id": "demo-62", "name": "Le Caroubier", "sub": "Spécialités kerkenniennes à La Goulette", "city": "La Goulette", "cat": "restaurant", "lang": "fr"}, {"id": "demo-63", "name": "Salsabil", "sub": "سلسبيل · Restaurant tunisien, La Goulette", "city": "La Goulette", "cat": "restaurant", "lang": "fr"}, {"id": "demo-64", "name": "Poterie Émeraude", "sub": "Céramique artisanale, showroom à Nabeul", "city": "Nabeul", "cat": "artisan", "lang": "fr"}, {"id": "demo-65", "name": "Rotin Coffee &amp; Resto", "sub": "Coffee &amp; Resto, Hammamet Nord", "city": "Mrezga", "cat": "cafe", "lang": "fr"}, {"id": "demo-66", "name": "Maison Mirabelle", "sub": "Pâtisserie créative, La Marsa", "city": "La Marsa", "cat": "cafe", "lang": "fr"}, {"id": "demo-67", "name": "Galata Ennasr II", "sub": "Restaurant &amp; café turc · Petit-déjeuner oriental", "city": "Ennasr 2", "cat": "restaurant", "lang": "fr"}, {"id": "demo-68", "name": "Bonita", "sub": "Brunch &amp; café, Cité Ennasr", "city": "Cité Ennasr", "cat": "cafe", "lang": "fr"}, {"id": "demo-69", "name": "Pâtisserie La Gerbe", "sub": "Gâteaux, glaces &amp; douceurs, Monastir", "city": "Monastir", "cat": "cafe", "lang": "fr"}, {"id": "demo-70", "name": "La Marelle", "sub": "Your easy-going spot", "city": "Sousse", "cat": "restaurant", "lang": "en"}, {"id": "demo-71", "name": "El Narenj", "sub": "Salon de thé &amp; restaurant, Corniche de Mahdia", "city": "Mahdia", "cat": "cafe", "lang": "fr"}, {"id": "demo-72", "name": "Le Néroli Café &amp; Lounge", "sub": "Toit-terrasse face à la mer, Zarzis", "city": "Zarzis", "cat": "restaurant", "lang": "fr"}, {"id": "demo-73", "name": "L’Oranger", "sub": "Restaurant pieds dans l’eau", "city": "La Goulette", "cat": "restaurant", "lang": "fr"}, {"id": "demo-74", "name": "Le Ventaglio", "sub": "Restaurant méditerranéen depuis 1961 · Tunis Belvédère", "city": "Tunis", "cat": "restaurant", "lang": "fr"}, {"id": "demo-75", "name": "Villa Solenne", "sub": "Mariages &amp; cérémonies à Hammamet-Nord", "city": "Hammamet", "cat": "evenement", "lang": "fr"}, {"id": "demo-76", "name": "Maison Tabouna", "sub": "Plat du jour fait maison", "city": "La Marsa", "cat": "restaurant", "lang": "fr"}, {"id": "demo-77", "name": "Salon Aria", "sub": "Balayage &amp; coloration à Sahloul, Sousse", "city": "Sousse", "cat": "beaute", "lang": "fr"}, {"id": "demo-78", "name": "Resto Corail Sahloul", "sub": "Poissons &amp; fruits de mer, Sousse", "city": "Sousse", "cat": "restaurant", "lang": "fr"}, {"id": "demo-79", "name": "Salle Dalia", "sub": "Salle des fêtes de prestige à Sousse", "city": "Sousse", "cat": "evenement", "lang": "fr"}, {"id": "demo-80", "name": "Pâtisserie Opaline", "sub": "", "city": "Monastir", "cat": "cafe", "lang": "fr"}, {"id": "demo-81", "name": "Dar Bahja", "sub": "Maison d&#x27;hôtes à Erriadh, Djerbahood", "city": "Djerba", "cat": "sejour", "lang": "fr"}, {"id": "demo-82", "name": "Studio Sève", "sub": "Pilates Reformer, Pvolve &amp; Yoga", "city": "Sousse", "cat": "beaute", "lang": "fr"}, {"id": "demo-83", "name": "Dar Rihana Djerba", "sub": "Villa de haut standing avec piscine, Houmt Souk", "city": "Djerba", "cat": "sejour", "lang": "fr"}];
+const CATS=[["all","Tout"],["cafe","Cafés & salons de thé"],["restaurant","Restaurants"],["sejour","Maisons d'hôtes & séjours"],["beaute","Beauté & sport"],["evenement","Événements & soirées"],["artisan","Artisans & boutiques"]];
+const LABEL=Object.fromEntries(CATS);
+const bar=document.querySelector(".filters"),grid=document.getElementById("grid");
+function render(cat){
+  const items=DATA.filter(d=>cat==="all"||d.cat===cat);
+  grid.innerHTML=items.map(d=>`<a class="card" href="${d.id}/" target="_blank" rel="noopener">
+<div class="shot"><img src="_portfolio/${d.id}.webp" alt="Aperçu du site ${d.name}" loading="lazy" width="720" height="450"></div>
+<div class="meta"><h3>${d.name}</h3><p>${d.sub||LABEL[d.cat]}</p>
+<div class="tags"><span>${LABEL[d.cat]}</span><span>${d.city}</span>${d.lang==="en"?"<span>English</span>":""}</div></div></a>`).join("")||'<p class="empty">Aucune maquette.</p>';
+  bar.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.cat===cat));
+}
+bar.innerHTML=CATS.map(([k,v])=>{const n=k==="all"?DATA.length:DATA.filter(d=>d.cat===k).length;return `<button type="button" data-cat="${k}" aria-pressed="false">${v}<small>${n}</small></button>`}).join("");
+bar.addEventListener("click",e=>{const b=e.target.closest("button");if(b)render(b.dataset.cat)});
+render("all");
+</script>
+</body>
+</html>
