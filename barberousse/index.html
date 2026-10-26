@@ -3,21 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Le Barberousse — Restaurant sur les remparts de la médina, Hammamet</title>
-<meta name="description" content="Le Barberousse, restaurant et wine bar posé sur les remparts de la vieille médina de Hammamet, tout en haut du Fort, face au golfe. Ouvert tous les jours de 12h à 00h, service continu.">
+<title>Le Barbaresque — Restaurant sur les remparts de la médina, Hammamet</title>
+<meta name="description" content="Le Barbaresque, restaurant et wine bar perché sur les remparts de la vieille médina de Hammamet, face au golfe. Ouvert tous les jours de 12h à 00h, service continu.">
 <meta name="theme-color" content="#F6F0E4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0C1823" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Le Barberousse">
-<meta property="og:title" content="Le Barberousse — Hammamet">
-<meta property="og:description" content="Posé sur les remparts de la vieille médina de Hammamet, tout en haut du Fort, avec une vue imprenable sur le golfe. Tous les jours, 12h – 00h.">
-<meta property="og:image" content="https://khalilrez.github.io/maquettes/barberousse/assets/og.jpg">
-<meta property="og:url" content="https://khalilrez.github.io/maquettes/barberousse/">
+<meta property="og:site_name" content="Le Barbaresque">
+<meta property="og:title" content="Le Barbaresque — Hammamet">
+<meta property="og:description" content="Perché sur les remparts de la vieille médina de Hammamet, avec le golfe à perte de vue. Tous les jours, 12h – 00h.">
+<meta property="og:image" content="assets/og.jpg">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Une table ronde dressée sur la terrasse des remparts au coucher du soleil, la tour du Fort et le golfe de Hammamet en arrière-plan">
+<meta property="og:image:alt" content="Une table ronde dressée sur la terrasse des remparts au coucher du soleil, les remparts et le golfe de Hammamet en arrière-plan">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,7 +134,8 @@
   /* Top bar */
   .top { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--linen) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
   .top .wrap { display: flex; align-items: center; gap: 20px; min-height: 60px; }
-  .brand { font: 400 21px/1 var(--caps); text-decoration: none; letter-spacing: .04em; white-space: nowrap; }
+  .brand { font: italic 400 22px/1 var(--serif); color: var(--sunset); text-decoration: none; letter-spacing: .02em; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; }
+  .brand svg { width: 20px; height: 20px; flex: none; }
   .nav { display: flex; gap: 22px; margin-left: auto; font-size: 14px; font-weight: 600; }
   .nav a { text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
   .nav a:hover { border-color: var(--sunset); }
@@ -309,12 +309,12 @@
 </style>
 </head>
 <body>
-<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour Le Barberousse. Non affiliée à l’établissement.</div>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
 <a class="skip" href="#main">Aller au contenu</a>
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#top">Le Barberousse</a>
+    <a class="brand" href="#top"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2"/><path d="M12 7v14M5 13a7 7 0 0 0 14 0M8 11h8"/></svg>Le Barbaresque</a>
     <nav class="nav" aria-label="Sections">
       <a href="#lieu">Le lieu</a>
       <a href="#cuisine">La cuisine</a>
@@ -322,7 +322,7 @@
       <a href="#soirees">Soirées</a>
       <a href="#infos">Infos</a>
     </nav>
-    <a class="btn" href="tel:+21672280037">Réserver</a>
+    <a class="btn" href="tel:+21600000000">Réserver</a>
   </div>
 </header>
 
@@ -330,29 +330,29 @@
   <div id="top">
     <figure class="hero-view">
       <img src="assets/hero.jpg" width="1800" height="1350" fetchpriority="high"
-           alt="Une table ronde nappée de blanc, verres bleus, dressée sur la terrasse des remparts au coucher du soleil ; à gauche la tour du Fort, au fond le golfe de Hammamet">
+           alt="Une table ronde nappée de blanc, verres bleus, dressée sur la terrasse des remparts au coucher du soleil ; à gauche les remparts, au fond le golfe de Hammamet">
     </figure>
     <div class="parapet stone merlons">
       <div class="wrap">
         <div>
           <p class="eyebrow">Restaurant · Wine Bar — La Médina, Hammamet</p>
-          <h1><span>Le</span> Barberousse</h1>
-          <p class="lede">Posé sur les remparts de la vieille médina de Hammamet, tout en haut du Fort, face au golfe.</p>
+          <h1><span>Le</span> Barbaresque</h1>
+          <p class="lede">Perché sur les remparts de la vieille médina de Hammamet, les yeux dans le golfe.</p>
         </div>
         <div class="hours-plaque">
           <dl>
             <dt>Restaurant</dt><dd>Tous les jours, 12h – 00h · service continu</dd>
             <dt>Wine Bar</dt><dd>Tous les soirs, 17h – minuit</dd>
-            <dt>Où</dt><dd>En haut du Fort, La Médina</dd>
+            <dt>Où</dt><dd>Sur les remparts, La Médina</dd>
           </dl>
           <div class="cta">
-            <a class="btn" href="tel:+21672280037">
+            <a class="btn" href="tel:+21600000000">
               <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
-              Réserver · 72 280 037
+              Réserver · 00 000 000
             </a>
             <a class="btn ghost" href="#trouver">Nous trouver</a>
           </div>
-          <p class="en" lang="en">Restaurant &amp; wine bar on the ramparts of Hammamet’s old medina — at the very top of the Fort. Open daily, noon to midnight.</p>
+          <p class="en" lang="en">Restaurant &amp; wine bar perched on the ramparts of Hammamet’s old medina, overlooking the bay. Open every day from noon until midnight.</p>
         </div>
       </div>
     </div>
@@ -362,8 +362,8 @@
     <div class="wrap">
       <div class="head">
         <p class="eyebrow">Le lieu</p>
-        <h2 id="lieu-t">Un restaurant historique dans une ville historique</h2>
-        <p class="intro">Les remparts de pierre ocre du Fort, une terrasse ouverte sur la mer et une salle aux grandes baies vitrées : au Barberousse, chaque table regarde le golfe de Hammamet.</p>
+        <h2 id="lieu-t">Une table de caractère au cœur de la vieille ville</h2>
+        <p class="intro">Des murs de pierre ocre, une terrasse ouverte sur la mer et une salle largement vitrée : au Barbaresque, toutes les tables ont vue sur le golfe de Hammamet.</p>
       </div>
       <div class="lieu-grid">
         <figure class="g-salle">
@@ -379,24 +379,24 @@
           <figcaption>L’heure bleue</figcaption>
         </figure>
         <figure class="g-nuit">
-          <img src="assets/fort-nuit.jpg" width="1000" height="666" loading="lazy" alt="Les murs du Fort éclairés à la nuit tombée, avec la terrasse vitrée du restaurant tout en haut">
-          <figcaption>Le Fort, la nuit</figcaption>
+          <img src="assets/fort-nuit.jpg" width="1000" height="666" loading="lazy" alt="Les remparts éclairés à la nuit tombée, avec la terrasse vitrée du restaurant tout en haut">
+          <figcaption>Les remparts, la nuit</figcaption>
         </figure>
       </div>
 
       <div class="way" id="trouver">
         <figure>
-          <img src="assets/fort-enseigne.jpg" width="1000" height="1000" loading="lazy" alt="Le mur du Fort en pierre dorée sous le ciel bleu, avec l’enseigne du Barberousse et les baies vitrées du restaurant au sommet">
+          <img src="assets/fort-enseigne.jpg" width="1000" height="1000" loading="lazy" alt="Un mur de pierre dorée sous le ciel bleu, avec les baies vitrées du restaurant au sommet">
         </figure>
         <div class="way-body">
           <p class="eyebrow">Comment nous trouver</p>
-          <h3>Montez tout en haut du Fort</h3>
+          <h3>Grimpez jusqu’aux remparts</h3>
           <ol class="steps">
             <li><strong>La Médina de Hammamet</strong><span>Entrez dans la vieille ville, au bord de la mer.</span></li>
-            <li><strong>Le Fort</strong><span>Rejoignez les remparts et montez.</span></li>
-            <li><strong>Tout en haut : Le Barberousse</strong><span>Notre enseigne est sur le mur du Fort, la vue sur le golfe vous attend.</span></li>
+            <li><strong>Les remparts</strong><span>Suivez les murs de pierre et prenez de la hauteur.</span></li>
+            <li><strong>Au sommet : Le Barbaresque</strong><span>Le golfe s’ouvre devant vous, votre table aussi.</span></li>
           </ol>
-          <p class="notice">Le Barberousse se trouve tout en haut du Fort. Si l’on vous propose une autre table en chemin, ce n’est pas nous&nbsp;: venez directement jusqu’à nous.</p>
+          <p class="notice">Le Barbaresque est au sommet des remparts. En chemin, ne vous laissez pas détourner&nbsp;: montez jusqu’en haut.</p>
         </div>
       </div>
     </div>
@@ -405,7 +405,7 @@
   <section class="horizon" aria-label="La vue">
     <img src="assets/coucher-golfe.jpg" width="1400" height="932" loading="lazy" alt="Coucher de soleil orangé sur le golfe de Hammamet, des barques sur l’eau calme">
     <blockquote>
-      <p style="margin:0">« Une vue imprenable sur le golfe de Hammamet. »</p>
+      <p style="margin:0">« Tout le golfe de Hammamet, à portée de regard. »</p>
       <cite>Depuis le restaurant</cite>
     </blockquote>
   </section>
@@ -414,8 +414,8 @@
     <div class="wrap">
       <div class="head">
         <p class="eyebrow">La cuisine</p>
-        <h2 id="cuisine-t" class="tagline">Cuisine raffinée, choix divers et varié, produits frais.</h2>
-        <p class="intro">Une expérience gastronomique marquante et unique dans le cœur historique de Hammamet.</p>
+        <h2 id="cuisine-t" class="tagline">Une cuisine soignée, une carte généreuse, des produits du jour.</h2>
+        <p class="intro">Un repas qui reste en mémoire, au cœur de la vieille ville de Hammamet.</p>
       </div>
       <ul class="plates">
         <li class="feature"><figure>
@@ -446,7 +446,7 @@
           <img src="assets/plat-patisserie-tunisienne.jpg" width="600" height="750" loading="lazy" alt="Assortiment de pâtisseries tunisiennes sur un plateau en métal martelé">
           <figcaption>Pâtisserie tunisienne traditionnelle</figcaption></figure></li>
       </ul>
-      <p class="note">Quelques assiettes de la maison, telles que partagées sur notre Instagram. Une question sur la carte&nbsp;? <a href="tel:+21672280037">Appelez-nous au 72 280 037</a>.</p>
+      <p class="note">Quelques assiettes de la maison. Une question sur la carte&nbsp;? <a href="tel:+21600000000">Appelez-nous au 00 000 000</a>.</p>
     </div>
   </section>
 
@@ -457,10 +457,10 @@
       </figure>
       <div>
         <p class="eyebrow">Le Wine Bar</p>
-        <h2 id="wine-t">La cave Shadrapa</h2>
-        <p class="big">Venez découvrir la cave Shadrapa au Wine Bar.</p>
+        <h2 id="wine-t">La cave du domaine</h2>
+        <p class="big">Une sélection de vins du pays, à découvrir au Wine Bar.</p>
         <div class="badge-hours"><small>Tous les soirs</small><b>17h – minuit</b></div>
-        <p class="muted">Partenariat exclusif avec Shadrapa, vins tunisiens, à déguster au-dessus des remparts quand la médina s’allume.</p>
+        <p class="muted">Des vins tunisiens choisis avec soin, à déguster au-dessus des remparts quand la médina s’allume.</p>
       </div>
     </div>
   </section>
@@ -470,13 +470,13 @@
       <div>
         <p class="eyebrow">Soirées</p>
         <h2 id="soirees-t">Le Ney, au fil du dîner</h2>
-        <blockquote>Le Ney, flûte typiquement berbère, enchantera votre dîner.</blockquote>
+        <blockquote>Le souffle du ney, la flûte des montagnes, accompagne votre soirée.</blockquote>
         <p>Pour les dîners d’exception, la musique s’invite à table.</p>
         <ul class="tags" aria-label="Exemples de soirées">
           <li>Saint-Valentin</li>
           <li>Iftar</li>
         </ul>
-        <p class="muted">Les prochaines dates sont annoncées sur <a href="https://www.instagram.com/lebarberoussehammamet/">Instagram</a>. Réservation au <a href="tel:+21672280037">72 280 037</a>.</p>
+        <p class="muted">Les prochaines dates sont annoncées sur nos réseaux. Réservation au <a href="tel:+21600000000">00 000 000</a>.</p>
       </div>
       <figure>
         <img src="assets/ney.jpg" width="1000" height="762" loading="lazy" alt="Un musicien en tenue traditionnelle brodée joue du ney entre les tables, le soir, devant les baies vitrées">
@@ -491,11 +491,11 @@
       <div class="info-grid">
         <div class="info addr">
           <h3>Adresse</h3>
-          <address id="addr">Restaurant Le Barberousse<br>La Médina, Hammamet 8050, Tunisie</address>
-          <p style="margin-top:8px">Tout en haut du Fort.</p>
+          <address id="addr">Restaurant Le Barbaresque<br>La Médina, Hammamet, Tunisie</address>
+          <p style="margin-top:8px">Sur les remparts.</p>
           <button class="copy" type="button" data-copy="#addr" hidden>Copier l’adresse</button>
           <ul class="linklist" style="margin-top:14px">
-            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant%20Barberousse%20Hammamet">Ouvrir dans Google Maps</a></li>
+            <li><a href="#">Ouvrir dans Google Maps</a></li>
           </ul>
         </div>
         <div class="info">
@@ -507,10 +507,10 @@
         </div>
         <div class="info">
           <h3>Réservation</h3>
-          <p class="big"><a href="tel:+21672280037">+216 72 280 037</a></p>
+          <p class="big"><a href="tel:+21600000000">+216 00 000 000</a></p>
           <ul class="linklist">
-            <li><a href="https://www.instagram.com/lebarberoussehammamet/">Instagram</a></li>
-            <li><a href="https://www.facebook.com/search/top?q=Restaurant%20Barberousse%20Hammamet">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
           </ul>
         </div>
       </div>
@@ -521,14 +521,14 @@
 
 <footer>
   <div class="wrap">
-    <span>© Le Barberousse · La Médina, Hammamet</span>
-    <span>Photos : Nadhim Ben Yedder</span>
+    <span>© Le Barbaresque · La Médina, Hammamet</span>
+    <span>Photos : images d’illustration</span>
   </div>
 </footer>
 
 <div class="callbar">
-  <a class="btn" href="tel:+21672280037">Réserver</a>
-  <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurant%20Barberousse%20Hammamet">Itinéraire</a>
+  <a class="btn" href="tel:+21600000000">Réserver</a>
+  <a class="btn ghost" href="#">Itinéraire</a>
 </div>
 
 <script>

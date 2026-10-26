@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moon’s Café · Lounge à Sfax, ouvert 24h/24 et 7j/7</title>
-<meta name="description" content="Moon’s Café-Lounge à Sfax (Kassas n°4, entre route El Ain et route Menzel Chaker) : ouvert 24h/24, 7j/7. Petit-déjeuner, Roue de Bonheur, box à partager, brunch, matchs sur écran géant et espace familial non-fumeur. 53 626 624 · 58 453 453.">
+<title>Cosmo’s Café · Lounge à Sfax, ouvert 24h/24 et 7j/7</title>
+<meta name="description" content="Cosmo’s Café-Lounge à Sfax (centre-ville) : ouvert 24h/24, 7j/7. Petit-déjeuner, Ronde Gourmande, box à partager, brunch, matchs sur écran géant et espace familial non-fumeur. 00 000 000.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Moon’s Café-Lounge · Sfax · 24h/24">
-<meta property="og:description" content="Petit-déj, Roue de Bonheur, box à partager, matchs sur écran géant. Ouvert jour et nuit, 7j/7.">
+<meta property="og:title" content="Cosmo’s Café-Lounge · Sfax · 24h/24">
+<meta property="og:description" content="Petit-déj, Ronde Gourmande, box à partager, matchs sur écran géant. Ouvert jour et nuit, 7j/7.">
 <meta name="theme-color" content="#0B0E0C">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,11 +85,11 @@
   .btn-gold { background: linear-gradient(135deg, #E6C77F, #B38936); color: #17120A; }
   .btn-line { border-color: var(--gold); color: var(--ink); }
 
-  /* moon logo */
-  .moonlogo { display: inline-flex; align-items: center; font: 600 25px/1 var(--sans); letter-spacing: .02em; text-decoration: none; gap: 0; }
-  .moonlogo .o { width: .62em; height: .62em; border-radius: 50%; border: .12em solid currentColor; margin: 0 .03em; position: relative; top: .04em; }
-  .moonlogo .o.c { border: 0; box-shadow: inset -.17em .02em 0 0 currentColor; transform: rotate(-25deg); }
-  .moonlogo small { display: block; font: 400 10px/1 var(--sans); letter-spacing: .28em; text-transform: lowercase; color: var(--gold-ink); margin-top: 4px; text-align: right; }
+  /* logo */
+  .cosmologo { display: inline-flex; align-items: center; font: 400 26px/1 var(--display); letter-spacing: .02em; text-decoration: none; gap: 0; }
+  .cosmologo .o { width: .62em; height: .62em; border-radius: 50%; border: .12em dotted currentColor; margin: 0 .03em; position: relative; top: .04em; }
+  .cosmologo .o.c { border: 0; box-shadow: inset -.17em .02em 0 0 currentColor; transform: rotate(-25deg); }
+  .cosmologo small { display: block; font: 400 10px/1 var(--sans); letter-spacing: .28em; text-transform: lowercase; color: var(--gold-ink); margin-top: 4px; text-align: right; }
 
   .top { position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
   .top .wrap { height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
@@ -100,11 +100,11 @@
   .top .btn { min-height: 42px; padding: 0 16px; font-size: 14px; }
   .toggle { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); display: grid; place-items: center; cursor: pointer; }
   .toggle svg { width: 18px; height: 18px; }
-  .toggle .moon { display: none; }
-  :root[data-theme="light"] .toggle .moon { display: block; }
+  .toggle .night { display: none; }
+  :root[data-theme="light"] .toggle .night { display: block; }
   :root[data-theme="light"] .toggle .sun { display: none; }
   @media (prefers-color-scheme: light) {
-    :root:not([data-theme="dark"]) .toggle .moon { display: block; }
+    :root:not([data-theme="dark"]) .toggle .night { display: block; }
     :root:not([data-theme="dark"]) .toggle .sun { display: none; }
   }
 
@@ -118,14 +118,14 @@
   .open b { font: 400 18px/1 var(--display); color: var(--ink); letter-spacing: .04em; }
   .dot { width: 10px; height: 10px; border-radius: 50%; background: #4CC38A; box-shadow: 0 0 0 5px rgba(76,195,138,.18); }
   .cta { display: flex; flex-wrap: wrap; gap: 12px; }
-  .moon-photo { position: relative; justify-self: center; width: min(100%, 520px); aspect-ratio: 1; }
-  .moon-photo .disc { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; box-shadow: var(--shadow), 0 0 0 1px var(--line), 0 0 80px -10px rgba(215,178,106,.35); }
-  .moon-photo img { width: 100%; height: 100%; object-fit: cover; }
-  .moon-photo .ring { position: absolute; inset: -22px; border-radius: 50%; border: 1px solid var(--gold); opacity: .55; }
-  .moon-photo .crescent { position: absolute; right: -6%; top: -4%; width: 30%; aspect-ratio: 1; border-radius: 50%; box-shadow: inset -22px 10px 0 0 var(--gold); transform: rotate(-20deg); }
-  .moon-photo .badge { position: absolute; left: -4%; bottom: 6%; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; box-shadow: var(--shadow); text-align: center; }
-  .moon-photo .badge b { display: block; font: 400 30px/1 var(--display); color: var(--gold-ink); }
-  .moon-photo .badge span { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+  .orb-photo { position: relative; justify-self: center; width: min(100%, 520px); aspect-ratio: 1; }
+  .orb-photo .disc { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; box-shadow: var(--shadow), 0 0 0 1px var(--line), 0 0 80px -10px rgba(215,178,106,.35); }
+  .orb-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .orb-photo .ring { position: absolute; inset: -22px; border-radius: 50%; border: 1px solid var(--gold); opacity: .55; }
+  .orb-photo .crescent { position: absolute; right: -6%; top: -4%; width: 30%; aspect-ratio: 1; border-radius: 50%; box-shadow: inset -22px 10px 0 0 var(--gold); transform: rotate(-20deg); }
+  .orb-photo .badge { position: absolute; left: -4%; bottom: 6%; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; box-shadow: var(--shadow); text-align: center; }
+  .orb-photo .badge b { display: block; font: 400 30px/1 var(--display); color: var(--gold-ink); }
+  .orb-photo .badge span { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
 
   .ticker { background: var(--green); color: #F3EEE3; border-block: 1px solid rgba(215,178,106,.4); }
   .ticker ul { list-style: none; margin: 0; padding: 18px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 26px; font: 400 18px/1.3 var(--display); letter-spacing: .08em; }
@@ -137,10 +137,10 @@
   .center { text-align: center; }
   .center .rule { justify-content: center; }
 
-  /* roue */
-  .roue .wrap { display: grid; grid-template-columns: .95fr 1.05fr; gap: 70px; align-items: center; }
-  .roue img { border-radius: 14px; box-shadow: var(--shadow); width: 100%; border: 1px solid var(--line); }
-  .roue p.lead { font-size: 18px; color: var(--soft); margin: 20px 0 30px; max-width: 46ch; }
+  /* ronde */
+  .ronde .wrap { display: grid; grid-template-columns: .95fr 1.05fr; gap: 70px; align-items: center; }
+  .ronde img { border-radius: 14px; box-shadow: var(--shadow); width: 100%; border: 1px solid var(--line); }
+  .ronde p.lead { font-size: 18px; color: var(--soft); margin: 20px 0 30px; max-width: 46ch; }
   .counts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 0 0 30px; padding: 0; list-style: none; }
   .counts li { text-align: center; padding: 18px 8px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); font-size: 13px; color: var(--soft); line-height: 1.3; }
   .counts b { display: block; font: 400 38px/1 var(--display); color: var(--gold-ink); margin-bottom: 6px; }
@@ -196,9 +196,9 @@
 
   @media (max-width: 1000px) {
     nav { display: none; }
-    .hero .wrap, .roue .wrap, .matchs .wrap, .events .wrap, .infos .card { grid-template-columns: 1fr; }
+    .hero .wrap, .ronde .wrap, .matchs .wrap, .events .wrap, .infos .card { grid-template-columns: 1fr; }
     .grid { grid-template-columns: repeat(2, 1fr); }
-    .moon-photo { width: min(88%, 460px); }
+    .orb-photo { width: min(88%, 460px); }
   }
   @media (max-width: 640px) {
     .wrap { width: calc(100% - 32px); }
@@ -223,7 +223,7 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette non officielle — proposition de site réalisée par Khalil Rezgui pour Moon’s Café-Lounge. Non affiliée à l’établissement.</div>
+<div role="note" style="position:relative;z-index:9999;background:#111;color:#f5f5f5;font:500 13px/1.4 system-ui,-apple-system,Segoe UI,sans-serif;text-align:center;padding:8px 16px">Maquette de démonstration réalisée par Khalil Rezgui. Nom, logo, photos et coordonnées sont fictifs.</div>
 <a class="skip" href="#contenu">Aller au contenu</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
@@ -237,14 +237,14 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="moonlogo" href="#" aria-label="Moon’s café-lounge, accueil"><span><span style="display:inline-flex;align-items:center">m<i class="o" aria-hidden="true"></i><i class="o c" aria-hidden="true"></i>n’s</span><small>café - lounge</small></span></a>
+    <a class="cosmologo" href="#" aria-label="Cosmo’s café-lounge, accueil"><span><span style="display:inline-flex;align-items:center">c<i class="o" aria-hidden="true"></i>sm<i class="o c" aria-hidden="true"></i>’s</span><small>café - lounge</small></span></a>
     <nav aria-label="Navigation principale"><ul>
-      <li><a href="#roue">La Roue</a></li><li><a href="#partage">À partager</a></li><li><a href="#matchs">Matchs</a></li><li><a href="#events">Événements</a></li><li><a href="#infos">Infos</a></li>
+      <li><a href="#ronde">La Ronde</a></li><li><a href="#partage">À partager</a></li><li><a href="#matchs">Matchs</a></li><li><a href="#events">Événements</a></li><li><a href="#infos">Infos</a></li>
     </ul></nav>
     <div class="tr">
-      <a class="btn btn-gold" href="tel:+21653626624" aria-label="Appeler le 53 626 624"><svg aria-hidden="true"><use href="#phone"/></svg><span>Appeler</span></a>
+      <a class="btn btn-gold" href="tel:+21600000000" aria-label="Appeler le 00 000 000"><svg aria-hidden="true"><use href="#phone"/></svg><span>Appeler</span></a>
       <button class="toggle" type="button" data-toggle aria-label="Changer de thème clair / sombre">
-        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="night" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       </button>
     </div>
@@ -256,39 +256,39 @@
     <div class="wrap">
       <div>
         <p class="open"><span class="dot" aria-hidden="true"></span><b>24h/24 · 7j/7</b> Ouvert jour et nuit</p>
-        <h1 id="titre"><span class="script">Bienvenue chez</span>Moon’s Café</h1>
-        <p class="sub">Le café-lounge de Sfax où l’on commence la journée, où l’on partage la Roue de Bonheur entre amis, et où l’on vibre devant les matchs. À toute heure.</p>
+        <h1 id="titre"><span class="script">Bienvenue chez</span>Cosmo’s Café</h1>
+        <p class="sub">Le café-lounge de Sfax où l’on commence la journée, où l’on partage la Ronde Gourmande entre amis, et où l’on vibre devant les matchs. À toute heure.</p>
         <div class="cta">
-          <a class="btn btn-gold" href="tel:+21653626624"><svg aria-hidden="true"><use href="#phone"/></svg>53 626 624</a>
-          <a class="btn btn-line" href="https://maps.app.goo.gl/jySUEMrtCQQZuMRV8" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Nous trouver</a>
+          <a class="btn btn-gold" href="tel:+21600000000"><svg aria-hidden="true"><use href="#phone"/></svg>00 000 000</a>
+          <a class="btn btn-line" href="#infos"><svg aria-hidden="true"><use href="#pin"/></svg>Nous trouver</a>
         </div>
       </div>
-      <div class="moon-photo">
+      <div class="orb-photo">
         <span class="ring" aria-hidden="true"></span>
-        <div class="disc"><img src="assets/interieur.jpg" width="1448" height="1300" alt="La salle du Moon’s : tables en marbre noir, chaises coque blanches, arches dorées, plantes et écran au fond."></div>
+        <div class="disc"><img src="assets/interieur.jpg" width="1448" height="1300" alt="La salle du Cosmo’s : tables en marbre noir, chaises coque blanches, arches dorées, plantes et écran au fond."></div>
         <span class="crescent" aria-hidden="true"></span>
-        <div class="badge"><b>Sfax</b><span>Kassas n°4</span></div>
+        <div class="badge"><b>Sfax</b><span>Centre-ville</span></div>
       </div>
     </div>
   </section>
 
   <div class="ticker">
-    <ul class="wrap" aria-label="Chez Moon’s">
+    <ul class="wrap" aria-label="Chez Cosmo’s">
       <li>Petit-déj</li><li>Brunch</li><li>Lunch</li><li>Box à partager</li><li>Desserts</li><li>Matchs</li><li><span lang="ar">سحور</span></li>
     </ul>
   </div>
 
-  <section class="sec roue" id="roue" aria-labelledby="t-roue">
+  <section class="sec ronde" id="ronde" aria-labelledby="t-ronde">
     <div class="wrap">
-      <img src="assets/roue-de-bonheur.jpg" width="1365" height="1820" loading="lazy" alt="Affiche « La Roue de Bonheur » de Moon’s : huit assiettes gourmandes sur un plateau en marbre, cafés, jus et verrines.">
+      <img src="assets/roue-de-bonheur.jpg" width="1365" height="1820" loading="lazy" alt="Affiche de « La Ronde Gourmande » : huit assiettes gourmandes sur un plateau en marbre, cafés, jus et verrines.">
       <div>
         <p class="rule">La signature</p>
-        <h2 id="t-roue"><span class="script">La Roue</span>de Bonheur</h2>
-        <p class="lead">En sa nouvelle forme : un grand plateau à partager, sucré et salé, pensé pour un moment entre amis ou en famille. Un moment de partage, plein de saveurs !</p>
+        <h2 id="t-ronde"><span class="script">La Ronde</span>Gourmande</h2>
+        <p class="lead">Un grand plateau sucré-salé à poser au milieu de la table, entre amis ou en famille. Chacun pioche, tout le monde se régale.</p>
         <ul class="counts">
-          <li><b>8</b>plats gourmands</li><li><b>2</b>cafés</li><li><b>2</b>jus</li><li><b>2</b>mini verres « Yhout »</li>
+          <li><b>8</b>plats gourmands</li><li><b>2</b>cafés</li><li><b>2</b>jus</li><li><b>2</b>mini verrines</li>
         </ul>
-        <a class="btn btn-gold" href="tel:+21658453453"><svg aria-hidden="true"><use href="#phone"/></svg>Réserver une table · 58 453 453</a>
+        <a class="btn btn-gold" href="tel:+21600000000"><svg aria-hidden="true"><use href="#phone"/></svg>Réserver une table · 00 000 000</a>
       </div>
     </div>
   </section>
@@ -301,13 +301,13 @@
       </div>
       <div class="grid">
         <article class="item"><img src="assets/box-4.jpg" width="1024" height="1360" loading="lazy" alt="Box pour 4 personnes : wraps, brochettes, beignets, salades et mojitos sur un plateau."><div><h3>Box 4 personnes</h3><p>Le grand plateau salé à partager entre amis.</p></div></article>
-        <article class="item"><img src="assets/brunch-golden-heart.jpg" width="1405" height="1874" loading="lazy" alt="Affiche du Brunch Golden Heart : jus, viennoiseries, crêpes et assiettes salées."><div><h3>Brunch Golden Heart</h3><p>Le brunch pour deux, sucré et salé.</p></div></article>
-        <article class="item"><img src="assets/petit-dejeuner.jpg" width="640" height="1136" loading="lazy" alt="Petit déjeuner Moon’s : croissants, ojja, salades et petites assiettes."><div><h3>Petit déjeuner Moon’s</h3><p>Pour bien commencer la journée, à n’importe quelle heure.</p></div></article>
+        <article class="item"><img src="assets/brunch-golden-heart.jpg" width="1405" height="1874" loading="lazy" alt="Affiche du Brunch Soleil : jus, viennoiseries, crêpes et assiettes salées."><div><h3>Brunch Soleil</h3><p>Le brunch pour deux, sucré et salé.</p></div></article>
+        <article class="item"><img src="assets/petit-dejeuner.jpg" width="640" height="1136" loading="lazy" alt="Petit déjeuner Cosmo’s : croissants, ojja, salades et petites assiettes."><div><h3>Petit déjeuner Cosmo’s</h3><p>Pour bien commencer la journée, à n’importe quelle heure.</p></div></article>
         <article class="item"><img src="assets/box-ete.jpg" width="640" height="1136" loading="lazy" alt="Box d’été pour deux : gratin, brochettes, beignets d’oignon et salade."><div><h3>Box <span lang="ar">صيف</span></h3><p>La box pour deux personnes.</p></div></article>
-        <article class="item"><img src="assets/grillade.jpg" width="640" height="1136" loading="lazy" alt="Grillade mixte : viandes et brochettes de poulet grillées, piment et citron."><div><h3>Grillade mixte</h3><p>La grillade maison Moon’s.</p></div></article>
+        <article class="item"><img src="assets/grillade.jpg" width="640" height="1136" loading="lazy" alt="Grillade mixte : viandes et brochettes de poulet grillées, piment et citron."><div><h3>Grillade mixte</h3><p>La grillade maison Cosmo’s.</p></div></article>
         <article class="item"><img src="assets/lasagne.jpg" width="720" height="1280" loading="lazy" alt="Lasagne gratinée au pesto et tomates cerises, servie avec pâtes et pain."><div><h3>Lunch time</h3><p>Lasagne gratinée, pâtes… la pause de midi.</p></div></article>
         <article class="item"><img src="assets/cafe-gourmand.jpg" width="640" height="1136" loading="lazy" alt="Café gourmand : cappuccino et part de San Sebastian au chocolat et pistache."><div><h3>Café gourmand</h3><p>Café + San Sebastian · <span class="price">12 DT</span></p></div></article>
-        <article class="item"><img src="assets/cheesecake.jpg" width="640" height="1136" loading="lazy" alt="Part de cheesecake nappée de coulis de fruits rouges."><div><h3>Cheesecake fruits rouges</h3><p>Benna, tout simplement.</p></div></article>
+        <article class="item"><img src="assets/cheesecake.jpg" width="640" height="1136" loading="lazy" alt="Part de cheesecake nappée de coulis de fruits rouges."><div><h3>Cheesecake fruits rouges</h3><p>Un délice, sans détour.</p></div></article>
       </div>
     </div>
   </section>
@@ -316,20 +316,20 @@
     <div class="wrap">
       <div>
         <p class="rule">Live screening</p>
-        <h2 id="t-matchs"><span class="script">Vivez le match</span>chez Moon’s</h2>
+        <h2 id="t-matchs"><span class="script">Vivez le match</span>chez Cosmo’s</h2>
         <ul class="feats">
           <li><svg aria-hidden="true"><use href="#screen"/></svg>Écran géant</li>
           <li><svg aria-hidden="true"><use href="#ball"/></svg>Ambiance 100 % foot : CSS, Coupe du monde, Clásico…</li>
           <li><svg aria-hidden="true"><use href="#glass"/></svg>Boissons &amp; cocktails</li>
           <li><svg aria-hidden="true"><use href="#smoke"/></svg>Chicha disponible</li>
         </ul>
-        <p style="color:var(--soft);margin:0 0 24px">Le programme des matchs est publié chaque semaine sur Instagram.</p>
-        <a class="btn btn-line" href="https://www.instagram.com/moons_cafe_sfax/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>Voir le programme</a>
+        <p style="color:var(--soft);margin:0 0 24px">Demandez le programme des matchs de la semaine par téléphone.</p>
+        <a class="btn btn-line" href="tel:+21600000000"><svg aria-hidden="true"><use href="#phone"/></svg>Demander le programme</a>
       </div>
       <div class="posters">
-        <img src="assets/match-css.jpg" width="1248" height="1248" loading="lazy" alt="Affiche : CSS contre Académie de FAD, Coupe de la CAF, samedi 17 octobre 2026 à 17h, en direct chez Moon’s.">
-        <img src="assets/match-tunisie.jpg" width="1254" height="1254" loading="lazy" alt="Affiche Coupe du monde 2026 : Tunisie contre Japon, chez Moon’s.">
-        <img src="assets/clasico.jpg" width="1254" height="1254" loading="lazy" alt="Affiche du Clásico FC Barcelone contre Real Madrid chez Moon’s.">
+        <img src="assets/match-css.jpg" width="1248" height="1248" loading="lazy" alt="Affiche : CSS contre Académie de FAD, Coupe de la CAF, samedi 17 octobre 2026 à 17h, en direct chez Cosmo’s.">
+        <img src="assets/match-tunisie.jpg" width="1254" height="1254" loading="lazy" alt="Affiche Coupe du monde 2026 : Tunisie contre Japon, chez Cosmo’s.">
+        <img src="assets/clasico.jpg" width="1254" height="1254" loading="lazy" alt="Affiche du Clásico FC Barcelone contre Real Madrid chez Cosmo’s.">
       </div>
     </div>
   </section>
@@ -338,14 +338,14 @@
     <div class="wrap">
       <div>
         <p class="rule">Espace familial</p>
-        <h2 id="t-events"><span class="script">Votre fête</span>chez Moon’s</h2>
-        <p class="ar" lang="ar" dir="rtl">مرحبا بيكم بحذانا في Moon’s ✨</p>
+        <h2 id="t-events"><span class="script">Votre fête</span>chez Cosmo’s</h2>
+        <p class="ar" lang="ar" dir="rtl">أهلا وسهلا في Cosmo’s ✨</p>
         <p>Anniversaire, Bride to be, hammam, réunion de famille, dîner, ftour ou petit-déj : on vous accueille dans notre espace familial non-fumeur, pour que vous soyez à l’aise, entre vous.</p>
         <ul class="tags"><li>Anniversaire</li><li>Bride to be</li><li>Hammam</li><li><span lang="ar">لمة عائلية</span></li><li>Ftour</li><li>Petit-déj</li></ul>
-        <a class="btn btn-gold" href="tel:+21653626624"><svg aria-hidden="true"><use href="#phone"/></svg>Organiser mon événement</a>
+        <a class="btn btn-gold" href="tel:+21600000000"><svg aria-hidden="true"><use href="#phone"/></svg>Organiser mon événement</a>
       </div>
       <figure>
-        <img src="assets/espace-familial.jpg" width="640" height="1136" loading="lazy" alt="Entrée de l’espace familial non-fumeur de Moon’s, avec son enseigne et ses miroirs ronds dorés.">
+        <img src="assets/espace-familial.jpg" width="640" height="1136" loading="lazy" alt="Entrée de l’espace familial non-fumeur de Cosmo’s, avec son enseigne et ses miroirs ronds dorés.">
         <div class="nosmoke"><span aria-hidden="true">🚭</span>Espace<br>non-fumeur</div>
       </figure>
     </div>
@@ -356,19 +356,18 @@
       <div class="card">
         <div>
           <p class="rule">Infos pratiques</p>
-          <h2 id="t-infos">Venir chez Moon’s</h2>
+          <h2 id="t-infos">Venir chez Cosmo’s</h2>
           <dl>
-            <div><dt>Adresse</dt><dd>Kassas n°4, entre route El Ain et route Menzel Chaker, en face du dispensaire, Sfax<span class="ar" lang="ar" dir="rtl">قصاص رقم 4 بين طريق العين و منزل شاكر، قدام المستوصف</span></dd></div>
-            <div><dt>Téléphone</dt><dd><a href="tel:+21653626624">53 626 624</a> · <a href="tel:+21658453453">58 453 453</a></dd></div>
+            <div><dt>Adresse</dt><dd>Centre-ville, Sfax<span class="ar" lang="ar" dir="rtl">وسط المدينة، صفاقس</span></dd></div>
+            <div><dt>Téléphone</dt><dd><a href="tel:+21600000000">00 000 000</a></dd></div>
             <div><dt>Horaires</dt><dd>24h/24, 7j/7</dd></div>
           </dl>
         </div>
         <div class="acts">
           <div class="clock"><b>24/7</b><span>Toujours ouvert</span></div>
-          <a class="btn btn-gold" href="tel:+21653626624"><svg aria-hidden="true"><use href="#phone"/></svg>Appeler le 53 626 624</a>
-          <a class="btn btn-line" href="tel:+21658453453"><svg aria-hidden="true"><use href="#phone"/></svg>Appeler le 58 453 453</a>
-          <a class="btn btn-line" href="https://maps.app.goo.gl/jySUEMrtCQQZuMRV8" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#pin"/></svg>Itinéraire Google Maps</a>
-          <a class="btn btn-line" href="https://ig.me/m/moons_cafe_sfax" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>Message sur Instagram</a>
+          <a class="btn btn-gold" href="tel:+21600000000"><svg aria-hidden="true"><use href="#phone"/></svg>Appeler le 00 000 000</a>
+                    <a class="btn btn-line" href="#infos"><svg aria-hidden="true"><use href="#pin"/></svg>Itinéraire Google Maps</a>
+          <a class="btn btn-line" href="mailto:contact@exemple.tn"><svg aria-hidden="true"><use href="#ig"/></svg>Nous écrire</a>
         </div>
       </div>
     </div>
@@ -376,12 +375,12 @@
 </main>
 
 <footer class="site">
-  <div class="wrap"><span>© Moon’s café - lounge · Sfax</span><a href="https://www.instagram.com/moons_cafe_sfax/" target="_blank" rel="noopener">@moons_cafe_sfax</a></div>
+  <div class="wrap"><span>© Cosmo’s café - lounge · Sfax</span><a href="mailto:contact@exemple.tn">contact@exemple.tn</a></div>
 </footer>
 
 <script>
   (function () {
-    var root = document.documentElement, KEY = 'moons-theme';
+    var root = document.documentElement, KEY = 'cosmos-theme';
     try { var s = localStorage.getItem(KEY); if (s) root.setAttribute('data-theme', s); } catch (e) {}
     document.querySelector('[data-toggle]').addEventListener('click', function () {
       var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
